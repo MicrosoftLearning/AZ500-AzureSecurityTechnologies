@@ -1,0 +1,186 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "vmSize": {
+            "type": "string",
+            "metadata": {
+                "description": "Virtual machine size"
+            }
+        },
+      "vmName": {
+        "type": "string",
+        "defaultValue": "az500-04-vm1",
+        "metadata": {
+          "description": "VM name"
+        }
+      },
+        "adminUsername": {
+            "type": "string",
+            "metadata": {
+                "description": "Admin username"
+            }
+        },
+        "adminPassword": {
+            "type": "securestring",
+            "metadata": {
+                "description": "Admin password"
+            }
+        },
+       "virtualNetworkName": {
+            "type": "string",
+            "defaultValue": "az500-04-vnet1",
+            "metadata": {
+                "description": "Virtual network name"
+        }
+      }
+    },
+  "variables": {
+    "vmName": "[parameters('vmName')]",
+    "nic1": "az500-04-nic1",
+    "virtualNetworkName": "[parameters('virtualNetworkName')]",
+    "subnet0Name": "subnet0",
+    "publicIPAddressName": "az500-04-pip1",
+    "subnet0Ref": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnet0Name'))]",
+    "networkSecurityGroupName": "az500-04-nsg1"
+  },
+    "resources": [
+        {
+            "name": "[variables('vmName')]",
+            "type": "Microsoft.Compute/virtualMachines",
+            "apiVersion": "2018-06-01",
+            "location": "[resourceGroup().location]",
+            "comments": "This is the VM that you're building.",
+            "dependsOn": [
+                "[variables('nic1')]"
+            ],
+            "properties": {
+                "osProfile": {
+                    "computerName": "[variables('vmName')]",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword": "[parameters('adminPassword')]",
+                    "windowsConfiguration": {
+                        "provisionVmAgent": "true"
+                    }
+                },
+                "hardwareProfile": {
+                    "vmSize": "[parameters('vmSize')]"
+                },
+                "storageProfile": {
+                    "imageReference": {
+                        "publisher": "MicrosoftWindowsServer",
+                        "offer": "WindowsServer",
+                        "sku": "2016-Datacenter",
+                        "version": "latest"
+                    },
+                    "osDisk": {
+                        "createOption": "FromImage",
+                        "managedDisk": {
+                            "storageAccountType": "Standard_LRS"
+                        }
+                    },
+                    "dataDisks": [
+                    ]
+                },
+                "networkProfile": {
+                    "networkInterfaces": [
+                        {
+                            "properties": {
+                                "primary": true
+                            },
+                            "id": "[resourceId('Microsoft.Network/networkInterfaces', variables('nic1'))]"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "type": "Microsoft.Network/virtualNetworks",
+            "name": "[variables('virtualNetworkName')]",
+            "apiVersion": "2018-08-01",
+            "location": "[resourceGroup().location]",
+            "comments": "Virtual Network",
+            "properties": {
+                "addressSpace": {
+                    "addressPrefixes": [
+                        "10.102.0.0/16"
+                    ]
+                },
+                "subnets": [
+                    {
+                        "name": "[variables('subnet0Name')]",
+                        "properties": {
+                            "addressPrefix": "10.102.0.0/24"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "name": "[variables('nic1')]",
+            "type": "Microsoft.Network/networkInterfaces",
+            "apiVersion": "2018-08-01",
+            "location": "[resourceGroup().location]",
+            "comments": "Primary NIC",
+            "dependsOn": [
+                "[variables('publicIpAddressName')]",
+                "[variables('networkSecurityGroupName')]",
+                "[variables('virtualNetworkName')]"
+            ],
+            "properties": {
+                "ipConfigurations": [
+                    {
+                        "name": "ipconfig1",
+                        "properties": {
+                            "subnet": {
+                                "id": "[variables('subnet0Ref')]"
+                            },
+                            "privateIPAllocationMethod": "Dynamic",
+                            "publicIpAddress": {
+                                "id": "[resourceId('Microsoft.Network/publicIpAddresses', variables('publicIpAddressName'))]"
+                            }
+                        }
+                    }
+                ],
+                "networkSecurityGroup": {
+                    "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+                }
+            }
+        },
+        {
+            "name": "[variables('publicIpAddressName')]",
+            "type": "Microsoft.Network/publicIpAddresses",
+            "apiVersion": "2018-08-01",
+            "location": "[resourceGroup().location]",
+            "comments": "Public IP for Primary NIC",
+            "properties": {
+                "publicIpAllocationMethod": "Dynamic"
+            }
+        },
+        {
+            "name": "[variables('networkSecurityGroupName')]",
+            "type": "Microsoft.Network/networkSecurityGroups",
+            "apiVersion": "2018-08-01",
+            "location": "[resourceGroup().location]",
+            "comments": "Network Security Group (NSG) for Primary NIC",
+            "properties": {
+                "securityRules": [
+                    {
+                        "name": "default-allow-rdp",
+                        "properties": {
+                            "priority": 1000,
+                            "sourceAddressPrefix": "*",
+                            "protocol": "Tcp",
+                            "destinationPortRange": "3389",
+                            "access": "Allow",
+                            "direction": "Inbound",
+                            "sourcePortRange": "*",
+                            "destinationAddressPrefix": "*"
+                        }
+                    }
+                ]
+            }
+        }
+    ],
+    "outputs": {}
+}
