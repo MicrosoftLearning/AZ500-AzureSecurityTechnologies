@@ -2,20 +2,17 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "SQL Server Name": {
-            "defaultValue": "az500labserver",
-            "type": "string"
-        }
     },
     "variables": {
-        "sqlAdministratorLogin":"sqladmin",
-        "sqlAdministratorLoginPassword":"Pa55w.rd"
+        "sqlAdministratorLogin": "sqladmin",
+        "sqlAdministratorLoginPassword": "Pa55w.rd",
+        "sqlServerName": "[concat('az500l11',uniqueString(resourceGroup().id))]"
     },
     "resources": [
         {
             "type": "Microsoft.Sql/servers",
             "apiVersion": "2015-05-01-preview",
-            "name": "[parameters('SQL Server Name')]",
+            "name": "[variables('sqlServerName')]",
             "location": "eastus",
             "kind": "v12.0",
             "properties": {
@@ -27,9 +24,9 @@
         {
             "type": "Microsoft.Sql/servers/firewallRules",
             "apiVersion": "2015-05-01-preview",
-            "name": "[concat(parameters('SQL Server Name'), '/AllowAllWindowsAzureIps')]",
+            "name": "[concat(variables('sqlServerName'), '/AllowAllWindowsAzureIps')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', parameters('SQL Server Name'))]"
+                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
             ],
             "properties": {
                 "startIpAddress": "0.0.0.0",
@@ -39,10 +36,10 @@
         {
             "type": "Microsoft.Sql/servers/databases",
             "apiVersion": "2017-03-01-preview",
-            "name": "[concat(parameters('SQL Server Name'), '/AZ500LabDb')]",
+            "name": "[concat(variables('sqlServerName'), '/AZ500LabDb')]",
             "location": "eastus",
             "dependsOn": [
-                "[resourceId('Microsoft.Sql/servers', parameters('SQL Server Name'))]"
+                "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
             ],
             "sku": {
                 "name": "Basic",
@@ -57,11 +54,5 @@
                 "sampleName":"AdventureWorksLT"
             }
         }
-    
-  
-      
- 
-
-      
     ]
 }

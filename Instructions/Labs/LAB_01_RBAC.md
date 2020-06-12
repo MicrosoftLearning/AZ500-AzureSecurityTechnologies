@@ -12,307 +12,321 @@ lab:
 
 You have been asked to create a proof of concept showing how Azure users and groups are created. Also, how role-based access control is used to assign roles to groups. Specifically, you need to:
 
-- Create a Senior Admins group with member Joseph Price. 
-- Create a Junior Admins group with member Isabel Garcia. 
-- Create a Service Desk group with member Dylan Williams.  
-- Assign the Service Desk group Virtual Machine Contributor permissions. 
+- Create a Senior Admins group containing the user account of Joseph Price as its member.
+- Create a Junior Admins group containing the user account of Isabel Garcia as its member.
+- Create a Service Desk group containing the user account of Dylan Williams as its member.
+- Assign the Virtual Machine Contributor role to the Service Desk group. 
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is the region to use for class. 
+> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
 
-In this lab, you will complete the following:
+In this lab, you will complete the following exercises
 
-- Exercise 1: Create the Senior Admins group with member Joseph Price (Portal). 
-- Exercise 2: Create the Junior Admins group with member Isabel Garcia (PowerShell).
-- Exercise 3: Create the Service Desk group with member Dylan Williams (CLI). 
-- Exercise 4: Assign the Service Desk group Virtual Machine Contributor permissions.
+- Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member (the Azure portal). 
+- Exercise 2: Create the Junior Admins group with the user account Isabel Garcia as its member (PowerShell).
+- Exercise 3: Create the Service Desk group with the user Dylan Williams as its member (Azure CLI). 
+- Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
-## Exercise 1: Create the Senior Admins group with member Joseph Price. 
+## Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will complete:
+In this exercise, you will complete the following tasks:
 
-- Task 1: Use the Portal to create the user account for Joseph Price.
-- Task 2: Use the Portal to create the Senior Admins group and assign the Joseph to the group.
+- Task 1: Use the Azure portal to create a user account for Joseph Price.
+- Task 2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
-#### Task 1: Use the Portal to create the user account for Joseph Price 
+#### Task 1: Use the Azure portal to create a user account for Joseph Price 
 
 In this task, you will create a user account for Joseph Price. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-1. Use the Portal menu and select **All services**. 
+    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. Search for and select **Azure Active Directory**.
+1. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the **Overview blade** note your tenant domain. You will need this in later steps. This takes the form *xxx.onmicrosoft.com*.
+1. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**.
 
-1. Under **Manage** select **Users**, and then select **New user**.
+1. On the **New User** blade, ensure that the **Create user** option is selected, and specify the following settings:
 
-1. On the **User** page, fill out the blade with the following information:
+   |Setting|Value|
+   |---|---|
+   |User name|**Joseph**|
+   |Name|**Joseph Price**|
 
-	- **User name**: Joseph
-      
-	- **Name**: Joseph Price
+1. Click on the copy icon next to the **User name** to copy the full user.
 
-1. Click on the copy icon next to the **User name**. 
-
-1. Under **Initial password** check **Show password**. You would need to provide this information to Joseph. 
+1. Ensure that the **Auto-generate** password is selected, select the **Show password** checkbox to identify the automatically generated password. You would need to provide this password, along with the user name to Joseph. 
 
 1. Click **Create**.
 
-1. Refresh the **Users** page to verify the new user was created in your Azure AD tenant.
+1. Refresh the **Users | All users** blade to verify the new user was created in your Azure AD tenant.
 
-### Task 2: Create the group in the Portal
+### Task 2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
-In this task, you will create the *Senior Admins* group and assign Joseph as the owner. 
+In this task, you will create the *Senior Admins* group, add the user account of Joseph Price to the group, and configure it as the group owner.
 
-1. Continue in the Portal and the Azure Active Directory blade.
+1. In the Azure portal, navigate back to the blade displaying your Azure Active Directory tenant. 
 
-1. Under **Manage** click **Groups**, and then select **New group**.
+1. In the **Manage** section, click **Groups**, and then select **+ New group**.
  
-1. Complete the group details.
-  
-	- **Group Type**: Security
-       
-	- **Group Name**: Senior Admins 
-    
-1. Under  **Members** click **No members selected** and select **Joseph Price**, click **Select**.
+1. On the **New Group** blade, specify the following settings (leave others with their default values):
 
-1. Click **Create**.
+   |Setting|Value|
+   |---|---|
+   |Group type|**Security**|
+   |Group name|**Senior Admins**|
+   |Membership type|**Assigned**|
+    
+1. Click the **No owners selected** link, on the **Add owners** blade, select **Joseph Price**, and click **Select**.
+
+1. Click the **No members selected** link, on the **Add members** blade, select **Joseph Price**, and click **Select**.
+
+1. Back on the **New Group** blade, click **Create**.
 
 > Result: You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
-## Exercise 2: Create the Junior Admins group with member Isabel Garcia.
+## Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Use PowerShell to create a user account for Isabel Garcia.
-- Task 2: Use PowerShell to create the Junior Admins group and assign Isabel to the group. 
+- Task 2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group. 
 
 #### Task 1: Use PowerShell to create a user account for Isabel Garcia.
 
-In this task, you will create a user account for Isabel Garcia.
+In this task, you will create a user account for Isabel Garcia by using PowerShell.
 
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
 
-1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
+1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-	> To copy and paste to the shell, right-click in the pane and **Paste as plain text**. 
+   >**Note**: To paste copied text into the Cloud Shell, right-click within the pane window and select **Pane**. Alternatively, you can use the **Shift+Insert** key combination.
 
-	> Bookmark the [Azure PowerShell page](https://docs.microsoft.com/en-us/powershell/module/az.resources/?view=azps-4.1.0#resources). The Reference section provides commands grouped by category, like Active Directory and Virtual Machines. 
+1. In the PowerShell session within the Cloud Shell pane, run the following to create a password profile object:
 
-1. Create a password profile object.
-
-    ```
-    $PasswordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
+    ```powershell
+    $passwordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
     ```
 
-1. Create a password.
-
+1. In the PowerShell session within the Cloud Shell pane, run the following to set the value of the password within the profile object:
+    ```powershell
+    $passwordProfile.Password = 'Pa55w.rd1234'
     ```
-    $PasswordProfile.Password = "Pa55w.rd"
-    ```
 
-1. Connect to Azure Active Directory. This is required when using PowerShell. 
+1. In the PowerShell session within the Cloud Shell pane, run the following to connect to Azure Active Directory:
 
-    ```
+    ```powershell
     Connect-AzureAD
     ```
       
-1. Create a user, Isabel Garcia. Substitute *yourdomain* with your domain. 
+1. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Azure AD tenant: 
 
-	```
-    New-AzureADUser -DisplayName "Isabel Garcia" -PasswordProfile $PasswordProfile   -UserPrincipalName "Isabel@yourdomain.onmicrosoft.com" -AccountEnabled $true -MailNickName "Isabel" 
+    ```powershell
+    $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
     ```
 
-1. Notice the UserPrincipalName for Isabel. You will need this to add her to the Junior Admins group. 
+1. In the PowerShell session within the Cloud Shell pane, run the following to create a user account for Isabel Garcia: 
 
-1. Get a list of users. Both, Mark and Isabel, should be listed. 
+    ```powershell
+    New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName 'Isabel@$domainName' -AccountEnabled $true -MailNickName 'Isabel' 
+    ```
 
-	```
-	Get-AzureADUser 
-	```
+1. In the PowerShell session within the Cloud Shell pane, run the following to list Azure AD users (the accounts of Joseph and Isabel should appear on the listed): 
 
-### Task 2: Use PowerShell to create the Junior Admins group and assign Isabel to the group.
+    ```powershell
+    Get-AzureADUser 
+    ```
 
-In this task, you will create the Junior Admins group and assign Isabel to the group. 
+### Task 2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
 
-1. Continue in the Cloud Shell. 
+In this task, you will create the Junior Admins group and add the user account of Isabel Garcia to the group by using PowerShell.
 
-1. Create a new security group named Junior Admins.
+1. In the same PowerShell session within the Cloud Shell pane, run the following to create a new security group named Junior Admins:
 	
-	```
-	New-AzureADGroup -DisplayName "Junior Admins" -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
-	```
-
-1. Verify the group was created. You should now have two groups, Senior Admins and Junior Admins.  
-
+    ```powershell
+    New-AzureADGroup -DisplayName 'Junior Admins' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
     ```
+
+1. In the PowerShell session within the Cloud Shell pane, run the following to list the groups in your Azure AD tenant (the list should include the Senior Admins and Junior Admins groups):
+
+    ```powershell
     Get-AzureADGroup
     ```
 
-1. Assign Isabel to the Junior Admins group. Use *yourdomain*. 
+1. In the PowerShell session within the Cloud Shell pane, run the following to obtain a reference to the user account of Isabel Garcia:
+
+    ```powershell
+    $user = Get-AzureADUser -Filter "MailNickName eq 'Isabel'"
+    ```
+
+1. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins group:
 	
-	```
-	Add-AzADGroupMember -MemberUserPrincipalName "isabel@yourdomain.onmicrosoft.com" -TargetGroupDisplayName "Junior Admins" 
-	```
+    ```powershell
+    Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins" 
+    ```
 
-1. Check the Junior Admins group membership and ensure Isabel is a member.
+1. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins group contains the user account of Isabel:
 
-	```
-	Get-AzADGroupMember -GroupDisplayName "Junior Admins"
-	```
+    ```powershell
+    Get-AzADGroupMember -GroupDisplayName "Junior Admins"
+    ```
 
-> Result: You used PowerShell to create a user and a group, and assigned the user to the group. 
+> Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
 
 
-## Exercise 3: Create the Service Desk group with member Dylan Williams. 
+## Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will:
+In this exercise, you will complete the following tasks:
 
-- Task 1: Use the CLI to create a user account for Dylan Williams.
-- Task 2: Use the CLI to create the Service Desk group and assign Dylan to the group. 
+- Task 1: Use Azure CLI to create a user account for Dylan Williams.
+- Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
 
-#### Task 1: Use the CLI to create a user account for Dylan Williams.
+#### Task 1: Use Azure CLI to create a user account for Dylan Williams.
 
-> Bookmark the [CLI reference page](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest). The Reference section has a command list with usage information. 
+In this task, you will create a user account for Dylan Williams.
 
-In this task, you will create a user account for Dylan Williams.. 
+1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
 
-1. Continue in the Cloud Shell.
+1. In the Bash session within the Cloud Shell pane, run the following to to identify the name of your Azure AD tenant:
 
-1. Use the top left drop-down to select **Bash** and then click **Confirm**.
+    ```cli
+    DOMAINNAME=$(az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//')
+    ```
 
-1. Create a user, Dylan Williams. Use *yourdomain*.
+1. In the Bash session within the Cloud Shell pane, run the following to create a user, Dylan Williams. Use *yourdomain*.
  
-      ```
-      az ad user create --display-name "Dylan Williams" --password Pa55w.rd --user-principal-name Dylan@yourdomain.onmicrosoft.com
-      ```
+    ```cli
+    az ad user create --display-name "Dylan Williams" --password "Pa55w.rd1234" --user-principal-name Dylan@$DOMAINNAME
+    ```
       
-1. Get a list of users. Joseph, Isabel, and Dylan should be listed. You will need Dylan's ObjectID to add him to the Service Desk group. 
+1. In the Bash session within the Cloud Shell pane, run the following to list Azure AD user accounts (the list should include user accounts of Joseph, Isabel, and Dylan)
 	
-      ```
-      az ad user list --output table
-      ```
+    ```cli
+    az ad user list --output table
+    ```
 
-#### Task 2: Use the CLI to create the Service Desk group and assign Dylan to the group. 
+#### Task 2: Use Azure CLI to create the Service Desk group and add the user account of Dylan to the group. 
 
 In this task, you will create the Service Desk group and assign Dylan to the group. 
 
-1. Continue in the Cloud Shell.
+1. In the same Bash session within the Cloud Shell pane, run the following to create a new security group named Service Desk.
 
-1. Create a new security group named Service Desk.
-
-   	```
-	az ad group create --display-name "Service Desk" --mail-nickname ServiceDesk
-   	```
+    ```cli
+    az ad group create --display-name "Service Desk" --mail-nickname "ServiceDesk"
+    ```
  
-1. Verify the Service Desk group was created. You should also have the Senior Admins and Junior Admins groups.  
+1. In the Bash session within the Cloud Shell pane, run the following to list the Azure AD groups (the list should include Service Desk, Senior Admins, and Junior Admins groups):
 
-   	```
-	az ad group list -o table
-	```
+    ```cli
+    az ad group list -o table
+    ```
 
-1. Assign Dylan to the Service Desk group. Use Dylan's ObjectID for Member-id. 
+1. In the Bash session within the Cloud Shell pane, run the following to obtain a reference do the user account of Dylan Williams: 
 
-   	```
-	az ad group member add --group "Service Desk" --member-id xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
-   	```
+    ```cli
+    USER=$(az ad user list --filter "displayname eq 'Dylan Williams'")
+    ```
 
-1. Check the Service Desk group membership and ensure Dylan is a member.
+1. In the Bash session within the Cloud Shell pane, run the following to obtain the objectId property of the user account of Dylan Williams: 
 
-	```
-	az ad group member list --group -o table
-	```
+    ```cli
+    OBJECTID=$(echo $USER | jq '.[].objectId' | tr -d '"')
+    ```
 
-> Result: Using the CLI you created a user and a group, and assigned the user to the group. 
+1. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group: 
+
+    ```cli
+    az ad group member add --group "Service Desk" --member-id $OBJECTID
+    ```
+
+1. In the Bash session within the Cloud Shell pane, run the following to list members of the Service Desk group and verify that it includes the user account of Dylan:
+
+    ```cli
+    az ad group member list --group "Service Desk"
+    ```
+
+1. Close the Cloud Shell pane.
+
+> Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
 
 
-## Exercise 4: Assign the Service Desk group Virtual Machine Contributor permissions. 
+## Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Create a resource group. 
 - Task 2: Assign the Service Desk Virtual Machine Contributor permissions to the resource group.  
 
 #### Task 1: Create a resource group
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. Under **Azure services** select **Resource groups**. 
+1. On the **Resource groups** blade, click **+ Add** and specify the following settings:
 
-1. Click **Add** and complete the required information. 
-
-	- Resource group name: Create new - **AZ500Lab01**
-
-	- Subscription: **your subscription**
-
-	- Location: **East US**
+   |Setting|Value|
+   |---|---|
+   |Subscription name|the name of your Azure subscription|
+   |Resource group name|**AZ500Lab01**|
+   |Location|**East US**|
 
 1. Click **Review + create** and then **Create**.
 
-1. Use the **Notification** icon (top right) to get information on deployment status.
+   >**Note**: Wait for the resource group to deploy. Use the **Notification** icon (top right) to track progress of the deployment status.
 
-1. Wait for the resource group to deploy.
+1. Back on the **Resource groups** blade, refresh the page and verify your new resource group appears in the list of resource groups.
 
-1. Click on the Portal Menu (Top left three lines) and select **Resource Groups**.
-
-1. Verify your new resource group is listed. 
 
 #### Task 2: Assign the Service Desk Virtual Machine Contributor permissions. 
 
-1. In the list of **Resource groups**, choose the new **AZ500LAB01** resource group.
+1. On the **Resource groups** blade, click the **AZ500LAB01** resource group entry.
 
-1. Select **Access control (IAM)**.
+1. On the **AZ500Lab01** blade, click **Access control (IAM)**.
 
-1. In the **Add role assignment** pane, select **Add**.
+1. On the **AZ500Lab01 | Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
 
-	> If you don't have permissions to assign roles, you won't see the **Add** option.
+1. On the **Add role assignment** blade, specify the following settings:
 
-1. In the **Role** drop-down list, select **Virtual Machine Contributor**.
-
-1. Use the Information icon to view the role privileges. 
-
-1. In the **Select** list, select **Service Desk**.
+   |Setting|Value|
+   |---|---|
+   |Role|**Virtual Machine Contributor**|
+   |Assign access to|**Azure AD user, group, or service principal**|
+   |Select|**Service Desk**|
 
 1. Choose **Save** to create the role assignment.
 
 1. From the **Access control (IAM)** blade, select **Role assignments**.
 
-1. Verify under **Virtual Machine Contributor** the **Service Desk** group is listed. 
+1. On the **AZ500Lab01 | Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
 
-1. Select **Check access**.
+1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
-1. Under **Find** in the second text box type **Dylan Williams**.
+1. Close the **Dylan Williams assignments - AZ500Lab01** blade.
 
-1. Select the user account to review Dylan's access as part of the Service Desk group.
+1. Repeat the same last two steps to check access for **Joseph Price**. 
 
-1. Return to **Check access**.
-
-1. Check the access for **Joseph Price**. 
-
-> Result: You have assigned RBAC permissions. 
+> Result: You have assigned and checked RBAC permissions. 
 
 **Clean up resources**
 
 > Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
 
-1. Access the Cloud Shell.
+1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 
-1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
+1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **PowerShell**, and, when prompted, click **Confirm**. 
 
-1. Remove the resource group by running the following command (When prompted to confirm press Y and press enter):
+1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
   
     ```
-    Remove-AzResourceGroup -Name "AZ500LAB01"
+    Remove-AzResourceGroup -Name "AZ500LAB01" -Force -AsJob
     ```
-1.  Close the **Cloud Shell**. 
+
+1.  Close the **Cloud Shell** pane. 

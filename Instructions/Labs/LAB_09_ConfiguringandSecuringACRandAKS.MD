@@ -17,11 +17,18 @@ You have been asked to deploy a proof of concept with Azure Container Registry a
 - Configuring an Azure Kubernetes Service.
 - Securing and accessing container applications both internally and externally. 
 
+> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
+
 ## Lab objectives
 
-In this lab, you will complete:
+In this lab, you will complete the following exercise:
 
 - Exercise 1: Configuring and Securing ACR and AKS
+
+## Lab files:
+
+- **\\Allfiles\\Labs\\09\\nginxexternal.yaml**
+- **\\Allfiles\\Labs\\09\\nginxinternal.yaml**
 
 ## Exercise 1: Configuring and Securing ACR and AKS
 
@@ -29,392 +36,321 @@ In this lab, you will complete:
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
-In this exercise, you will complete:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Create an Azure Container Registry
 - Task 2: Create a Dockerfile, build a container and push it to Azure Container Registry
-- Task 3: Create an Azure Kubernetes Service
-- Task 4: Give AKS permission to access the ACR 
-- Task 5: Deploy an external facing container from ACR to AKS
-- Task 6: Verify you can access the container externally
-- Task 7: Deploy an internal facing container from ACR to AKS
-- Task 8: Verify you can access the container internally
+- Task 3: Create an Azure Kubernetes Service cluster
+- Task 4: Grant the AKS cluster permissions to access the ACR
+- Task 5: Deploy an external service to AKS
+- Task 6: Verify the you can access an external AKS-hosted service
+- Task 7: Deploy an internal service to AKS
+- Task 8: Verify the you can access an internal AKS-hosted service
 
 #### Task 1: Create an Azure Container Registry
 
 In this task, you will create a resource group for the lab an an Azure Container Registry.
 
-1. Access the Portal and then the Cloud Shell.
+1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-1. Ensure **Bash** is selected in the upper-left drop-down menu.
+    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. Create a new resource group for this lab.
+1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash** and **Create storage**.
 
-    ```
+1. Ensure **Bash** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
+
+1. In the Bash session within the Cloud Shell pane, run the following to create a new resource group for this lab:
+
+    ```sh
     az group create --name AZ500LAB09 --location eastus
     ```
 
-1. Verify the resource group was created.
-	```
-	az resource list --resource-group AZ500LAB09 -o table
-	```
-
-1. Create a new Azure Container Registry (ACR). The name of the ACR must be globally unique. 
+1. In the Bash session within the Cloud Shell pane, run the following to verify the resource group was created:
 
     ```
-    az acr create --resource-group AZ500LAB09 --name <ACRuniquename> --sku Basic
+    az group list --query "[?name=='AZ500LAB09']" -o table
     ```
 
-1. Wait for the command to execute.
+1. In the Bash session within the Cloud Shell pane, run the following to create a new Azure Container Registry (ACR) instance (The name of the ACR must be globally unique): 
 
-1. Confirm that the new ACR was created. Remember the ACR name you will need it in the next task.
+    ```sh
+    az acr create --resource-group AZ500LAB09 --name az500$RANDOM$RANDOM --sku Basic
+    ```
 
+1. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
+
+    ```sh
+    az acr list --resource-group AZ500LAB09
     ```
-    az acr list -o table
-    ```
+
+    >**Note**: Record the name of the ACR. You will need it in the next task.
 
 ### Task 2: Create a Dockerfile, build a container and push it to Azure Container Registry
 
 In this task, you will create a Dockerfile, build an image from the Dockerfile, and deploy the image to the ACR. 
 
-1. Continue working in the **Bash** shell.
+1. In the Bash session within the Cloud Shell pane, run the following to create a Dockerfile to create an Nginx-based image: 
 
-1. Create a Dockerfile to deploy to Nginx. 
-
-    ```
+    ```sh
     echo FROM nginx > Dockerfile
     ```
 
-1. Build an image from the Dockerfile and push the image to the new ACR. 
+1. In the Bash session within the Cloud Shell pane, run the following to build an image from the Dockerfile and push the image to the new ACR. 
 
-    > The fullstop (period) at the end of the command line is required. It means the current directory. Replace ACRuniquename with the name of your ACR. 
+    >**Note**: The trailing period at the end of the command line is required. It designates the current directory as the location of Dockerfile. 
 
+    ```sh
+    ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
+
+    az acr build --image sample/nginx:v1 --registry $ACRNAME --file Dockerfile .
     ```
-    az acr build --image sample/nginx:v1 --registry <ACRuniquename> --file Dockerfile .
-    ```
 
-1. Wait for the command to successfully complete.
+    >**Note**: Wait for the command to successfully complete. This might take about 2 minutes.
 
-1. Close the Cloud Shell and return to the Portal.
+1. Close the Cloud Shell pane.
 
-1. Navigate to your resource group, **AZ500Lab09** and select your **ACR**. 
+1. In the Azure portal, navigate to the **AZ500Lab09** resource group and, in the list of resources, click the entry representing the Azure Container Registry instance you provisioned in the previous task.
 
-1. Under **Services** select **Repositories**. 
+1. On the Container registry blade, in the **Services** section, click **Repositories**. 
 
-1. Verify you have a new container image named sample/nginx.
+1. Verify that the list of repositories includes the new container image named **sample/nginx**.
 
-1. Select the image and notice the **v1** tag that identifies the version.
+1. Click the **sample/nginx** entry and verify presence of the **v1** tag that identifies the image version.
 
-1. Click on **v1** to view the Manifest information for the container image.
+1. Click the **v1** entry to view the image manifest.
 
-1. At the top is information on the sha256 **Digest**, **Manifest creation date**, and **Platform**. 
+    >**Note**: The manifest includes the sha256 digest, manifest creation date, and platform entries. 
 
-### Task 3: Create an Azure Kubernetes Service
+### Task 3: Create an Azure Kubernetes Service cluster
 
 In this task, you will create an Azure Kubernetes service and review the deployed resources. 
 
-1. Continue in the Portal.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Kubernetes services** and press the **Enter** key.
 
-1. From the Portal menu (top left), select **Create a Resource**.
+1. On the **Kubernetes services** blade, click **+ Add** and, in the drop-down menu, click **+ Add Kubernetes cluster**
 
-1. Search for and select **Kubernetes Service**.
+1. On the **Basics** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
-1. Click **Create** and configure the **Basics** tab. Take the default value for any setting that is not listed. 
+    |Setting|Value|
+    |----|----|
+    |Subscription|the name of the Azure subscription you are using in this lab|
+    |Resource group|**AZ500LAB09**|
+    |Kubernetes cluster name|**MyKubernetesCluster**|
+    |Region|**(US) East US**|
+    |Node count|**1**|
 
-	- Resource group: **AZ500LAB09**
+1. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
-	- Kubernetes cluster name: **MyKubernetesCluster**
-
-	- Region: **East US**
-
-	- Node count: **1**
-
-1. Click **Next: Node pools**.
- 
-	- Virtual nodes: **disabled**
+    |Setting|Value|
+    |----|----|
+    |Virtual nodes|**Disabled**|
+    |VM scale sets|**Disabled**|
 	
-	- VM scale sets: **disabled**
+1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
+    >**Note**: You are creating a cluster infrastructure service principal which is used by the Kubernetes cluster to manage cloud resources attached to the cluster. For more information, visit the [Service principals with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal) page.
 
-1. Click **Next: Authentication**.
+    >**Note**: You are enabling Role based access control for Kubernetes. For more information, visit the [Integrate Azure Active Directory with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/azure-ad-integration) page. 
 
-	> Do not make any changes.
+1. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
+
+    |Setting|Value|
+    |----|----|
+    |Network configuration|**Advanced**|
+    |DNS name prefix|any valid, globally unique DNS host name|
+
+    >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
+
+1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Container monitoring** to **Disabled**. 
+
+    >**Note**: In production scenarios, you would want to enable monitoring. Monitoring is disabled in this case since it is not covered in the lab. 
+
+1. Click **Review + Create** and then click **Create**.
+
+    >**Note**: Wait for the deployment to complete. This might take about 10 minutes.
+
+1. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+
+1. On the **Resource groups** blade, in the listing of resource groups, note a new resource group named **MC_AZ500LAB09_MyKubernetesCluster_eastus** that holds components of the AKS Nodes. Review resources in this resource group. 
 	
-	> Notice we are creating a cluster infrastructure service principal which is used by the Kubernetes cluster to manage cloud resources attached to the cluster. For more information, visit the [Service principals with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal) page.
+1. Navigate back to the **Resource groups** blade and click the *AZ500LAB09** entry. 
 
-	> Also notice we are enabling Role based access control for Kubernetes. For more information, visit the [Integrate Azure Active Directory with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/azure-ad-integration) page. 
+    >**Note**: In the list of resources, note the AKS Cluster and the corresponding virtual network.
 
-1. Click **Next: Networking**.
+1. In the Azure portal, open a Bash session in the Cloud Shell. 
 
-	- Network configuration: **Advanced**
+    >**Note**: Ensure **Bash** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-	> Do not make any changes.
-	
-	> Notice that AKS can be enabled as a private cluster. This gives the API server a private IP to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
+1. In the Bash session within the Cloud Shell pane, run the following to connect to the Kubernetes cluster:
 
-1. Click **Next: Monitoring**
-
-	- Container monitoring: **Disabled**
-
-1. Click **Review + Create** and then **Create**.
-
-1. Monitor your deployment using the **Notification** icon, top right. 
-
-    > It can take 5 - 15 minutes for AKS to deploy. 
-
-1. Once the deployment is complete, navigate to **Resource Groups**. 
-
-	> Notice a new resource group that holds components of the AKS Nodes, This resource group is named similar to  **MC_AZ500LAB09_MyKubernetesCluster_eastus**. Take a minute to review the resources in this new resource group. 
-	
-	> Return to the resource group page, and open the *AZ500LAB09** resource group. Notice there is now an AKS Cluster and a new virtual network.
-
-1. Open the Cloud Shell.
-
-1. Ensure **Bash** is selected in the upper-left drop-down menu.
-
-1. Connect to the Kubernetes cluster. 
-
-    ```
+    ```sh
     az aks get-credentials --resource-group AZ500LAB09 --name MyKubernetesCluster
     ```
 
-1. View the Kubenetes nodes. The **Status** should be **Ready**.
+1. In the Bash session within the Cloud Shell pane, run the following to list nodes of the Kubenetes cluster: 
 
-    ```
+    ```sh
     kubectl get nodes
     ```
 
-### Task 4: Give AKS permission to access the ACR
+    >**Note**: Verify that the **Status** is listed as **Ready**.
 
-In this task, you will give the AKS permission to access the ACR. 
+### Task 4: Grant the AKS cluster permissions to access the ACR
 
-1. Continue in the **Bash** Cloud shell.
+In this task, you will grant the AKS cluster permission to access the ACR. 
 
-2. Update the AKS cluster to use the ACR. This command grants the 'acrpull' role assignment to the ACR. Change ACRuniquename to the name of your ACR.
+1. In the Bash session within the Cloud Shell pane, run the following to configure the AKS cluster to use the Azure Container Registry instance you created earlier in this lab. 
 
+    ```sh
+    ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
+
+    az aks update -n MyKubernetesCluster -g AZ500LAB09 --attach-acr $ACRNAME
     ```
-    az aks update -n MyKubernetesCluster -g AZ500LAB09 --attach-acr <ACRuniquename> 
-    ```
 
-    > It may take a few minutes for this command to complete. 
+    >**Note**: This command grants the 'acrpull' role assignment to the ACR. Change ACRuniquename to the name of your ACR.
 
-### Task 5: Deploy an external facing container from ACR to AKS
+    >**Note**: It may take a few minutes for this command to complete. 
+
+### Task 5: Deploy an external service to AKS
 
 In this task,  you will download the Manifest files, edit the YAML file, and apply your changes to the cluster. 
 
-1. Continue in the **Bash** Cloud shell. 
+1. In the Bash session within the Cloud Shell pane, click the **Uplaod/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** and **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**. 
 
-1. Download the Manifest files.
+1. In the Bash session within the Cloud Shell pane, run the following to identify the name of the Azure Container Registry instance:
 
+    ```sh
+    echo $ACRNAME
     ```
-    wget https://raw.githubusercontent.com/sympa18/AZ-500-Azure-Security/master/2020/Allfiles/Labs/LAB_09/nginxexternal.yaml && wget https://raw.githubusercontent.com/sympa18/AZ-500-Azure-Security/master/2020/Allfiles/Labs/LAB_09/nginxinternal.yaml
-    ```
 
-1. Open the nginxexternal.yaml file, so you can make an edit. Notice this is the *external* yaml file.
+    >**Note**: Record the Azure Container Registry instance name. You will need it later in this task.
 
-    ```
+1. In the Bash session within the Cloud Shell pane, run the following to open the nginxexternal.yaml file, so you can edit its content. 
+
+    ```sh
     code ./nginxexternal.yaml
     ```
 
-1. On **line 21** replace **ACRUniquename** with your ACR name.
+    >**Note**: This is the *external* yaml file.
 
-    image: **ACRUniquename**.azurecr.io/sample/nginx:v1
+1. In the editor pane, scroll down to **line 21** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. Click on the **ellipses** (editor menu bar, far right) and select **Save**.
+1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
-1. Click on the **ellipses** and select **Close editor**.
+1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
-1. Apply the change to the cluster.
-
-    ```
+    ```sh
     kubectl apply -f nginxexternal.yaml
     ```
 
-1. Review the output to verify your deployment and the service have been created. 
+1. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. 
 
-    ```
+    ```sh
     deployment.apps/nginxexternal created
     service/nginxexternal created
     ```
 
-### Task 6: Verify the you can access the container externally
+### Task 6: Verify the you can access an external AKS-hosted service
 
 In this task, verify the container can be accessed externally using the public IP address.
 
-1. Continue in the **Bash** Cloud shell. 
+1. In the Bash session within the Cloud Shell pane, run the following to retrieve information about the nginxexternal service including name, type, IP addresses, and ports. 
 
-1. Retrieve information about the external facing pod (container) including name, type, IP addresses, and ports. 
-
-    ```
+    ```sh
     kubectl get service nginxexternal
     ```
 
-1. Review your output and make a note of the External-IP address. You will need it in the next step. 
+1. In the Bash session within the Cloud Shell pane, review the output and record the value in the External-IP column. You will need it in the next step. 
 
-	| NAME | TYPE | CLUSTER-IP | **External-IP** | PORT(S) | AGE |
-	| --- |--- | --- | --- | --- | --- |
-    | nginxexternal | LoadBalancer | 10.0.60.56 | 52.191.80.141 | 80:32591/TCP | 2m9s |
-	| | | | | | |
-
-    > When you view the service details, the IP address of the internal load balancer is shown in the EXTERNAL-IP column. In this context, External is in relation to the external interface of the load balancer, not that it receives a public, external IP address.
-
-1. Open Internet Explorer and browse to your external pod's External-IP address. 
+1. Open Internet Explorer and browse to the IP address you identified in the previous step.
 
 1. Ensure the **Welcome to nginx!** page displays. 
 
-### Task 7: Deploy an internal facing container from ACR to AKS
+### Task 7: Deploy an internal service to AKS
 
-In this task, you will deploy the internal facing container from ACR to AKS. 
+In this task, you will deploy the internal facing service on the AKS. 
 
-1. Continue in the **Bash** Cloud shell. 
+1. In the Bash session within the Cloud Shell pane, run the following to open the nginxintenal.yaml file, so you can edit its content. 
 
-1. Open the nginxintenal.yaml file, so you can make an edit. Notice this is the *internal* yaml file.
-
-    ```
+    ```sh
     code ./nginxinternal.yaml
     ```
 
-1. On **line 21** replace **ACRUniquename** with your ACR name.
+    >**Note**: This is the *internal* yaml file.
 
-    image: **ACRUniquename**.azurecr.io/sample/nginx:v1
+1. In the editor pane, scroll down to **line 21** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
-1. Click on the **ellipses** (editor menu bar, far right) and select **Save**.
+1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
-1. Click on the **ellipses** and select **Close editor**.
+1. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
-1. Apply the change to the cluster.
-    ```
+    ```sh
     kubectl apply -f nginxinternal.yaml
     ```
 
-1.  Review the output to verify your deployment and the service have been created.
+1.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created:
 
-    ```
+    ```sh
     deployment.apps/nginxinternal created
     service/nginxinternal created
     ```
 
+1. In the Bash session within the Cloud Shell pane, run the following to retrieve information about the nginxinternal service including name, type, IP addresses, and ports. 
 
-### Task 8: Verify the you can access the container internally
-
-In this task, you will create a virtual machine and verify you can access the container. 
-
-1. Retrieve information about the internal facing pod (container) including name, type, IP addresses, and ports. 
-
-    ```
+    ```sh
     kubectl get service nginxinternal
-	```
+    ```
 
-1. Review your output. The External-IP is the private IP address. Make a note of this address. You will need it at the end of this task. 
+1. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. 
 
-	| NAME | TYPE | CLUSTER-IP | External-IP | PORT(S) | AGE |
-	| --- |--- | --- | --- | --- | --- |
-    | nginxinternal | LoadBalancer | 10.0.78.106 | 10.240.0.35  | 80:31834/TCP | 41s |
-	| | | | | | |
+    >**Note**: Record this IP address. You will need it in the next task. 
 
-1. Close the **Bash** Cloud shell.
+    >**Note**: To access the internal service endpoint, you will connect interactively to one of the pods running in the cluster. 
 
-1. To access the container we need to deploy a virtual machine (AKSJumpBox) in a virtual network subnet (JumpBox). 
 
-1. First, lets create the subnet.
+### Task 8: Verify the you can access an internal AKS-hosted service
 
-1. In the Portal, navigate to **Resource Groups**.
+In this task, you will use one of the pods running on the AKS cluster to access the internal service. 
 
-1. Select the **AZ500LAB09** resource group and then select the **AZ500LAB09-vnet** virtual network.
+1. In the Bash session within the Cloud Shell pane, run the following to list the pods in the default namespace on the AKS cluster:
 
-1. Under **Settings** select **Subnets**. 
+    ```sh
+    kubectl get pods
+    ```
 
-1. Click **+ Subnet** and complete the required information. Take the default value for any setting that is not listed. 
+1. In the listing of the pods, copy the first entry in the **NAME** column.
 
-	- Name: **JumpBox**
+    >**Note**: This is the pod you will use in the subsequent steps.
 
-	- Address range: **10.0.0.0/24**
+1. In the Bash session within the Cloud Shell pane, run the following to connect interactively to the first pod (replace the `<pod_name>` placeholder with the name you copied in the previous step):
 
-1. Click **OK** to create the subnet. 
+    ```sh
+    kubectl exec -it <pod_name> -- /bin/bash
+    ```
 
-2. Now lets create the virtual machine in the JumpBox subnet. 
+1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the name you identified in the previous task):
 
-1. On the Portal menu (top left) select **Create a resource**.
+    ```sh
+    curl http://10.240.0.35
+    ```
 
-1. Under **Popular**, select **Windows Server 2016 Datacenter**.
-
-1. Configure the **Basic** information. Take the default value for any setting that is not specified. 
-
-	- Resource group: **AZ500LAB09**
-
-	- Virtual machine name: **AKSJumpBox**
-	
-	- Region: **East US**
-
-	- Size: **Standard DS2 v2**
-
-	- User: **localadmin**
-
-	- Password: **Pa55w.rd**
-
-	- Public inbound ports: **Allow selected ports** - **RDP (3389)**
-
-1. Move the **Networking** tab. Ensure the virtual machine is deployed in the JumpBox subnet. Take the default value for any setting that is not specified. 
-
-	- Virtual network: **AZ400LAB09-vnet**
-	
-	- Subnet: **JumpBox (10.0.0.0/24)**
-
-1. Move to the **Management** tab. Take the default value for any setting that is not specified. 
-
-	- Boot diagnostics: **Off**
-
-1. Click **Review + Create** then **Create**.
-
-1. Wait for the AKSJumpBox to deploy.
-
-1. Navigate to the **AZ500LAB09** resource group. 
-
-	> Notice the AKSJumpBox has been added to the resource group. You will also notice there is a NSG to control network flow within the virtual network to the AKS Cluster.
-
-1. Select the **AKSJumpBox** virtual machine. 
-
-1. You will need to connect to the virtual machine to test the private container.
-
-1. On the **Overview** pane, click **Connect** > **RDP**.
-
-1. Click **Download RDP file** and open the file.
-
-1. In the **Remote Desktop Connection** dialog select **Connect**.
-
-1. Select **More choices** and then **Use a different account**.
-
-	- Email address: **localadmin**
-
-    - Password: **Pa55w.rd**
-
-1. Click **OK** and click **Yes** to verify the identity of the virtual machine. 
-
-1. Wait for the remote session to open. 
-
-1. Open Internet Explorer and browse to internal pod's External-IP address.
-
-1. Ensure the **Welcome to nginx!** page displays. 
+1. Close the Cloud Shell pane.
 
 > Result: You have configured and secured ACR and AKS.
 
 
 **Clean up resources**
 
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
+> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
 
-1. Access the Cloud Shell.
+1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 
-1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
+1. In the upper-left drop-down menu of the Cloud Shell pane, select **PowerShell** and, when prompted, click **Confirm**.
 
-1. Remove the resource group using the Cloud Shell and PowerShell.
-
+1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
+  
+    ```powershell
+    Remove-AzResourceGroup -Name "AZ500LAB09" -Force -AsJob
     ```
-    Remove-AzResourceGroup -Name "AZ500LAB09"
-	```
 
-1. Remove the AKS cluster.    
-
-	```
-	Remove-AzResourceGroup -Name "MC_AZ500LAB09_MyKubernetesCluster_eastus"
-    ```
+1.  Close the **Cloud Shell** pane. 

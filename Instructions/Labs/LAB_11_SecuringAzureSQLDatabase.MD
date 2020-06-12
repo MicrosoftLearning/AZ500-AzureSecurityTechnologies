@@ -10,39 +10,34 @@ lab:
 
 ## Lab scenario
 
-You have been asked to recommend security features for Azure SQL database. Specifically, you are interested in:
+You have been asked to review security features for Azure SQL database. Specifically, you are interested in:
 
 - Protection against attacks such as SQL injection and data exfiltration. 
 - Ability to discover and classify database information into categories such as Confidential. 
 - Ability to audit database server and database queries and log events. 
 
-Lab files:
-
-- **2020\Allfiles\Labs\LAB_11\azuredeploy.json**
-- **2020\Allfiles\Labs\LAB_11\azuredeploy.parameters.json**
-
+> For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
 
-In this lab, you will complete:
+In this lab, you will complete the following exercise:
 
 - Exercise 1: Implement SQL Database security features
 
-## Instructions
+## Lab files:
+
+- **\\Allfiles\\Labs\\11\\azuredeploy.json**
 
 ## Exercise 1: Implement SQL Database security features
 
 ### Estimated timing: 30 minutes
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
-
-In this exercise, you will complete:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Deploy an Azure SQL Database
 - Task 2: Configure Advanced Data Protection
 - Task 3: Configure Data Classification
 - Task 4: Configure Auditing
-
 
 #### Task 1: Deploy an Azure SQL Database
 
@@ -50,146 +45,129 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-1. Under **Azure services** select **Create a resource**.
+    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-1. From the **New** blade, search Azure Marketplace for **Template deployment (deploy using custom templates)**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
 
-1. Use the list of search results to navigate to the **Template deployment (deploy using custom templates)** blade. 
+1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. Click **Create**.
+1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\11\\azuredeploy.json** file and click **Open**.
 
-1. On the **Custom deployment** blade, select the **Build your own template in the editor**.
+    >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
 
-1. From the **Edit template** blade, click **Load file** and locate the **2020\\Allfiles\\Labs\\LAB_08\\template.json** file.
+1. On the **Edit template** blade, click **Save**.
 
-1. Review the content of the template. This template will a SQL Server.
+1. On the **Edit parameters** blade, click **Save**.
 
-1. Click **Save**.
+1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
-1. Click **Edit parameters**.
+   |Setting|Value|
+   |---|---|
+   |Subscription|the name of the Azure subscription you will be using in this lab|
+   |Resource group|click **Create new** and type the name **AZ500LAB11**|
+   |Location|**(US) East US**|
 
-1. Click **Load file**, select **2020\Allfiles\Labs\LAB_11\azuredeploy.parameters.json** and then click **Open**. 
+1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
 
-1. Click **Save**.
-
-1. Complete the required parameters.
-
-	- Resource group: **Create new** - **AZ500LAB11**
-
-	- Region: **East US**
-
-	- SQL Server Name: **this must be a globally unique name**
-
-1. Click **Review + Create** and then **Create**.
-
-1. Before proceeding, wait for the SQL database to deploy. 
+    >**Note**: Wait for the deployment to complete. 
 
 #### Task 2: Configure Advanced Data Protection
 
-1. Navigate to **Resource Groups** and select your new resource group **AZ500LAB11**
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. Click your new SQL Server. 
+1. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB11** entry.
 
-1. Under **Security** click **Advanced data security**.
+1. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-1. Select **ON** and read the information about pricing and the trial period.
+1. On the server blade, in the **Security** section, click **Advanced data security**.
 
-1. Click **Advanced Threat Protection Types**. Read through the threat types. Click **OK**
+1. Set the **ADVANCED DATA SECURITY** switch to **ON**.
 
-1. **Click Save**.
+    >**Note**: Review the information about pricing and the trial period.
 
-1. Continue working on the **Advanced data security** blade.  
+1. Click **Advanced Threat Protection Types**. 
 
-1. Under **Vulnerability Assessment Settings** select **storage account**.
+1. On the **Advanced Threat Protection Types** blade, review the listing of threat types, click **OK** and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
 
-1. Click **create new** and complete the required information. Take the defaults for everything except **Name**.
+1. In the **VULNERABILITY ASSESSMENT SETTINGS** section, click **Storage account**.
 
-	- Name: **this must be unique**
+1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, and back on the **ADVANCED DATA SECURITY** pane, click **Save**.
 
-1. Click **OK** to create the storage account. 
-
-1. Click **Save** to save the Advanced Data Security settings. 
-
-	> If you receive an error about the storage container path then the storage account may not have completely deployed. Wait a few minutes and simply reselect the same storage account. Then click Save again.
+    >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
 
 #### Task 3: Configure Data Classification
 
 In this task, you will discover and classify information in SQL database for GPDR and data protection compliance.
-1. Continue working with your SQL Server.
 
-1. Under **Settings** select **SQL Databases**.
+1. On the server blade, in the **Settings** section, click **SQL Databases**.
 
-1. Select the **AZ500LabDb** database. This was created by the template. 
+1. In the list of databases, select the **AZ500LabDb** entry. 
 
-1. Under **Security** select **Advanced data security** pane
+1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Advanced data security**.
 
-1. Click the **Data discovery & classification** card.
+1. On the Advanced data security blade, click the **Data Discovery & Classification** tile.
 
-1. Select the **Classification tab**.
+1. On the **Data Discovery & Classification** blade, click the **Classification** tab.
 
-	> The classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
+    >**Note**: The classification engine scans your database for columns containing potentially sensitive data and provides a list of recommended column classifications.
 
-1. Click the **We have found 15 columns with classification recommendations** (blue bar) at the top.    
+1. Click the text message **We have found 15 columns with classification recommendations** displayed on blue bar at the top of the blade.
 
 1. Review the listed columns and the recommended sensitivity label. 
 
-1. Click **Select all** and then **Accept Selected Recommendations**.
+1. Enable the **Select all** checkbox and then click **Accept Selected Recommendations**.
 
-	> Notice you could select only certain columns and you could dismiss the recommendations. 
+    >**Note**: Alternatively, you could select only certain columns and dismiss others. 
 
-	> Notice you can change the Information type and Sensitivity label. 
+    >**Note**: You have the option to change the information type and sensitivity label. 
 
-1. When you have completed your review click **Save**. This will complete the classification and persistently label (**tag**) the database columns with the new classification metadata. 
+1. Once you have completed your review click **Save**. 
 
-1. Notice the **Data Discovery & Classification** card has been updated with the latest classification information.  page. 
+    >**Note**: This will complete the classification and persistently label the database columns with the new classification metadata. 
 
+1. Back on the Advanced data security blade, note that the **Data Discovery & Classification** tile has been updated to account for the latest classification information. 
 
 ### Task 4 : Configure auditing 
 
 In this task, you will first configure server level auditing and then configure database level auditing. 
 
-1. Return to your **SQL Server**.
+1. In the Azure portal, navigate back to the SQL Server blade.
 
-1. Under **Security**, select **Auditing**.
+1. On the SQL Server blade, in the **Security** section, click **Auditing**.
 
-	> This is server level auditing. The default auditing settings include all the queries and stored procedures executed against the database, as well as successful and failed logins.
+    >**Note**: This is server level auditing. The default auditing settings include all the queries and stored procedures executed against the database, as well as successful and failed logins.
 
-1. Click **ON** to enable auditing. 
+1. Set the **Auditing** switch to **ON** to enable auditing. 
 
-1. Select **Storage** as the audit log location. 
+1. Select the **Storage** checkbox and click **Configure**. 
 
-1. Under **Storage details** click **Configure**. Complete the required information. 
+1. On the **Storage settings** blade, click **Storage account**.
 
-	- Storage account: **Create New** - The storage account must be unique. 
+1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
 
-	- Click **OK** to finish creating the storage account. 
+1. Back on the **Storage settings** blade, set **Retention (days)** to **5** and click **OK**. 
 
-1. Change the **Retention (days)** to **5** and click **OK** 
+1. Back on the Auditing blade, click **Save** to save the auditing settings. 
 
-1. Click **Save** to save the auditing settings. 
+    >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the Auditing blade, click **Save**.
 
-	> If you receive an error about the storage container path then the storage account may not have completely deployed. Wait a few minutes and simply reselect the same storage account. Then click Save again.
+1. On the server blade, in the **Settings** section, click **SQL Databases**.
 
+1. In the list of databases, select the **AZ500LabDb** entry. 
 
-1. Under **Settings** select **SQL Databases**.
+1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Auditing**. 
 
-1. Select the **AZ500LabDb** database. 
-
-1. Under **Security** select **Auditing**. 
-
-1. Click **AZ500LabDb (az500labserver2/AZ500LabDb)** to select your test database
-
-1. **Under Security**, select **Auditing**.
-
-	> This is database level auditing. Notice Server-level Auditing is Enabled. The Database level audit will exist side-by-side with the server audit.
+    >**Note**: This is database level auditing. Server-level auditing is already enabled. 
   
-1. Notice audits can be written to an Azure storage account, to a Log Analytics workspace for consumption by Azure Monitor logs, or to the Event Hub.. You can configure any combination of these storage options.
+    >**Note**: Audits can be written to an Azure storage account, to a Log Analytics workspace, or to the Event Hub. You can configure any combination of these options.
+
+    >**Note**: If storage-based auditing is enabled on the server, it will always apply to the database, regardless of the database settings.
 
 1. Click **View Audit Logs**.
 
-1. Notice you can switch between Server audit and Database. 
+1. On the **Audit records** blade, note that you can switch between Server audit and Database audit. 
 
-	> Since this SQL server and database were created recently, there will probably not be any log events. 
+    >**Note**: Since this SQL server and database were created recently, it is unlikely that any events will be available at this point. 
 
 > Results: You have created a SQL server and database, configured data classification, and auditing. 
 
@@ -198,12 +176,13 @@ In this task, you will first configure server level auditing and then configure 
 
 > Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
 
-1. Access the Cloud Shell.
+1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
-1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
+1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-1. Remove the resource group using the Cloud Shell and PowerShell.
-
+1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
+  
+    ```powershell
+    Remove-AzResourceGroup -Name "AZ500LAB11" -Force -AsJob
     ```
-    Remove-AzResourceGroup -Name "AZ500LAB11"
-    ```
+1. Close the **Cloud Shell** pane. 
