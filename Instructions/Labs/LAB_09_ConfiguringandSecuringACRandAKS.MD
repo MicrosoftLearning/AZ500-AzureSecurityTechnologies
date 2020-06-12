@@ -331,7 +331,7 @@ In this task, you will use one of the pods running on the AKS cluster to access 
 1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the name you identified in the previous task):
 
     ```sh
-    curl http://10.240.0.35
+    curl http://<internal_IP>
     ```
 
 1. Close the Cloud Shell pane.
