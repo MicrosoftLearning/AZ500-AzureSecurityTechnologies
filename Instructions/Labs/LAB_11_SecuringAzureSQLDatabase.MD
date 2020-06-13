@@ -4,8 +4,7 @@ lab:
     module: 'Module 03 - Secure data and applications'
 ---
 
-# Lab 11 - Securing Azure SQL Database
-
+# Lab 11: Securing Azure SQL Database
 # Student lab manual
 
 ## Lab scenario
@@ -28,7 +27,7 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\11\\azuredeploy.json**
 
-## Exercise 1: Implement SQL Database security features
+### Exercise 1: Implement SQL Database security features
 
 ### Estimated timing: 30 minutes
 
@@ -127,7 +126,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
 1. Back on the Advanced data security blade, note that the **Data Discovery & Classification** tile has been updated to account for the latest classification information. 
 
-### Task 4 : Configure auditing 
+#### Task 4 : Configure auditing 
 
 In this task, you will first configure server level auditing and then configure database level auditing. 
 

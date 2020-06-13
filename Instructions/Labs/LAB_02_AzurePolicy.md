@@ -1,11 +1,10 @@
----
+﻿---
 lab:
     title: '02 - Azure Policy'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 02 - Azure Policy
-
+# Lab 02: Azure Policy
 # Student lab manual
 
 ## Lab scenario
@@ -23,9 +22,9 @@ In this lab, you will complete the following:
 
 - Exercise 1: Implement Azure Policy. 
 
-## Exercise 1: Implement Azure Policy
+### Exercise 1: Implement Azure Policy
 
-### Estimated timing: 20 minutes
+#### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 

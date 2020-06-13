@@ -4,8 +4,7 @@ lab:
     module: 'Module 04 - Manage Security Operations'
 ---
 
-# Lab 15 - Azure Sentinel
-
+# Lab 15: Azure Sentinel
 # Student lab manual
 
 ## Lab scenario
@@ -28,9 +27,9 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\15\\changeincidentseverity.json**
 
-## Exercise 1: Implement Azure Sentinel
+### Exercise 1: Implement Azure Sentinel
 
-### Exercise timing: 30 minutes
+### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 

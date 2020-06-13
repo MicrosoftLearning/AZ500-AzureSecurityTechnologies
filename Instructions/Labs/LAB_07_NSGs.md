@@ -4,8 +4,7 @@ lab:
     module: 'Module 02 - Implement Platform Protection'
 ---
 
-# Lab 07 - Network Security Groups and Application Security Groups
-
+# Lab 07: Network Security Groups and Application Security Groups
 # Student lab manual
 
 ## Lab scenario
@@ -27,9 +26,9 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Create the virtual networking infrastructure
 - Exercise 2: Deploy virtual machines and test the network filters
 
-## Exercise 1: Create the virtual networking infrastructure
+### Exercise 1: Create the virtual networking infrastructure
 
-### Exercise timing: 20 minutes
+### Estimated timing: 20 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -172,9 +171,9 @@ In this task, you will create a network security group.
 
 > Result: You have deployed a virtual network, network security with inbound security rules, and two application security groups. 
 
-## Exercise 2: Deploy virtual machines and test network filters
+### Exercise 2: Deploy virtual machines and test network filters
 
-### Exercise timing: 25 minutes
+### Estimated timing: 25 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -301,7 +300,7 @@ In this task, you will associate each virtual machines network interface with th
 
 1. Click **Configure the application security groups**, in the **Application security group** drop-down list, select **myAsgMgmtServers**, and then click **Save**.
 
-### Task 4: Test the network traffic filtering
+#### Task 4: Test the network traffic filtering
 
 In this task, you will test the network traffic filters. You should be able to RDP into the myVMMgmnt virtual machine. You should be able to connect from the internet to the myVMWeb virtual machine and view the default IIS web page.  
 

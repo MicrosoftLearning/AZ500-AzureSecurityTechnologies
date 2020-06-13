@@ -4,8 +4,7 @@ lab:
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 01 - Role-Based Access Control
-
+# Lab 01: Role-Based Access Control
 # Student lab manual
 
 ## Lab scenario
@@ -28,9 +27,9 @@ In this lab, you will complete the following exercises
 - Exercise 3: Create the Service Desk group with the user Dylan Williams as its member (Azure CLI). 
 - Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
-## Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
+### Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -64,7 +63,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. Refresh the **Users | All users** blade to verify the new user was created in your Azure AD tenant.
 
-### Task 2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
+#### Task2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
 In this task, you will create the *Senior Admins* group, add the user account of Joseph Price to the group, and configure it as the group owner.
 
@@ -88,9 +87,9 @@ In this task, you will create the *Senior Admins* group, add the user account of
 
 > Result: You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
-## Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
+### Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -142,7 +141,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
     Get-AzureADUser 
     ```
 
-### Task 2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
+#### Task2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
 
 In this task, you will create the Junior Admins group and add the user account of Isabel Garcia to the group by using PowerShell.
 
@@ -179,9 +178,9 @@ In this task, you will create the Junior Admins group and add the user account o
 > Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
 
 
-## Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
+### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -257,9 +256,9 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 > Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
 
 
-## Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
+### Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 

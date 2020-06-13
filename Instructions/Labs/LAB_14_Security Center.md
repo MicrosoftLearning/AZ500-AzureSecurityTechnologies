@@ -4,8 +4,7 @@ lab:
     module: 'Module 04 - Manage Security Operations'
 ---
 
-# Lab 14 - Azure Security Center
-
+# Lab 14: Azure Security Center
 # Student lab manual
 
 ## Lab scenario
@@ -25,7 +24,7 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Implement Security Center
 
-## Exercise 1: Implement Security Center
+### Exercise 1: Implement Security Center
 
 In this exercise, you will complete the following tasks:
 
@@ -33,7 +32,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Implement the Security Center recommendation to install guest configuration extension
 - Task 3: Implement the Security Center recommendation to enable Just in time VM Access
 
-### Task 1: Configure Security Center
+#### Task 1: Configure Security Center
 
 In this task, you will on-board and configure Security Center.
 

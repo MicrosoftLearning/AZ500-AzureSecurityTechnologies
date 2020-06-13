@@ -4,8 +4,7 @@ lab:
     module: 'Module 03 - Secure data and applications'
 ---
 
-# Lab 12 - Service Endpoints and Securing Storage
-
+# Lab 12: Service Endpoints and Securing Storage
 # Student lab manual
 
 ## Lab scenario
@@ -24,7 +23,7 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Service endpoints and security storage
 
-## Exercise 1: Service endpoints and security storage
+### Exercise 1: Service endpoints and security storage
 
 ### Estimated timing: 45 minutes
 
@@ -250,7 +249,7 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: At this point in the lab you have configured a virtual network, a network security group, and a storage account with a file share. 
 
-### Task 5: Deploy virtual machines into the designated subnets
+#### Task 5: Deploy virtual machines into the designated subnets
 
 In this task, you will create two virtual machines one in the Private subnet and one in the Public subnet. 
 
@@ -338,7 +337,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
-### Task 6: Test the storage connection from the private subnet to confirm that access is allowed
+#### Task 6: Test the storage connection from the private subnet to confirm that access is allowed
 
 In this task, you will connect to the myVMPrivate virtual machine via Remote Desktop and map a drive to the file share. 
 

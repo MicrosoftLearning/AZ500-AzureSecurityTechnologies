@@ -4,8 +4,7 @@ lab:
     module: 'Module 02 - Implement Platform Protection'
 ---
 
-# Lab 08 - Azure Firewall
-
+# Lab 08: Azure Firewall
 # Student lab manual
 
 ## Lab scenario
@@ -30,9 +29,9 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\08\\template.json**
 
-## Exercise 1: Deploy and test an Azure Firewall
+### Exercise 1: Deploy and test an Azure Firewall
 
-### Exercise timing: 40 minutes
+### Estimated timing: 40 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 

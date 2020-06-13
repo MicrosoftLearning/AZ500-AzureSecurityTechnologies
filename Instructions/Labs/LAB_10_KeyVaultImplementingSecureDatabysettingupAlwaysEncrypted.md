@@ -1,11 +1,10 @@
----
+﻿---
 lab:
     title: '10 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
     module: 'Module 03 - Secure Data and Applications'
 ---
 
-# Lab 10 - Key Vault (Implementing Secure Data by setting up Always Encrypted)
-
+# Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
 # Student lab manual
 
 ## Lab scenario
@@ -30,7 +29,7 @@ In this lab, you will complete the following exercises:
 - **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.parameters.json**
 - **\\Allfiles\\Labs\\10\\program.cs**
  
-## Exercise 1: Configure the key vault with a key and a secret
+### Exercise 1: Configure the key vault with a key and a secret
 
 ### Estimated timing: 60 minutes
 
@@ -240,7 +239,7 @@ In this task, you will add a key to the key vault and view information about the
     >**Note**: To get the most current version of a secret, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>` or get a specific version, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>/<secret_version>`
 
 
-## Exercise 2: Create an application to demonstrate using the key vault for encryption
+### Exercise 2: Create an application to demonstrate using the key vault for encryption
 
 ### Estimated timing: 60 minutes
 

@@ -4,8 +4,7 @@ lab:
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 05 - Azure AD Privileged Identity Management
-
+# Lab 05: Azure AD Privileged Identity Management
 # Student lab manual
 
 ## Lab scenario
@@ -29,9 +28,9 @@ In this lab, you will complete the following exercises:
 - Exercise 2: Activate PIM roles with and without approval.
 - Exercise 3: Create an Access Review and review PIM auditing features.
 
-## Exercise 1 - Configure PIM users and roles
+### Exercise 1 - Configure PIM users and roles
 
-### Estimated timing: 15 minutes
+#### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -131,9 +130,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: User aaduser2 is now permanently assigned the Security Administrator role.
 	
-## Exercise 2 - Activate PIM roles with and without approval
+### Exercise 2 - Activate PIM roles with and without approval
 
-### Estimated timing: 15 minutes
+#### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -247,9 +246,9 @@ In this task, you will activate a role that requires approval.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
-## Exercise 3 - Create an Access Review and review PIM auditing features
+### Exercise 3 - Create an Access Review and review PIM auditing features
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 

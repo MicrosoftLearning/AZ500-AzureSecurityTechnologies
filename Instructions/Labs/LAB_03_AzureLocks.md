@@ -4,8 +4,7 @@ lab:
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 03 - Resource Manager Locks
-
+# Lab 03: Resource Manager Locks
 # Student lab manual
 
 ## Lab scenario 
@@ -24,9 +23,9 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Resource Manager Locks
 
-## Exercise 1: Resource Manager Locks
+### Exercise 1: Resource Manager Locks
 
-### Estimated timing: 20 minutes
+#### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 

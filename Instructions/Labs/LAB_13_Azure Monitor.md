@@ -4,8 +4,7 @@ lab:
     module: 'Module 04 - Manage security operations'
 ---
 
-# Lab 13 - Azure Monitor
-
+# Lab 13: Azure Monitor
 # Student lab manual
 
 ## Lab scenario
@@ -24,7 +23,7 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
-## Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
+### Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
 ### Exercise timing: 20 minutes
 

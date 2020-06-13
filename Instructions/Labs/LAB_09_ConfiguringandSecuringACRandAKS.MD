@@ -4,8 +4,7 @@ lab:
     module: 'Module 02 - Implement Platform Protection'
 ---
 
-# Lab 09 - Configuring and Securing ACR and AKS
-
+# Lab 09: Configuring and Securing ACR and AKS
 # Student lab manual
 
 ## Lab scenario
@@ -30,9 +29,9 @@ In this lab, you will complete the following exercise:
 - **\\Allfiles\\Labs\\09\\nginxexternal.yaml**
 - **\\Allfiles\\Labs\\09\\nginxinternal.yaml**
 
-## Exercise 1: Configuring and Securing ACR and AKS
+### Exercise 1: Configuring and Securing ACR and AKS
 
-### Exercise timing: 45 minutes
+### Estimated timing: 45 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -85,7 +84,7 @@ In this task, you will create a resource group for the lab an an Azure Container
 
     >**Note**: Record the name of the ACR. You will need it in the next task.
 
-### Task 2: Create a Dockerfile, build a container and push it to Azure Container Registry
+#### Task 2: Create a Dockerfile, build a container and push it to Azure Container Registry
 
 In this task, you will create a Dockerfile, build an image from the Dockerfile, and deploy the image to the ACR. 
 
@@ -121,7 +120,7 @@ In this task, you will create a Dockerfile, build an image from the Dockerfile, 
 
     >**Note**: The manifest includes the sha256 digest, manifest creation date, and platform entries. 
 
-### Task 3: Create an Azure Kubernetes Service cluster
+#### Task 3: Create an Azure Kubernetes Service cluster
 
 In this task, you will create an Azure Kubernetes service and review the deployed resources. 
 
@@ -195,7 +194,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     >**Note**: Verify that the **Status** is listed as **Ready**.
 
-### Task 4: Grant the AKS cluster permissions to access the ACR
+#### Task 4: Grant the AKS cluster permissions to access the ACR
 
 In this task, you will grant the AKS cluster permission to access the ACR. 
 
@@ -211,7 +210,7 @@ In this task, you will grant the AKS cluster permission to access the ACR.
 
     >**Note**: It may take a few minutes for this command to complete. 
 
-### Task 5: Deploy an external service to AKS
+#### Task 5: Deploy an external service to AKS
 
 In this task,  you will download the Manifest files, edit the YAML file, and apply your changes to the cluster. 
 
@@ -250,7 +249,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
     service/nginxexternal created
     ```
 
-### Task 6: Verify the you can access an external AKS-hosted service
+#### Task 6: Verify the you can access an external AKS-hosted service
 
 In this task, verify the container can be accessed externally using the public IP address.
 
@@ -266,7 +265,7 @@ In this task, verify the container can be accessed externally using the public I
 
 1. Ensure the **Welcome to nginx!** page displays. 
 
-### Task 7: Deploy an internal service to AKS
+#### Task 7: Deploy an internal service to AKS
 
 In this task, you will deploy the internal facing service on the AKS. 
 
@@ -308,7 +307,7 @@ In this task, you will deploy the internal facing service on the AKS.
     >**Note**: To access the internal service endpoint, you will connect interactively to one of the pods running in the cluster. 
 
 
-### Task 8: Verify the you can access an internal AKS-hosted service
+#### Task 8: Verify the you can access an internal AKS-hosted service
 
 In this task, you will use one of the pods running on the AKS cluster to access the internal service. 
 

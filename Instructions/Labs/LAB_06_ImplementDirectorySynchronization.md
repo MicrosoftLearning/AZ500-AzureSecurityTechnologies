@@ -5,7 +5,6 @@ lab:
 ---
 
 # Lab 06: Implement Directory Synchronization
-
 # Student lab manual
 
 ## Lab scenario
@@ -26,7 +25,7 @@ In this lab, you will complete the following exercises:
 - Exercise 2: Create and configure an Azure Active Directory tenant
 - Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
-## Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+### Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 
 ### Estimated timing: 10 minutes
 
