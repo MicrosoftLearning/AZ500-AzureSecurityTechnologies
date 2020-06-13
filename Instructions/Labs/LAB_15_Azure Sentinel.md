@@ -18,9 +18,7 @@ You have been asked to create a proof of concept of Azure Sentinel-based threat 
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Implement Azure Sentinel
 
@@ -28,9 +26,9 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\15\\changeincidentseverity.json**
 
-## Exercise 1: Implement Azure Sentinel
+### Exercise 1: Implement Azure Sentinel
 
-### Exercise timing: 30 minutes
+#### Exercise timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 
