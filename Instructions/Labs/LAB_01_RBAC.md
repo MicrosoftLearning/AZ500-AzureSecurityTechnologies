@@ -19,18 +19,16 @@ You have been asked to create a proof of concept showing how Azure users and gro
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercises
+## Lab exercises
 
 - Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member (the Azure portal). 
 - Exercise 2: Create the Junior Admins group with the user account Isabel Garcia as its member (PowerShell).
 - Exercise 3: Create the Service Desk group with the user Dylan Williams as its member (Azure CLI). 
 - Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
-## Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
+### Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member. 
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -88,9 +86,9 @@ In this task, you will create the *Senior Admins* group, add the user account of
 
 > Result: You used the Azure Portal to create a user and a group, and assigned the user to the group. 
 
-## Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
+### Exercise 2: Create a Junior Admins group containing the user account of Isabel Garcia as its member.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -179,9 +177,9 @@ In this task, you will create the Junior Admins group and add the user account o
 > Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
 
 
-## Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
+### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -257,9 +255,9 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 > Result: Using Azure CLI you created a user and a group accounts, and added the user account to the group. 
 
 
-## Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
+### Exercise 4: Assign the Virtual Machine Contributor role to the Service Desk group.
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
