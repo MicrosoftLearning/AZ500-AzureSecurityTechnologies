@@ -18,9 +18,7 @@ You have been asked to review security features for Azure SQL database. Specific
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Implement SQL Database security features
 
@@ -28,9 +26,9 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\11\\azuredeploy.json**
 
-## Exercise 1: Implement SQL Database security features
+### Exercise 1: Implement SQL Database security features
 
-### Estimated timing: 30 minutes
+#### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks:
 
