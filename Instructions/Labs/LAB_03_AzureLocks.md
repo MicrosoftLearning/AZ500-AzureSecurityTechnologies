@@ -12,21 +12,18 @@ lab:
 
 You have been asked to create a proof of concept showing how resource locks can be used to prevent accidental deletion or changes. Specifically, you need to:
 
-- create a ReadOnly lock
-
-- create a Delete lock
+- Create a ReadOnly lock
+- Create a Delete lock
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
  
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Resource Manager Locks
 
-## Exercise 1: Resource Manager Locks
+### Exercise 1: Resource Manager Locks
 
-### Estimated timing: 20 minutes
+#### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 
