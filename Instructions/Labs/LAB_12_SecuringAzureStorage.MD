@@ -18,15 +18,13 @@ You have been asked to create a proof of concept to demonstrate securing Azure f
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Service endpoints and security storage
 
-## Exercise 1: Service endpoints and security storage
+### Exercise 1: Service endpoints and security storage
 
-### Estimated timing: 45 minutes
+#### Estimated timing: 45 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -48,7 +46,7 @@ In this task, you will create a virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ Add**.
+1. On the **Virtual Networks** blade, clickÂ **+ Add**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -187,7 +185,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-1. On the **Storage accounts** blade, click **+ Add**.
+1. On the **Storage accounts** blade, clickÂ **+ Add**.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
