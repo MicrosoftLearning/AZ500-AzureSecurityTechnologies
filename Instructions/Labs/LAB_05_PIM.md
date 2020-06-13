@@ -21,17 +21,15 @@ You have been asked to create a proof of concept that uses Azure Privileged Iden
 
 > Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and AAD Identity Protection . You will need the Azure AD tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
 
-## Lab objectives
-
-In this lab, you will complete the following exercises:
+## Lab exercises
 
 - Exercise 1: Configure PIM users and roles.
 - Exercise 2: Activate PIM roles with and without approval.
 - Exercise 3: Create an Access Review and review PIM auditing features.
 
-## Exercise 1 - Configure PIM users and roles
+### Exercise 1 - Configure PIM users and roles
 
-### Estimated timing: 15 minutes
+#### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -131,9 +129,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: User aaduser2 is now permanently assigned the Security Administrator role.
 	
-## Exercise 2 - Activate PIM roles with and without approval
+### Exercise 2 - Activate PIM roles with and without approval
 
-### Estimated timing: 15 minutes
+#### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -247,9 +245,9 @@ In this task, you will activate a role that requires approval.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
-## Exercise 3 - Create an Access Review and review PIM auditing features
+### Exercise 3 - Create an Access Review and review PIM auditing features
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
