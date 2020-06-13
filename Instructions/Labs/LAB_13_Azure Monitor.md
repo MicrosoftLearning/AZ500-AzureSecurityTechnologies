@@ -18,15 +18,13 @@ You have been asked to create a proof of concept of monitoring virtual machine p
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
-## Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
+### Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
-### Exercise timing: 20 minutes
+#### Exercise timing: 20 minutes
 
 In this exercise, you will complete the following tasks: 
 
@@ -83,7 +81,7 @@ In this task, you will create a Log Analytics workspace.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Log Analytics workspaces** and press the **Enter** key.
 
-1. On the **Log Analytics workspaces** blade, click **+ Add**.
+1. On the **Log Analytics workspaces** blade, clickÂ **+ Add**.
 
 1. On the **Basics** tab of the **Create Log Analytics workspace** blade, specify the following settings (leave others with their default values):
 
