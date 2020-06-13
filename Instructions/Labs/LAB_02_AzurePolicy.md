@@ -17,15 +17,13 @@ You have been asked to create a proof of concept showing how Azure policy can be
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following:
+## Lab exercises
 
 - Exercise 1: Implement Azure Policy. 
 
-## Exercise 1: Implement Azure Policy
+### Exercise 1: Implement Azure Policy
 
-### Estimated timing: 20 minutes
+#### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 
