@@ -19,9 +19,7 @@ You have been asked to deploy a proof of concept with Azure Container Registry a
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Configuring and Securing ACR and AKS
 
@@ -30,9 +28,9 @@ In this lab, you will complete the following exercise:
 - **\\Allfiles\\Labs\\09\\nginxexternal.yaml**
 - **\\Allfiles\\Labs\\09\\nginxinternal.yaml**
 
-## Exercise 1: Configuring and Securing ACR and AKS
+### Exercise 1: Configuring and Securing ACR and AKS
 
-### Exercise timing: 45 minutes
+#### Exercise timing: 45 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
