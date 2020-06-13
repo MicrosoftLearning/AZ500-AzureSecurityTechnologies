@@ -20,16 +20,14 @@ You have been asked to implement your organization's virtual networking infrastr
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercises:
+## Lab exercises
 
 - Exercise 1: Create the virtual networking infrastructure
 - Exercise 2: Deploy virtual machines and test the network filters
 
-## Exercise 1: Create the virtual networking infrastructure
+### Exercise 1: Create the virtual networking infrastructure
 
-### Exercise timing: 20 minutes
+#### Exercise timing: 20 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -172,9 +170,9 @@ In this task, you will create a network security group.
 
 > Result: You have deployed a virtual network, network security with inbound security rules, and two application security groups. 
 
-## Exercise 2: Deploy virtual machines and test network filters
+### Exercise 2: Deploy virtual machines and test network filters
 
-### Exercise timing: 25 minutes
+#### Exercise timing: 25 minutes
 
 In this exercise, you will complete the following tasks:
 
