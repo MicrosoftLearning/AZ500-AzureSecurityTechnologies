@@ -18,17 +18,15 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercises:
+## Lab exercises
 
 - Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 - Exercise 2: Create and configure an Azure Active Directory tenant
 - Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
-## Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
+### Exercise 1: Deploy an Azure VM hosting an Active Directory domain controller
 
-### Estimated timing: 10 minutes
+#### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
