@@ -10,19 +10,17 @@ lab:
 
 ## Lab scenario
 
-You have been asked to install Azure Firewall. This will help your organization control inbound and outbound network access which is an important part of an overall network security plan. Specifically, you would like to create and test the following infrastructure components:
+You have been asked to install Azure Firewall. This will help your organization control inbound and outbound network access which is an important part of an overall network security plan. Specifically, you would like to:
 
-- A virtual network with a workload subnet and a jump host subnet.
-- A virtual machine is each subnet. 
-- A custom route that ensures all outbound workload traffic from the workload subnet must use the firewall.
-- Firewall Application rules that only allow outbound traffic to www.bing.com. 
-- Firewall Network rules that allow external DNS server lookups.
+- Create a virtual network with a workload subnet and a jump host subnet.
+- Create a virtual machine is each subnet. 
+- Create a custom route that ensures all outbound workload traffic from the workload subnet must use the firewall.
+- Create Firewall application rules that only allow outbound traffic to www.bing.com. 
+- Create Firewall network rules that allow external DNS server lookups.
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Deploy and test an Azure Firewall
 
@@ -30,9 +28,9 @@ In this lab, you will complete the following exercise:
 
 - **\\Allfiles\\Labs\\08\\template.json**
 
-## Exercise 1: Deploy and test an Azure Firewall
+### Exercise 1: Deploy and test an Azure Firewall
 
-### Exercise timing: 40 minutes
+#### Exercise timing: 40 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
