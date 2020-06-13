@@ -19,13 +19,11 @@ You have been asked to create a proof of concept of Security Center-based enviro
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercise:
+## Lab exercises
 
 - Exercise 1: Implement Security Center
 
-## Exercise 1: Implement Security Center
+### Exercise 1: Implement Security Center
 
 In this exercise, you will complete the following tasks:
 
@@ -33,7 +31,7 @@ In this exercise, you will complete the following tasks:
 - Task 2: Implement the Security Center recommendation to install guest configuration extension
 - Task 3: Implement the Security Center recommendation to enable Just in time VM Access
 
-### Task 1: Configure Security Center
+#### Task 1: Configure Security Center
 
 In this task, you will on-board and configure Security Center.
 
