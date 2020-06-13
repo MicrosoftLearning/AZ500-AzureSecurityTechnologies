@@ -17,9 +17,7 @@ You have been asked to create a proof of concept application that makes use of t
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-## Lab objectives
-
-In this lab, you will complete the following exercises:
+## Lab exercises
 
 - Exercise 1: Configure the key vault with a key and a secret
 - Exercise 2: Create an application to demonstrate using the key vault for encryption
@@ -30,9 +28,9 @@ In this lab, you will complete the following exercises:
 - **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.parameters.json**
 - **\\Allfiles\\Labs\\10\\program.cs**
  
-## Exercise 1: Configure the key vault with a key and a secret
+### Exercise 1: Configure the key vault with a key and a secret
 
-### Estimated timing: 60 minutes
+#### Estimated timing: 60 minutes
 
 > For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
 
@@ -240,9 +238,9 @@ In this task, you will add a key to the key vault and view information about the
     >**Note**: To get the most current version of a secret, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>` or get a specific version, reference `https://<key_vault_name>.vault.azure.net/secrets/<secret_name>/<secret_version>`
 
 
-## Exercise 2: Create an application to demonstrate using the key vault for encryption
+### Exercise 2: Create an application to demonstrate using the key vault for encryption
 
-### Estimated timing: 60 minutes
+#### Estimated timing: 60 minutes
 
 In this exercise, you will complete the following tasks:
 
