@@ -181,6 +181,9 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: This rule identifies removal of Just in time VM access policies.
 
+    >**Note** if you receive a parse error, intellisense may have added values to your query. Ensure the query matches otherwise paste the query into notepad and then from notepad to the rule query. 
+
+
 1. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, in the **Query scheduling** section, set the **Run query every** to **5 Minutes**.
 
 1. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule** blade, accept the default values of the remaining settings and click **Next: Incident settings >**.
