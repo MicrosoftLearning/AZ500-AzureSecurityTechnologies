@@ -1,6 +1,6 @@
 # AZ-500 (PREVIEW): Microsoft Azure Security Technologies
 
-**This repository is not yet active.**
+**This repository will begin accepting Issues on 1 July 2020.**
 
 - **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
