@@ -172,7 +172,7 @@ In this task you will create an application rule that allows outbound access to 
 
 1. On the **Test-FW01 | Rules** blade, click the **Application rule collection** tab, and then click **+ Add application rule collection**.
 
-1. On the **Add application rule collection** blade, specify the following settings (leave others with their defaault values):
+1. On the **Add application rule collection** blade, specify the following settings (leave others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -180,7 +180,7 @@ In this task you will create an application rule that allows outbound access to 
    |Priority|**200**|
    |Action|**Allow**|
 
-1. On the **Add application rule collection** blade, create a new entry in the **Target FQDNs** section with the following settings (leave others with their defaault values):
+1. On the **Add application rule collection** blade, create a new entry in the **Target FQDNs** section with the following settings (leave others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -202,7 +202,7 @@ In this task, you will create a network rule that allows outbound access to two 
 
 1. On the **Test-FW01 | Rules** blade, click the **Network rule collection** tab and then click **+ Add network rule collection**.
 
-1. On the **Add network rule collection** blade, specify the following settings (leave others with their defaault values):
+1. On the **Add network rule collection** blade, specify the following settings (leave others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -210,7 +210,7 @@ In this task, you will create a network rule that allows outbound access to two 
    |Priority|**200**|
    |Action|**Allow**|
 
-1. On the **Add network rule collection** blade, create a new entry in the **IP Addresses** section with the following settings (leave others with their defaault values):
+1. On the **Add network rule collection** blade, create a new entry in the **IP Addresses** section with the following settings (leave others with their defaalt values):
 
    |Setting|Value|
    |---|---|
