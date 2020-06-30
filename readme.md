@@ -2,9 +2,10 @@
 
 **This repository will begin accepting Issues on 1 July 2020.**
 
-- **[Download Latest Student Handbook and AllFiles Content](../../releases/latest)**
+> **Microsoft is prioritizing cloud resources for Covid-19 support. You can read more here - [Update #2 on Microsoft cloud services continuity](https://azure.microsoft.com/en-us/blog/update-2-on-microsoft-cloud-services-continuity/). There is also an active discussion on the MCT Courseware Forum.**
+
+- **[Link to Walkthroughs (HTML format)](https://microsoftlearning.github.io/TEST-AZ500X-AzureSecurityTechnologies/)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
-- **Need to manually build the lab instructions?** - Instructions are available in the [MicrosoftLearning/Docker-Build](https://github.com/MicrosoftLearning/Docker-Build) repository
 
 ## What are we doing?
 
