@@ -187,7 +187,7 @@ In this task you will create an application rule that allows outbound access to 
    |name|**AllowGH**|
    |Source type|**IP Address**|
    |Source|**10.0.2.0/24**|
-   |Protocol port|**http, https**|
+   |Protocol port|**http:80, https:443**|
    |Target FQDNS|**www.bing.com**|
 
 1. Click **Add** to add the Target FQDNs-based application rule.
