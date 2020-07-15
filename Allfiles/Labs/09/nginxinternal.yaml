@@ -18,7 +18,7 @@ spec:
         app: nginxinternal
     spec:
       nodeSelector:
-        "beta.kubernetes.io/os": linux
+        "kubernetes.io/os": linux
       containers:
       - name: nginx
         image: <ACRUniquename>.azurecr.io/sample/nginx:v1
@@ -35,7 +35,7 @@ kind: Service
 metadata:
   name: nginxinternal
   annotations:
-    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+    service.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
   type: LoadBalancer
   ports:
