@@ -35,7 +35,7 @@ kind: Service
 metadata:
   name: nginxinternal
   annotations:
-    service.kubernetes.io/azure-load-balancer-internal: "true"
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
 spec:
   type: LoadBalancer
   ports:
