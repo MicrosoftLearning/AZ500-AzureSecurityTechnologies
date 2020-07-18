@@ -132,7 +132,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a user account for Isabel Garcia: 
 
     ```powershell
-    New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName 'Isabel@$domainName' -AccountEnabled $true -MailNickName 'Isabel' 
+    New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel' 
     ```
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to list Azure AD users (the accounts of Joseph and Isabel should appear on the listed): 
