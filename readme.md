@@ -1,4 +1,4 @@
-# AZ-500 (PREVIEW): Microsoft Azure Security Technologies
+# AZ-500: Microsoft Azure Security Technologies
 
 **This course in now in preview and this lab repository will begin accepting Issues on 1 July 2020.**
 
