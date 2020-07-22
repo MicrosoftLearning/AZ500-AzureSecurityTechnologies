@@ -42,7 +42,10 @@ In this exercise, you will complete the following tasks:
 - Task 3: Add a key to the key vault
 - Task 4: Add a secret to the key vault
 
-#### Task 1: Deploy and configure an Azure VM with Visual Studio 2019 and SQL Server Management Studio
+#### Task 1: (Optional Prerequisite) Deploy and configure an Azure VM with Visual Studio 2019 and SQL Server Management Studio
+    
+    >**Note**: If you are using a lab provider that has both Visual Studio 2019 and SQL Server Management studio installed you can skip this step and go straight to Task 2.
+
 
 In this task, you will deploy an Azure VM, connect to it, and download and install Visual Studio 2019 and SQL Server Management Studio (SSMS).
 
