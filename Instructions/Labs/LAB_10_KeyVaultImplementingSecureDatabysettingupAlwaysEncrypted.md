@@ -137,6 +137,14 @@ In this task, you will create a lab resource group and a key vault. You will als
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a key vault in the resource group **AZ500LAB10**. The key vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
+1. If you skipped Task 1 run the following command to create a Resource Group, otherwsie go to the next task
+
+    ```powershell
+    New-AzResourceGroup -Name 'AZ500LAB10' -Location eastus
+    ```
+
+1. Create a key vault
+
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
     New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location 'eastus'
