@@ -127,7 +127,7 @@ In this task, you will deploy an Azure VM, connect to it, and download and insta
 
 In this task, you will create a lab resource group and a key vault. You will also configure the key vault permissions.
 
-1. Within the Remote Desktop session to the **az500-10-vm1** Azure VM, sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Within the Remote Desktop session to the **az500-10-vm1** Azure VM, sign-in to the Azure portal **`https://portal.azure.com/`**. (Skip this step if you did not complete Task 1)
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
