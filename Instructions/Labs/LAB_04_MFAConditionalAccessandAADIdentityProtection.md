@@ -445,7 +445,7 @@ In this task, you will create a user risk policy.
 
    - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, click **Select, and then click **Done**. 
 
-   - Click **Conditions**, on the **Conditions** blde, click **User risk**, on the **User risk** blade, select **Low and above**, click **Select, and then click **Done**. 
+   - Click **Conditions**, on the **Conditions** blade, click **User risk**, on the **User risk** blade, select **Low and above**, click **Select, and then click **Done**. 
 
    - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Select**.
 
@@ -461,7 +461,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Click **Users**, on the **Include** tab of the **Users** blade, ensure that the **All users** option.
 
-   - Click **Conditions**, on the **Conditions** blde, click **User risk**, on the **User risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Conditions**, on the **Conditions** blade, click **Sign-in risk**, on the **User risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
 
    - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Select**.
 
@@ -496,7 +496,7 @@ In this task, you will configure a sign-in risk policy.
 
 1. Start **Internet Explorer**, click the cog wheel icon in the toolbar, in the drop-down menu, click **Safety** and then click **InPrivate Browsing**.
 
-1. In the InPrivate Inernet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
+1. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
 
 1. Download and install the Windows version of the ToR Browser with the default settings. 
 
