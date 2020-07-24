@@ -227,7 +227,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
     az ad group list -o table
     ```
 
-1. In the Bash session within the Cloud Shell pane, run the following to obtain a reference do the user account of Dylan Williams: 
+1. In the Bash session within the Cloud Shell pane, run the following to obtain a reference to the user account of Dylan Williams: 
 
     ```cli
     USER=$(az ad user list --filter "displayname eq 'Dylan Williams'")
