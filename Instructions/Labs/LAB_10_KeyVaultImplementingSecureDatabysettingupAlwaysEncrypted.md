@@ -127,7 +127,7 @@ In this task, you will deploy an Azure VM, connect to it, and download and insta
 
 In this task, you will create a lab resource group and a key vault. You will also configure the key vault permissions.
 
-1. Within the Remote Desktop session to the **az500-10-vm1** Azure VM, sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Within the Remote Desktop session to the **az500-10-vm1** Azure VM, sign-in to the Azure portal **`https://portal.azure.com/`**. (Skip this step if you did not complete Task 1)
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
@@ -136,6 +136,14 @@ In this task, you will create a lab resource group and a key vault. You will als
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a key vault in the resource group **AZ500LAB10**. The key vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
+
+1. If you skipped Task 1 run the following command to create a Resource Group, otherwsie go to the next task
+
+    ```powershell
+    New-AzResourceGroup -Name 'AZ500LAB10' -Location eastus
+    ```
+
+1. Create a key vault
 
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
