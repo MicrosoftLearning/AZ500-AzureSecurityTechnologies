@@ -44,7 +44,7 @@ In this task, you will on-board and configure Security Center.
 
 1. On the **Security Center \| Getting started** blade, click **Upgrade** and then click **Install agents**.
      
-1. On the **Security Center | Getting started** blade, click **Pricing & settings**.
+1. On the **Security Center \| Getting started** blade, click **Pricing & settings**.
 
 1. Click the entry representing your subscription and, on the **Settings | Pricing tier** blade, ensure that the **Standard** pricing tier is selected. 
 
@@ -52,17 +52,17 @@ In this task, you will on-board and configure Security Center.
 
 1. If you made any changes, click **Save**.
 
-1. On the **Settings | Pricing tier** blade, click **Data Collection**.
+1. On the **Settings \| Pricing tier** blade, click **Data Collection**.
 
-1. On the **Settings | Data Collection** blade, set **Auto provisioning** to **On**. 
+1. On the **Settings \| Data Collection** blade, set **Auto provisioning** to **On**. 
 
-1. On the **Settings | Data Collection** blade, in the **Workspace configuration** section, select the **Use another workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
+1. On the **Settings \| Data Collection** blade, in the **Workspace configuration** section, select the **Use another workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
 
-1. On the **Settings | Data Collection** blade, click **Save**.
+1. On the **Settings \| Data Collection** blade, click **Save**.
 
-1. On the **Settings | Data Collection** blade, click **Workflow automation**.
+1. On the **Settings \| Data Collection** blade, click **Workflow automation**.
 
-1. On the **Settings | Workflow automation** blade, click **+ Add workflow automation**.
+1. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
 
 1. On the **Add workflow automation** blade, review the available settings. 
 
@@ -76,15 +76,15 @@ In this task, you will on-board and configure Security Center.
 
 In this task, you will implement the Security Center recommendation to install endpoint protection on the virtual machine. 
 
-1. In the Azure portal, navigate back to the **Security Center | Overview** blade. 
+1. In the Azure portal, navigate back to the **Security Center \| Overview** blade. 
 
-1. On the **Security Center | Overview** blade, in the **POLICY & COMPLIANCE** section, click **Secure Score**. 
+1. On the **Security Center \| Overview** blade, in the **POLICY & COMPLIANCE** section, click **Secure Score**. 
 
     >**Note**: Record the current score.
 
-1. On the **Security Center | Secure Score** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
+1. On the **Security Center \| Secure Score** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
 
-1. On the **Security Center | Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
+1. On the **Security Center \| Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
 
 1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, review the recommendations and click the **Guest configuration extension should be installed on Windows virtual machines** entry.
 
@@ -94,7 +94,7 @@ In this task, you will implement the Security Center recommendation to install e
 
     >**Note**: Monitor the progress of installation by clicking on the **Notifications** icon in the toolbar and viewing the **Notifications** blade. 
 
-    >**Note**: You can also verify the installation by viewing the configuration of the **myVM** virtual machine. On the **myVM** virtual machine blade, in the **Settings** section, click **Extensions** and, on the **myVM | Extensions** blade, you should see the **AzurePolicyforWindows** extension listed with the status of **Provisioning succeeded**.
+    >**Note**: You can also verify the installation by viewing the configuration of the **myVM** virtual machine. On the **myVM** virtual machine blade, in the **Settings** section, click **Extensions** and, on the **myVM \| Extensions** blade, you should see the **AzurePolicyforWindows** extension listed with the status of **Provisioning succeeded**.
 
     >**Note**: Security Center will automatically rescan the virtual machine. That will be reflected by an increase in the secure score.
 
@@ -106,9 +106,9 @@ In this task, you will implement the Security Center recommendation to enable Ju
 
 1. In the Azure portal, navigate back to the **Security Center | Overview** blade. 
 
-1. On the **Security Center | Overview** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
+1. On the **Security Center \| Overview** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
 
-1. On the **Security Center | Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
+1. On the **Security Center \| Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
 
 1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, click the **Management ports of virtual machines should be protected with just-in-time network access control** entry.
 
