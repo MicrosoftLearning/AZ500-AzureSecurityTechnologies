@@ -42,7 +42,7 @@ In this task, you will on-board and configure Security Center.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Security Center** and press the **Enter** key.
 
-1. On the **Security Center | Getting started** blade, click **Upgrade** and then click **Install agents**.
+1. On the **Security Center \| Getting started** blade, click **Upgrade** and then click **Install agents**.
      
 1. On the **Security Center | Getting started** blade, click **Pricing & settings**.
 
