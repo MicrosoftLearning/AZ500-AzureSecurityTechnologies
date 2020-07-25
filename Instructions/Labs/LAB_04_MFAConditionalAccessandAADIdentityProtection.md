@@ -137,7 +137,7 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
 
-1. On the **Licenses | Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
+1. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
 1. On the **Activate** blade, in the Azure AD Premium P2 section, click **Free Trial** and then click **Activate**.
 
@@ -148,7 +148,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
 
-1. On the **Users | All users** blade, click **+ New User**. 
+1. On the **Users \| All users** blade, click **+ New User**. 
 
 1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
 
@@ -165,7 +165,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the user's password. You will need this later in this lab. 
 
-1. Back on the **Users | All users** blade, click **+ New User**. 
+1. Back on the **Users \| All users** blade, click **+ New User**. 
 
 1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
 
@@ -180,7 +180,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the full user name and the password.
 
-1. Back on the **Users | All users** blade, click **+ New User**. 
+1. Back on the **Users \| All users** blade, click **+ New User**. 
 
 1. Click **New User**,complete the new user configuration settings, and then click **Create**.
 
@@ -203,7 +203,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
-1. On the **Users | All users** blade, click the entry representing your user account. 
+1. On the **Users \| All users** blade, click the entry representing your user account. 
 
 1. On the blade displaying the properties of your user account, click **Edit**. 
 
@@ -211,7 +211,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
-1. On the **Licenses | Overview** blae, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
+1. On the **Licenses \| Overview** blae, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
 1. On the **Assign licenses** blade, click **Users and groups**.
 
@@ -235,9 +235,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Manage** section, click **MFA**.
+1. On the **Security \| Getting started** blade, in the **Manage** section, click **MFA**.
 
-1. On the **Multi-Factor Authentication | Getting started** blade, click the **Additional cloud-based MFA settings** link. 
+1. On the **Multi-Factor Authentication \| Getting started** blade, click the **Additional cloud-based MFA settings** link. 
 
     >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page.
 
@@ -259,11 +259,11 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
    - Restore multi-factor authentication on all remembered devices.
 
-1. Click **Cancel** and switch back to the browser tab displaying the **Multi-Factor Authentication | Getting started** blade in the Azure portal.
+1. Click **Cancel** and switch back to the browser tab displaying the **Multi-Factor Authentication \| Getting started** blade in the Azure portal.
 
 1. In the **Settings** section, click **Fraud alert**.
 
-1. On the **Multi-Factor Authentication | Fraud alert** blade, configure the following settings:
+1. On the **Multi-Factor Authentication \| Fraud alert** blade, configure the following settings:
 
    |Setting|Value|
    |---|---|
@@ -331,9 +331,9 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Protect** section, click **Conditional Access**.
+1. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**.
 
-1. On the **Conditional Access | Policies** blade, click **+ New policy**. 
+1. On the **Conditional Access \| Policies** blade, click **+ New policy**. 
 
 1. On the **New** blade, configure the following settings:
 
@@ -399,9 +399,9 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Protect** section, click **Conditional Access**.
+1. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**.
 
-1. On the **Conditional Access | Policies** blade, click the ellipsis next to **AZ500Policy1**, click **Delete**, and, when prompted to confirm, click **Yes**.
+1. On the **Conditional Access \| Policies** blade, click the ellipsis next to **AZ500Policy1**, click **Delete**, and, when prompted to confirm, click **Yes**.
 
     >**Note**: Result: In this exercise you implement a conditional access policy to require MFA when a user signs into the Azure portal. 
 
@@ -429,15 +429,15 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Protect** section, click **Identity Protection**.
+1. On the **Security \| Getting started** blade, in the **Protect** section, click **Identity Protection**.
 
-1. On the **Identity Protection | Overview** blade, review the **Protect**, **Report**, and **Notify** options. 
+1. On the **Identity Protection \| Overview** blade, review the **Protect**, **Report**, and **Notify** options. 
 
 #### Task 2: Configure a user risk policy
 
 In this task, you will create a user risk policy. 
 
-1. On the **Identity Protection | Overview** blade, in the **Protect** section, click **user risk policy**
+1. On the **Identity Protection \| Overview** blade, in the **Protect** section, click **user risk policy**
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
@@ -455,7 +455,7 @@ In this task, you will create a user risk policy.
 
 In this task, you will configure a sign-in risk policy. 
 
-1. On the **Identity Protection | User risk policy** blade, in the **Protect** section, click **Sign-in risk policy**
+1. On the **Identity Protection \| User risk policy** blade, in the **Protect** section, click **Sign-in risk policy**
 
 1. Configure the **Sign-in risk remediation policy** with the following settings: 
 
@@ -526,11 +526,11 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Reports** section, click **Risky users**. 
+1. On the **Security \| Getting started** blade, in the **Reports** section, click **Risky users**. 
 
 1. Review the **aaduser3** user account entry.
 
-1. On the **Security | Getting started** blade, in the **Reports** section, click **Risky sign-ins**. 
+1. On the **Security \| Getting started** blade, in the **Reports** section, click **Risky sign-ins**. 
 
 1. Review the entry corresponding to the sign-in with the **aaduser3** user account.
 
@@ -550,15 +550,15 @@ Use the following steps to disable the identity protection policies in the **Ada
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-1. On the **Security | Getting started** blade, in the **Protect** section, click **Identity Protection**.
+1. On the **Security \| Getting started** blade, in the **Protect** section, click **Identity Protection**.
 
-1. On the **Identity Protection | Overview** blade, click **User risk policy**.
+1. On the **Identity Protection \| Overview** blade, click **User risk policy**.
 
-1. On the **Identity Protection | User risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
+1. On the **Identity Protection \| User risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
 
-1. On the **Identity Protection | User risk policy** blade, click **Sign-in risk policy**
+1. On the **Identity Protection \| User risk policy** blade, click **Sign-in risk policy**
 
-1. On the **Identity Protection | Sign-in risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
+1. On the **Identity Protection \| Sign-in risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
 
 Use the following steps to stop the Azure VM you provisioned earlier in the lab.
 
