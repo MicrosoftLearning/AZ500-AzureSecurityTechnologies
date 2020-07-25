@@ -140,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 1. On the **AdatumSync** blade, in the in the **Manage** section, click **Custom domain names**.
 
-1. On the **AdatumSync | Custom domain names** blade, click **+ Add custom domain**.
+1. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
 1. On the **Custom domain name** blade, in the **Custom domain name** text box, type **adatum.com** and click **Add Domain**.
 
@@ -154,7 +154,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
 
-1. On the **Users | All users** blade, click **+ New User**. 
+1. On the **Users \| All users** blade, click **+ New User**. 
 
 1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
 
@@ -249,9 +249,9 @@ In this task, you will install AD Connect on the virtual machine.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. In the Azure portal, on the **AdatumSync | Overview** blade, click **Azure AD Connect**.
+1. In the Azure portal, on the **AdatumSync \| Overview** blade, click **Azure AD Connect**.
 
-1. On the **AdatumSync | Azure AD Connect** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
+1. On the **AdatumSync \| Azure AD Connect** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
 
 1. On the **Microsoft Azure Active Directory Connect** download page, click **Download**.
 
@@ -303,13 +303,13 @@ In this task, you will verify that directory synchronization is working.
 
 1. Within the Remote Desktop session to **adVM**, in the Internet Explorer window displaying the Azure portal, navigate to the **Users - All users** blade of the Adatum Lab Azure AD tenant.
 
-1. On the **Users | All users** blade, note that the list of user objects includes the **aduser1** account, with the **Windows Server AD** appearing in the **Source** column.
+1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account, with the **Windows Server AD** appearing in the **Source** column.
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
-1. On the **Users | All users** blade, select the **aduser1** entry.
+1. On the **Users \| All users** blade, select the **aduser1** entry.
 
-1. On the **aduser1 | Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
+1. On the **aduser1 \| Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
 
 1. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **ToSync** section, select **Properties**.
 
@@ -325,7 +325,7 @@ In this task, you will verify that directory synchronization is working.
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-1. Switch to the Internet Explorer window displaying the **aduser1 | Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
+1. Switch to the Internet Explorer window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
 
     >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
 
