@@ -50,9 +50,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **Azure AD Privileged Identity Management** blade, in the **Manage** section, click **Azure AD roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Roles**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
-1. On the **AdatumLab500-04 | Roles** blade, click **+ Add assignments**.
+1. On the **AdatumLab500-04 \| Roles** blade, click **+ Add assignments**.
 
 1. On the **Add assignments** blade, in the **Select a role** drop-down, select **Billing Administrator**.
 
@@ -62,11 +62,11 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Ensure the **Assignment type** is set to **Eligible**, review the eligible duration settings, and click **Assign**.
  
-1. Back on the **AdatumLab500-04 | Roles** blade, in the **Manage** section, click **Assignments**.
+1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click **Assignments**.
 
-1. On the **AdatumLab500-04 | Assignments** blade, click **Member filter**, on the **Select a member** blade, click **aaduser2**, and click **Select**.
+1. On the **AdatumLab500-04 \| Assignments** blade, click **Member filter**, on the **Select a member** blade, click **aaduser2**, and click **Select**.
 
-1. Back on the **AdatumLab500-04 | Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
+1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
 
 1. Verify on the **Eligible assignments** tab that **aaduser2** is shown as a **Billing administrator**. 
 
@@ -76,11 +76,11 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click **Azure AD roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Roles**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
-1. On the **AdatumLab500-04 | Roles** blade, click the **Global reader** role entry. 
+1. On the **AdatumLab500-04 \| Roles** blade, click the **Global reader** role entry. 
 
-1. On the **Global Reader | Assignments** blade, click **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
+1. On the **Global Reader \| Assignments** blade, click **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
 
 1. Click **Edit**.
 
@@ -98,7 +98,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
     >**Note**: Anyone trying to use the Global Reader role will now need approval from aaduser3. 
 
-1. On the **Global Reader | Assignments** blade, click **+ Add assignments**.
+1. On the **Global Reader \| Assignments** blade, click **+ Add assignments**.
 
 1. On the **Add assignments** blade, click **No member selected**, on the **Select a member** blade, click **aaduser2**, and then click **Select**.
 
@@ -114,9 +114,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. In the Azure Portal, navigate back to the **Azure AD Privileged Identity Management** blade and click **Azure AD roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Roles**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
-1. On the **AdatumLab500-04 | Roles** blade, click **+ Add assignments**.
+1. On the **AdatumLab500-04 \| Roles** blade, click **+ Add assignments**.
 
 1. On the **Add assignments** blade, in the **Select role** drop-down, select **Security Administrator**.
 
@@ -173,7 +173,7 @@ In this task, you will activate a role that does not require approval.
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles | Azure AD roles** blade, switch to the **Active assignments** tab. Notice the **Billing Administrator** role is **Activated**.
+1. On the **My roles \| Azure AD roles** blade, switch to the **Active assignments** tab. Notice the **Billing Administrator** role is **Activated**.
 
     >**Note**: Once a role has been activated, it automatically deactivates when its time limit under **End time**(eligible duration) is reached.
 
@@ -188,11 +188,11 @@ In this task, you will activate a role that does not require approval.
 
 In this task, you will activate a role that requires approval.
 
-1. In the InPrivate browser window, in the Azure portal, while signed in as the **aaduser2** user, navigate back to the **Privileged Identity Management | Quick start** blade. 
+1. In the InPrivate browser window, in the Azure portal, while signed in as the **aaduser2** user, navigate back to the **Privileged Identity Management \| Quick start** blade. 
 
-1. On the **Privileged Identity Management | Quick start** blade, in the **Tasks** section, click **My roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles | Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
+1. On the **My roles \| Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
 1. On the **Activate - Global Reader** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
@@ -200,7 +200,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: As the Privileged role administrator you can review and cancel requests at any time. 
 
-1. On the **My roles | Azure AD roles** blade, locate the **Security Administrator** role, and click **Activate**. 
+1. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click **Activate**. 
 
 1. Click the warning **Additional verification required. Click to continue**. 
 
@@ -212,7 +212,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: The auto approval process should complete.
 
-1. Back on the **My roles | Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
+1. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
@@ -224,9 +224,9 @@ In this task, you will activate a role that requires approval.
 
 1. In the Azure portal, navigate to **Azure AD Privileged Identity Management**.
 
-1. On the **Privileged Identity Management | Quick start** blade, in the **Tasks** section, click **Approve requests**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-1. On the **Approve requests | Azure AD roles** blade, in the **Requests for role activations** section, note the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, note the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
 1. Click the entry representing the request, in the **Justification** text box, type a text explaining the reason for activation, note the start and end times, and click **Approve**. 
 
@@ -238,9 +238,9 @@ In this task, you will activate a role that requires approval.
 
 1. In the Azure portal, navigate to **Azure AD Privileged Identity Management**.
 
-1. On the **Privileged Identity Management | Quick start** blade, in the **Tasks** section, click **My roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles | Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
+1. On the **My roles \| Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
 
     >**Note**: You might have to refresh the page to view the updated list of active roles.
 
@@ -267,11 +267,11 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Navigate to the **Azure AD Privileged Identity Management** blade. 
 
-1. On the **Privileged Identity Management | Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Access reviews**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
-1. On the **AdatumLab500-04 | Access reviews** blade, click **New**:
+1. On the **AdatumLab500-04 \| Access reviews** blade, click **New**:
 
 1. On the **Create an access review** blade, specify the following settings (leave others with their default values): 
 
@@ -288,7 +288,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
  
     >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 | Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
-1. On the **AdatumLab500-04 | Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
+1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
 
 1. On the **Global Reader Review** blade, examine the **Overview** page and note that the **Progress** charts shows a single users in the **Not reviewed** category. 
 
@@ -296,9 +296,9 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Click **aaduser2** to view a detailed audit log with entries representing PIM activities that involve that user.
 
-1. Navigate back to the **AdatumLab500-04 | Access reviews** blade.
+1. Navigate back to the **AdatumLab500-04 \| Access reviews** blade.
 
-1. On the the **AdatumLab500-04 | Access reviews** blade, in the **Tasks** section, click **Review access** and then, click the **Global Reader Review** entry. 
+1. On the the **AdatumLab500-04 \| Access reviews** blade, in the **Tasks** section, click **Review access** and then, click the **Global Reader Review** entry. 
 
 1. On the **Global Reader Review** blade, click the **aaduser2** entry. 
 
@@ -306,7 +306,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Manage** section, click **Azure AD roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Access reviews**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
 1. Select the entry representing the **Global Reader** review. Note that the **Progress** chart has been updated to show your review. 
 
@@ -316,15 +316,15 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Manage** section, click **Azure AD roles**.
 
-1. On the **AdatumLab500-04 | Quick start** blade, in the **Manage** section, click **Alerts**, and then click **Setting**.
+1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Alerts**, and then click **Setting**.
 
 1. On the **Alert settings** blade, review the preconfigured alerts and risk levels. Click on any of them for more detailed information. 
 
-1. Return to the **AdatumLab500-04 | Quick start** blade and click **Overview**. 
+1. Return to the **AdatumLab500-04 \| Quick start** blade and click **Overview**. 
 
-1. On the **AdatumLab500-04 | Overview** blade, review summary information about role activations, PIM activities, alerts, and role assignments.
+1. On the **AdatumLab500-04 \| Overview** blade, review summary information about role activations, PIM activities, alerts, and role assignments.
 
-1. On the **AdatumLab500-04 | Overview** blade, in the **Activity** section, click **Resource audit**. 
+1. On the **AdatumLab500-04 \| Overview** blade, in the **Activity** section, click **Resource audit**. 
 
     >**Note**: Audit history is available for all privileged role assignments and activations within the past 30 days.
 
