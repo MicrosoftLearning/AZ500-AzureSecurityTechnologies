@@ -66,9 +66,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. On the **AdatumLab500-04 | Assignments** blade, click **Member filter**, on the **Select a member** blade, click **aaduser2**, and click **Select**.
 
-1. Back on the **AdatumLab500-04 | Assignments** blade, note the tabs for **Eligible roles**, **Active roles**, and **Expired roles**.
+1. Back on the **AdatumLab500-04 | Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
 
-1. Verify on the **Eligible roles** tab that **aaduser2** is shown as a **Billing administrator**. 
+1. Verify on the **Eligible assignments** tab that **aaduser2** is shown as a **Billing administrator**. 
 
     >**Note**: During sign-in, aaduser2 will be eligible to use the Billing administrator role. 
 
@@ -173,7 +173,7 @@ In this task, you will activate a role that does not require approval.
 
 1. Navigate back to the **Azure AD Privileged Identity Management** blade and, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles | Azure AD roles** blade, switch to the **Active roles** tab. Notice the **Billing Administrator** role is **Activated**.
+1. On the **My roles | Azure AD roles** blade, switch to the **Active assignments** tab. Notice the **Billing Administrator** role is **Activated**.
 
     >**Note**: Once a role has been activated, it automatically deactivates when its time limit under **End time**(eligible duration) is reached.
 
@@ -192,7 +192,7 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management | Quick start** blade, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles | Azure AD roles** blade, in the list of **Eligible roles**, in the row displaying the **Global Reader** role, click **Activate**. 
+1. On the **My roles | Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
 1. On the **Activate - Global Reader** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
@@ -212,7 +212,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: The auto approval process should complete.
 
-1. Back on the **My roles | Azure AD roles** blade, click the **Active roles** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
+1. Back on the **My roles | Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
