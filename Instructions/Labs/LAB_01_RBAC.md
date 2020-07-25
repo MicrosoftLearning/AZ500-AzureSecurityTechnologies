@@ -61,7 +61,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. Click **Create**.
 
-1. Refresh the **Users | All users** blade to verify the new user was created in your Azure AD tenant.
+1. Refresh the **Users \| All users** blade to verify the new user was created in your Azure AD tenant.
 
 #### Task2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
@@ -290,7 +290,7 @@ In this exercise, you will complete the following tasks:
 
 1. On the **AZ500Lab01** blade, click **Access control (IAM)**.
 
-1. On the **AZ500Lab01 | Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
+1. On the **AZ500Lab01 \| Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
 
 1. On the **Add role assignment** blade, specify the following settings:
 
@@ -304,7 +304,7 @@ In this exercise, you will complete the following tasks:
 
 1. From the **Access control (IAM)** blade, select **Role assignments**.
 
-1. On the **AZ500Lab01 | Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
+1. On the **AZ500Lab01 \| Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
 
 1. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
