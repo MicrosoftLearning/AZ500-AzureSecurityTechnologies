@@ -264,7 +264,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Enable a client application to access the Azure SQL Database service. 
 
-In this task, you will enable a client application to access the Azure SQL Database service. This will be done by setting up the required authentication and acquiring the Application ID and Secret that you will need to authenticate your application. T
+In this task, you will enable a client application to access the Azure SQL Database service. This will be done by setting up the required authentication and acquiring the Application ID and Secret that you will need to authenticate your application.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **App Registrations** and press the **Enter** key.
 
@@ -287,7 +287,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
 
 1. On the **sqlApp** blade, in the **Manage** section, click **Certificates & secrets**.
 
-1. On the **sqlApp | Certificates & secrets** blade, click **+ New client secret**
+1. On the **sqlApp \| Certificates & secrets** blade, click **+ New client secret**
 
 1. In the **Add a client secret** pane, specify the following settings:
 
@@ -298,7 +298,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
 	
 1. Click **Add** to update the application credentials.
 
-1. On the **sqlApp | Certificates & secrets** blade, identify the value of **Key1**.
+1. On the **sqlApp \| Certificates & secrets** blade, identify the value of **Key1**.
 
     >**Note**: Record this value. You will need it in the next task. 
 
@@ -419,13 +419,13 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 		[BirthDate] [date] NOT NULL 
      PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
-1. After the table is created successfully, in the **Obbject Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
+1. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
 
     >**Note**: This will initiate the **Always Encrypted** wizard displays. 
 
 1. On the **Introduction** page, click **Next**.
 
-1. On the **Column Selection** page, select the **SSN** and **Birthdate** columnts, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
+1. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
 
 1. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that key vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
