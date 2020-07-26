@@ -172,7 +172,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 1. On the **Resource groups** blade, in the listing of resource groups, note a new resource group named **MC_AZ500LAB09_MyKubernetesCluster_eastus** that holds components of the AKS Nodes. Review resources in this resource group. 
 	
-1. Navigate back to the **Resource groups** blade and click the *AZ500LAB09** entry. 
+1. Navigate back to the **Resource groups** blade and click the **AZ500LAB09** entry. 
 
     >**Note**: In the list of resources, note the AKS Cluster and the corresponding virtual network.
 
@@ -214,7 +214,7 @@ In this task, you will grant the AKS cluster permission to access the ACR.
 
 In this task,  you will download the Manifest files, edit the YAML file, and apply your changes to the cluster. 
 
-1. In the Bash session within the Cloud Shell pane, click the **Uplaod/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** and **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**. 
+1. In the Bash session within the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** and **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to identify the name of the Azure Container Registry instance:
 
