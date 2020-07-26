@@ -133,7 +133,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
 1. On the **Route tables** blade, click **Refresh**, and, in the list of route tables, click the **Firewall-route** entry.
 
-1. On the **Firewall-route** blade, in the **Settings** section, click **Subnets** and then, on the **Firewall-route | Subnets** blade, click **+ Associate**.
+1. On the **Firewall-route** blade, in the **Settings** section, click **Subnets** and then, on the **Firewall-route \| Subnets** blade, click **+ Associate**.
 
 1. On the **Associate subnet** blade, specify the following settings:
 
@@ -170,7 +170,7 @@ In this task you will create an application rule that allows outbound access to 
 
 1. On the **Test-FW01** blade, in the **Settings** section, click **Rules**.
 
-1. On the **Test-FW01 | Rules** blade, click the **Application rule collection** tab, and then click **+ Add application rule collection**.
+1. On the **Test-FW01 \| Rules** blade, click the **Application rule collection** tab, and then click **+ Add application rule collection**.
 
 1. On the **Add application rule collection** blade, specify the following settings (leave others with their default values):
 
@@ -198,9 +198,9 @@ In this task you will create an application rule that allows outbound access to 
 
 In this task, you will create a network rule that allows outbound access to two IP addresses on port 53 (DNS).
 
-1. In the Azure portal, navigate back to the **Test-FW01 | Rules** blade.
+1. In the Azure portal, navigate back to the **Test-FW01 \| Rules** blade.
 
-1. On the **Test-FW01 | Rules** blade, click the **Network rule collection** tab and then click **+ Add network rule collection**.
+1. On the **Test-FW01 \| Rules** blade, click the **Network rule collection** tab and then click **+ Add network rule collection**.
 
 1. On the **Add network rule collection** blade, specify the following settings (leave others with their default values):
 
@@ -210,7 +210,7 @@ In this task, you will create a network rule that allows outbound access to two 
    |Priority|**200**|
    |Action|**Allow**|
 
-1. On the **Add network rule collection** blade, create a new entry in the **IP Addresses** section with the following settings (leave others with their defaalt values):
+1. On the **Add network rule collection** blade, create a new entry in the **IP Addresses** section with the following settings (leave others with their default values):
 
    |Setting|Value|
    |---|---|
@@ -236,7 +236,7 @@ In this task, you will configure the primary and secondary DNS addresses for the
 
 1. On the **Srv-Work** blade, in the **Settings** section, click **Networking**.
 
-1. On the **Srv-Work | Networking** blade, click the link next to the **Network interface** entry.
+1. On the **Srv-Work \| Networking** blade, click the link next to the **Network interface** entry.
 
 1. On the network interface blade, in the **Settings** section, click **DNS servers**, select the **Custom** option, add the two DNS servers referenced in the network rule: **209.244.0.3** and **209.244.0.4**, and click **Save** to save the change.
 
