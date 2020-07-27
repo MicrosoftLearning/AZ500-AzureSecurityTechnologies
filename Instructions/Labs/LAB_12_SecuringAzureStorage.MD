@@ -79,7 +79,7 @@ In this task, you will create another subnet and enable a service endpoint on th
 
 1. On the **myVirtualNetwork** blade, in the **Settings** section, click **Subnets**.
 
-1. On the **myVirtualNetwork | Subnets** blade, click **+ Subnet**. 
+1. On the **myVirtualNetwork \| Subnets** blade, click **+ Subnet**. 
 
 1. On the **Add subnet** blade, specify the following settings (leave others with their default values):
 
@@ -118,7 +118,7 @@ In this task, you will create a network security group with two outbound securit
 
 1. On the **myNsgPrivate** blade, in the **Settings** section, click **Outbound security rules**.
 
-1. On the **myNsgPrivate | Outbound security rules** blade, click **+ Add**.
+1. On the **myNsgPrivate \| Outbound security rules** blade, click **+ Add**.
 
 1. On the **Add outbound security rule** blade, specify the following settings to explicitly allow outbound traffic to Azure Storage (leave all other values with their default settings): 
 
@@ -129,13 +129,13 @@ In this task, you will create a network security group with two outbound securit
     |Destination|in the drop-down list, select **Service Tag** and then click **Storage**|
     |Destination port ranges|*|
     |Protocol|**Any**|
-    |Priority|**1000**|
     |Action|**Allow**|
+    |Priority|**1000**|
     |Name|**Allow-Storage-All**|
 
 1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule. 
 
-1. On the **myNsgPrivate** blade, in the **Settings** section, click **outbound security rules**, and then click **+ Add**.
+1. On the **myNsgPrivate** blade, in the **Settings** section, click **Outbound security rules**, and then click **+ Add**.
 
 1. On the **Add outbound security rule** blade, specify the following settings to explicitly deny outbound traffic to Internet (leave all other values with their default settings): 
 
@@ -146,15 +146,15 @@ In this task, you will create a network security group with two outbound securit
     |Destination|in the drop-down list, select **Service Tag** and then click **Internet**|
     |Destination port ranges|*|
     |Protocol|**Any**|
-    |Priority|**1100**|
     |Action|**Deny**|
+    |Priority|**1100**|
     |Name|**Deny-Internet-All**|
 
     >**Note**: This rule overrides a default rule in all network security groups that allows outbound internet communication. 
 
     >**Note**: In the next steps, you will create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 
-1. On the **myNsgPrivate | Outbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
+1. On the **myNsgPrivate \| Outbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
 
 1. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
 
@@ -173,7 +173,7 @@ In this task, you will create a network security group with two outbound securit
 
     >**Note**: Now you will associate the network security group with the Private subnet.
 
-1. On the **Associate subnet** blade, specify the following settings and click **OK**:
+1. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
 
     |Setting|Value|
     |---|---|
