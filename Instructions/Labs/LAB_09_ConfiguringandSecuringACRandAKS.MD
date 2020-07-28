@@ -206,7 +206,7 @@ In this task, you will grant the AKS cluster permission to access the ACR.
     az aks update -n MyKubernetesCluster -g AZ500LAB09 --attach-acr $ACRNAME
     ```
 
-    >**Note**: This command grants the 'acrpull' role assignment to the ACR. Change ACRuniquename to the name of your ACR.
+    >**Note**: This command grants the 'acrpull' role assignment to the ACR. 
 
     >**Note**: It may take a few minutes for this command to complete. 
 
