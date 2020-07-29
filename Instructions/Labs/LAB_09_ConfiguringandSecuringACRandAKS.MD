@@ -244,7 +244,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
 1. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. 
 
-    ```sh
+    ```
     deployment.apps/nginxexternal created
     service/nginxexternal created
     ```
@@ -289,7 +289,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
 1.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created:
 
-    ```sh
+    ```
     deployment.apps/nginxinternal created
     service/nginxinternal created
     ```
