@@ -327,7 +327,7 @@ In this task, you will use one of the pods running on the AKS cluster to access 
     kubectl exec -it <pod_name> -- /bin/bash
     ```
 
-1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the name you identified in the previous task):
+1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the IP address you recorded in the previous task):
 
     ```sh
     curl http://<internal_IP>
