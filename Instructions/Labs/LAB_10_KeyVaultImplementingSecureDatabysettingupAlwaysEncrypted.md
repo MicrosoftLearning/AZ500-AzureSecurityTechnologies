@@ -44,7 +44,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: (Optional Prerequisite) Deploy and configure an Azure VM with Visual Studio 2019 and SQL Server Management Studio
     
-    >**Note**: If you are using a lab provider that has both Visual Studio 2019 and SQL Server Management studio installed you can skip this step and go straight to Task 2.
+>**Note**: If you are using a lab provider that has both Visual Studio 2019 and SQL Server Management studio installed you can skip this step and go straight to Task 2.
 
 
 In this task, you will deploy an Azure VM, connect to it, and download and install Visual Studio 2019 and SQL Server Management Studio (SSMS).
@@ -82,7 +82,7 @@ In this task, you will deploy an Azure VM, connect to it, and download and insta
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
+1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete. 
 
