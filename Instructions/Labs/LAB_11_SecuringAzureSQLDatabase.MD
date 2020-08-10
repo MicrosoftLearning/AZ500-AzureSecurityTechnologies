@@ -56,8 +56,6 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **Edit template** blade, click **Save**.
 
-1. On the **Edit parameters** blade, click **Save**.
-
 1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
    |Setting|Value|
