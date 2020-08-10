@@ -64,7 +64,7 @@ In this task, you will use a template to deploy the lab infrastructure.
    |Resource group|click **Create new** and type the name **AZ500LAB11**|
    |Location|**(US) East US**|
 
-1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
+1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete. 
 
