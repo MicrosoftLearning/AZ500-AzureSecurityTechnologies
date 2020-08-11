@@ -87,7 +87,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Domain Name|**adatum.com**|
    |VM Size|**Standard_D2s_v3**|
 
-1. On the **Create an Azure VM with a new AD Forest** blade, click the checkbox **I agree to the terms and conditions above** and click **Purchase**.
+1. On the **Create an Azure VM with a new AD Forest** blade, click **Review + create**, and then click **Create**.
 
     >**Note**: Do not wait for the deployment to complete but instead proceed to the next exercise. The deployment might take about 15 minutes. You will use the virtual machine deployed in this task in the third exercise of this lab.
 
