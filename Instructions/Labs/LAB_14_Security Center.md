@@ -86,15 +86,13 @@ In this task, you will implement the Security Center recommendation to install e
 
 1. On the **Security Center \| Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
 
-1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, review the recommendations and click the **Guest configuration extension should be installed on Windows virtual machines** entry.
+1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, review the recommendations and click the **Install endpoint protection solution on virtual machines** entry.
 
-1. On the **Guest configuration extension should be installed on Windows virtual machines** blade, click **Remediate**.
+1. On the **Install endpoint protection solution on virtual machines** blade, click **Remediate**.
 
 1. On the **Remediate resources** blade, ensure that **myVM** is listed as the selected resource and click **Remediate 1 resource**.
 
     >**Note**: Monitor the progress of installation by clicking on the **Notifications** icon in the toolbar and viewing the **Notifications** blade. 
-
-    >**Note**: You can also verify the installation by viewing the configuration of the **myVM** virtual machine. On the **myVM** virtual machine blade, in the **Settings** section, click **Extensions** and, on the **myVM \| Extensions** blade, you should see the **AzurePolicyforWindows** extension listed with the status of **Provisioning succeeded**.
 
     >**Note**: Security Center will automatically rescan the virtual machine. That will be reflected by an increase in the secure score.
 
