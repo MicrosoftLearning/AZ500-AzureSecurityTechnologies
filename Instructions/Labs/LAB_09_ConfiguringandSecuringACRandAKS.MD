@@ -277,7 +277,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
     >**Note**: This is the *internal* yaml file.
 
-1. In the editor pane, scroll down to **line 21** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
+1. In the editor pane, scroll down to the line containing the reference to the container image and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
