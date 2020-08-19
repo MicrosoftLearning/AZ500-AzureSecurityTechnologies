@@ -72,7 +72,7 @@ In this task, you will on-board and configure Security Center.
 
     >**Note**: Security Center provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
-#### Task 2: Implement the Security Center recommendation to install guest configuration extension
+#### Task 2: Implement a Security Center recommendation
 
 In this task, you will implement the Security Center recommendation to install endpoint protection on the virtual machine. 
 
