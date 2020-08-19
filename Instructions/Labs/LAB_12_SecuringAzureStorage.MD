@@ -154,7 +154,7 @@ In this task, you will create a network security group with two outbound securit
 
     >**Note**: In the next steps, you will create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 
-1. On the **myNsgPrivate \| Outbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
+1. On the **myNsgPrivate \| Intbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
 
 1. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
 
