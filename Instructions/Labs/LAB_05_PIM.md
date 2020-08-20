@@ -64,8 +64,6 @@ In this task, you will make a user eligible for an Azure AD directory role.
  
 1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click **Assignments**.
 
-1. On the **AdatumLab500-04 \| Assignments** blade, click **Member filter**, on the **Select a member** blade, click **aaduser2**, and click **Select**.
-
 1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
 
 1. Verify on the **Eligible assignments** tab that **aaduser2** is shown as a **Billing administrator**. 
