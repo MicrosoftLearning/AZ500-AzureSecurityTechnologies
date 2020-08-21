@@ -155,13 +155,9 @@ In this task, you will activate a role that does not require approval.
 
 1. In the row displaying the **Billing Administrator** role entry, click **Activate**.
 
-1. Click the warning **Additional verification required. Click to continue**. 
+1. If needed, click the warning **Additional verification required. Click to continue** and follow the instructions to verify your identity.
 
-1. Follow the instructions to verify your identity.
-
-    >**Note**: You only have to authenticate once per session. 
-
-1. Once you are back in the Azure Portal interface, on the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
+1. On the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
     >**Note**: When you activate a role in PIM, it can take up to 10 minutes for the activation to take effect. 
 	
