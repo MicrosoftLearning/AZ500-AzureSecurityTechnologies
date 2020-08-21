@@ -71,8 +71,6 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
 
-1. Click **Review + Create** and then **Create**.
-
 #### Task 2:  Create application security groups
 
 In this task, you will create an application security group.
