@@ -60,7 +60,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Back on the **Add assignments** blade, click **Next**. 
 
-1. Ensure the **Assignment type** is set to **Eligible**, review the eligible duration settings, and click **Assign**.
+1. Ensure the **Assignment type** is set to **Eligible** and click **Assign**.
  
 1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click **Assignments**.
 
@@ -151,7 +151,7 @@ In this task, you will activate a role that does not require approval.
 
 1. On the **Azure AD Privileged Identity Management** blade, in the **Tasks** section, click **My roles**.
 
-1. You should see three **Eligible roles** for **aaduser2**: **Global Reader**, **Security Administrator**, and **Billing Administrator**. Notice that **Security Administrator** is a **Permanent** role.
+1. You should see three **Eligible roles** for **aaduser2**: **Global Reader**, **Security Administrator**, and **Billing Administrator**. 
 
 1. In the row displaying the **Billing Administrator** role entry, click **Activate**.
 
