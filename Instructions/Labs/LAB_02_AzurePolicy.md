@@ -96,7 +96,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Description|**Allow resources to be created in UK South Only for AZ500LAB02**|
    |Policy enforcement|**Enabled**|
 
-1. Click **Next**. 
+1. Click **Next**.
 
 1. On the **Parameters** tab of the **Allowed locations** blade, in the **Allowed locations** drop-down list, select **UK South** as the only allowed location. 
 

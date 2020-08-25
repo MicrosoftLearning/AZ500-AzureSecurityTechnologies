@@ -538,7 +538,7 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
 **Clean up resources**
 
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
+> We need to remove identity protection resources that you no longer use. 
 
 Use the following steps to disable the identity protection policies in the **AdatumLab500-04** Azure AD tenant.
 
