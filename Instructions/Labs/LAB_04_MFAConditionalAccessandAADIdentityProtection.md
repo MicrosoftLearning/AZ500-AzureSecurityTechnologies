@@ -21,17 +21,17 @@ You have been asked to create a proof of concept of features that enhance Azure 
 
 In this lab, you will complete the following exercises:
 
-- Exercise 0: Deploy an Azure VM by using an Azure Resource Manager template
-- Exercise 1: Implement Azure MFA
-- Exercise 2: Implement Azure AD Conditional Access Policies 
-- Exercise 3: Implement Azure AD Identity Protection
+- Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
+- Exercise 2: Implement Azure MFA
+- Exercise 3: Implement Azure AD Conditional Access Policies 
+- Exercise 4: Implement Azure AD Identity Protection
 
 ## Lab files:
 
 - **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json**
 - **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.parameters.json** 
 
-### Exercise 0: Deploy an Azure VM by using an Azure Resource Manager template
+### Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 
 ### Estimated timing: 10 minutes
 
@@ -87,7 +87,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 > Result: You have initiated a template deployment of an Azure VM **az500-04-vm1** that you will use in the last exercise of this lab.
 
 
-### Exercise 1: Implement Azure MFA
+### Exercise 2: Implement Azure MFA
 
 ### Estimated timing: 30 minutes
 
@@ -312,7 +312,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 > Result: You have created a new AD tenant, configured AD users, configured MFA, and tested the MFA experience for a user. 
 
 
-### Exercise 2: Implement Azure AD Conditional Access Policies 
+### Exercise 3: Implement Azure AD Conditional Access Policies 
 
 ### Estimated timing: 15 minutes
 
@@ -403,7 +403,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 >Result: You have configured and tested Azure AD conditional access.
 
-### Exercise 3: Implement Azure AD Identity Protection
+### Exercise 4: Implement Azure AD Identity Protection
 
 ### Estimated timing: 30 minutes
 
