@@ -108,7 +108,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The reason the Azure policy assignment might take up to 30 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
-#### Task 2: Test the Allowed Locations policy assignment
+#### Task 3: Test the Allowed Locations policy assignment
 
 In this task, you will test the Allowed Locations policy assignment. 
 
