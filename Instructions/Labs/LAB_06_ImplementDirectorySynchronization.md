@@ -303,7 +303,9 @@ In this task, you will verify that directory synchronization is working.
 
 1. Within the Remote Desktop session to **adVM**, in the Internet Explorer window displaying the Azure portal, navigate to the **Users - All users** blade of the Adatum Lab Azure AD tenant.
 
-1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account, with the **Windows Server AD** appearing in the **Source** column.
+1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
+
+1. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
