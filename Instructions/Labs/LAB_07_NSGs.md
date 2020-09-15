@@ -209,17 +209,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
 
-1. On the **Create virtual network** blade, specify the following settings (leave others with their default values):
-
-   |Setting|Value|
-   |---|---|
-   |Name|**myVirtualNetwork**|
-   |Address range|**10.0.0.0/16**|
-   |Subnet name|**default**|
-   |Subnet range|**10.0.0.0/24**|
-   |Public IP|**(new)myVmWeb-ip**|
-   |NIC network security group|**Advanced**|
-   |Configure network security group|**myNsg**|
+1. On the **Create virtual network** blade, select the previously created network **myVirtualNetwork**. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
@@ -257,17 +247,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
 
-1. On the **Create virtual network** blade, specify the following settings (leave others with their default values):
-
-   |Setting|Value|
-   |---|---|
-   |Name|**myVirtualNetwork**|
-   |Address range|**10.0.0.0/16**|
-   |Subnet name|**default**|
-   |Subnet range|**10.0.0.0/24**|
-   |Public IP|**(new)myVMMgmt-ip**|
-   |NIC network security group|**Advanced**|
-   |Configure network security group|**myNsg**|
+1.  On the **Create virtual network** blade, select the previously created network **myVirtualNetwork**. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
