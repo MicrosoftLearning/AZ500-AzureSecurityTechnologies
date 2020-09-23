@@ -35,7 +35,7 @@ In this lab, you will complete the following exercises:
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will complete the following tasks:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Deploy an Azure VM by using an Azure Resource Manager template.
 
@@ -465,7 +465,7 @@ In this task, you will configure a sign-in risk policy.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
-> Before you start this task, ensure that the template deployment you started in Exercise 0 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
+> Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
