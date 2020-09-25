@@ -80,7 +80,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 In this task, you will review and create a rule that uses the Azure Activity data connector. 
 
-1. On the **Azure Sentinel | Data connectors** blade, click **Analytics**. 
+1. On the **Azure Sentinel | Configuration** blade, click **Analytics**. 
 
 1. On the **Azure Sentinel | Analytics** blade, click the **Rule templates** tab. 
 
