@@ -202,11 +202,11 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click the **az500-04-vm1** entry. 
+1. On the **Virtual machines** blade, click the **adVM** entry. 
 
-1. On the **az500-04-vm1** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+1. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
@@ -215,7 +215,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
-    >**Note**: The following steps are performed in the Remote Desktop session to the **az500-04-vm1** Azure VM. 
+    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM. 
 
 1. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
 
