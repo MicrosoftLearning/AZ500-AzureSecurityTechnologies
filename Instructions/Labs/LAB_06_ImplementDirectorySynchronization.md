@@ -215,7 +215,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
-    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM. 
+    >**Note**: The following steps are performed in the Remote Desktop session to the **az500-04-vm1** Azure VM. 
 
 1. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
 
