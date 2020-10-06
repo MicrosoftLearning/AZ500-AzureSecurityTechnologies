@@ -125,7 +125,7 @@ In this task, you will create a new Azure AD tenant.
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 
-#### Task 2: Activate Azure AD Premium v2 trial
+#### Task 2: Activate Azure AD Premium P2 trial
 
 In this task, you will sign up for the Azure AD Premium P2 free trial. 
 
@@ -437,15 +437,15 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click **Users**, on the **Include** tab of the **Users** blade, ensure that the **All users** option.
+   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, click **Select, and then click **Done**. 
+   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
 
-   - Click **Conditions**, on the **Conditions** blade, click **User risk**, on the **User risk** blade, select **Low and above**, click **Select, and then click **Done**. 
+   - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
 
-   - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Select**.
+   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
 
-   - Set **Enforce Policy** to **On** and click **Save**.
+   - Set **Enforce policy** to **On** and click **Save**.
 
 #### Task 3: Configure sign-in risk policy
 
@@ -455,11 +455,11 @@ In this task, you will configure a sign-in risk policy.
 
 1. Configure the **Sign-in risk remediation policy** with the following settings: 
 
-   - Click **Users**, on the **Include** tab of the **Users** blade, ensure that the **All users** option.
+   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Conditions**, on the **Conditions** blade, click **Sign-in risk**, on the **User risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
 
-   - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Select**.
+   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click **Save**.
 
