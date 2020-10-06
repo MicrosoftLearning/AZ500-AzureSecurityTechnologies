@@ -94,9 +94,9 @@ In this task, you will create a virtual machine by using an ARM template. This v
 In this exercise, you will complete the following tasks
 
 - Task 1: Create a new Azure AD tenant.
-- Task 2: Activate Azure AD Premium v2 trial.
+- Task 2: Activate Azure AD Premium P2 trial.
 - Task 3: Create Azure AD users and groups.
-- Task 4: Assign Azure AD Premium v2 licenses to Azure AD users.
+- Task 4: Assign Azure AD Premium P2 licenses to Azure AD users.
 - Task 5: Configure Azure MFA settings.
 - Task 6: Validate MFA configuration
 
@@ -199,7 +199,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
-#### Task 4: Assign Azure AD Premium v2 licenses to Azure AD users
+#### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
