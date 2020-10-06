@@ -220,9 +220,9 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, note the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-1. Click the entry representing the request, in the **Justification** text box, type a text explaining the reason for activation, note the start and end times, and click **Approve**. 
+1. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
 
     >**Note**: You also have the option of denying requests.
 
@@ -237,6 +237,8 @@ In this task, you will activate a role that requires approval.
 1. On the **My roles \| Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
 
     >**Note**: You might have to refresh the page to view the updated list of active roles.
+
+1. Sign out and close the InPrivate browser window.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
