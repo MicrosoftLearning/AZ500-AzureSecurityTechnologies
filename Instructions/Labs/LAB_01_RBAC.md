@@ -328,4 +328,4 @@ In this exercise, you will complete the following tasks:
     Remove-AzResourceGroup -Name "AZ500LAB01" -Force -AsJob
     ```
 
-1.  Close the **Cloud Shell** pane. 
+1.  Close the **Bash Cloud Shell** pane. 

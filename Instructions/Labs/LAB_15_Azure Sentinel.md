@@ -202,7 +202,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: Check your secure score. By now it should have updated. 
 
-1. On the **Security Center | Overview** blade, in the **ADVANCED CLOUD DEFENSE** section, click **Just in time VM access**.
+1. On the **Security Center | Azure Defender** blade, click **Just-in-time vm access** section.
 
 1. On the **Security Center | Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
 
