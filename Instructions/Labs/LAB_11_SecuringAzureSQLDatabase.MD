@@ -120,7 +120,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: This will complete the classification and persistently label the database columns with the new classification metadata. 
 
-1. Back on the **Data Discovery & Classification** BLADE, note that it has been updated to account for the latest classification information. 
+1. Back on the **Data Discovery & Classification** blade, note that it has been updated to account for the latest classification information. 
 
 #### Task 4 : Configure auditing 
 
