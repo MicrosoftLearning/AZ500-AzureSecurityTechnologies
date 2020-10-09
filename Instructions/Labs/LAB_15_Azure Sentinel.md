@@ -60,17 +60,17 @@ In this task, you will on-board Azure Sentinel and connect the Log Analytics wor
 
 In this task, you will configure Sentinel to use the Azure Activity data connector.  
 
-1. In the Azure portal, on the **Azure Sentinel | Overview** blade, in the **Configuration** section, click **Data connectors**. 
+1. In the Azure portal, on the **Azure Sentinel \| Overview** blade, in the **Configuration** section, click **Data connectors**. 
 
-1. On the **Azure Sentinel | Data connectors** blade, review the list of available connectors, click the entry representing the **Azure Activity** connector, review its description, and then click **Open connector page**.
+1. On the **Azure Sentinel \| Data connectors** blade, review the list of available connectors, click the entry representing the **Azure Activity** connector, review its description, and then click **Open connector page**.
 
 1. On the **Azure Activity** blade, click the **Configure Azure Activity logs** link.
 
 1. On the **Azure Activity log** blade, click the entry representing the Azure subscription you are using in this lab and then click **Connect**.
 
-1. Navigate back to the **Azure Sentinel | Data connectors** blade and click **Refresh**.
+1. Navigate back to the **Azure Sentinel \| Data connectors** blade and click **Refresh**.
 
-1. On the **Azure Sentinel | Data connectors** blade, click **Azure Activity**. 
+1. On the **Azure Sentinel \| Data connectors** blade, click **Azure Activity**. 
 
 1. Verify that the **Azure Activity** pane displays the **Data received** graph. 
 
@@ -80,9 +80,9 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 In this task, you will review and create a rule that uses the Azure Activity data connector. 
 
-1. On the **Azure Sentinel | Configuration** blade, click **Analytics**. 
+1. On the **Azure Sentinel \| Configuration** blade, click **Analytics**. 
 
-1. On the **Azure Sentinel | Analytics** blade, click the **Rule templates** tab. 
+1. On the **Azure Sentinel \| Analytics** blade, click the **Rule templates** tab. 
 
     >**Note**: Reviwe the types of rules you can create. Each rule is associated with a specific Data Source.
 
@@ -156,11 +156,11 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 #### Task 5 Create a custom alert and configure a playbook as an automated response
 
-1. In the Azure portal, navigate back to the **Azure Sentinel | Overview** blade.
+1. In the Azure portal, navigate back to the **Azure Sentinel \| Overview** blade.
 
-1. On the the **Azure Sentinel | Overview** blade, in the **Configuration** section, click **Analytics**.
+1. On the the **Azure Sentinel \| Overview** blade, in the **Configuration** section, click **Analytics**.
 
-1. On the **Azure Sentinel | Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
+1. On the **Azure Sentinel \| Analytics** blade, click **+ Create** and, in the drop-down menu, click **Scheduled query rule**. 
 
 1. On the **General** tab of the **Analytic rule wizard - Create new rule** blade, specify the following settings (leave others with their default values):
 
@@ -198,13 +198,13 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 #### Task 6: Invoke an incident and review the associated actions.
 
-1. In the Azure portal, navigate to the **Security Center | Overview** blade.
+1. In the Azure portal, navigate to the **Security Center \| Overview** blade.
 
     >**Note**: Check your secure score. By now it should have updated. 
 
-1. On the **Security Center | Azure Defender** blade, click **Just-in-time vm access** section.
+1. On the **Security Center \| Azure Defender** blade, click **Just-in-time vm access** section.
 
-1. On the **Security Center | Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
+1. On the **Security Center \| Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
@@ -212,19 +212,19 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: This may take a minute to appear. 
 
-1. In the Azure portal, navigate back to the **Azure Sentinel | Overview** blade.
+1. In the Azure portal, navigate back to the **Azure Sentinel \| Overview** blade.
 
-1. On the **Azure Sentinel | Overview** blade, review the dashboard and verify that it displays an alert corresponding to the deletion of the Just in time VM access policy.
+1. On the **Azure Sentinel \| Overview** blade, review the dashboard and verify that it displays an alert corresponding to the deletion of the Just in time VM access policy.
 
-    >**Note**: It can take up to 5 minutes for alerts to appear on the **Azure Sentinel | Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Azure Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
+    >**Note**: It can take up to 5 minutes for alerts to appear on the **Azure Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Azure Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
 
-1. On the **Azure Sentinel | Overview** blade, in the **Threat Management** section, click **Incidents**.
+1. On the **Azure Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
 
 1. Verify that the blade displays an incident with either medium or high severity level.
 
-    >**Note**: It can take up to 5 minutes for the incident to appear on the **Azure Sentinel | Incidents** blade. 
+    >**Note**: It can take up to 5 minutes for the incident to appear on the **Azure Sentinel \| Incidents** blade. 
 
-    >**Note**: Review the **Azure Sentinel | Playbooks** blade. You will find there the count of succesfull and failed runs.
+    >**Note**: Review the **Azure Sentinel \| Playbooks** blade. You will find there the count of succesfull and failed runs.
 
     >**Note**: You have the option of assigning a different severity level and status to an incident.
 
