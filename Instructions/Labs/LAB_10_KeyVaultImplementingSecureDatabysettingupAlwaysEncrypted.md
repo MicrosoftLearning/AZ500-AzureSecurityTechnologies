@@ -106,17 +106,17 @@ In this task, you will deploy an Azure VM, connect to it, and download and insta
 
 1. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
-1. Start **Internet Explorer**, and browse to the [Download SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) page.
+1. Start **Internet Explorer**, and browse to the [**Download SQL Server Management Studio**](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15) page.
 
 1. Download and start the SQL Server Management Studio installer.  
 
     >**Note**: Do not wait for the SQL Server Management Studio installation to complete but instead proceed to the next step. 
 
-1. Start **Internet Explorer**, and browse to the [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/) page.
+1. Start **Internet Explorer**, and browse to the [**Visual Studio Downloads**](https://visualstudio.microsoft.com/downloads/) page.
 
 1. Initiate download and installation of Visual Studio 2019 Community Edition. When prompted, in the **Visual Studio Installer** window, click **Continue**.
 
-1. When prompted, in the **Workloads** window, in the **Desktop & Mobile** section, select the **.NET desktop development** checkbox, and click **Install*.
+1. When prompted, in the **Workloads** window, in the **Desktop & Mobile** section, select the **.NET desktop development** checkbox, and click **Install**.
 
     >**Note**: Do not wait for the Visual Studio 2019 installation to complete but instead proceed to the next task. 
 
@@ -391,7 +391,7 @@ In this task, you will connect to the SQL Database by using SQL Server Managemen
 
    >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
-   >**Note**: The following steps are performed in the Remote Desktop session to the **** Azure VM. 
+   >**Note**: The following steps are performed in the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
 1. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
 

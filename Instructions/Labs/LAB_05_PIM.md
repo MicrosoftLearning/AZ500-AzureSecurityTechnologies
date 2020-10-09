@@ -282,7 +282,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. On the **Create an access review** blade, click **Start**:
  
-    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 | Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
+    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
 

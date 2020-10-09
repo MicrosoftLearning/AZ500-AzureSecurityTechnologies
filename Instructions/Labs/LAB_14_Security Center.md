@@ -46,7 +46,7 @@ In this task, you will on-board and configure Security Center.
      
 1. On the **Security Center \| Getting started** blade, click **Pricing & settings**.
 
-1. Click the entry representing your subscription and, on the **Settings | Azure Defender Plans** blade, ensure that **Azure Defender on** is selected. 
+1. Click the entry representing your subscription and, on the **Settings \| Azure Defender Plans** blade, ensure that **Azure Defender on** is selected. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
@@ -102,7 +102,7 @@ In this task, you will implement the Security Center recommendation to install e
 
 In this task, you will implement the Security Center recommendation to enable Just in time VM Access on the virtual machine. 
 
-1. In the Azure portal, navigate back to the **Security Center | Overview** blade. 
+1. In the Azure portal, navigate back to the **Security Center \| Overview** blade. 
 
 1. On the **Security Center \| Overview** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
 
