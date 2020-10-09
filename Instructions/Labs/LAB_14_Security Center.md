@@ -46,13 +46,13 @@ In this task, you will on-board and configure Security Center.
      
 1. On the **Security Center \| Getting started** blade, click **Pricing & settings**.
 
-1. Click the entry representing your subscription and, on the **Settings | Pricing tier** blade, ensure that the **Standard** pricing tier is selected. 
+1. Click the entry representing your subscription and, on the **Settings | Azure Defender Plans** blade, ensure that **Azure Defender on** is selected. 
 
-    >**Note**: Review all the features that are available as part of the Standard pricing tier and ensure the Standard plan is enabled fro each resource type. 
+    >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
 1. If you made any changes, click **Save**.
 
-1. On the **Settings \| Pricing tier** blade, click **Data Collection**.
+1. On the **Settings** blade, click **Data Collection**.
 
 1. On the **Settings \| Data Collection** blade, set **Auto provisioning** to **On**. 
 
@@ -60,7 +60,7 @@ In this task, you will on-board and configure Security Center.
 
 1. On the **Settings \| Data Collection** blade, click **Save**.
 
-1. On the **Settings \| Data Collection** blade, click **Workflow automation**.
+1. On the **Settings** blade, click **Workflow automation**.
 
 1. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
 
@@ -82,15 +82,15 @@ In this task, you will implement the Security Center recommendation to install e
 
     >**Note**: Record the current score.
 
-1. On the **Security Center \| Secure Score** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
+1. On the **Cloud Security \| Secure Score** blade, click on your **subscription**.
 
-1. On the **Security Center \| Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
 
-1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, review the recommendations and click the **Install endpoint protection solution on virtual machines** entry.
+1. On the **Recommendations** blade, click the **Enable endpoint protection** control, and then click the **Install endpoint protection solution on virtual machines** entry.
 
-1. On the **Install endpoint protection solution on virtual machines** blade, click **Remediate**.
+1. Select the **myVM** entry.
 
-1. On the **Remediate resources** blade, ensure that **myVM** is listed as the selected resource and click **Remediate 1 resource**.
+1. Click **Install on 1 VM**. Select **Microsoft Antimalware** then **Create** > **OK**
+
 
     >**Note**: Monitor the progress of installation by clicking on the **Notifications** icon in the toolbar and viewing the **Notifications** blade. 
 
@@ -106,13 +106,9 @@ In this task, you will implement the Security Center recommendation to enable Ju
 
 1. On the **Security Center \| Overview** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
 
-1. On the **Security Center \| Compute & apps** blade, click the **VMs and Servers** tab, and then click the **myVM** entry.
+1. On the **Cloud Security \| Azure Defender** blade, click the **Just-in-time- VM access** tab, select **Not Configured** and then click the **myVM** entry.
 
-1. On the **myvm** blade, in the **Recommendations list** section, on the **Recommendations** tab, click the **Management ports of virtual machines should be protected with just-in-time network access control** entry.
-
-1. On the **Management ports of virtual machines should be protected with just-in-time network access control** blade, expand the **Remediation steps** section and review the steps. 
-
-1. On the **Management ports of virtual machines should be protected with just-in-time network access control** blade, click **Remediate**.
+1. Select **Enable JIT on 1 VM**.
 
 1. On the **JIT VM access configuration** blade, on the far right of the row referencing the port **22**, click the ellipsis button and then click **Delete**.
 
