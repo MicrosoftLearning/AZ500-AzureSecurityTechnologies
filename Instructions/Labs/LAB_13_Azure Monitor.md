@@ -71,7 +71,7 @@ In this exercise, you will complete the following tasks:
 1. In the PowerShell session within the Cloud Shell pane, run the following to confirm that the virtual machine named **myVM** was created and its **ProvisioningState** is **Succeeded**.
 
     ```powershell
-    Get-AzVM -Name 'myVM' -ResourceGroupName 'AZ500LAB131415' \| Format-Table
+    Get-AzVM -Name 'myVM' -ResourceGroupName 'AZ500LAB131415' | Format-Table
     ```
 
 1. Close the Cloud Shell pane. 
