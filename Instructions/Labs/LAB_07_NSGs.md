@@ -201,7 +201,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
    |Public inbound ports|**None**|
-   |Already have a Windows Server license|**No**|
+   |Would  have a Windows Server license|**No**|
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
