@@ -136,15 +136,15 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Resource group|**AZ500LAB09**|
     |Kubernetes cluster name|**MyKubernetesCluster**|
     |Region|**(US) East US**|
-    |Availability zones | **Untick all three to end up with None** |
+    |Availability zones |**None**|
     |Node count|**1**|
 
 1. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
-    |Virtual nodes|**Untick**|
-    |VM scale sets|**Untick**|
+    |Virtual nodes|cleared checkbox|
+    |VM scale sets|cleared checkbox|
 	
 1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
