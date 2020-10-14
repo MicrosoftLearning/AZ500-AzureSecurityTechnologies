@@ -312,7 +312,7 @@ In this task, you will grant the newly registered app permissions to access secr
 
 1. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
 
-1. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the **Application (client) ID** you recorded in the previous task (replace the `<Azure_AD_Application_ID>` placeholder with the value of the **Application (client) ID**):
+1. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the **Application (client) ID** you recorded in the previous task (replace the `<Azure_AD_Application_ID>` placeholder **including the "<>" brackets** with the value of the **Application (client) ID**):
    
     ```powershell
     $applicationId = '<Azure_AD_Application_ID>'
