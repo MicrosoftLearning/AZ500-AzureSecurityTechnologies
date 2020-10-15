@@ -104,8 +104,6 @@ In this task, you will implement the Security Center recommendation to enable Ju
 
 1. In the Azure portal, navigate back to the **Security Center | Overview** blade. 
 
-1. On the **Security Center \| Overview** blade, in the **RESOURCE SECURITY HYGIENE** section, click **Compute & apps**.
-
 1. On the **Cloud Security \| Azure Defender** blade, click the **Just-in-time- VM access** tab, select **Not Configured** and then click the **myVM** entry.
 
 1. Select **Enable JIT on 1 VM**.
