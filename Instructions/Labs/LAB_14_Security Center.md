@@ -118,6 +118,5 @@ In this task, you will implement the Security Center recommendation to enable Ju
 
 > Results: You have on-boarded Security Center and implemented virtual machine recommendations. 
 
-**Clean up resources**
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
