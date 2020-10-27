@@ -47,7 +47,9 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+
+    >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
