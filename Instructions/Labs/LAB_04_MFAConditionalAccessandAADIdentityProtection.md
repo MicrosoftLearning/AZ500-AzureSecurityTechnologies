@@ -329,6 +329,8 @@ In this task, you will review conditional access policy settings and create a po
 
 1. In the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
 
+1. Navigate to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **No**. Select **My Organization is using Conditonal Access** as the reason and and then click **Save**.
+
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
@@ -358,8 +360,6 @@ In this task, you will review conditional access policy settings and create a po
    - Set the **Enable policy** to **On**.
 
 1. On the **New** blade, click **Create**. 
-
-    >**Note**: If you get an error stating that "Security defaults must be disabled to enable Conditional access policy", then navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **No**, and then click **Save**.
 
     >**Note**: At this point, you have a conditional access policy that requires MFA to sign in to the Azure portal. 
 
