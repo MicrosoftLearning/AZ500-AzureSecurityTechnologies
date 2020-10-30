@@ -97,8 +97,6 @@ In this task, you will create a Log Analytics workspace.
 
 1. On the **Review + create** tab of the **Create Log Analytics workspace** blade, click **Create**.
 
-1. Click **Review + Create** and then **Create**.
-
 #### Task 3: Enable the Log Analytics virtual machine extension
 
 In this task, you will enable the Log Analytics virtual machine extension. This extension installs the Log Analytics agent on Windows and Linux virtual machines. This agent collects data from the virtual machine and transfers it to the Log Analytics workspace that you designate. Once the agent is installed it will be automatically upgraded ensuring you always have the latest features and fixes. 

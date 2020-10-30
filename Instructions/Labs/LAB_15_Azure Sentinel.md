@@ -74,7 +74,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. Verify that the **Azure Activity** pane displays the **Data received** graph. 
 
-    >**Note**: It may take a few minutes before the graph will reflect the any events included in the Azure Activity logs.
+    >**Note**: It may take over 5 minutes before the graph will reflect the any events included in the Azure Activity logs.
 
 #### Task 3: Create a rule that uses the Azure Activity data connector. 
 
@@ -84,9 +84,9 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
 1. On the **Azure Sentinel \| Analytics** blade, click the **Rule templates** tab. 
 
-    >**Note**: Reviwe the types of rules you can create. Each rule is associated with a specific Data Source.
+    >**Note**: Review the types of rules you can create. Each rule is associated with a specific Data Source.
 
-1. In the listing of rules, click the **DATA SOURCES** header to sort by **Data Sources**, scroll down to the listing of templates associated with the **Azure Activity** data source, click the **Suspicious number of resource creation or deployment** entry, and then, in the pane displaying the rule template properties, click **Create rule**.
+1. In the listing of rules, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule**.
 
     >**Note**: This rule has the medium severity. 
 
