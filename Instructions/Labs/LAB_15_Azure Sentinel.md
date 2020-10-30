@@ -74,7 +74,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. Verify that the **Azure Activity** pane displays the **Data received** graph. 
 
-    >**Note**: It may take a few minutes before the graph will reflect the any events included in the Azure Activity logs.
+    >**Note**: It may take over 5 minutes before the graph will reflect the any events included in the Azure Activity logs.
 
 #### Task 3: Create a rule that uses the Azure Activity data connector. 
 
