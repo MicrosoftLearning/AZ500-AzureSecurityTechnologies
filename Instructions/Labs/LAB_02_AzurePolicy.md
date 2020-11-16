@@ -128,9 +128,9 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click **Review + create**. 
 
-1. On the **Review + create** tab of the **Create virtual network** blade
+1. On the **Review + create** tab of the **Create virtual network** blade note the **Validation failed** message. 
 
-1. Click **Create** note the **Validation failed** message. 
+    > **Note**: If the **Validation Failed** warning does not appear, click **Previous** and wait a few more minutes.
 
 1. Click the error message to open the **Errors** blade. You will see the detailed error message stating that the deployment of the resource **myVnet** was disallowed by policy.
 
