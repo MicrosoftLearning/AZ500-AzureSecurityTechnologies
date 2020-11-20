@@ -96,7 +96,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Description|**Allow resources to be created in UK South Only for AZ500LAB02**|
    |Policy enforcement|**Enabled**|
 
-1. Click **Next**. 
+1. Click **Next**.
 
 1. On the **Parameters** tab of the **Allowed locations** blade, in the **Allowed locations** drop-down list, select **UK South** as the only allowed location. 
 
@@ -108,7 +108,7 @@ In this task, you will create an Allowed Locations policy assignment and specify
 
    >**Note**: The reason the Azure policy assignment might take up to 30 minutes to take effect is that is has to replicate globally. Typically this takes only a few minutes.  If the next task fails, simply wait a few minutes and attempt its steps again.
 
-#### Task 2: Test the Allowed Locations policy assignment
+#### Task 3: Test the Allowed Locations policy assignment
 
 In this task, you will test the Allowed Locations policy assignment. 
 
@@ -128,11 +128,13 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. Click **Review + create**. 
 
-1. On the **Review + create** tab of the **Create virtual network** blade, note the **Validation failed** message. 
+1. On the **Review + create** tab of the **Create virtual network** blade note the **Validation failed** message. 
+
+    > **Note**: If the **Validation Failed** warning does not appear, click **Previous** and wait a few more minutes.
 
 1. Click the error message to open the **Errors** blade. You will see the detailed error message stating that the deployment of the resource **myVnet** was disallowed by policy.
 
-1. Close the **Errors** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK Sourth**.
+1. Close the **Errors** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
 
 1. Click **Review + create**, verify that validation passed, click **Create**, and verify that the virtual network was created successfully. 
 

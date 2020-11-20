@@ -52,11 +52,9 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\11\\azuredeploy.json** file and click **Open**.
 
-    >**Note**: Review the content of the template and note that it deploys an Azure VM hosting Windows Server 2019 Datacenter.
+    >**Note**: Review the content of the template and note that it deploys an Azure SQL database.
 
 1. On the **Edit template** blade, click **Save**.
-
-1. On the **Edit parameters** blade, click **Save**.
 
 1. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
@@ -66,7 +64,7 @@ In this task, you will use a template to deploy the lab infrastructure.
    |Resource group|click **Create new** and type the name **AZ500LAB11**|
    |Location|**(US) East US**|
 
-1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
+1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete. 
 
@@ -78,9 +76,9 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-1. On the server blade, in the **Security** section, click **Advanced data security**.
+1. On the server blade, in the **Security** section, click **Security Center**.
 
-1. Set the **ADVANCED DATA SECURITY** switch to **ON**.
+1. Set the **AZURE DEFENDER FOR SQL** switch to **ON**.
 
     >**Note**: Review the information about pricing and the trial period.
 
@@ -102,9 +100,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
 1. In the list of databases, select the **AZ500LabDb** entry. 
 
-1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Advanced data security**.
-
-1. On the Advanced data security blade, click the **Data Discovery & Classification** tile.
+1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Data Discovery & Classification**.
 
 1. On the **Data Discovery & Classification** blade, click the **Classification** tab.
 
@@ -124,7 +120,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: This will complete the classification and persistently label the database columns with the new classification metadata. 
 
-1. Back on the Advanced data security blade, note that the **Data Discovery & Classification** tile has been updated to account for the latest classification information. 
+1. Back on the **Data Discovery & Classification** blade, note that it has been updated to account for the latest classification information. 
 
 #### Task 4 : Configure auditing 
 

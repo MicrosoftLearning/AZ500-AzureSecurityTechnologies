@@ -60,11 +60,9 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Back on the **Add assignments** blade, click **Next**. 
 
-1. Ensure the **Assignment type** is set to **Eligible**, review the eligible duration settings, and click **Assign**.
+1. Ensure the **Assignment type** is set to **Eligible** and click **Assign**.
  
 1. Back on the **AdatumLab500-04 \| Roles** blade, in the **Manage** section, click **Assignments**.
-
-1. On the **AdatumLab500-04 \| Assignments** blade, click **Member filter**, on the **Select a member** blade, click **aaduser2**, and click **Select**.
 
 1. Back on the **AdatumLab500-04 \| Assignments** blade, note the tabs for **Eligible assignments**, **Active assignments**, and **Expired assignments**.
 
@@ -153,17 +151,13 @@ In this task, you will activate a role that does not require approval.
 
 1. On the **Azure AD Privileged Identity Management** blade, in the **Tasks** section, click **My roles**.
 
-1. You should see three **Eligible roles** for **aaduser2**: **Global Reader**, **Security Administrator**, and **Billing Administrator**. Notice that **Security Administrator** is a **Permanent** role.
+1. You should see three **Eligible roles** for **aaduser2**: **Global Reader**, **Security Administrator**, and **Billing Administrator**. 
 
 1. In the row displaying the **Billing Administrator** role entry, click **Activate**.
 
-1. Click the warning **Additional verification required. Click to continue**. 
+1. If needed, click the warning **Additional verification required. Click to continue** and follow the instructions to verify your identity.
 
-1. Follow the instructions to verify your identity.
-
-    >**Note**: You only have to authenticate once per session. 
-
-1. Once you are back in the Azure Portal interface, on the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
+1. On the **Activate - Billing Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
     >**Note**: When you activate a role in PIM, it can take up to 10 minutes for the activation to take effect. 
 	
@@ -226,9 +220,9 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, note the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-1. Click the entry representing the request, in the **Justification** text box, type a text explaining the reason for activation, note the start and end times, and click **Approve**. 
+1. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
 
     >**Note**: You also have the option of denying requests.
 
@@ -243,6 +237,8 @@ In this task, you will activate a role that requires approval.
 1. On the **My roles \| Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
 
     >**Note**: You might have to refresh the page to view the updated list of active roles.
+
+1. Sign out and close the InPrivate browser window.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
@@ -286,7 +282,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. On the **Create an access review** blade, click **Start**:
  
-    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 | Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
+    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
 

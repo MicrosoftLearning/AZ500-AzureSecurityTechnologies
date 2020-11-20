@@ -1,8 +1,7 @@
 # AZ-500: Microsoft Azure Security Technologies
 
-> **Microsoft is prioritizing cloud resources for Covid-19 support. You can read more here - [Update #2 on Microsoft cloud services continuity](https://azure.microsoft.com/en-us/blog/update-2-on-microsoft-cloud-services-continuity/). There is also an active discussion on the MCT Courseware Forum.**
+- **[Link to labs (HTML format)](https://microsoftlearning.github.io/AZ500-AzureSecurityTechnologies/)**
 
-- **[Link to Walkthroughs (HTML format)](https://microsoftlearning.github.io/AZ500-AzureSecurityTechnologies/)**
 - **Are you a MCT?** - Have a look at our [GitHub User Guide for MCTs](https://microsoftlearning.github.io/MCT-User-Guide/)
 
 ## What are we doing?

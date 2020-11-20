@@ -71,8 +71,6 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
 
-1. Click **Review + Create** and then **Create**.
-
 #### Task 2:  Create application security groups
 
 In this task, you will create an application security group.
@@ -209,25 +207,15 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
+1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1. On the **Create virtual network** blade, specify the following settings (leave others with their default values):
-
-   |Setting|Value|
-   |---|---|
-   |Name|**myVirtualNetwork**|
-   |Address range|**10.0.0.0/16**|
-   |Subnet name|**default**|
-   |Subnet range|**10.0.0.0/24**|
-   |Public IP|**(new)myVmWeb-ip**|
-   |NIC network security group|**Advanced**|
-   |Configure network security group|**myNsg**|
+1. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
    |Setting|Value|
    |---|---|
-   |Boot diagnostics|**On**|
+   |Boot diagnostics|**Enabled with managed storage account (recommended)**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
@@ -257,25 +245,15 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
+1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1. On the **Create virtual network** blade, specify the following settings (leave others with their default values):
-
-   |Setting|Value|
-   |---|---|
-   |Name|**myVirtualNetwork**|
-   |Address range|**10.0.0.0/16**|
-   |Subnet name|**default**|
-   |Subnet range|**10.0.0.0/24**|
-   |Public IP|**(new)myVMMgmt-ip**|
-   |NIC network security group|**Advanced**|
-   |Configure network security group|**myNsg**|
+1. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
    |Setting|Value|
    |---|---|
-   |Boot diagnostics|**On**|
+   |Boot diagnostics|**Enabled with managed storage account (recommended)**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.

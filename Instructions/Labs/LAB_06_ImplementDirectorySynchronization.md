@@ -72,7 +72,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 
 1. On the **Create an Azure VM with a new AD Forest** blade, click **Edit parameters**.
 
-1. On the **Edit parameters** blade, click **Load file**, in the **Open** dialog box, click **\\\\AZ303\\AllFiles\Labs\\06\\active-directory-new-domain\\azuredeploy.parameters.json**, click **Open**, and then click **Save**. 
+1. On the **Edit parameters** blade, click **Load file**, in the **Open** dialog box, click **\\\\AllFiles\Labs\\06\\active-directory-new-domain\\azuredeploy.parameters.json**, click **Open**, and then click **Save**. 
 
 1. On the **Create an Azure VM with a new AD Forest** blade, specify the following settings (leave others with their existing values):
 
@@ -87,7 +87,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Domain Name|**adatum.com**|
    |VM Size|**Standard_D2s_v3**|
 
-1. On the **Create an Azure VM with a new AD Forest** blade, click the checkbox **I agree to the terms and conditions above** and click **Purchase**.
+1. On the **Create an Azure VM with a new AD Forest** blade, click **Review + create**, and then click **Create**.
 
     >**Note**: Do not wait for the deployment to complete but instead proceed to the next exercise. The deployment might take about 15 minutes. You will use the virtual machine deployed in this task in the third exercise of this lab.
 
@@ -206,7 +206,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 1. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. Click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
@@ -303,7 +303,9 @@ In this task, you will verify that directory synchronization is working.
 
 1. Within the Remote Desktop session to **adVM**, in the Internet Explorer window displaying the Azure portal, navigate to the **Users - All users** blade of the Adatum Lab Azure AD tenant.
 
-1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account, with the **Windows Server AD** appearing in the **Source** column.
+1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
+
+1. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
 
     >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 

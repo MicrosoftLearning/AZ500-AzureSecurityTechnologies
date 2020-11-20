@@ -136,14 +136,15 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Resource group|**AZ500LAB09**|
     |Kubernetes cluster name|**MyKubernetesCluster**|
     |Region|**(US) East US**|
+    |Availability zones |**None**|
     |Node count|**1**|
 
 1. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
-    |Virtual nodes|**Disabled**|
-    |VM scale sets|**Disabled**|
+    |Virtual nodes|cleared checkbox|
+    |VM scale sets|cleared checkbox|
 	
 1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
@@ -155,7 +156,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     |Setting|Value|
     |----|----|
-    |Network configuration|**Advanced**|
+    |Network configuration|**Azure CNI**|
     |DNS name prefix|any valid, globally unique DNS host name|
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
@@ -232,7 +233,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
     >**Note**: This is the *external* yaml file.
 
-1. In the editor pane, scroll down to **line 21** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
+1. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
@@ -277,7 +278,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
     >**Note**: This is the *internal* yaml file.
 
-1. In the editor pane, scroll down to **line 21** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
+1. In the editor pane, scroll down to the line containing the reference to the container image and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 1. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
@@ -327,7 +328,7 @@ In this task, you will use one of the pods running on the AKS cluster to access 
     kubectl exec -it <pod_name> -- /bin/bash
     ```
 
-1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the name you identified in the previous task):
+1. In the Bash session within the Cloud Shell pane, run the following to verify that the nginx web site is available via the private IP address of the service (replace the `<internal_IP>` placeholder with the IP address you recorded in the previous task):
 
     ```sh
     curl http://<internal_IP>

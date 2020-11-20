@@ -21,21 +21,21 @@ You have been asked to create a proof of concept of features that enhance Azure 
 
 In this lab, you will complete the following exercises:
 
-- Exercise 0: Deploy an Azure VM by using an Azure Resource Manager template
-- Exercise 1: Implement Azure MFA
-- Exercise 2: Implement Azure AD Conditional Access Policies 
-- Exercise 3: Implement Azure AD Identity Protection
+- Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
+- Exercise 2: Implement Azure MFA
+- Exercise 3: Implement Azure AD Conditional Access Policies 
+- Exercise 4: Implement Azure AD Identity Protection
 
 ## Lab files:
 
 - **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json**
 - **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.parameters.json** 
 
-### Exercise 0: Deploy an Azure VM by using an Azure Resource Manager template
+### Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 
 ### Estimated timing: 10 minutes
 
-In this exercise, you will complete the following tasks:
+In this exercise, you will complete the following tasks:
 
 - Task 1: Deploy an Azure VM by using an Azure Resource Manager template.
 
@@ -47,7 +47,9 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+
+    >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
@@ -80,23 +82,23 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
+1. Click **Review + create**, and then click **Create**.
 
     >**Note**: Do not wait for the deployment to complete but proceed to the next exercise. You will use the virtual machine included in this deployment in the last exercise of this lab.
 
 > Result: You have initiated a template deployment of an Azure VM **az500-04-vm1** that you will use in the last exercise of this lab.
 
 
-### Exercise 1: Implement Azure MFA
+### Exercise 2: Implement Azure MFA
 
 ### Estimated timing: 30 minutes
 
 In this exercise, you will complete the following tasks
 
 - Task 1: Create a new Azure AD tenant.
-- Task 2: Activate Azure AD Premium v2 trial.
+- Task 2: Activate Azure AD Premium P2 trial.
 - Task 3: Create Azure AD users and groups.
-- Task 4: Assign Azure AD Premium v2 licenses to Azure AD users.
+- Task 4: Assign Azure AD Premium P2 licenses to Azure AD users.
 - Task 5: Configure Azure MFA settings.
 - Task 6: Validate MFA configuration
 
@@ -108,9 +110,9 @@ In this task, you will create a new Azure AD tenant.
 
 1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
 
-1. On the **Basics** tab of the **Create a directory** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
+1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
-1. On the **Configuration** tab of the **Create a directory** blade, specify the following settings:
+1. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
@@ -120,12 +122,12 @@ In this task, you will create a new Azure AD tenant.
 
     >**Note**: Record the initial domain name. You will need it later in this lab.
 
-1. Click **Review + crate** and then click **Create**.
+1. Click **Review + Create** and then click **Create**.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 
-#### Task 2: Activate Azure AD Premium v2 trial
+#### Task 2: Activate Azure AD Premium P2 trial
 
 In this task, you will sign up for the Azure AD Premium P2 free trial. 
 
@@ -199,7 +201,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
-#### Task 4: Assign Azure AD Premium v2 licenses to Azure AD users
+#### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
@@ -312,7 +314,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 > Result: You have created a new AD tenant, configured AD users, configured MFA, and tested the MFA experience for a user. 
 
 
-### Exercise 2: Implement Azure AD Conditional Access Policies 
+### Exercise 3: Implement Azure AD Conditional Access Policies 
 
 ### Estimated timing: 15 minutes
 
@@ -326,6 +328,8 @@ In this exercise, you will complete the following tasks
 In this task, you will review conditional access policy settings and create a policy that requires MFA when signing in to the Azure portal. 
 
 1. In the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
+
+1. Navigate to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **No**. Select **My Organization is using Conditonal Access** as the reason and and then click **Save**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
@@ -357,8 +361,6 @@ In this task, you will review conditional access policy settings and create a po
 
 1. On the **New** blade, click **Create**. 
 
-    >**Note**: If you get an error stating that "Security defaults must be disabled to enable Conditional access policy", then navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **No**, and then click **Save**.
-
     >**Note**: At this point, you have a conditional access policy that requires MFA to sign in to the Azure portal. 
 
 #### Task 2 - Test the conditional access policy.
@@ -371,21 +373,17 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 1. When prompted, in the **More information required** dialog box, click **Next**.
 
-    >**Note**: The browser seesion will be redirected to the **Additional security verification** page.
+    >**Note**: The browser seesion will be redirected to the **Keep your account secure** page.
+    
+1. On the **Keep your account secure** page, select the **I want to set up a different method** link, in the **Which method would you like to use?** drop-down list, select **Phone**, and select **Confirm**.
 
-1. In the **Step 1: How should we contact you?** section, note that you need to set up one of the following options:
+1. On the **Keep your account secure** page, select your country or region, type your mobile phone number in the **Enter phone number** area, ensure that the **Text me a code** option is selected, and click **Next**.
 
-   - **Authentication phone**
+1. On the **Keep your account secure** page, type the code you received in the text message on your mobile phone, and click **Next**.
 
-   - **Mobile app**
+1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. Ensure that the **Authentication phone** entry appears in the drop-down list and the **Send me a code by text message** option is selected. 
-
-1. In the **Step 1: How should we contact you?** section, in the drop-down list, select your country or region, provide your mobile phone number in the empty text box, and click **Next**.
-
-1. Provide your phone number, click **Next**, in the text box, type the code you received in the text message on your mobile phone, and click **Verify**.
-
-1. On the **Additional security verification** page, review instructions provided in **Step 3: Keep using your existing applications**, and then click **Done**.
+1. On the **Keep your account secure** page, click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
@@ -407,7 +405,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 >Result: You have configured and tested Azure AD conditional access.
 
-### Exercise 3: Implement Azure AD Identity Protection
+### Exercise 4: Implement Azure AD Identity Protection
 
 ### Estimated timing: 30 minutes
 
@@ -441,15 +439,15 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click **Users**, on the **Include** tab of the **Users** blade, ensure that the **All users** option.
+   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, click **Select, and then click **Done**. 
+   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
 
-   - Click **Conditions**, on the **Conditions** blade, click **User risk**, on the **User risk** blade, select **Low and above**, click **Select, and then click **Done**. 
+   - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
 
-   - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Select**.
+   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
 
-   - Set **Enforce Policy** to **On** and click **Save**.
+   - Set **Enforce policy** to **On** and click **Save**.
 
 #### Task 3: Configure sign-in risk policy
 
@@ -459,17 +457,17 @@ In this task, you will configure a sign-in risk policy.
 
 1. Configure the **Sign-in risk remediation policy** with the following settings: 
 
-   - Click **Users**, on the **Include** tab of the **Users** blade, ensure that the **All users** option.
+   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Conditions**, on the **Conditions** blade, click **Sign-in risk**, on the **User risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
 
-   - Click **Access**, on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Select**.
+   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click **Save**.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
-> Before you start this task, ensure that the template deployment you started in Exercise 0 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
+> Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
@@ -542,7 +540,7 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
 **Clean up resources**
 
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
+> We need to remove identity protection resources that you no longer use. 
 
 Use the following steps to disable the identity protection policies in the **AdatumLab500-04** Azure AD tenant.
 
