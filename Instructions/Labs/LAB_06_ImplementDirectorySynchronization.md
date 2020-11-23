@@ -94,7 +94,9 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-### Exercise 2: Create and configure an Azure Active Directory tenant
+### Exercise 2: Create and configure an Azure Active Directory tenant 
+
+### Estimated timing: ?
 
 In this exercise, you will complete the following tasks:
 
