@@ -173,7 +173,7 @@ In this task, you will activate a role that does not require approval.
 
     >**Note**: If you complete your administrator tasks early, you can deactivate a role manually.
 
-1.  In the list of Active Roles, in the row representing the Billing Administrator role, click the **Deactivate** link.
+1.  In the list of **Active Assignments**, in the row representing the Billing Administrator role, click the **Deactivate** link.
 
 1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm the your intent.
 
@@ -206,7 +206,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: The auto approval process should complete.
 
-1. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
+1. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
@@ -234,9 +234,9 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles \| Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
+1. On the **My roles \| Azure AD roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
 
-    >**Note**: You might have to refresh the page to view the updated list of active roles.
+    >**Note**: You might have to refresh the page to view the updated list of active assignments.
 
 1. Sign out and close the InPrivate browser window.
 
