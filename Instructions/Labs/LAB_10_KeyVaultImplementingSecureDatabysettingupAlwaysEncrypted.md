@@ -488,10 +488,15 @@ Then you will create a Console application using Visual Studio to load data into
 
 1. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
-1. In the **Package Manager Console** pane, run the following to install the required **NuGet** packages:
+1. In the **Package Manager Console** pane, run the following first required **NuGet** package:
 
     ```powershell
     Install-Package Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider
+    ```
+    
+   1. Then in the **Package Manager Console** pane, run the next required **NuGet** package: 
+   
+      ```powershell
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
 
