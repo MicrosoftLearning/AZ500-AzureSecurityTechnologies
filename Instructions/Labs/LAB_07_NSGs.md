@@ -186,7 +186,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add**.
+1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -196,7 +196,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2019 Datacenter**|
+   |Image|**Windows Server 2019 Datacenter Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -224,7 +224,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a management server.
 
-1. In the Azure portal, navigate back to the **Virtual machines** blade and click **+ Add**.
+1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Add**, and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -234,7 +234,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2019 Datacenter**|
+   |Image|**Windows Server 2019 Datacenter Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
