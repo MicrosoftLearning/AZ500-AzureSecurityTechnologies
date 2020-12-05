@@ -158,7 +158,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **Users \| All users** blade, click **+ New User**. 
 
-1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
+1. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
    |Setting|Value|
    |---|---|
