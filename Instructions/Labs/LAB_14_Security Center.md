@@ -58,9 +58,9 @@ In this task, you will on-board and configure Security Center.
 
 1. On the **Settings \| Auto Provisioning** blade, for the first item **Log Analytics agent for Azure VMs** click the **Edit Configuration** link in the **Configuration** column. 
 
-1. On the **Extension deployment configuration** blade, in the **Workspace configuration** section, select the **Use another workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
+1. On the **Extension deployment configuration** blade, in the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
 
-1. On the **Extension deployment configuration** blade, click **Apply**.
+1. On the **Extension deployment configuration** blade, click **Apply**, when prompted, select the **Existing and new VMs** option, and click **Apply** again.
 
 1. Back on the **Settings \| Auto provisioning** blade, in the vertical menu on the left side, click **Workflow automation**.
 
