@@ -297,7 +297,7 @@ In this exercise, you will complete the following tasks:
    |Setting|Value|
    |---|---|
    |Role|**Virtual Machine Contributor**|
-   |Assign access to|**Azure AD user, group, or service principal**|
+   |Assign access to|**User, group, or service principal**|
    |Select|**Service Desk**|
 
 1. Choose **Save** to create the role assignment.

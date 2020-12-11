@@ -94,7 +94,9 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-### Exercise 2: Create and configure an Azure Active Directory tenant
+### Exercise 2: Create and configure an Azure Active Directory tenant 
+
+### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -156,7 +158,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **Users \| All users** blade, click **+ New User**. 
 
-1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
+1. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
    |Setting|Value|
    |---|---|
@@ -185,6 +187,8 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 
 ### Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
+
+### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 

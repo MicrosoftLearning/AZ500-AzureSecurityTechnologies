@@ -52,7 +52,7 @@ In this task, you will on-board Azure Sentinel and connect the Log Analytics wor
 
 1. On the **Azure Sentinel** blade, click **Connect workspace**.
 
-1. On the **Choose a workspace to add to Azure Sentinel** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add Azure Sentinel**.
+1. On the **Choose a workspace to add to Azure Sentinel** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
     >**Note**: Azure Sentinel has very specific requirements for workspaces. For example, workspaces created by Azure Security Center can not be used. Read more at [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
 	
@@ -62,7 +62,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. In the Azure portal, on the **Azure Sentinel \| Overview** blade, in the **Configuration** section, click **Data connectors**. 
 
-1. On the **Azure Sentinel \| Data connectors** blade, review the list of available connectors, click the entry representing the **Azure Activity** connector, review its description, and then click **Open connector page**.
+1. On the **Azure Sentinel \| Data connectors** blade, review the list of available connectors, click the entry representing the **Azure Activity** connector (scroll to the right if needed), review its description, and then click **Open connector page**.
 
 1. On the **Azure Activity** blade, click the **Configure Azure Activity logs** link.
 
@@ -72,7 +72,7 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. On the **Azure Sentinel \| Data connectors** blade, click **Azure Activity**. 
 
-1. Verify that the **Azure Activity** pane displays the **Data received** graph. 
+1. Verify that the **Azure Activity** pane displays the **Data received** graph (you might have to refresh the browser page). 
 
     >**Note**: It may take over 5 minutes before the graph will reflect the any events included in the Azure Activity logs.
 
@@ -86,7 +86,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: Review the types of rules you can create. Each rule is associated with a specific Data Source.
 
-1. In the listing of rules, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule**.
+1. In the listing of rules, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule** (scroll to the right of the page if needed).
 
     >**Note**: This rule has the medium severity. 
 
@@ -128,7 +128,7 @@ In this task, you will create a playbook. A security playbook is a collection of
     |Playbook Name|**Change-Incident-Severity**|
     |User Name|your email address|
 
-1. Click the **I agree to the terms and conditions stated above** checkbox, and click **Purchase**.
+1. Click **Review + create** and then click **Create**.
 
     >**Note**: Wait for the deployment to complete.
 

@@ -128,8 +128,9 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
    |---|---|
    |Name|**Firewall-route**|
    |Resource group|**AZ500LAB08**|
+   |Region| **East US**|
 
-1. Click **Create** and wait for the provisioning to complete. 
+1. Click **Review + create**, then click **Create**, and wait for the provisioning to complete. 
 
 1. On the **Route tables** blade, click **Refresh**, and, in the list of route tables, click the **Firewall-route** entry.
 

@@ -151,11 +151,13 @@ In this task, you will run a log search on your data collection.
 
 1. On the Logs blade, click **Get started**.  
 
-1. On the **Example queries** pane, click **Virtual machine**
+1. On the **Example queries** pane, clear the **Log Analytics** filter, scroll down to the bottom of the list of resource types, and click **Virtual machine**
+    
+    >**Note**: If you dont see **Virtual machine**, click Resource Type filter and select **Virtual machines**
 
 1. Review the list of predefined queries, identify the one you want to test, and click the corresponding **Run** button.
 
-    >**Note**: You can start with the query **Virtual machine available memory**.
+    >**Note**: You can start with the query **Virtual machine available memory**. If you don't get any results check the scope is set to virtual machine
 
 1. The query will automatically open in a new query tab. 
 
