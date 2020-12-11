@@ -126,7 +126,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
     >**Note**: The green check mark in the **Initial domain name** text box will indicate whether the domain name you typed in is valid and unique. (Record your initial domain name for later use).
 
-1. Click **Review + crate** and then click **Create**.
+1. Click **Review + create** and then click **Create**.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
@@ -140,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
 
-1. On the **AdatumSync** blade, in the in the **Manage** section, click **Custom domain names**.
+1. On the **AdatumSync** blade, in the **Manage** section, click **Custom domain names**.
 
 1. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
@@ -374,7 +374,7 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: Next, remove the Azure resources
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **adVM** Azure VM.
 
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 
