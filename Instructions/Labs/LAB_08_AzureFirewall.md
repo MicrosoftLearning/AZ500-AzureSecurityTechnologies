@@ -229,7 +229,7 @@ In this task, you will create a network rule that allows outbound access to two 
 
 #### Task 6: Configure the virtual machine DNS servers
 
-In this task, you will configure the primary and secondary DNS addresses for the virtual machine. This not a firewall requirement. 
+In this task, you will configure the primary and secondary DNS addresses for the virtual machine. This is not a firewall requirement. 
 
 1. In the Azure portal, navigate back to the **AZ500LAB08** resource group.
 
