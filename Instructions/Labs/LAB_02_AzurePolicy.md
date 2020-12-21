@@ -92,7 +92,6 @@ In this task, you will create an Allowed Locations policy assignment and specify
    |Setting|Value|
    |---|---|
    |Assignment name|**Allow UK South for AZ500LAB02**|
-   |Resource group|**AZ500LAB02**|
    |Description|**Allow resources to be created in UK South Only for AZ500LAB02**|
    |Policy enforcement|**Enabled**|
 
