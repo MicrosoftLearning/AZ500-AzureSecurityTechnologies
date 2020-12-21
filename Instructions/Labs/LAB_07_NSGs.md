@@ -209,7 +209,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
+1. Under **NIC network security group** select **None**.
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
@@ -247,7 +247,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
+1. Under **NIC network security group** select **None**.
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
