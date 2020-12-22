@@ -80,11 +80,11 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |---|---|
    |Subscription|the name of you Azure subscription|
    |Resource group|click **Create new** and type the name **AZ500LAB06**|
-   |Dns Prefix|the DNS hostname you identified in the previous task|
-   |Location|the Azure region you identified in the previous task|
+   |Region|the Azure region you identified in the previous task|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    |Domain Name|**adatum.com**|
+   |Dns Prefix|the DNS hostname you identified in the previous task|
    |VM Size|**Standard_D2s_v3**|
 
 1. On the **Create an Azure VM with a new AD Forest** blade, click **Review + create**, and then click **Create**.
@@ -210,7 +210,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 1. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
