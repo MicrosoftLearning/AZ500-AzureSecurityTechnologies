@@ -260,7 +260,7 @@ In this task, you will create a virtual machine to use as a management server.
 
     >**Note**: Wait for both virtual machines to be provisioned before continuing. 
 
-#### Task 3: Associate each virtual machines network interface to it's application security group.
+#### Task 3: Associate each virtual machines network interface to its application security group.
 
 In this task, you will associate each virtual machines network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
 
