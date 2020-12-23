@@ -80,7 +80,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. Set the **AZURE DEFENDER FOR SQL** switch to **ON**.
 
-      >**Note**: Wait until it is enabled.
+      >**Note**: Wait until enabling Azure Defender for SQL takes effect.
 
 1. In the **Azure Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
     
@@ -88,7 +88,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. Back to **Security Center** blade, review **Recommandations** and **Security incidents and alerts**.
 
-      >**Note**: It may take 10-15 minutes to see recommendations, you can follow with next tasks and back to this menu after.
+      >**Note**: It may take 10-15 minutes for recommendations to appear on the **Security Center** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
 
 
 #### Task 3: Configure Data Classification
