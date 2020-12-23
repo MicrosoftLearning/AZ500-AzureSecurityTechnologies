@@ -80,17 +80,17 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. Set the **AZURE DEFENDER FOR SQL** switch to **ON**.
 
-    >**Note**: Review the information about pricing and the trial period.
+      >**Note**: Wait until it is enabled.
 
-1. Click **Advanced Threat Protection Types**. 
+1. In the **Azure Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+    
+1. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
-1. On the **Advanced Threat Protection Types** blade, review the listing of threat types, click **OK** and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
 
-1. In the **VULNERABILITY ASSESSMENT SETTINGS** section, click **Storage account**.
+1. Back to **Security Center** blade, review **Recommandations** and **Security incidents and alerts**.
 
-1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, and back on the **ADVANCED DATA SECURITY** pane, click **Save**.
+      >**Note**: It may take 10-15 minutes to see recommendations, you can follow with next tasks and back to this menu after.
 
-    >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
 
 #### Task 3: Configure Data Classification
 
