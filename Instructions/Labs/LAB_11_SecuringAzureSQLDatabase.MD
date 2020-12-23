@@ -86,7 +86,6 @@ In this task, you will use a template to deploy the lab infrastructure.
     
 1. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
-
 1. Back to **Security Center** blade, review **Recommandations** and **Security incidents and alerts**.
 
       >**Note**: It may take 10-15 minutes to see recommendations, you can follow with next tasks and back to this menu after.
