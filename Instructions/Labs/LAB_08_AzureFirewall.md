@@ -128,8 +128,9 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
    |---|---|
    |Name|**Firewall-route**|
    |Resource group|**AZ500LAB08**|
+   |Region| **East US**|
 
-1. Click **Create** and wait for the provisioning to complete. 
+1. Click **Review + create**, then click **Create**, and wait for the provisioning to complete. 
 
 1. On the **Route tables** blade, click **Refresh**, and, in the list of route tables, click the **Firewall-route** entry.
 
@@ -228,7 +229,7 @@ In this task, you will create a network rule that allows outbound access to two 
 
 #### Task 6: Configure the virtual machine DNS servers
 
-In this task, you will configure the primary and secondary DNS addresses for the virtual machine. This not a firewall requirement. 
+In this task, you will configure the primary and secondary DNS addresses for the virtual machine. This is not a firewall requirement. 
 
 1. In the Azure portal, navigate back to the **AZ500LAB08** resource group.
 

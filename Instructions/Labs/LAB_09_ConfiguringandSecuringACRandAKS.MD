@@ -136,14 +136,15 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Resource group|**AZ500LAB09**|
     |Kubernetes cluster name|**MyKubernetesCluster**|
     |Region|**(US) East US**|
+    |Availability zones |**None**|
     |Node count|**1**|
 
 1. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
-    |Virtual nodes|**Disabled**|
-    |VM scale sets|**Disabled**|
+    |Virtual nodes|cleared checkbox|
+    |VM scale sets|cleared checkbox|
 	
 1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
@@ -155,7 +156,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     |Setting|Value|
     |----|----|
-    |Network configuration|**Advanced**|
+    |Network configuration|**Azure CNI**|
     |DNS name prefix|any valid, globally unique DNS host name|
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
@@ -214,7 +215,7 @@ In this task, you will grant the AKS cluster permission to access the ACR.
 
 In this task,  you will download the Manifest files, edit the YAML file, and apply your changes to the cluster. 
 
-1. In the Bash session within the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** and **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**. 
+1. In the Bash session within the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** click **Open**. Next, select **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**.
 
 1. In the Bash session within the Cloud Shell pane, run the following to identify the name of the Azure Container Registry instance:
 

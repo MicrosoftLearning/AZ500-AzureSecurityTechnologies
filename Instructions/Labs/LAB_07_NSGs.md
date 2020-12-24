@@ -186,7 +186,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add**.
+1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -196,7 +196,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2019 Datacenter**|
+   |Image|**Windows Server 2019 Datacenter Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -207,15 +207,15 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
+1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1. On the **Create virtual network** blade, select the previously created network **myVirtualNetwork**. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
+1. Under **NIC network security group** select **None**.
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
    |Setting|Value|
    |---|---|
-   |Boot diagnostics|**On**|
+   |Boot diagnostics|**Enabled with managed storage account (recommended)**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
@@ -224,7 +224,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a management server.
 
-1. In the Azure portal, navigate back to the **Virtual machines** blade and click **+ Add**.
+1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Add**, and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -234,7 +234,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2019 Datacenter**|
+   |Image|**Windows Server 2019 Datacenter Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -245,22 +245,22 @@ In this task, you will create a virtual machine to use as a management server.
 
 1. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-1. On the **Networking** tab of the **Create a virtual machine** blade, click **Create new** below the **Virtual network** textbox.
+1. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-1.  On the **Create virtual network** blade, select the previously created network **myVirtualNetwork**. Under **NIC network security group** select **Advanced** and under **Configure network security group** select **myNsg** (leave others with their default values).
+1. Under **NIC network security group** select **None**.
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
 
    |Setting|Value|
    |---|---|
-   |Boot diagnostics|**On**|
+   |Boot diagnostics|**Enabled with managed storage account (recommended)**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: Wait for both virtual machines to be provisioned before continuing. 
 
-#### Task 3: Associate each virtual machines network interface to it's application security group.
+#### Task 3: Associate each virtual machines network interface to its application security group.
 
 In this task, you will associate each virtual machines network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
 

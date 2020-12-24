@@ -80,11 +80,11 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |---|---|
    |Subscription|the name of you Azure subscription|
    |Resource group|click **Create new** and type the name **AZ500LAB06**|
-   |Dns Prefix|the DNS hostname you identified in the previous task|
-   |Location|the Azure region you identified in the previous task|
+   |Region|the Azure region you identified in the previous task|
    |Admin Username|**Student**|
    |Admin Password|**Pa55w.rd1234**|
    |Domain Name|**adatum.com**|
+   |Dns Prefix|the DNS hostname you identified in the previous task|
    |VM Size|**Standard_D2s_v3**|
 
 1. On the **Create an Azure VM with a new AD Forest** blade, click **Review + create**, and then click **Create**.
@@ -94,7 +94,9 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 > Result: After you completed this exercise, you have initiated deployment of an Azure VM that will host an Active Directory domain controller by using an Azure Resource Manager template
 
 
-### Exercise 2: Create and configure an Azure Active Directory tenant
+### Exercise 2: Create and configure an Azure Active Directory tenant 
+
+### Estimated timing: 20 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -124,7 +126,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
     >**Note**: The green check mark in the **Initial domain name** text box will indicate whether the domain name you typed in is valid and unique. (Record your initial domain name for later use).
 
-1. Click **Review + crate** and then click **Create**.
+1. Click **Review + create** and then click **Create**.
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
@@ -138,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
 
-1. On the **AdatumSync** blade, in the in the **Manage** section, click **Custom domain names**.
+1. On the **AdatumSync** blade, in the **Manage** section, click **Custom domain names**.
 
 1. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
@@ -156,7 +158,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **Users \| All users** blade, click **+ New User**. 
 
-1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
+1. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
    |Setting|Value|
    |---|---|
@@ -186,6 +188,8 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 ### Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
 
+### Estimated timing: 20 minutes
+
 In this exercise, you will complete the following tasks:
 
 - Task 1: Prepare AD DS for directory synchronization
@@ -206,7 +210,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 1. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-1. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+1. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
@@ -370,7 +374,7 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: Next, remove the Azure resources
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **adVM** Azure VM.
 
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 

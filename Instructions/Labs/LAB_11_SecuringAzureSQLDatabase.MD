@@ -76,21 +76,20 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-1. On the server blade, in the **Security** section, click **Advanced data security**.
+1. On the server blade, in the **Security** section, click **Security Center**.
 
-1. Set the **ADVANCED DATA SECURITY** switch to **ON**.
+1. Set the **AZURE DEFENDER FOR SQL** switch to **ON**.
 
-    >**Note**: Review the information about pricing and the trial period.
+      >**Note**: Wait until enabling Azure Defender for SQL takes effect.
 
-1. Click **Advanced Threat Protection Types**. 
+1. In the **Azure Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+    
+1. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
-1. On the **Advanced Threat Protection Types** blade, review the listing of threat types, click **OK** and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
+1. Back to **Security Center** blade, review **Recommandations** and **Security incidents and alerts**.
 
-1. In the **VULNERABILITY ASSESSMENT SETTINGS** section, click **Storage account**.
+      >**Note**: It may take 10-15 minutes for recommendations to appear on the **Security Center** blade. Rather than waiting, proceed to the next task but consider returning to this blade once you complete all the remaining tasks.
 
-1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, and back on the **ADVANCED DATA SECURITY** pane, click **Save**.
-
-    >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the **ADVANCED DATA SECURITY**  pane, click **Save**.
 
 #### Task 3: Configure Data Classification
 
@@ -100,9 +99,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
 1. In the list of databases, select the **AZ500LabDb** entry. 
 
-1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Advanced data security**.
-
-1. On the Advanced data security blade, click the **Data Discovery & Classification** tile.
+1. On the **AZ500LabDb** SQL database blade, in the **Security** section, click **Data Discovery & Classification**.
 
 1. On the **Data Discovery & Classification** blade, click the **Classification** tab.
 
@@ -122,7 +119,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: This will complete the classification and persistently label the database columns with the new classification metadata. 
 
-1. Back on the Advanced data security blade, note that the **Data Discovery & Classification** tile has been updated to account for the latest classification information. 
+1. Back on the **Data Discovery & Classification** blade, note that it has been updated to account for the latest classification information. 
 
 #### Task 4 : Configure auditing 
 

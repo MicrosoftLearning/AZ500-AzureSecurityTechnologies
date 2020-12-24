@@ -122,9 +122,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Click **Next**. 
 
-1. Ensure the **Assignment type** is set to **Eligible** and the **Permanently eligible** check box is selected.
-
-1. Click **Assign**.
+1. Review the **Assignment type** settings and click **Assign**.
 
     >**Note**: User aaduser2 is now permanently assigned the Security Administrator role.
 	
@@ -173,7 +171,7 @@ In this task, you will activate a role that does not require approval.
 
     >**Note**: If you complete your administrator tasks early, you can deactivate a role manually.
 
-1.  In the list of Active Roles, in the row representing the Billing Administrator role, click the **Deactivate** link.
+1.  In the list of **Active Assignments**, in the row representing the Billing Administrator role, click the **Deactivate** link.
 
 1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm the your intent.
 
@@ -206,7 +204,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: The auto approval process should complete.
 
-1. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of active roles includes **Security Administrator** but not the **Global Reader** role.
+1. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
@@ -220,9 +218,9 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, note the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+1. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-1. Click the entry representing the request, in the **Justification** text box, type a text explaining the reason for activation, note the start and end times, and click **Approve**. 
+1. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
 
     >**Note**: You also have the option of denying requests.
 
@@ -234,9 +232,11 @@ In this task, you will activate a role that requires approval.
 
 1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-1. On the **My roles \| Azure AD roles** blade, click the **Active roles** tab and verify that the Global Reader role is now active.
+1. On the **My roles \| Azure AD roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
 
-    >**Note**: You might have to refresh the page to view the updated list of active roles.
+    >**Note**: You might have to refresh the page to view the updated list of active assignments.
+
+1. Sign out and close the InPrivate browser window.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
@@ -276,11 +276,12 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Frequency|**One time**|
    |End Date|end of the current month|
    |Review role membership|**Global Reader**|
-   |Reviewers|your account|
+   |Reviewers|**Selected users**|
+   |Select reviewers|your account|
 
 1. On the **Create an access review** blade, click **Start**:
  
-    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 | Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
+    >**Note**: It will take about a minute for the review to deploy and appear on the **AdatumLab500-04 \| Access reviews** blade. You might have to refresh the web page. The review status will be **Active**. 
 
 1. On the **AdatumLab500-04 \| Access reviews** blade, under the **Global Admin Review** header, click the **Global Reader** entry. 
 
@@ -348,7 +349,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses, click **Remove license**, and, when prompted to confirm, click **OK**.
 
-1. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, click **OK**.
+1. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 
 1. Repeat the same sequence of steps to delete the remaining user accounts you created.
 

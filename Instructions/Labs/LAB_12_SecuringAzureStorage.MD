@@ -125,9 +125,9 @@ In this task, you will create a network security group with two outbound securit
     |Setting|Value|
     |---|---|
     |Source|**VirtualNetwork**|
-    |Source port ranges|*|
+    |Source port ranges|**\***|
     |Destination|in the drop-down list, select **Service Tag** and then click **Storage**|
-    |Destination port ranges|*|
+    |Destination port ranges|**\***|
     |Protocol|**Any**|
     |Action|**Allow**|
     |Priority|**1000**|
@@ -142,13 +142,15 @@ In this task, you will create a network security group with two outbound securit
     |Setting|Value|
     |---|---|
     |Source|**VirtualNetwork**|
-    |Source port ranges|*|
+    |Source port ranges|**\***|
     |Destination|in the drop-down list, select **Service Tag** and then click **Internet**|
-    |Destination port ranges|*|
+    |Destination port ranges|**\***|
     |Protocol|**Any**|
     |Action|**Deny**|
     |Priority|**1100**|
     |Name|**Deny-Internet-All**|
+
+1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule.
 
     >**Note**: This rule overrides a default rule in all network security groups that allows outbound internet communication. 
 
@@ -161,7 +163,7 @@ In this task, you will create a network security group with two outbound securit
     |Setting|Value|
     |---|---|
     |Source|**Any**|
-    |Source port ranges|*|
+    |Source port ranges|**\***|
     |Destination|**VirtualNetwork**|
     |Destination port ranges|**3389**|
     |Protocol|**TCP**|
@@ -231,7 +233,7 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
-1. Navigate back to the storage account blade, then in the **Settings** section, click **Firewalls and virtual networks**.
+1. Navigate back to the storage account blade, then in the **Settings** section, click **Networking**.
 
 1. Select the **Selected networks** option and click the **+ Add existing virtual network** link. 
 
@@ -257,7 +259,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add**.
+1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -267,7 +269,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter**|
+    |Image|**Windows Server 2019 Datacenter Gen 1**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -286,18 +288,13 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Public IP|**(new)myVmPrivate-ip**|
     |NIC network security group|**None**|
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
-
-    |Setting|Value|
-    |---|---|
-    |Boot diagnostics|**On**|
-    |Diagnostics storage account|the default value|
+1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
-1. Navigate back to the **Virtual machines** blade, and click **+ Add**.
+1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -307,7 +304,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter**|
+    |Image|**Windows Server 2019 Datacenter Gen 1**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -326,12 +323,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Public IP|**(new)myVmPublic-ip**|
     |NIC network security group|**None**|
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
-
-    |Setting|Value|
-    |---|---|
-    |Boot diagnostics|**On**|
-    |Diagnostics storage account|the default value|
+1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
 
