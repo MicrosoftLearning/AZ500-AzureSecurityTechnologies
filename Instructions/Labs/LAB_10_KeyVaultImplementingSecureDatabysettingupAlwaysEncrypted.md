@@ -37,16 +37,16 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Deploy and configure an Azure VM with Visual Studio 2019 and SQL Server Management Studio
+- Task 1: Deploy and configure an Azure VM with Visual Studio Code and SQL Server Management Studio
 - Task 2: Create and configure a key vault
 - Task 3: Add a key to the key vault
 - Task 4: Add a secret to the key vault
 
-#### Task 1: Deploy and configure an Azure VM with Visual Studio 2019 and SQL Server Management Studio
+#### Task 1: Deploy and configure an Azure VM with Visual Studio Code and SQL Server Management Studio
     
->**Note**: If you are using a lab provider that has both Visual Studio 2019 and SQL Server Management studio installed on your lab computer you can skip this step and go straight to Task 2.
+>**Note**: If you are using a lab provider that has both Visual Studio Code and SQL Server Management studio installed on your lab computer you can skip this step and go straight to Task 2.
 
-In this task, you will deploy an Azure VM, connect to it, and download and install Visual Studio 2019 and SQL Server Management Studio (SSMS).
+In this task, you will deploy an Azure VM, connect to it, and download and install Visual Studio Code and SQL Server Management Studio (SSMS).
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
@@ -112,13 +112,19 @@ In this task, you will deploy an Azure VM, connect to it, and download and insta
 
     >**Note**: Do not wait for the SQL Server Management Studio installation to complete but instead proceed to the next step. 
 
-1. Start **Internet Explorer**, and browse to the [**Visual Studio Downloads**](https://visualstudio.microsoft.com/downloads/) page.
+1. Start **Internet Explorer**, and browse to the [**Visual Studio Code Downloads**](https://code.visualstudio.com/Download/) page.
 
-1. Initiate download and installation of Visual Studio 2019 Community Edition. When prompted, in the **Visual Studio Installer** window, click **Continue**.
+1. Initiate download and installation of Visual Studio Code on Windows. When prompted, in the **Visual Studio Code Installer** window, Select **I accept the agreement**  and click **Next**.
 
-1. When prompted, in the **Workloads** window, in the **Desktop & Mobile** section, select the **.NET desktop development** checkbox, and click **Install**.
+1. Click **Next** to select default installation location.
 
-    >**Note**: Do not wait for the Visual Studio 2019 installation to complete but instead proceed to the next task. 
+1. Click **Next** to select default Start menu folder.
+
+1. Click **Next** again then click **Install**.
+
+1. Click **Finish** to launch **Visual Studio Code**.
+
+1. Download and Install **.Net core** by clicking [**here**](https://dotnet.microsoft.com/download/dotnet-core/thank-you/sdk-3.1.404-windows-x64-installer)
 
 > Result: You have deployed and initiated configuration of an Azure VM **az500-10-vm1** that you will use in the second exercise of this lab.
 
@@ -468,51 +474,53 @@ In this task, you will connect to the SQL Database by using SQL Server Managemen
 
 #### Task 5: Build a Console Application to work with Encrypted Columns
 
->**Note**: Before you proceed with this task, make sure that the installation of Visual Studio 2019 you started at the beginning of this lab is completed.
+>**Note**: Before you proceed with this task, make sure that the installation of Visual Studio Code and .Net Core you started at the beginning of this lab is completed.
 
-Then you will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
+Then you will create a Console application using Visual Studio Code to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
 
-1. Switch to the window displaying Visual Studio 2019 welcome message, click the **Not now, maybe later** link and then click **Start Visual Studio**.
+1. Click Start and open Windows PowerShell.
 
-1. On the **Get started** page, click **Create a new project**. 
+1. Change folder to **\\Allfiles\\Labs\\10**.
 
-1. In the list of project templates, search for **Console App (.NET Framework)**, in the list of results, click **Console App (.NET Framework)** for **C#**, and click **Next**.
+1. Enter following command and then select Enter to create a new .net core console project:
 
-1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values):
+    ```
+    dotnet new console --name OpsEncrypt
+    ```
 
-    |Setting|Value|
-    |---|---|
-    |Project name|**OpsEncrypt**|
-    |Solution name|**OpsEncrypt**|
-    |Framework|**.NET Framework 4.7.2.**|
+1. Once the project is created, open Visual Studio Code
 
-1. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
+1. Click File --> Open Folder and brwose to **\\Allfiles\\Labs\\10** folder, select **OpsEncrypt** folder and click **Select Folder**.
 
-1. In the **Package Manager Console** pane, run the following first required **NuGet** package:
+1. In Visual Studio code, in the Explorer pane, right click and select **Open in Integrated Terminal**.
+
+1. In the TERMINAL window, enter following command to import required **NuGet** package:
 
     ```powershell
-    Install-Package Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider
+    dotnet add package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
     
-   1. Then in the **Package Manager Console** pane, run the next required **NuGet** package: 
-   
-      ```powershell
-    Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
-    ```
+   1. In the same TERMINAL window, enter following command to import required **NuGet** package: 
+   ```powershell
+   dotnet add package Microsoft.Data.SqlClient.AlwaysEncrypted.AzureKeyVaultProvider
+   ```
 
 1. Navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
-1. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
+1. Switch to the Visual Studio code, in the **Explorer** pane, double click **Program.cs** to oepn it and replace its content with the code you copied into Clipboard.
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab.
+1. In the Visual Studio code, in the **Program.cs** pane, in line 15, replace the `<connection string noted earlier>` placeholder with the Azure SQL database **ADO.NET** connection string you recorded earlier in the lab.
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
+1. In the Visual Studio code, in the **Program.cs** pane, in line 16, replace the `<client id noted earlier>` placeholder with the value of **Application (client) ID** of the registered app you recorded earlier in the lab. 
 
-1. In the Visual Studio window, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the the value of **Key1** of the registered app you recorded earlier in the lab. 
+1. In the Visual Studio code, in the **Program.cs** pane, in line 17, replace the `<key value noted earlier>` placeholder with the the value of **Key1** of the registered app you recorded earlier in the lab. 
 
-1. In the Visual Studio console, click the **Start** button to initiate the build of the console application and start it.
+1. In the TERMINAL window, enter following code to start the application.
+    ```powershell
+    dotnet run
+    ```
 
-1. The application will start a Command Prompt window. When prompted for password, type **Pa55w.rd1234** to connect to Azure SQL Database. 
+1. The application will start. When prompted for password, type **Pa55w.rd1234** to connect to Azure SQL Database. 
 
 1. Leave the console app running and switch to the **SQL Management Studio** console. 
 
@@ -524,7 +532,7 @@ Then you will create a Console application using Visual Studio to load data into
     SELECT FirstName, LastName, SSN, BirthDate FROM Patients;
     ```
 
-1. Switch back to the console application where you are prompted to enter a valid SSN. This will query the encrypted column for the data. At the Command Prompt, type the following and press the Enter key:
+1. Switch back to Visual Studio Code where you are prompted to enter a valid SSN. This will query the encrypted column for the data. At the Command Prompt, type the following and press the Enter key:
 
     ```cmd
     999-99-0003
@@ -532,7 +540,7 @@ Then you will create a Console application using Visual Studio to load data into
 
     >**Note**: Verify that the data returned by the query is not encrypted.
 
-1. To terminate the console app, press the Enter key
+1. To terminate the console app, press Ctrl + C
 
 **Clean up resources**
 
