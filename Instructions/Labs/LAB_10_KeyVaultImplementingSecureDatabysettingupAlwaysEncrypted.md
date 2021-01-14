@@ -326,8 +326,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 1. On the **Firewall settings** blade, scroll down to **Rule Name**, and specify the following settings: 
 
-    |Rule Name|Start IP|End IP|
-    |---|---|---|
+    |Setting|Value|
+    |---|---|
     |Rule Name|**Allow Mgmt VM**|
     |Start IP|the Public IP Address of the az500-10-vm1|
     |End IP|the Public IP Address of the az500-10-vm1|
