@@ -329,8 +329,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Rule Name|Start IP|End IP|
     |---|---|---|
     |Rule Name|**Allow Mgmt VM**|
-    |Start IP|**<the Public IP Address of the az500-10-vm1>**|
-    |End IP|**<the Public IP Address of the az500-10-vm1>**|
+    |Start IP|the Public IP Address of the az500-10-vm1|
+    |End IP|the Public IP Address of the az500-10-vm1|
 
 1. Click **Save** and **OK** to save the change and close the confirmation pane. 
 
