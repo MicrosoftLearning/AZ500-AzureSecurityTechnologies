@@ -356,8 +356,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Setting|Value|
     |---|---|
     |Server Type|**Database Engine**|
-    |Server Name|**<the server name you identified earlier in this task>**|
-    |Authentication: **SQL Server Authentication**
+    |Server Name|the server name you identified earlier in this task|
+    |Authentication|**SQL Server Authentication**|
     |Login|**Student**|
     |Password|**Pa55w.rd1234**|
 
