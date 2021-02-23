@@ -94,6 +94,7 @@ In this task you will deploy the Azure firewall into the virtual network.
    |Resource group|**AZ500LAB08**|
    |Name|**Test-FW01**|
    |Region|**(US) East US**|
+   |Firewall management|**Use Firewall rules (classic) to manage this firewall**|
    |Choose a virtual network|click the **Use existing** option and, in the drop-down list, select **Test-FW-VN**|
    |Public IP address|clck **Add new** and type the name **TEST-FW-PIP** and click **OK**|
 
