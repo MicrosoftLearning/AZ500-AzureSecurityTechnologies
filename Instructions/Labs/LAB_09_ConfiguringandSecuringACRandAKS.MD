@@ -307,6 +307,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
     >**Note**: To access the internal service endpoint, you will connect interactively to one of the pods running in the cluster. 
 
+    >**Note**: Alternatively you could use the CLUSTER-IP address.
 
 #### Task 8: Verify the you can access an internal AKS-hosted service
 
