@@ -213,7 +213,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
-1. On the **Licenses \| Overview** blae, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
+1. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
 1. On the **Assign licenses** blade, click **Users**.
 
