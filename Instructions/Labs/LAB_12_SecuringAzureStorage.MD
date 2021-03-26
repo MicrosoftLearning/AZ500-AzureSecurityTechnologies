@@ -47,7 +47,7 @@ In this task, you will create a virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ Add**.
+1. On the **Virtual Networks** blade, click **+ New**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -89,7 +89,7 @@ In this task, you will create another subnet and enable a service endpoint on th
     |Subnet address range|**10.0.1.0/24**|
     |Service endpoints|**Microsoft.Storage**|
 
-1. On the **Add subnet** blade, click **OK** to add the new subnet.
+1. On the **Add subnet** blade, click **Save** to add the new subnet.
 
     >**Note**: The virtual network now has two subnets: Public and Private. 
 	
@@ -188,7 +188,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-1. On the **Storage accounts** blade, click **+ Add**.
+1. On the **Storage accounts** blade, click **+ New**.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
