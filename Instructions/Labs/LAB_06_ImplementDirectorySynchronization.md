@@ -140,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
 
-1. On the **AdatumSync** blade, in the **Manage** section, click **Custom domain names**.
+1. On the **AdatumSync** \**| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
 
 1. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 
