@@ -46,7 +46,7 @@ In this task, you will on-board and configure Security Center.
      
 1. On the **Security Center \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Pricing & settings**.
 
-1. On the **Security Center \| Pricing & settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender Plans** blade, ensure that **Azure Defender on** is selected. 
+1. On the **Security Center \| Pricing & settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
@@ -56,11 +56,11 @@ In this task, you will on-board and configure Security Center.
 
 1. On the **Settings \| Auto Provisioning** blade, make sure that **Auto provisioning** is set to **On** for the first item **Log Analytics agent for Azure VMs**. 
 
-1. On the **Settings \| Auto Provisioning** blade, for the first item **Log Analytics agent for Azure VMs** click the **Edit Configuration** link in the **Configuration** column. 
+1. If needed, on the **Settings \| Auto Provisioning** blade, for the first item **Log Analytics agent for Azure VMs** click the **Edit Configuration** link in the **Configuration** column. 
 
 1. On the **Extension deployment configuration** blade, in the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
 
-1. On the **Extension deployment configuration** blade, click **Apply**, when prompted, select the **Existing and new VMs** option, and click **Apply** again.
+1. On the **Extension deployment configuration** blade, click **Apply**, when prompted, select the **Existing and new VMs** option, click **Apply** again, and back on the **Settings** blade, click **Save**.
 
 1. Back on the **Settings \| Auto provisioning** blade, in the vertical menu on the left side, click **Workflow automation**.
 
