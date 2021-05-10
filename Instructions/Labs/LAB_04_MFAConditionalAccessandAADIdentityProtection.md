@@ -213,7 +213,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
-1. On the **Licenses \| Overview** blae, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
+1. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
 1. On the **Assign licenses** blade, click **Users**.
 
@@ -295,19 +295,15 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
     >**Note**: The browser session will be redirected to the **Additional security verification** page.
 
-1. In the **Step 1: How should we contact you?** section, note that you need to set up one of the following options:
+1. On the **Keep your account secure** page, select the **I want to set up a different method** link, in the **Which method would you like to use?** drop-down list, select **Phone**, and select **Confirm**.
 
-   - **Authentication phone**
+1. On the **Keep your account secure** page, select your country or region, type your mobile phone number in the **Enter phone number** area, ensure that the **Text me a code** option is selected, and click **Next**.
+ 
+1. On the **Keep your account secure** page, type the code you received in the text message on your mobile phone, and click **Next**.
 
-   - **Mobile app**
+1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. Ensure that the **Authentication phone** entry appears in the drop-down list and the **Send me a code by text message** option is selected. 
-
-1. In the **Step 1: How should we contact you?** section, in the drop-down list, select your country or region, provide your mobile phone number in the empty text box, and click **Next**.
-
-1. Provide your phone number, click **Next**, in the text box, type the code you received in the text message on your mobile phone, and click **Verify**.
-
-1. On the **Additional security verification** page, review instructions provided in **Step 3: Keep using your existing applications**, and then click **Done**.
+1. On the **Keep your account secure** page, click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 

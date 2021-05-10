@@ -66,7 +66,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
-1. Open another browser tab in the same browser window and navigate to the [https://github.com/Azure/azure-quickstart-templates/tree/master/active-directory-new-domain](https://github.com/Azure/azure-quickstart-templates/tree/master/active-directory-new-domain). 
+1. Open another browser tab in the same browser window and navigate to the [https://github.com/polichtm/azure-quickstart-templates/tree/master/active-directory-new-domain](https://github.com/polichtm/azure-quickstart-templates/tree/master/active-directory-new-domain). 
 
 1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
 
@@ -140,7 +140,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
 
-1. On the **AdatumSync** blade, in the **Manage** section, click **Custom domain names**.
+1. On the **AdatumSync** \**| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
 
 1. On the **AdatumSync \| Custom domain names** blade, click **+ Add custom domain**.
 

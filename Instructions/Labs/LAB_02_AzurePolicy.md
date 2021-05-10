@@ -113,7 +113,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ Add**.
+1. On the **Virtual Networks** blade, click **+ New**.
 
    >**Note**: First, you will try to create a virtual network in East US. Since this is not an allowed location, the request should be blocked. 
 
