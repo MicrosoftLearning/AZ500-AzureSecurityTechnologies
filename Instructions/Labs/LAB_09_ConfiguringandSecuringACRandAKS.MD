@@ -143,14 +143,10 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     |Setting|Value|
     |----|----|
-    |Virtual nodes|cleared checkbox|
+    |Enable virtual nodes|cleared checkbox|
     |VM scale sets|cleared checkbox|
 	
 1. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
-
-    >**Note**: You are creating a cluster infrastructure service principal which is used by the Kubernetes cluster to manage cloud resources attached to the cluster. For more information, visit the [Service principals with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/kubernetes-service-principal) page.
-
-    >**Note**: You are enabling Role based access control for Kubernetes. For more information, visit the [Integrate Azure Active Directory with Azure Kubernetes Service](https://docs.microsoft.com/en-us/azure/aks/azure-ad-integration) page. 
 
 1. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
@@ -193,11 +189,11 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     kubectl get nodes
     ```
 
-    >**Note**: Verify that the **Status** is listed as **Ready**.
+    >**Note**: Verify that the **Status** of the cluster node is listed as **Ready**.
 
-#### Task 4: Grant the AKS cluster permissions to access the ACR
+#### Task 4: Grant the AKS cluster permissions to access the ACR and manage its virtual network
 
-In this task, you will grant the AKS cluster permission to access the ACR. 
+In this task, you will grant the AKS cluster permission to access the ACR and manage its virtual network. 
 
 1. In the Bash session within the Cloud Shell pane, run the following to configure the AKS cluster to use the Azure Container Registry instance you created earlier in this lab. 
 
@@ -210,6 +206,22 @@ In this task, you will grant the AKS cluster permission to access the ACR.
     >**Note**: This command grants the 'acrpull' role assignment to the ACR. 
 
     >**Note**: It may take a few minutes for this command to complete. 
+
+1. In the Bash session within the Cloud Shell pane, run the following to grant the AKS cluster the Contributor role to its virtual network. 
+
+    ```sh
+    RG_AKS=AZ500LAB09
+    
+    AKS_VNET_NAME=AZ500LAB09-vnet
+    
+    AKS_CLUSTER_NAME=MyKubernetesCluster
+    
+    AKS_VNET_ID=$(az network vnet show --name $AKS_VNET_NAME --resource-group $RG_AKS --query id -o tsv)
+    
+    AKS_MANAGED_ID=$(az aks show --name $AKS_CLUSTER_NAME --resource-group $RG_AKS --query identity.principalId -o tsv)
+    
+    az role assignment create --assignee $AKS_MANAGED_ID --role "Contributor" --scope $AKS_VNET_ID
+    ```
 
 #### Task 5: Deploy an external service to AKS
 
@@ -307,6 +319,7 @@ In this task, you will deploy the internal facing service on the AKS.
 
     >**Note**: To access the internal service endpoint, you will connect interactively to one of the pods running in the cluster. 
 
+    >**Note**: Alternatively you could use the CLUSTER-IP address.
 
 #### Task 8: Verify the you can access an internal AKS-hosted service
 

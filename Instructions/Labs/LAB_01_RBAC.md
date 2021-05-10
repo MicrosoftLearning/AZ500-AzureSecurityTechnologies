@@ -269,7 +269,7 @@ In this exercise, you will complete the following tasks:
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-1. On the **Resource groups** blade, click **+ Add** and specify the following settings:
+1. On the **Resource groups** blade, click **+ New** and specify the following settings:
 
    |Setting|Value|
    |---|---|

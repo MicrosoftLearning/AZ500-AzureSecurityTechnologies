@@ -29,7 +29,7 @@ In this lab, you will complete the following exercise:
 In this exercise, you will complete the following tasks:
 
 - Task 1: Configure Security Center
-- Task 2: Implement the Security Center recommendation to install guest configuration extension
+- Task 2: Review the Security Center recommendations
 - Task 3: Implement the Security Center recommendation to enable Just in time VM Access
 
 #### Task 1: Configure Security Center
@@ -46,7 +46,7 @@ In this task, you will on-board and configure Security Center.
      
 1. On the **Security Center \| Getting started** blade, in the vertical menu on the left side, in the **Management** section, click **Pricing & settings**.
 
-1. On the **Security Center \| Pricing & settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender Plans** blade, ensure that **Azure Defender on** is selected. 
+1. On the **Security Center \| Pricing & settings** blade, click the entry representing your subscription and, on the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected. 
 
     >**Note**: Review all the features that are available as part of Azure Defender tier and ensure that Azure Defender turned on for each resource type. 
 
@@ -56,11 +56,11 @@ In this task, you will on-board and configure Security Center.
 
 1. On the **Settings \| Auto Provisioning** blade, make sure that **Auto provisioning** is set to **On** for the first item **Log Analytics agent for Azure VMs**. 
 
-1. On the **Settings \| Auto Provisioning** blade, for the first item **Log Analytics agent for Azure VMs** click the **Edit Configuration** link in the **Configuration** column. 
+1. If needed, on the **Settings \| Auto Provisioning** blade, for the first item **Log Analytics agent for Azure VMs** click the **Edit Configuration** link in the **Configuration** column. 
 
 1. On the **Extension deployment configuration** blade, in the **Workspace configuration** section, select the **Connect Azure VMs to a different workspace** option and, in the drop-down list, select the Log Analytics workspace you created in the previous lab. 
 
-1. On the **Extension deployment configuration** blade, click **Apply**, when prompted, select the **Existing and new VMs** option, and click **Apply** again.
+1. On the **Extension deployment configuration** blade, click **Apply**, when prompted, select the **Existing and new VMs** option, click **Apply** again, and back on the **Settings** blade, click **Save**.
 
 1. Back on the **Settings \| Auto provisioning** blade, in the vertical menu on the left side, click **Workflow automation**.
 
@@ -74,9 +74,14 @@ In this task, you will on-board and configure Security Center.
 
     >**Note**: Security Center provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
-#### Task 2: Implement a Security Center recommendation
+1. Navigate back to the **Security Center \| Pricing & settings** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
 
-In this task, you will implement the Security Center recommendation to install endpoint protection on the virtual machine. 
+1.  On the **Settings \| Azure Defender plans** blade, ensure that **Azure Defender on** is selected and click **Save**.
+
+
+#### Task 2: Review the Security Center recommendation
+
+In this task, you will review the Security Center recommendations. 
 
 1. In the Azure portal, navigate back to the **Security Center \| Overview** blade. 
 
@@ -84,29 +89,22 @@ In this task, you will implement the Security Center recommendation to install e
 
     >**Note**: Record the current score if it is available.
 
-1. On the **Security Center \| Overview** blade, review the **Insights** tile.
+1. Navigate back to the **Security Center \| Overview** blade, select **Assessed resources**.
 
-1. On the **Insights** tile, click the **Install endpoint protection solution on virtual machines** entry.
-
-1. Select the **myVM** entry.
+1. On the **Inventory** blade, select the **myVM** entry.
 
     >**Note**: You might have to wait a few minutes and refresh the browser page for the entry to appear.
     
-1. Click **Install on 1 VM**. Select **Microsoft Antimalware** then **Create** > **OK**
+1. On the **Resource health** blade, on the **Recommendations** tab, review the list of recommendations for **myVM**.
 
-    >**Note**: Monitor the progress of installation by clicking on the **Notifications** icon in the toolbar and viewing the **Notifications** blade. 
-
-    >**Note**: Security Center will automatically rescan the virtual machine. That will be reflected by an increase in the secure score.
-
-    >**Note**: Do not wait for the intallation to complete but instead continue to the next task. 
 
 #### Task 3: Implement the Security Center recommendation to enable Just in time VM Access
 
 In this task, you will implement the Security Center recommendation to enable Just in time VM Access on the virtual machine. 
 
-1. In the Azure portal, navigate back to the **Security Center \| Overview** blade. 
+1. In the Azure portal, navigate back to the **Security Center \| Overview** blade and select the **Azure Defender** tile.
 
-1. On the **Cloud Security \| Azure Defender** blade, click the **Just-in-time- VM access** tab, select **Not Configured** and then click the **myVM** entry.
+1. On the **Azure Defender** blade, click the **Just-in-time- VM access** tab, select **Not Configured** and then click the **myVM** entry.
 
 1. Select **Enable JIT on 1 VM**.
 

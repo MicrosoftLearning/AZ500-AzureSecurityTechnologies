@@ -432,13 +432,18 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
-1. In the **Package Manager Console** pane, run the following to install the required **NuGet** packages:
+1. In the **Package Manager Console** pane, run the following to install the first required **NuGet** package:
 
     ```powershell
     Install-Package Microsoft.SqlServer.Management.AlwaysEncrypted.AzureKeyVaultProvider
-    Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
 
+1. In the **Package Manager Console** pane, run the following to install the second required **NuGet** package:
+
+    ```powershell
+    Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
+    ```
+    
 1. Navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 1. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
