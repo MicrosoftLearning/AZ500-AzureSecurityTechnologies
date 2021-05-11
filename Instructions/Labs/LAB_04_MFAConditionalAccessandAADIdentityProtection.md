@@ -245,15 +245,15 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **multi-factor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
 
-1. Switch to the **users** tab, click **aaduser1** entry, click the **Enable** link, and, when prompted, click **enable multi-factor auth**.
+1. Switch to the **users** tab,click **multi-factor authentication** in the top right, it will redirect to multifactor user page, Select **aaduser1** and click **Enable**.
 
-1. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
+1. In the multifactor user page, Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
-1. Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
+1. again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
 
     >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Azure AD integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
 
-1. With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
+1. Again With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
 
    - Require selected users to provide contact methods again.
 
@@ -261,7 +261,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
    - Restore multi-factor authentication on all remembered devices.
 
-1. Click **Cancel** and switch back to the browser tab displaying the **Multi-Factor Authentication \| Getting started** blade in the Azure portal.
+1. Click **Cancel**.
+
+1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multi-Factor Authentication** and press the Enter key. on the **Multi-Factor Authentication | Getting started** blade, 
 
 1. In the **Settings** section, click **Fraud alert**.
 
