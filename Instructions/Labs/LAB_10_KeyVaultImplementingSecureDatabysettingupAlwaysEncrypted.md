@@ -248,7 +248,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**in 1 year**|
+    |Expires|**in 12 months**|
 	
 1. Click **Add** to update the application credentials.
 
