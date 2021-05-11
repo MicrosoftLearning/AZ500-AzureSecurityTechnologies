@@ -437,13 +437,13 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Click **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
    - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
 
    - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
+   - Click **Block Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
 
    - Set **Enforce policy** to **On** and click **Save**.
 
@@ -457,9 +457,9 @@ In this task, you will configure a sign-in risk policy.
 
    - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
+   - Click **Block Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click **Save**.
 
