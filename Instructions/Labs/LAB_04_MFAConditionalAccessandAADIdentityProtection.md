@@ -150,7 +150,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
 
-1. On the **Users \| All users** blade, click **+ New User**. 
+1. On the **Users \| All users** blade, click **+ New User**.
 
 1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**:
 
