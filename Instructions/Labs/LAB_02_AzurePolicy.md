@@ -1,8 +1,4 @@
----
-lab:
-    title: '02 - Azure Policy'
-    module: 'Module 01 - Manage Identity and Access'
----
+
 
 # Lab 02: Azure Policy
 # Student lab manual
