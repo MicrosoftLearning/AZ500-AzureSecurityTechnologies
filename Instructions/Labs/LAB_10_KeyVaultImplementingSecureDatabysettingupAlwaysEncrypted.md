@@ -474,18 +474,3 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. To terminate the console app, press the Enter key
 
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure portal. 
-
-1. In the upper-left drop-down menu of the Cloud Shell pane, select **PowerShell** and, when prompted, click **Confirm**.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB10" -Force -AsJob
-    ```
-
-1.  Close the **Cloud Shell** pane. 
