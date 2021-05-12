@@ -1,8 +1,4 @@
----
-lab:
-    title: '04 - MFA, Conditional Access and AAD Identity Protection'
-    module: 'Module 01 - Manage Identity and Access'
----
+
 
 # Lab 04: MFA, Conditional Access and AAD Identity Protection
 # Student lab manual
