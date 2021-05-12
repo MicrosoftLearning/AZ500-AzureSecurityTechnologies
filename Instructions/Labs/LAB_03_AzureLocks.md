@@ -1,8 +1,4 @@
----
-lab:
-    title: '03 - Resource Manager Locks'
-    module: 'Module 01 - Manage Identity and Access'
----
+
 
 # Lab 03: Resource Manager Locks
 # Student lab manual
