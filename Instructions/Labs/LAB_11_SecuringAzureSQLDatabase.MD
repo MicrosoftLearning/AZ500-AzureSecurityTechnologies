@@ -1,8 +1,4 @@
----
-lab:
-    title: '11 - Securing Azure SQL Database'
-    module: 'Module 03 - Secure data and applications'
----
+
 
 # Lab 11: Securing Azure SQL Database
 # Student lab manual

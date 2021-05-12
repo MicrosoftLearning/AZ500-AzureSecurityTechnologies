@@ -1,8 +1,4 @@
----
-lab:
-    title: '10 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 03 - Secure Data and Applications'
----
+
 
 # Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
 # Student lab manual
@@ -29,7 +25,7 @@ In this lab, you will complete the following exercises:
 
 ## Lab files:
 
-- **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
+- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
 
 - **\\Allfiles\\Labs\\10\\program.cs**
 
@@ -53,7 +49,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+1. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
 
 1. On the **Edit template** blade, click **Save**.
 
@@ -248,7 +244,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**in 1 year**|
+    |Expires|**in 12 months**|
 	
 1. Click **Add** to update the application credentials.
 

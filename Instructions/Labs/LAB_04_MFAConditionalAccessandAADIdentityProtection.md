@@ -1,8 +1,4 @@
----
-lab:
-    title: '04 - MFA, Conditional Access and AAD Identity Protection'
-    module: 'Module 01 - Manage Identity and Access'
----
+
 
 # Lab 04: MFA, Conditional Access and AAD Identity Protection
 # Student lab manual
@@ -150,7 +146,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
 
-1. On the **Users \| All users** blade, click **+ New User**. 
+1. On the **Users \| All users** blade, click **+ New User**.
 
 1. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**:
 
@@ -245,15 +241,15 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 1. On the **multi-factor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
 
-1. Switch to the **users** tab, click **aaduser1** entry, click the **Enable** link, and, when prompted, click **enable multi-factor auth**.
+1. Switch to the **users** tab,click **multi-factor authentication** in the top right, it will redirect to multifactor user page, Select **aaduser1** and click **Enable**.
 
-1. Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
+1. In the multifactor user page, Notice the **Multi-Factor Auth status** column for **aaduser1** is now **Enabled**.
 
-1. Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
+1. again Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
 
     >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Azure AD integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
 
-1. With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
+1. Again With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
 
    - Require selected users to provide contact methods again.
 
@@ -261,7 +257,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
    - Restore multi-factor authentication on all remembered devices.
 
-1. Click **Cancel** and switch back to the browser tab displaying the **Multi-Factor Authentication \| Getting started** blade in the Azure portal.
+1. Click **Cancel**.
+
+1. In the Azure portal, in the **Search resources, services, and docs text box** at the top of the Azure portal page, type **Multi-Factor Authentication** and press the Enter key. on the **Multi-Factor Authentication | Getting started** blade, 
 
 1. In the **Settings** section, click **Fraud alert**.
 
@@ -435,13 +433,13 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Click **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
    - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
 
    - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
+   - Click **Block Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
 
    - Set **Enforce policy** to **On** and click **Save**.
 
@@ -455,9 +453,9 @@ In this task, you will configure a sign-in risk policy.
 
    - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
+   - Click **Block Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click **Save**.
 

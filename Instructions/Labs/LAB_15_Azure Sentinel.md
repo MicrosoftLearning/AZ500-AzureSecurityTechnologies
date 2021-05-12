@@ -1,8 +1,4 @@
----
-lab:
-    title: '15 - Azure Sentinel'
-    module: 'Module 04 - Manage Security Operations'
----
+
 
 # Lab 15: Azure Sentinel
 # Student lab manual

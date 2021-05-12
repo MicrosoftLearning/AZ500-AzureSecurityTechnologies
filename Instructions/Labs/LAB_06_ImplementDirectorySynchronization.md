@@ -1,8 +1,4 @@
----
-lab:
-    title: '06 - Implement Directory Synchronization'
-    module: 'Module 01 - Manage Identity and Access'
----
+
 
 # Lab 06: Implement Directory Synchronization
 # Student lab manual
@@ -74,6 +70,12 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 
 1. On the **Edit parameters** blade, click **Load file**, in the **Open** dialog box, click **\\\\AllFiles\Labs\\06\\active-directory-new-domain\\azuredeploy.parameters.json**, click **Open**, and then click **Save**. 
 
+1. On the **Create an Azure VM with a new AD Forest** blade, select **Edit template**.
+
+1.  On the **Edit template** blade, apply the following changes and select **Save**:
+
+    -   in the line **211**, replace `"VMSize": "Standard_D2_v2",` with `VMSize": "Standard_D2s_v3",`
+
 1. On the **Create an Azure VM with a new AD Forest** blade, specify the following settings (leave others with their existing values):
 
    |Setting|Value|
@@ -85,7 +87,6 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Admin Password|**Pa55w.rd1234**|
    |Domain Name|**adatum.com**|
    |Dns Prefix|the DNS hostname you identified in the previous task|
-   |VM Size|**Standard_D2s_v3**|
 
 1. On the **Create an Azure VM with a new AD Forest** blade, click **Review + create**, and then click **Create**.
 

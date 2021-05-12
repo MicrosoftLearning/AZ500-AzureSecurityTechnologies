@@ -1,8 +1,4 @@
----
-lab:
-    title: ' 12 - Service Endpoints and Securing Storage'
-    module: 'Module 03 - Secure data and applications'
----
+
 
 # Lab 12: Service Endpoints and Securing Storage
 # Student lab manual
@@ -199,7 +195,6 @@ In this task, you will create a storage account with a file share and obtain the
     |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
     |Location|**(US) EastUS**|
     |Performance|**Standard**|
-    |Account kind|**StorageV2 (general purpose v2)**|
     |Replication|**Locally redundant storage (LRS)**|
 
 1. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
@@ -212,7 +207,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. On the **AZ500LAB12** resource group blade, in the list of resources, click the entry representing the newly created storage account.
 
-1. On the storage account blade, in the **File service** section, **File shares** and then, click **+ File Share**.
+1. On the storage account blade, in the **Data Storage** section, **File shares** and then, click **+ File Share**.
 
 1. On the **New file share** blade, specify the following settings:
 
@@ -233,7 +228,7 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
-1. Navigate back to the storage account blade, then in the **Settings** section, click **Networking**.
+1. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
 
 1. Select the **Selected networks** option and click the **+ Add existing virtual network** link. 
 
