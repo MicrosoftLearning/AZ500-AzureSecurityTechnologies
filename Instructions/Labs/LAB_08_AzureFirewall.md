@@ -1,8 +1,4 @@
----
-lab:
-    title: '08 - Azure Firewall'
-    module: 'Module 02 - Implement Platform Protection'
----
+
 
 # Lab 08: Azure Firewall
 # Student lab manual
