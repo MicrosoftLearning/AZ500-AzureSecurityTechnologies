@@ -250,10 +250,11 @@
           "tags": {
             "displayName": "Database"
           },
+          "sku": {
+            "name": "Basic",
+            "tier": "Basic"
+          },
           "properties": {
-            "edition": "[variables('databaseEdition')]",
-            "collation": "[variables('databaseCollation')]",
-            "requestedServiceObjectiveName": "[variables('databaseServiceObjectiveName')]"
           },
           "dependsOn": [
             "[variables('sqlServerName')]"
