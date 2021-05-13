@@ -251,8 +251,8 @@
             "displayName": "Database"
           },
           "sku": {
-            "name": "Basic",
-            "tier": "Basic"
+            "name": "[variables('databaseEdition')]",
+            "tier": "[variables('databaseEdition')]"
           },
           "properties": {
           },
