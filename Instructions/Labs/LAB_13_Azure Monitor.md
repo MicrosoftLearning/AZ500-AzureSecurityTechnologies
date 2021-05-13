@@ -129,7 +129,7 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. Click **Windows Performance Counters**, click **+ Add performance counter**, review the listing of available performance counters, and add the following ones:
 
-    - Process(*)\%Processor Time
+    - Process(*)\ %Processor Time
     - Event Tracing for Windows\Total Memory Usage --- Non-Paged Pool
     - Event Tracing for Windows\Total Memory Usage --- Paged Pool
 
