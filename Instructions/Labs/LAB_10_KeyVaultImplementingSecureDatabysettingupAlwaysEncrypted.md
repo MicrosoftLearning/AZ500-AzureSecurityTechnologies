@@ -1,8 +1,4 @@
----
-lab:
-    title: '10 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 03 - Secure Data and Applications'
----
+
 
 # Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
 # Student lab manual
@@ -29,7 +25,7 @@ In this lab, you will complete the following exercises:
 
 ## Lab files:
 
-- **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
+- **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
 
 - **\\Allfiles\\Labs\\10\\program.cs**
 
@@ -53,7 +49,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
+1. On the **Edit template** blade, click **Load file**, locate the **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json** file and click **Open**.
 
 1. On the **Edit template** blade, click **Save**.
 
@@ -248,7 +244,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**in 1 year**|
+    |Expires|**in 12 months**|
 	
 1. Click **Add** to update the application credentials.
 
@@ -478,18 +474,3 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. To terminate the console app, press the Enter key
 
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure portal. 
-
-1. In the upper-left drop-down menu of the Cloud Shell pane, select **PowerShell** and, when prompted, click **Confirm**.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB10" -Force -AsJob
-    ```
-
-1.  Close the **Cloud Shell** pane. 

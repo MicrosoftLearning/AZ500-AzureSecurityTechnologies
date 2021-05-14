@@ -1,8 +1,4 @@
----
-lab:
-    title: '11 - Securing Azure SQL Database'
-    module: 'Module 03 - Secure data and applications'
----
+
 
 # Lab 11: Securing Azure SQL Database
 # Student lab manual
@@ -163,20 +159,4 @@ In this task, you will first configure server level auditing and then configure 
 
     >**Note**: Since this SQL server and database were created recently, it is unlikely that any events will be available at this point. 
 
-> Results: You have created a SQL server and database, configured data classification, and auditing. 
-
-
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
-
-1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB11" -Force -AsJob
-    ```
-1. Close the **Cloud Shell** pane. 
+> Results: You have created a SQL server and database, configured data classification, and auditing.  

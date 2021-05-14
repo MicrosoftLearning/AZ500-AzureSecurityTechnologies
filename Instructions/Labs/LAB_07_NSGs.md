@@ -1,8 +1,4 @@
----
-lab:
-    title: '07 - Network Security Groups and Application Security Groups'
-    module: 'Module 02 - Implement Platform Protection'
----
+
 
 # Lab 07: Network Security Groups and Application Security Groups
 # Student lab manual
@@ -316,19 +312,3 @@ In this task, you will test the network traffic filters. You should be able to R
     >**Note**: The browser page should display the default IIS welcome page because port 80 is allowed inbound from the internet based on the setting of the **myAsgWebServers** application security group. The network interface of the myVMWeb Azure VM is associated with that application security group. 
 
 > Result: You have validated that the NSG and ASG configuration is working and traffic is being correctly managed. 
-
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
-
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
-
-1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB07" -Force -AsJob
-    ```
-
-1.  Close the **Cloud Shell** pane. 

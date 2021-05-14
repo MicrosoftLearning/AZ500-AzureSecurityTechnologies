@@ -1,8 +1,4 @@
----
-lab:
-    title: '09 - Configuring and Securing ACR and AKS'
-    module: 'Module 02 - Implement Platform Protection'
----
+
 
 # Lab 09: Configuring and Securing ACR and AKS
 # Student lab manual
@@ -350,20 +346,3 @@ In this task, you will use one of the pods running on the AKS cluster to access 
 1. Close the Cloud Shell pane.
 
 > Result: You have configured and secured ACR and AKS.
-
-
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs.
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
-
-1. In the upper-left drop-down menu of the Cloud Shell pane, select **PowerShell** and, when prompted, click **Confirm**.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB09" -Force -AsJob
-    ```
-
-1.  Close the **Cloud Shell** pane. 

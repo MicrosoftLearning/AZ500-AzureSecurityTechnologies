@@ -1,8 +1,4 @@
----
-lab:
-    title: '13 - Azure Monitor'
-    module: 'Module 04 - Manage security operations'
----
+
 
 # Lab 13: Azure Monitor
 # Student lab manual
@@ -170,8 +166,4 @@ In this task, you will run a log search on your data collection.
     >**Note**: You have the option of displaying data in different formats. You also have the option of creating an alert rule based on the results of the query.
 
 > Results: You used a Log Analytics workspace to configure data sources and query logs. 
-
-**Clean up resources**
-
->**Note**: Do not remove the resources from this lab as they are needed for the Azure Security Center lab and the Azure Sentinel lab.
  

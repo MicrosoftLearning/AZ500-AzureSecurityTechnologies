@@ -1,8 +1,4 @@
----
-lab:
-    title: '15 - Azure Sentinel'
-    module: 'Module 04 - Manage Security Operations'
----
+
 
 # Lab 15: Azure Sentinel
 # Student lab manual
@@ -230,17 +226,3 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 > Results: You have created an Azure Sentinel workspace, connected it to Azure Activity logs, created a playbook and custom alerts that are triggered in response to the removal of Just in time VM access policies, and verified that the configuration is valid.
 
-**Clean up resources**
-
-> Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
-
-1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
-
-1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
-
-1. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource group you created in this lab:
-  
-    ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB131415" -Force -AsJob
-    ```
-1. Close the **Cloud Shell** pane.
