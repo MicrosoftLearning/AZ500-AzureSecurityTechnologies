@@ -1,5 +1,3 @@
-
-
 # Lab 04: MFA, Conditional Access and AAD Identity Protection
 # Student lab manual
 

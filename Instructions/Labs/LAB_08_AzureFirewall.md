@@ -1,5 +1,3 @@
-
-
 # Lab 08: Azure Firewall
 # Student lab manual
 
