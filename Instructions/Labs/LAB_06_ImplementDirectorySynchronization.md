@@ -202,6 +202,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
    > Before you start this task, ensure that the template deployment you started in the first exercise of this lab has completed.
 
+You cannot log into the Portal in this VM now because it is server 2016, need to update states to download edge or chrome...
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
