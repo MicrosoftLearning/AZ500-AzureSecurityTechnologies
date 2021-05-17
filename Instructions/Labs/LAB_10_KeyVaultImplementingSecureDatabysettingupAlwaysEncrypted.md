@@ -27,7 +27,7 @@ In this lab, you will complete the following exercises:
 
 - **C:\\AllFiles\\AZ500-AzureSecurityTechnologies-prod\\Allfiles\\Labs\\10\\az-500-10_azuredeploy.json**
 
-- **\\Allfiles\\Labs\\10\\program.cs**
+- **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\10\\program.cs**
 
 ### Total Lab Time estimate: 60 minutes
 
@@ -440,7 +440,7 @@ You will create a Console application using Visual Studio to load data into the 
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
     
-1. Navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
+1. Navigate to **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 1. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
 

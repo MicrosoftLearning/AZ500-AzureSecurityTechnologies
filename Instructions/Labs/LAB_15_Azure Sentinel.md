@@ -21,7 +21,7 @@ In this lab, you will complete the following exercise:
 
 ## Lab files:
 
-- **\\Allfiles\\Labs\\15\\changeincidentseverity.json**
+- **\\C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\15\\changeincidentseverity.json**
 
 ### Exercise 1: Implement Azure Sentinel
 
@@ -108,7 +108,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\15\\changeincidentseverity.json** file and click **Open**.
+1. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\15\\changeincidentseverity.json** file and click **Open**.
 
     >**Note**: You can find sample playbooks at [https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks](https://github.com/Azure/Azure-Sentinel/tree/master/Playbooks).
 
