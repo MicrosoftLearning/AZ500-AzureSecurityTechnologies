@@ -225,6 +225,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 1. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
+1. Start Internet Explorer, navigate to [https://www.microsoft.com/en-us/edge/business/download](https://www.microsoft.com/en-us/edge/business/download), download Microsoft Edge installation binaries, run the installation, and configure the web browser with the default settings.
+
 1. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
 1. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, click **New**, and, in the cascading menu, click **Organizational Unit**.
@@ -249,7 +251,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, start Internet Explorer, navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
@@ -305,7 +307,7 @@ In this task, you will install AD Connect on the virtual machine.
 
 In this task, you will verify that directory synchronization is working. 
 
-1. Within the Remote Desktop session to **adVM**, in the Internet Explorer window displaying the Azure portal, navigate to the **Users - All users** blade of the Adatum Lab Azure AD tenant.
+1. Within the Remote Desktop session to **adVM**, in the Microsoft Edge window displaying the Azure portal, navigate to the **Users - All users** blade of the Adatum Lab Azure AD tenant.
 
 1. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
 
@@ -331,7 +333,7 @@ In this task, you will verify that directory synchronization is working.
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-1. Switch to the Internet Explorer window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
+1. Switch to the Microsoft Edge window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
 
     >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
 
