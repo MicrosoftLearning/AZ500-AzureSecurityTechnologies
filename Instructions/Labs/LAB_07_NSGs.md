@@ -212,6 +212,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
+   |Enable OS guest diagnostics|**Enable the check box**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
@@ -250,6 +251,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
+   |Enable OS guest diagnostics|**Enable the check box**|
    |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.

@@ -21,7 +21,7 @@ In this lab, you will complete the following exercise:
 
 ## Lab files:
 
-- **\\Allfiles\\Labs\\11\\azuredeploy.json**
+- **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json**
 
 ### Exercise 1: Implement SQL Database security features
 
@@ -46,7 +46,7 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 1. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
 
-1. On the **Edit template** blade, click **Load file**, locate the **\\Allfiles\\Labs\\11\\azuredeploy.json** file and click **Open**.
+1. On the **Edit template** blade, click **Load file**, locate the **C:\AllFiles\AZ500-AzureSecurityTechnologies-prod\Allfiles\Labs\\11\\azuredeploy.json** file and click **Open**.
 
     >**Note**: Review the content of the template and note that it deploys an Azure SQL database.
 
@@ -135,7 +135,7 @@ In this task, you will first configure server level auditing and then configure 
 
 1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
 
-1. Back on the **Storage settings** blade, set **Retention (days)** to **5** and click **OK**. 
+1. Back on the **Storage settings** blade, Go to **Advanced properties** set **Retention (days)** to **5** and click **OK**. 
 
 1. Back on the Auditing blade, click **Save** to save the auditing settings. 
 
