@@ -192,7 +192,7 @@ In this task, you will create a storage account with a file share and obtain the
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB12**|
-    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
+    |Storage account name|storage[DeploymentID]|
     |Location|**(US) EastUS**|
     |Performance|**Standard**|
     |Replication|**Locally redundant storage (LRS)**|

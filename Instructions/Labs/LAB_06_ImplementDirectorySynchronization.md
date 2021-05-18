@@ -251,6 +251,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 In this task, you will install AD Connect on the virtual machine. 
 
 1. Within the Remote Desktop session to **adVM**, start Internet Explorer, navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+>Note:If Internet Explorer is not working, download and install the Microsoft Edge by using this link.[Microsoft Edge](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fgo.microsoft.com.mcas.ms%2Ffwlink%2F%3Flinkid%3D2069324%26Channel%3DStable%26language%3Den) 
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
