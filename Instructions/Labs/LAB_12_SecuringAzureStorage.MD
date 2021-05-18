@@ -240,7 +240,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Virtual networks|**myVirtualNetwork**|
     |Subnets|**Private**|
 
-1. On the **Add networks** blade, click **Enable** and then click **Add**. 
+1. On the **Add networks** blade, Click on **Add**. 
 
 1. Back on the storage account blade, click **Save**.
 
