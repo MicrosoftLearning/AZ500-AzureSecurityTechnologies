@@ -66,7 +66,7 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
-1. Open another browser tab in the same browser window and navigate to the [https://github.com/polichtm/azure-quickstart-templates/tree/master/active-directory-new-domain](https://github.com/polichtm/azure-quickstart-templates/tree/master/active-directory-new-domain). 
+1. Open another browser tab in the same browser window and navigate to the [https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain). 
 
 1. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
 
