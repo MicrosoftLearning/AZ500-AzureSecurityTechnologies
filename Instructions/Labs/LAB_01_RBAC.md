@@ -104,7 +104,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-   >**Note**: To paste copied text into the Cloud Shell, right-click within the pane window and select **Pane**. Alternatively, you can use the **Shift+Insert** key combination.
+   >**Note**: To paste copied text into the Cloud Shell, right-click within the pane window and select **Paste**. Alternatively, you can use the **Shift+Insert** key combination.
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to create a password profile object:
 
