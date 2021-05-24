@@ -197,8 +197,6 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the full user name and the password.
 
-1. On the **New user** blade, click **Create**.
-
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
 #### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
@@ -215,13 +213,11 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
-1. On the **Assign licenses** blade, click **Users**.
+1. On the **Assign licenses** blade, click **+ Add users and groups**.
 
 1. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, and click **OK**.
-
-1. Back on the **Assign licenses** blade, click **Assign**.
+1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + asssign**, click **Assign**.
 
 1. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
 
@@ -455,7 +451,7 @@ In this task, you will configure a sign-in risk policy.
 
    - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, click **Select, and then click **Done**. 
+   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
 
    - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
