@@ -110,6 +110,8 @@ In this task, you will create a new Azure AD tenant.
 
 1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
 
+    >**Note**: If you do not see "Create a tenant" than you're using the preview version. Click on **+Manage tenants** instead and then click on **+Create** or disable the preview view..
+
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
 1. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
