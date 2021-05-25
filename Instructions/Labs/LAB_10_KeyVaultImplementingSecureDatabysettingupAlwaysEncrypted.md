@@ -248,7 +248,7 @@ In this task, you will enable a client application to access the Azure SQL Datab
     |Setting|Value|
     |----|----|
     |Description|**Key1**|
-    |Expires|**in 1 year**|
+    |Expires|**12 months**|
 	
 1. Click **Add** to update the application credentials.
 
@@ -422,7 +422,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. In the list of project templates, search for **Console App (.NET Framework)**, in the list of results, click **Console App (.NET Framework)** for **C#**, and click **Next**.
 
-1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values):
+1. On the **Configure your new project** page, specify the following settings (leave other settings with their default values), then click **Create**:
 
     |Setting|Value|
     |---|---|
