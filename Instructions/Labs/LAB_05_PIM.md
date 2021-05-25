@@ -173,7 +173,7 @@ In this task, you will activate a role that does not require approval.
 
 1.  In the list of **Active Assignments**, in the row representing the Billing Administrator role, click the **Deactivate** link.
 
-1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm the your intent.
+1.  On the **Deactivate - Billing Administrator** blade, click **Deactivate** again to confirm.
 
 
 #### Task 2: Activate a role that requires approval. 
@@ -347,7 +347,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** Azure Active Directory tenant.
 
-1. Navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses, click **Remove license**, and, when prompted to confirm, click **OK**.
+1. Navigate to the **Azure Active Directory Premium P2 - Licensed users** blade, select the user accounts to which you assigned licenses, click **Remove license**, and, when prompted to confirm, select **Yes**.
 
 1. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 

@@ -99,7 +99,7 @@ In this task, you will create a network security group with two outbound securit
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
-1. On the **Network security groups** blade, click **+ Add**.
+1. On the **Network security groups** blade, click **+ New**.
 
 1. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
@@ -133,7 +133,7 @@ In this task, you will create a network security group with two outbound securit
     |Priority|**1000**|
     |Name|**Allow-Storage-All**|
 
-1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule. 
+1. On the **Add outbound security rule** blade, click **+ Add** to create the new outbound rule. 
 
 1. On the **myNsgPrivate** blade, in the **Settings** section, click **Outbound security rules**, and then click **+ Add**.
 
@@ -149,8 +149,6 @@ In this task, you will create a network security group with two outbound securit
     |Action|**Deny**|
     |Priority|**1100**|
     |Name|**Deny-Internet-All**|
-
-1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule.
 
     >**Note**: This rule overrides a default rule in all network security groups that allows outbound internet communication. 
 
@@ -212,7 +210,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. On the **AZ500LAB12** resource group blade, in the list of resources, click the entry representing the newly created storage account.
 
-1. On the storage account blade, in the **File service** section, **File shares** and then, click **+ File Share**.
+1. On the storage account **Overview** blade, click **File service** under the **Properties** tab, and then click **+ File Share**.
 
 1. On the **New file share** blade, specify the following settings:
 
@@ -269,7 +267,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 1**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -290,7 +288,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
-1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
+1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
@@ -304,7 +302,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 1**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -325,7 +323,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, accept the default settings and click **Review + create**.
 
-1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful andf click **Create**.
+1. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
