@@ -49,7 +49,7 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual networks** blade, click **+ Add**.
+1. On the **Virtual networks** blade, click **+ New**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -77,7 +77,7 @@ In this task, you will create an application security group.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Application security groups** and press the **Enter** key.
 
-1. On the **Application security groups** blade, click **+ Add**.
+1. On the **Application security groups** blade, click **+ New**.
 
 1. On the **Basics** tab of the **Create an application security group** blade, specify the following settings: 
 
@@ -196,7 +196,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2019 Datacenter Gen 1**|
+   |Image|**Windows Server 2019 Datacenter - Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
@@ -211,12 +211,11 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. Under **NIC network security group** select **None**.
 
-1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
+1. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
-   |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
@@ -234,7 +233,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2019 Datacenter Gen 1**|
+   |Image|**Windows Server 2019 Datacenter - Gen 1**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
