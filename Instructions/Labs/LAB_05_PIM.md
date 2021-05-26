@@ -124,7 +124,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 1. Review the **Assignment type** settings and click **Assign**.
 
-    >**Note**: User aaduser2 is now permanently assigned the Security Administrator role.
+    >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
 ### Exercise 2 - Activate PIM roles with and without approval
 
