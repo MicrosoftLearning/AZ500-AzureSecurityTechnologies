@@ -149,13 +149,11 @@ In this task, you will run a log search on your data collection.
 
 1. On the Log Analytics workspace blade, in the **General** section, click **Logs**.
 
-1. On the Logs blade, click **Get started**.  
+1. If needed, close the **Welcome to Log Analysis** window. 
 
-1. On the **Example queries** pane, clear the **Log Analytics** filter, scroll down to the bottom of the list of resource types, and click **Virtual machine**
+1. On the **Queries** pane, in the **All Queries** column, scroll down to the bottom of the list of resource types, and click **Virtual machines**
     
-    >**Note**: If you dont see **Virtual machine**, click Resource Type filter and select **Virtual machines**
-
-1. Review the list of predefined queries, identify the one you want to test, and click the corresponding **Run** button.
+1. Review the list of predefined queries, select **Memory and CPU usage**, and click the corresponding **Run** button.
 
     >**Note**: You can start with the query **Virtual machine available memory**. If you don't get any results check the scope is set to virtual machine
 
@@ -168,6 +166,19 @@ In this task, you will run a log search on your data collection.
     >**Note**: Since this virtual machine was just created, there may not be any data yet. 
 
     >**Note**: You have the option of displaying data in different formats. You also have the option of creating an alert rule based on the results of the query.
+
+    >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:
+
+    1. Navigate to the Azure VM blade.
+    1. On the Azure VM blade, in the **Operations** section, select **Run command**, on the **Run Command Script** blade, type the following script, and click **Run**:
+
+    ```cmd
+    cmd
+    :loop
+    dir c:\ /s > SWAP
+    goto loop
+    ```
+    1. Switch back ot the Log Analytics blade and re-run the query. You might need to wait a few minutes for data to be collected and re-run the query again.
 
 > Results: You used a Log Analytics workspace to configure data sources and query logs. 
 
