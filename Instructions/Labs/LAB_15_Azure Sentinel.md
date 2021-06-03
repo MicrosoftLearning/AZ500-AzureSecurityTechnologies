@@ -50,9 +50,9 @@ In this task, you will on-board Azure Sentinel and connect the Log Analytics wor
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Sentinel** and press the **Enter** key.
 
-1. On the **Azure Sentinel** blade, click **Connect workspace**.
+1. On the **Azure Sentinel** blade, click **+ New**.
 
-1. On the **Choose a workspace to add to Azure Sentinel** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
+1. On the **Add Azure Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
     >**Note**: Azure Sentinel has very specific requirements for workspaces. For example, workspaces created by Azure Security Center can not be used. Read more at [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
 	
@@ -148,7 +148,9 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. When prompted, sign in with the user account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-1. Repeat the previous three steps in for each of other **Connections**.
+1. Click the second **Connection** step and, in the list of connections, select the second entry, representing the connection you created in the previous step.
+
+1. Repeat the previous steps in for the remaining two **Connection** steps.
 
     >**Note**: Ensure there are no warnings displayed on any of the steps.
 
