@@ -104,7 +104,13 @@ In this task, you will implement the Security Center recommendation to enable Ju
 
 1. In the Azure portal, navigate back to the **Security Center \| Overview** blade and select the **Azure Defender** tile.
 
-1. On the **Azure Defender** blade, click the **Just-in-time- VM access** tab, select **Not Configured** and then click the **myVM** entry.
+1. On the **Azure Defender** blade, in the **Azure Defender coverage** section, select **Upgrade all**.
+
+1. On the **Getting started** blade, on the **Upgrade*** tab, select the Log Analytics workspace you created in the previous lab and then click **Upgrade*.
+
+1. On the **Azure Defender** blade, in the **Advanced protection** section, click the **Just-in-time- VM access** tile and, on the **Just-in-time VM access blade**, click **Try Just in time VM access**.
+
+1. select **Not Configured** and then click the **myVM** entry.
 
 1. Select **Enable JIT on 1 VM**.
 
