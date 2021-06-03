@@ -86,7 +86,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: Review the types of rules you can create. Each rule is associated with a specific Data Source.
 
-1. In the listing of rules, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule** (scroll to the right of the page if needed).
+1. In the listing of rule templates, type **Suspicious** into the search bar form and click the **Suspicious number of resource creation or deployment** entry associated with the **Azure Activity** data source. And then, in the pane displaying the rule template properties, click **Create rule** (scroll to the right of the page if needed).
 
     >**Note**: This rule has the medium severity. 
 
@@ -192,7 +192,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule** blade, accept the default settings and click **Next: Automated response >**. 
 
-1. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, select the **Change-Incident-Severity** checkbox and click **Next: Review >**. 
+1. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, in the **Alert automation** dropdown list, select the checkbox next to the **Change-Incident-Severity** entry and click **Next: Review >**. 
 
 1. On the **Review and create** tab of the **Analytic rule wizard - Create new rule** blade, click **Create**.
 
@@ -210,7 +210,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
-1. On the **Activity log** blade, note an **Delete JIT Network Access Policies** entry. 
+1. Navigate to the **Activity log** blade, note an **Delete JIT Network Access Policies** entry. 
 
     >**Note**: This may take a minute to appear. 
 
