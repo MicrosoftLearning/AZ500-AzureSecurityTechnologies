@@ -231,9 +231,9 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
-1. Navigate back to the storage account blade, then in the **Settings** section, click **Networking**.
+1. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
 
-1. Select the **Selected networks** option and click the **+ Add existing virtual network** link. 
+1. Under **Firewalls and virtual networks** blade, select the **Selected networks** option and click the **+ Add existing virtual network** link. 
 
 1. On the **Add networks** blade, specify the following settings:
 
