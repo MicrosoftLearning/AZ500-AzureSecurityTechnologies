@@ -299,7 +299,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. On the **Keep your account secure** page, click **Done**.
+1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
