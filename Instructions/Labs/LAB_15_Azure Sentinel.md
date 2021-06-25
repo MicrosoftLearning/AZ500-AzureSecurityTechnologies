@@ -177,8 +177,8 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     ```
     AzureActivity
-     | where ResourceProviderValue == "Microsoft.Security" 
-     | where OperationNameValue == "Microsoft.Security/locations/jitNetworkAccessPolicies/delete" 
+     | where ResourceProviderValue =~ "Microsoft.Security" 
+     | where OperationNameValue =~ "Microsoft.Security/locations/jitNetworkAccessPolicies/delete" 
     ```
 
     >**Note**: This rule identifies removal of Just in time VM access policies.
