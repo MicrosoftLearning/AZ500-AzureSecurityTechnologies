@@ -133,9 +133,11 @@ In this task, you will first configure server level auditing and then configure 
 
 1. Set the **Auditing** switch to **ON** to enable auditing. 
 
-1. Select the **Storage** checkbox and click **Configure**. 
+1. Select the **Storage** checkbox and entry boxes for **Subscription** and **Storage Account** will display.
 
-1. On the **Storage settings** blade, click **Storage account**.
+1. Choose your **Subscription** from the dropdown list.
+
+1. Click **Storage account** and choose **Create new**.
 
 1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
 
