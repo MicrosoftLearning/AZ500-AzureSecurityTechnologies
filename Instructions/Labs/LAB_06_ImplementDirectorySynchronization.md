@@ -42,6 +42,10 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
+    >**Note**: In the Azure portal, verify the Directory + subscription filter is set to the main Azure AD tenant associated with your Azure subscription.
+
+    >**Note**: If you don't see your main Azure AD tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
+
 1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
 1. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
@@ -110,7 +114,9 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**.
+
+1. On the **Switch tenant** blade, click **+ Create**,
 
 1. On the **Basics** tab of the **Create a directory** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -128,7 +134,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 1. Click **Review + create** and then click **Create**.
 
-    >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
+    >**Note**: Wait for the new tenant to be created. Use the **Help us prove you're not a robot** blade to monitor the deployment status. 
 
 #### Task 2: Add a custom DNS name to the new Azure AD tenant
 
@@ -139,6 +145,10 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumSync**.
 
     >**Note**: You may need to refresh the browser window if the **AdatumSync** entry does not appear in the **Directory + subscription** filter list.
+
+    >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumSync line and click the Switch button.
+
+1. In the Azure portal, in the Search resources, services, and docs text box at the top of the Azure portal page, type Azure Active Directory and press the Enter key.
 
 1. On the **AdatumSync \| Azure Active Directory** blade, in the **Manage** section, click **Custom domain names**.
 
@@ -203,6 +213,8 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    > Before you start this task, ensure that the template deployment you started in the first exercise of this lab has completed.
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
+
+    >**Note**: If you don't see your main tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
@@ -374,9 +386,11 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: The result should be `False`. If that is not the case, wait a minute and re-run the command.
 
-    >**Note**: Next, remove the Azure resources
+    >**Note**: Next, exit the remote desktop session to remove the Azure resources
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **adVM** Azure VM.
+
+    >**Note**: If you don't see your main Azure AD tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
 
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 
@@ -393,11 +407,17 @@ In this task, you will verify that directory synchronization is working.
 
 1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumSync** Azure Active Directory tenant.
 
+    >**Note**: If you don't see the **AdatumSync** tenant entry, click on the Switch Diretory link, select the **AdatumSync** line and click the Switch button.
+
 1. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **syncadmin** user account, on the **syncadmin - Profile** blade click **Delete**, and, when prompted to confirm, click **OK**.
 
 1. Repeat the same sequence of steps to delete the **aduser1** user account.
 
-1. Navigate to the **AdatumSync - Overview** blade of the Azure AD tenant, click **Delete tenant**, on the **Delete directory 'AdatumSync'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
+1. Navigate to the **AdatumSync - Overview** blade of the Azure AD tenant, click **Manage tenants**,
+
+1. On the **Switch tenant** blade, click the checkbox near **AdatumSync** and click the **Delete** Button.
+ 
+1.   on the **Delete directory 'AdatumSync'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
 
 1. Sign out from the Azure portal and sign in back. 
 
