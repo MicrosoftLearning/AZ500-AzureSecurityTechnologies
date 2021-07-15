@@ -124,7 +124,8 @@ In this task, you will create a new Azure AD tenant.
 
 1. Click **Review + Create** and then click **Create**.
 
-    >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
+    >**Note**: Wait for the new tenant to be created. Use the **Notification** icon.
+    >**Note**: If you see a **Help us prove you're not a robot** popup, type the asked characters and click **Submit**. The popup will inform you when the new tenant is ready.
 
 
 #### Task 2: Activate Azure AD Premium P2 trial
@@ -136,6 +137,9 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 1. In the **Directory + subscription** blade, click the newly created tenant, **AdatumLab500-04**.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
+    >**Note**: If you still don't see the **AdatumLab500-04** entry, click on the **Switch Diretory** link, select the **AdatumLab500-04** line and click the **Switch** button.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
 
@@ -335,19 +339,19 @@ In this task, you will review conditional access policy settings and create a po
 
    - In the **Name** text box, type **AZ500Policy1**
 	
-   - Click **Users and groups**, select the **Users and Groups** checkbox, on the **Select** blade, click **aaduser2**, and click **Select**.
+   - Click **0 Users and groups selected**, click **Select users and groups**, select the **Users and Groups** checkbox, on the **Select** blade, click **aaduser2**, and click **Select**.
 	
-   - Click **Cloud apps or actions**, click **Select apps**, on the **Select** blade, click **Microsoft Azure Management**, and click **Select**. 
+   - Click **No cloud apps, actions, or authentication contexts selected**, click **Select apps**, on the **Select** blade, click **Microsoft Azure Management**, and click **Select**. 
 
     >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
-   - Click **Conditions**, click **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
+   - Click **0 conditions selected**, click **not configured** under **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
-   - Click **Device platforms**, review the device platforms that can included and click **Done**.
+   - Click **Not configured** under **Device platforms**, review the device platforms that can included and click **Done**.
 	
-   - Click **Locations** and review the location options without making any changes.
+   - Click **Not configured** under **Locations** and review the location options without making any changes.
 	
-   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
+   - Click **0 controls selected** under **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
 	
    - Set the **Enable policy** to **On**.
 
@@ -363,6 +367,8 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 1. In the new browser window, navigate to the Azure portal and sign in with the **aaduser2** user account.
 
+1. When prompted, change your password. Make sure to record the new password.
+
 1. When prompted, in the **More information required** dialog box, click **Next**.
 
     >**Note**: The browser seesion will be redirected to the **Keep your account secure** page.
@@ -376,8 +382,6 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
 1. On the **Keep your account secure** page, click **Done**.
-
-1. When prompted, change your password. Make sure to record the new password.
 
 1. Verify that you successfully signed in to the Azure portal.
 
@@ -431,13 +435,13 @@ In this task, you will create a user risk policy.
 
 1. Configure the **User risk remediation policy** with the following settings: 
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Click **All Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
+   - On the **Users** blade, switch to the **Exclude** tab, click **0 users and groups selected** under **Select excluded users and groups**, select your user account, and then click **Select**. 
 
-   - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
+   - Click **Low and above** under **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
+   - Click **Blocl Access** under **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
 
    - Set **Enforce policy** to **On** and click **Save**.
 
@@ -449,11 +453,11 @@ In this task, you will configure a sign-in risk policy.
 
 1. Configure the **Sign-in risk remediation policy** with the following settings: 
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+   - Click **All users** under **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
 
-   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
+   - Click **Low and above** under **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
+   - Click **Block access** under **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
 
    - Set **Enforce Policy** to **On** and click **Save**.
 
@@ -462,6 +466,8 @@ In this task, you will configure a sign-in risk policy.
 > Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+
+  >**Note**: If you don't see your main Azure AD tenant entry, click on the **Switch Diretory** link, select your main tenant line and click the **Switch** button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
@@ -500,7 +506,7 @@ In this task, you will configure a sign-in risk policy.
 
     >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentiation. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
-1. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
+1. Use the **Verify** option and specify whether you want to verify your identity via text.
 
 1. Complete the verification and ensure that you successfully signed in to the Application Access Panel.
 
@@ -513,6 +519,10 @@ In this task, you will configure a sign-in risk policy.
 In this task, you will review the Azure AD Identity Protection reports generated from the ToR browser logins.
 
 1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** Azure Active Directory tenant.
+
+>**Note**: If you still don't see the **AdatumLab500-04** entry, click on the **Switch Diretory** link, select the **AdatumLab500-04** line and click the **Switch** button.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
 1. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
@@ -555,6 +565,8 @@ Use the following steps to disable the identity protection policies in the **Ada
 Use the following steps to stop the Azure VM you provisioned earlier in the lab.
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+
+  >**Note**: If you don't see your main Azure AD tenant entry, click on the **Switch Diretory** link, select your main tenant line and click the **Switch** button.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
