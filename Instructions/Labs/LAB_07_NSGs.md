@@ -49,7 +49,7 @@ In this task, you will create a virtual network to use with the network and appl
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual networks** blade, click **+ New**.
+1. On the **Virtual networks** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -253,7 +253,6 @@ In this task, you will create a virtual machine to use as a management server.
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
-   |Diagnostics storage account|the default value|
 
 1. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
