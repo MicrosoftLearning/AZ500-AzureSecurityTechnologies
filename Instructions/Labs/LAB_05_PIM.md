@@ -353,7 +353,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. Repeat the same sequence of steps to delete the remaining user accounts you created.
 
-1. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, click **Delete tenant**, on the **Delete directory 'AdatumLab500-04'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
+1. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, click **Manage tenant** and then on the next screen, click **Delete tenant**, on the **Delete directory 'AdatumLab500-04'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
 
 1. Sign out from the Azure portal and sign in back. 
 
