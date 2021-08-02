@@ -72,7 +72,29 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 1. On the **Azure Sentinel \| Data connectors** blade, click **Azure Activity**. 
 
-1. Verify that the **Azure Activity** pane displays the **Data received** graph (you might have to refresh the browser page). 
+1. Setting up the new Azure Activity log connector has two stages:
+
+Step 1 Disconnect the existing subscriptions from the legacy method.
+
+Step 2 Connection of all relevant subscriptions to the new diagnostics settings pipeline using Azure policy.
+
+Disconnect from old pipeline
+From the Azure Sentinel navigation menu, select Data connectors. From the list of connectors, select Azure Activity, and then click the Open connector page button on the lower right.
+
+Under the Instructions tab, in the Configuration section, in step 1, review the list of your existing subscriptions that are connected to the legacy method (so you know which ones to add to the new), and disconnect them all at once by clicking the Disconnect All button below.
+
+Connect to new pipeline
+Under step 2, select the Launch Azure Policy Assignment wizard button. The policy assignment wizard will open, ready to create a new policy called Configure Azure Activity logs to stream to specified Log Analytics workspace.
+
+In the Basics tab, click the button with the three dots under Scope to open the Scope panel where you select your subscription (and, optionally, a resource group). You can also add a description.
+
+In the Parameters tab, leave the Effect and Enable logs fields as is. Choose your Azure Sentinel workspace from the Log Analytics workspace drop-down list.
+
+The policy will be applied to resources added in the future. To apply the policy on your existing resources as well, select the Remediation tab and mark the Create a remediation task check box.
+
+In the Review + create tab, click Create. Your policy is now assigned to the scope you chose.
+ >**Note**: The policy compliance and remediation task may take upto 15 minutes once it is done you will see one connector under connected.
+2. Verify that the **Azure Activity** pane displays the **Data received** graph (you might have to refresh the browser page). 
 
     >**Note**: It may take over 5 minutes before the graph will reflect the any events included in the Azure Activity logs.
 
