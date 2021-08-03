@@ -110,7 +110,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**, and then on the next screen, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a directory** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
