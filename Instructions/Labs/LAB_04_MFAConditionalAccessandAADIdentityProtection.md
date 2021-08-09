@@ -108,7 +108,7 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**, and then on the next screen, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -210,8 +210,6 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 1. On the **Users \| All users** blade, click the entry representing your user account. 
 
 1. On the blade displaying the properties of your user account, click **Edit**. 
-
-1. In the **Settings** section, in the **Usage location** drop down list, select the **United States** entry and click **Save**.
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
@@ -347,7 +345,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Click **0 conditions selected**, click **not configured** under **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
-   - Click **Not configured** under **Device platforms**, review the device platforms that can included and click **Done**.
+   - Click **Device platforms**, review the device platforms that can be included and click **Done**.
 	
    - Click **Not configured** under **Locations** and review the location options without making any changes.
 	
