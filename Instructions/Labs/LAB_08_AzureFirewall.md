@@ -85,7 +85,7 @@ In this task you will deploy the Azure firewall into the virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Firewalls** and press the **Enter** key.
 
-1. On the **Firewalls** blade, click **+ Add**.
+1. On the **Firewalls** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a firewall** blade, specify the following settings (leave others with their default values):
 
@@ -121,7 +121,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Route tables** and press the **Enter** key.
 
-1. On the **Route tables** blade, click **+ New**.
+1. On the **Route tables** blade, click **+ Create**.
 
 1. On the **Create route table** blade, specify the following settings:
 
