@@ -390,6 +390,7 @@ In this task, you will verify that directory synchronization is working.
 1. Close the **Cloud Shell** pane.
 
     >**Note**: Finally, remove the Azure AD tenant
+    >**Note 2**: Deleting a tenant is meant to be a very hard process, so it can never accidentally or maliciously be done.  That means that removing the tenant as part of this lab often does not work.  While we have the steps here to delete the tenant, it is not required to consider yourself as completing this lab. If you ever have a need to remove a tenant in the real world, there are articles on DOCS.Microsoft.com to help you.
 
 1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumSync** Azure Active Directory tenant.
 
