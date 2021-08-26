@@ -170,7 +170,7 @@ In this task, you will run a log search on your data collection.
     >**Note**: You can generate some additional load on the Azure VM you deployed earlier in this lab by using the following steps:
 
     1. Navigate to the Azure VM blade.
-    1. On the Azure VM blade, in the **Operations** section, select **Run command**, on the **Run Command Script** blade, type the following script, and click **Run**:
+    1. On the Azure VM blade, in the **Operations** section, select **Run command**, on the **Run Command** page click **RunPowerShellScript**, on the **Run Command Script** blade, type the following script, and click **Run**:
     2. 
        ```cmd
        cmd
