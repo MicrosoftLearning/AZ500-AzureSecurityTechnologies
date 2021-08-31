@@ -263,7 +263,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 1. Navigate to the **Azure AD Privileged Identity Management** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Azure AD Roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
 
 1. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
