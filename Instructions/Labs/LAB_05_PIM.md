@@ -182,7 +182,7 @@ In this task, you will activate a role that requires approval.
 
 1. In the InPrivate browser window, in the Azure portal, while signed in as the **aaduser2** user, navigate back to the **Privileged Identity Management \| Quick start** blade. 
 
-1. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
+1. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **My roles**.
 
 1. On the **My roles \| Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
@@ -325,7 +325,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
     >**Note**: Audit history is available for all privileged role assignments and activations within the past 30 days.
 
-1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope** and **Subject**. 
+1. Notice you can retrieve detailed information, including **Time**, **Requestor**, **Action**, **Resource name**, **Scope**, **Primary Target** and **Subject**. 
 
 > Result: You have configured an access review and reviewed audit information. 
 
