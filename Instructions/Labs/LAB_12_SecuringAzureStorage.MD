@@ -47,7 +47,7 @@ In this task, you will create a virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
 
-1. On the **Virtual Networks** blade, click **+ New**.
+1. On the **Virtual Networks** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create virtual network** blade, specify the following settings (leave others with their default values) and click **Next: IP Addresses**:
 
@@ -99,7 +99,7 @@ In this task, you will create a network security group with two outbound securit
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
-1. On the **Network security groups** blade, click **+ New**.
+1. On the **Network security groups** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
 
@@ -133,7 +133,7 @@ In this task, you will create a network security group with two outbound securit
     |Priority|**1000**|
     |Name|**Allow-Storage-All**|
 
-1. On the **Add outbound security rule** blade, click **+ Add** to create the new outbound rule. 
+1. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule. 
 
 1. On the **myNsgPrivate** blade, in the **Settings** section, click **Outbound security rules**, and then click **+ Add**.
 
@@ -186,7 +186,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-1. On the **Storage accounts** blade, click **+ New**.
+1. On the **Storage accounts** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
@@ -198,7 +198,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Location|**(US) EastUS**|
     |Performance|**Standard**|
     |Account kind|**StorageV2 (general purpose v2)**|
-    |Replication|**Locally redundant storage (LRS)**|
+    |Redundency|**Locally redundant storage (LRS)**|
 
 1. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
 
@@ -242,7 +242,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Virtual networks|**myVirtualNetwork**|
     |Subnets|**Private**|
 
-1. On the **Add networks** blade, click **Enable** and then click **Add**. 
+1. On the **Add networks** blade, click **Add**. 
 
 1. Back on the storage account blade, click **Save**.
 
@@ -256,7 +256,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-1. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
+1. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Virtual machine**.
 
 1. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -266,7 +266,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -301,7 +301,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 1**|
+    |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
