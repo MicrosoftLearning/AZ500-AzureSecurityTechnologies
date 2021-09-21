@@ -50,7 +50,7 @@ In this task, you will on-board Azure Sentinel and connect the Log Analytics wor
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Sentinel** and press the **Enter** key.
 
-1. On the **Azure Sentinel** blade, click **+ New**.
+1. On the **Azure Sentinel** blade, click **+ Create**.
 
 1. On the **Add Azure Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
