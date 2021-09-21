@@ -82,7 +82,7 @@ In this task, you will create a Log Analytics workspace.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Log Analytics workspaces** and press the **Enter** key.
 
-1. On the **Log Analytics workspaces** blade, click **+ New**.
+1. On the **Log Analytics workspaces** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create Log Analytics workspace** blade, specify the following settings (leave others with their default values):
 
@@ -103,7 +103,7 @@ In this task, you will enable the Log Analytics virtual machine extension. This 
 
 1. In the Azure portal, navigate back to the **Log Analytics workspaces** blade, and, in the list of workspaces, click the entry representing the workspace you created in the previous task.
 
-1. On the Log Analytics workspace blade, in the **Workspace Data Sources** section, click the **Virtual machines** entry.
+1. On the Log Analytics workspace blade, in the **Connect a Data Source** section, click the **Virtual machines** entry.
 
     >**Note**: For the agent to be successfully installed, the virtual machine must be running.
 
@@ -125,7 +125,7 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. On the **Agents configuration** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
 
-1. Ensure that **Windows Event Logs** is selected, click **+ Add windows event log**, in the listing of event log types, select **System** and then click **+**.
+1. Ensure that **Windows Event Logs** is selected, click **+ Add windows event log**, in the listing of event log types, select **System**.
 
     >**Note**: This is how you add event logs to the workspace. Other choices include, for example, **Hardware events** or **Key Management Service**.  
 
