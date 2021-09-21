@@ -47,7 +47,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template**.
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
@@ -123,6 +123,7 @@ In this task, you will create a new Azure AD tenant.
     >**Note**: Record the initial domain name. You will need it later in this lab.
 
 1. Click **Review + Create** and then click **Create**.
+2. Add Captcha code on **Help us prove you're not a robot** blade and then click on **Submit** button. 
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
