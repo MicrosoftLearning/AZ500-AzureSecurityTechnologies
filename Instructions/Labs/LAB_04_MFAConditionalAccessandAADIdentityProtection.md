@@ -41,7 +41,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **custom template** and select **Deploy a custom template** under the list of **Services**.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template**.
 
     >**Note**: You can also select **Template Deployment (deploy using custom templates)** from the **Marketplace** list.
 
@@ -102,7 +102,7 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-1. On the blade displaying **Overview** of your current Azure AD tenant, click **+ Create a tenant**.
+1. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**, and then on the next screen, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -117,6 +117,7 @@ In this task, you will create a new Azure AD tenant.
     >**Note**: Record the initial domain name. You will need it later in this lab.
 
 1. Click **Review + Create** and then click **Create**.
+2. Add Captcha code on **Help us prove you're not a robot** blade and then click on **Submit** button. 
 
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
@@ -191,8 +192,6 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the full user name and the password.
 
-1. On the **New user** blade, click **Create**.
-
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
 #### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
@@ -203,19 +202,15 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the blade displaying the properties of your user account, click **Edit**. 
 
-1. In the **Settings** section, in the **Usage location** drop down list, select the **United States** entry and click **Save**.
-
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
 1. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
-1. On the **Assign licenses** blade, click **Users**.
+1. On the **Assign licenses** blade, click **+ Add users and groups**.
 
 1. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, and click **OK**.
-
-1. Back on the **Assign licenses** blade, click **Assign**.
+1. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + asssign**, click **Assign**.
 
 1. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
 
@@ -299,7 +294,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 1. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-1. On the **Keep your account secure** page, click **Done**.
+1. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 1. When prompted, change your password. Make sure to record the new password.
 
@@ -343,7 +338,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Click **Conditions**, click **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
-   - Click **Device platforms**, review the device platforms that can included and click **Done**.
+   - Click **Device platforms**, review the device platforms that can be included and click **Done**.
 	
    - Click **Locations** and review the location options without making any changes.
 	

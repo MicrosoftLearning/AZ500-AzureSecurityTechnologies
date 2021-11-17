@@ -79,7 +79,7 @@ In this task you will deploy the Azure firewall into the virtual network.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Firewalls** and press the **Enter** key.
 
-1. On the **Firewalls** blade, click **+ Add**.
+1. On the **Firewalls** blade, click **+ Create**.
 
 1. On the **Basics** tab of the **Create a firewall** blade, specify the following settings (leave others with their default values):
 
@@ -115,15 +115,15 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Route tables** and press the **Enter** key.
 
-1. On the **Route tables** blade, click **+ Add**.
+1. On the **Route tables** blade, click **+ Create**.
 
 1. On the **Create route table** blade, specify the following settings:
 
    |Setting|Value|
    |---|---|
-   |Name|**Firewall-route**|
    |Resource group|**AZ500LAB08**|
    |Region| **East US**|
+   |Name|**Firewall-route**|
 
 1. Click **Review + create**, then click **Create**, and wait for the provisioning to complete. 
 
@@ -164,9 +164,9 @@ In this task you will create an application rule that allows outbound access to 
 
 1. In the Azure portal, navigate back to the **Test-FW01** firewall.
 
-1. On the **Test-FW01** blade, in the **Settings** section, click **Rules**.
+1. On the **Test-FW01** blade, in the **Settings** section, click **Rules (classic)**.
 
-1. On the **Test-FW01 \| Rules** blade, click the **Application rule collection** tab, and then click **+ Add application rule collection**.
+1. On the **Test-FW01 \| Rules (classic)** blade, click the **Application rule collection** tab, and then click **+ Add application rule collection**.
 
 1. On the **Add application rule collection** blade, specify the following settings (leave others with their default values):
 
@@ -194,9 +194,9 @@ In this task you will create an application rule that allows outbound access to 
 
 In this task, you will create a network rule that allows outbound access to two IP addresses on port 53 (DNS).
 
-1. In the Azure portal, navigate back to the **Test-FW01 \| Rules** blade.
+1. In the Azure portal, navigate back to the **Test-FW01 \| Rules (classic)** blade.
 
-1. On the **Test-FW01 \| Rules** blade, click the **Network rule collection** tab and then click **+ Add network rule collection**.
+1. On the **Test-FW01 \| Rules (classic)** blade, click the **Network rule collection** tab and then click **+ Add network rule collection**.
 
 1. On the **Add network rule collection** blade, specify the following settings (leave others with their default values):
 
