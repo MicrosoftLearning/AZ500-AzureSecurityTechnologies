@@ -141,7 +141,7 @@ In this task, you will first configure server level auditing and then configure 
 
 1. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
 
-1. Back on the **Auditing** blade, set **Retention (days)** to **5** and click **OK**. 
+1. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5** and click **OK**. 
 
 1. Back on the Auditing blade, click **Save** to save the auditing settings. 
 
