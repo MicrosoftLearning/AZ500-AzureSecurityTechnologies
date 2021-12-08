@@ -200,7 +200,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Pa55w.rd1234**|
-   |Confrim password|**Pa55w.rd1234**|
+   |Confirm password|**Pa55w.rd1234**|
    |Public inbound ports|**None**|
    |Would you like to use an existing Windows Server License |**No**|
 
