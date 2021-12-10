@@ -112,7 +112,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
 7. On the **Automated response** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Review >**. 
 
-8. On the **Review and create** tab of the **Analytic rule wizard - Create new rule from template** blade, click **Review**.
+8. On the **Review and create** tab of the **Analytic rule wizard - Create new rule from template** blade, click **Create**.
 
     >**Note**: You now have an active rule.
 
@@ -216,9 +216,11 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: Check your secure score. By now it should have updated. 
 
-2. On the **Microsoft Defender for Cloud \| Defender plan** blade, click **Just-in-time vm access** section.
+2. On the **Microsoft Defender for Cloud \| Workload protections** blade, click **Just-in-time vm access** section under the **Advanced protection**.
 
 3. On the **Microsoft Defender for Cloud \| Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
+
+**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time VMs**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
 4. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
