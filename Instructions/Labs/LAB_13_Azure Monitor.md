@@ -93,7 +93,7 @@ In this task, you will create a Log Analytics workspace.
     |Name|any valid, globally unique name|
     |Region|**(US) East US**|
 
-4. Click **Next : Tags >** with their default values  **Next: Pricing tier >**, on the **Pricing tier** tab of the **Create Log Analytics workspace** blade, accept the default **Pay-as-you-go (Per GB 2018)** pricing tier, and click **Review + create**.
+4. Click **Next: Pricing tier >**, on the **Pricing tier** tab of the **Create Log Analytics workspace** blade, accept the default **Pay-as-you-go (Per GB 2018)** pricing tier, and click **Review + create**.
 
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, click **Create**.
 
