@@ -76,13 +76,13 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 3. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-4. On the SQL server blade, in the **Auditing** section, click **Microsoft Defender for Cloud**.
+4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**.
 
-5. Click the **Enable Azure Defender for SQL** in the **Azure Defender for SQL**.
+5. Click the **Enable Microsoft Defender for SQL** in the **Microsoft Defender for SQL**.
 
       >**Note**: Wait until enabling option for Azure Defender for SQL appears.
 
-6. In the **Azure Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+6. In the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
     
 7. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
@@ -131,7 +131,7 @@ In this task, you will first configure server level auditing and then configure 
 
     >**Note**: This is server level auditing. The default auditing settings include all the queries and stored procedures executed against the database, as well as successful and failed logins.
 
-3. Set the **Auditing** switch to **ON** to enable auditing. 
+3. Set the **Enable Azure SQL Auditing** switch to **ON** to enable auditing. 
 
 4. Select the **Storage** checkbox and entry boxes for **Subscription** and **Storage Account** will display.
 
@@ -141,9 +141,9 @@ In this task, you will first configure server level auditing and then configure 
 
 7. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
 
-8. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5** and click **OK**. 
+8. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5**. 
 
-9. Back on the Auditing blade, click **Save** to save the auditing settings. 
+9. On the Auditing blade, click **Save** to save the auditing settings. 
 
     >**Note**: If you receive an error message regarding invalid storage container path then the storage account may not have have been provisioned yet. Wait a few minutes, click **Storage account**, on the **Choose storage account** blade, select the newly created storage account and back on the Auditing blade, click **Save**.
 
