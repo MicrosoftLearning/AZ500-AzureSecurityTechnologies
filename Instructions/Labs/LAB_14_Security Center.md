@@ -56,9 +56,9 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 8. On the **Microsoft Defender for Cloud | Environment Settings** blade, click the relevant subscription. 
 
-10. On the **Settings | Defender plans** blade, in the vertical menu on the left side, click **Auto provisioning**.
+9. On the **Settings | Defender plans** blade, in the vertical menu on the left side, click **Auto provisioning**.
 
-12. On the **Settings | Auto provisioning**  blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
+10. On the **Settings | Auto provisioning**  blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
 
 11. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
 
