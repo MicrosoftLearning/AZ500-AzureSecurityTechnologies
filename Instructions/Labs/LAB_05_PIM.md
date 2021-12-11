@@ -369,4 +369,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 14. Navigate back to the **Delete directory 'AdatumLab500-04'** blade and click **Delete**.
 
+**Note:** Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free Premium P2 license** could be throwing the validation error. Deleting the trial subscription of the Premium P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Azure Active directory and then try to delete the tenant.    
+
 > For any additional  information regarding this task, refer to [https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto)
