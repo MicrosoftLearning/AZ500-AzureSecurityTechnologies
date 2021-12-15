@@ -128,7 +128,9 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 1. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Add Kubernetes cluster**
 
-1. On the **Basics** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
+1. On the **Basics** tab of the **Create Kubernetes cluster** blade, click **View all preset configurations**, select **Dev/Test ($)** and click **Apply**
+
+1. Now specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
@@ -153,11 +155,11 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Setting|Value|
     |----|----|
     |Network configuration|**Azure CNI**|
-    |DNS name prefix|any valid, globally unique DNS host name|
+    |DNS name prefix|**Leave the default value**|
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
 
-1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Container monitoring** to **Disabled**. 
+1. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, make sure **Container monitoring** is **Disabled**. 
 
     >**Note**: In production scenarios, you would want to enable monitoring. Monitoring is disabled in this case since it is not covered in the lab. 
 
