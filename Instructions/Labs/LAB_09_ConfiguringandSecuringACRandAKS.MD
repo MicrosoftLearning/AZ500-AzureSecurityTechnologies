@@ -128,7 +128,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 2. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create a Kubernetes cluster**
 
-3. On the **Basics** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create Kubernetes cluster** blade, click **View all preset configurations**, select **Dev/Test ($)** and click **Apply**. Now specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
@@ -153,7 +153,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Setting|Value|
     |----|----|
     |Network configuration|**Azure CNI**|
-    |DNS name prefix|any valid, globally unique DNS host name|
+    |DNS name prefix|**Leave the default value**|
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
 
