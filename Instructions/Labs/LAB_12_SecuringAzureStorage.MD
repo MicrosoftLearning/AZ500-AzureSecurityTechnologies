@@ -154,11 +154,9 @@ In this task, you will create a network security group with two outbound securit
 
     >**Note**: In the next steps, you will create an inbound security rule that allows Remote Desktop Protocol (RDP) traffic to the subnet. The rule overrides a default security rule that denies all inbound traffic from the internet. Remote Desktop connections are allowed to the subnet so that connectivity can be tested in a later step.
 
-12. On the **Add outbound security rule** blade, click **Add** to create the new outbound rule. 
+12. On the **myNsgPrivate** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
 
-13. On the **myNsgPrivate \| Outbound security rules** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
-
-14. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
+13. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
 
     |Setting|Value|
     |---|---|
@@ -171,11 +169,11 @@ In this task, you will create a network security group with two outbound securit
     |Priority|**1200**|                                                    
     |Name|**Allow-RDP-All**|
 
-15. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
+14. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
 
     >**Note**: Now you will associate the network security group with the Private subnet.
 
-16. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
+15. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
 
     |Setting|Value|
     |---|---|
@@ -357,7 +355,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     $connectTestResult = Test-NetConnection -ComputerName <storage_account_name>.file.core.windows.net -Port 445
     if ($connectTestResult.TcpTestSucceeded) {
        # Save the password so the drive will persist on reboot
-       cmd.exe /C "cmdkey /add:`"<storage_account_name>.file.core.windows.net`" /user:`"Azure\<storage_account_name>`"  /pass:`"<storage_account_key>`""
+       cmd.exe /C "cmdkey /add:`"<storage_account_name>.file.core.windows.net`" /user:`"localhost\<storage_account_name>`"  /pass:`"<storage_account_key>`""
        # Mount the drive
        New-PSDrive -Name Z -PSProvider FileSystem -Root "\\<storage_account_name>.file.core.windows.net\my-file-share" -Persist
     } else {
