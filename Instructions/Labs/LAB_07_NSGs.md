@@ -199,8 +199,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Image|**Windows Server 2019 Datacenter - Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
-   |Password|**Pa55w.rd1234**|
-   |Confirm password|**Pa55w.rd1234**|
+   |Password|*Create a unique password*|
    |Public inbound ports|**None**|
    |Would you like to use an existing Windows Server License |**No**|
 
@@ -237,7 +236,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Image|**Windows Server 2019 Datacenter - Gen 2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|*Create a unique password*|
    |Public inbound ports|**None**|
    |Already have a Windows Server license|**No**|
 
@@ -285,12 +284,12 @@ In this task, you will test the network traffic filters. You should be able to R
 
 2. On the **myVMMgmt** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-3. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+3. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|*Use your unique password*|
 
     >**Note**: Verify that the Remote Desktop connection was successful. At this point you have confirmed you can connect via Remote Desktop to myVMMgmt.
 

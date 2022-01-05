@@ -64,7 +64,7 @@ In this exercise, you will complete the following tasks:
     |Setting|Value|
     |---|---|
     |User |**localadmin**|
-    |Password|**Pa55w.rd1234**|
+    |Password|*Create a unique password*|
 
     >**Note**: Wait for the deployment to complete. 
 
