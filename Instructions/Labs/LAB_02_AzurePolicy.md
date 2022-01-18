@@ -131,9 +131,9 @@ In this task, you will test the Allowed Locations policy assignment.
 
     > **Note**: If the **Validation Failed** warning does not appear, click **Previous** and wait a few more minutes.
 
-1. Click the error message to open the **Errors** blade. You will see the detailed error message stating that the deployment of the resource **myVnet** was disallowed by policy.
+1. On the **Basics** tab, click the error message link to open the **Policy Assignment** blade. You will see the policy assignment that restricts the location.
 
-1. Close the **Errors** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Close the **Policy Assignment** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
 
 1. Click **Review + create**, verify that validation passed, click **Create**, and verify that the virtual network was created successfully. 
 
