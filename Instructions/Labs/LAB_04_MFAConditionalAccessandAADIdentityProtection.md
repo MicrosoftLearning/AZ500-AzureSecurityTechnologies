@@ -108,7 +108,7 @@ In this task, you will create a new Azure AD tenant.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**, and then on the next screen, click **+ Create**.
+2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
 3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -485,17 +485,17 @@ In this task, you will configure a sign-in risk policy.
 
 8. Start **Internet Explorer**, click the cog wheel icon in the toolbar, in the drop-down menu, click **Safety** and then click **InPrivate Browsing**.
 
-9. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at [**https://www.torproject.org/projects/torbrowser.html.en**](https://www.torproject.org/projects/torbrowser.html.en).
+9. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at **https://www.torproject.org/projects/torbrowser.html.en**.
 
 10. Download and install the Windows version of the ToR Browser with the default settings. 
 
-11. Once the installation completes, start the ToR Browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at [**https://myapps.microsoft.com**](https://myapps.microsoft.com).
+11. Once the installation completes, start the ToR Browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at **https://myapps.microsoft.com**.
 
 12. When prompted, attempt to sign in with the **aaduser3** account. 
 
     >**Note**: You will be presented with the message **Your sign-in was blocked**. This is expected, since this account is not configured with multi-factor authentication, which is required due to increased sign-in risk associated with the use of ToR Browser.
 
-13. Use the **Sign out and sign in with a different account option** to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
+13. Use the **Sign out and sign in with a different account option** or select the back arrow to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
 
     >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentiation. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
@@ -515,7 +515,7 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-3. On the **Security \| Getting started** blade, in the **Reports** section, click **Risky users**. 
+3. On the **Security \| Getting started** blade, in the **Report** section, click **Risky users**. 
 
 4. Review the report and identify any entries referencing the **aaduser3** user account.
 
