@@ -270,7 +270,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Region|**(US)East US**|
     |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
-    |Password|*Create a unique password*|
+    |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
     |Already have a Windows Server license|**No**|
 
@@ -305,7 +305,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Region|**(US)East US**|
     |Image|**Windows Server 2019 Datacenter - Gen 2**|
     |Username|**localadmin**|
-    |Password|*Create a unique password*|
+    |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
     |Already have a Windows Server license|**No**|
 
@@ -343,7 +343,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     |Setting|Value|
     |---|---|
     |User name|**localadmin**|
-    |Password|*Use your unique password*|
+    |Password|**Pa55w.rd1234**|
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
@@ -393,7 +393,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     |Setting|Value|
     |---|---|
     |User name|**localadmin**|
-    |Password|*Use your unique password*|
+    |Password|**Pa55w.rd1234**|
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 

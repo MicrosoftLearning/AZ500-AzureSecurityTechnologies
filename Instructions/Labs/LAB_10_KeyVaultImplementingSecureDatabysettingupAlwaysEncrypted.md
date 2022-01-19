@@ -65,7 +65,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
    |Location|**(US) East US**|
    |Admin Username|**Student**|
-   |Admin Password|*Create a unique password*|
+   |Admin Password|**Pa55w.rd1234**|
    
     >**Note**: While you can change the administrative credentials used for logging on to the Virtual Machine, you don't have to.
 
@@ -343,7 +343,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Setting|Value|
     |---|---|
     |User name|**Student**|
-    |Password|*Use your unique password*|
+    |Password|**Pa55w.rd1234**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load. Close Server Manager. 
 

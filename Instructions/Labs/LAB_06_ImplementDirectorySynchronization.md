@@ -82,7 +82,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Resource group|click **Create new** and type the name **AZ500LAB06**|
    |Region|the Azure region you identified in the previous task|
    |Admin Username|**Student**|
-   |Admin Password|*Create a unique password*|
+   |Admin Password|**Pa55w.rd1234**|
    |Domain Name|**adatum.com**|
    |Dns Prefix|the DNS hostname you identified in the previous task|
    |VM Size|**Standard_D2s_v3**|
@@ -177,7 +177,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 4. Open an InPrivate browser window.
 
-5. Navigate to the Azure portal and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to *a unique password*.
+5. Navigate to the Azure portal and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to **Pa55w.rd1234**.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
@@ -210,12 +210,12 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 4. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
+5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|*Use your unique password*|
+   |Password|**Pa55w.rd1234**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
@@ -251,7 +251,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the *user unique password*.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
