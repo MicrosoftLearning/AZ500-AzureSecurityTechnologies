@@ -199,8 +199,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Image|**Windows Server 2019 Datacenter - Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
-   |Password|**Please re-use the 
-password you created in the module 6 lab (Exercise 1, Task 2)**|
+   |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
    |Confirm password|**Retype your password**|
    |Public inbound ports|**None**|
    |Would you like to use an existing Windows Server License |**No**|
