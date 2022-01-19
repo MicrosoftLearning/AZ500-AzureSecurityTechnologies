@@ -128,7 +128,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 2. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create a Kubernetes cluster**
 
-3. On the **Basics** tab of the **Create Kubernetes cluster** blade, click **View all preset configurations**, select **Dev/Test ($)** and click **Apply**. Now specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create Kubernetes cluster** blade, click **Change preset configurations**, select **Dev/Test ($)** and click **Apply**. Now specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
@@ -274,7 +274,7 @@ In this task, verify the container can be accessed externally using the public I
 
 2. In the Bash session within the Cloud Shell pane, review the output and record the value in the External-IP column. You will need it in the next step. 
 
-3. Open Internet Explorer and browse to the IP address you identified in the previous step.
+3. Open a new browser tab and browse to the IP address you identified in the previous step.
 
 4. Ensure the **Welcome to nginx!** page displays. 
 
@@ -313,7 +313,7 @@ In this task, you will deploy the internal facing service on the AKS.
     kubectl get service nginxinternal
     ```
 
-7. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. 
+7. In the Bash session within the Cloud Shell pane, review the output. The External-IP is, in this case, a private IP address. If it is in a **Pending** state then run the previous command again.
 
     >**Note**: Record this IP address. You will need it in the next task. 
 
