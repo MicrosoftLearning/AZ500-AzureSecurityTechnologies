@@ -76,13 +76,15 @@ In this task, you will use a template to deploy the lab infrastructure.
 
 3. On the **AZ500LAB11** blade, click the entry representing the newly created SQL Server.
 
-4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**.
+4. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**. Scroll to the bottom of the **Getting started** page and select **Upgrade**. On the **Install agents** tab select **Install agents**.
 
-5. Click the **Enable Microsoft Defender for SQL** in the **Microsoft Defender for SQL**.
+5. On the SQL server blade, in the **Security** section, click **Microsoft Defender for Cloud**, select **Enable Microsoft Defender for SQL**.
 
-      >**Note**: Wait until enabling option for Azure Defender for SQL appears.
+      >**Note**: Wait until notification indicates Azure Defender for SQL has been successfully enabled.
 
-6. In the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+6. On the SQL server blade, in the **Security** section, on the **Microsoft Defender for Cloud** page, in the **Microsoft Defender for SQL: Enabled at the server-level (Configure)** parameter, click **(configure)**.   
+
+      >**Note**: Refresh the browser if **(configure)** is not displaying.
     
 7. On the **Server Settings** blade, review the information about pricing and the trial period, **VULNERABILITY ASSESSMENT SETTINGS** and **ADVANCED THREAT PROTECTION SETTINGS**.
 
@@ -119,7 +121,7 @@ In this task, you will discover and classify information in SQL database for GPD
 
     >**Note**: This will complete the classification and persistently label the database columns with the new classification metadata. 
 
-9. Back on the **Data Discovery & Classification** blade, note that it has been updated to account for the latest classification information. 
+9. Back on the **Data Discovery & Classification** blade **Overview** tab, note that it has been updated to account for the latest classification information. 
 
 #### Task 4 : Configure auditing 
 
@@ -140,6 +142,8 @@ In this task, you will first configure server level auditing and then configure 
 6. Click **Storage account** and choose **Create new**.
 
 7. On the **Create storage account** blade, in the **Name** box, type a globally unique name consisting of between 3 and 24 lower case letters and digits, click **OK**, 
+
+    >**Note**: You may need to refresh the browser before the storage account becomes available.
 
 8. Back on the **Auditing** blade, under **Advanced properties** set **Retention (days)** to **5**. 
 
