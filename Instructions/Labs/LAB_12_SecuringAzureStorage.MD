@@ -198,8 +198,7 @@ In this task, you will create a storage account with a file share and obtain the
     |Resource group|**AZ500LAB12**|
     |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
     |Location|**(US) EastUS**|
-    |Performance|**Standard**|
-    |Account kind|**StorageV2 (general purpose v2)**|
+    |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
 4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
@@ -268,7 +267,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPrivate**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -303,7 +302,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2019 Datacenter - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter - Gen 2**|
     |Username|**localadmin**|
     |Password|**Pa55w.rd1234**|
     |Public inbound ports|**None**|
@@ -347,7 +346,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
-    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2019 computer
+    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2022 computer
 
 5. Within the Remote Desktop session to **myVMPrivate**, click **Start** and then click **Windows PowerShell ISE**.
 
@@ -397,7 +396,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
-    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2019 computer
+    >**Note**: You will now map drive Z to an Azure File share within the Remote Desktop session to a Windows Server 2022 computer
 
 5. Within the Remote Desktop session to **myVMPublic**, click **Start** and then click **Windows PowerShell ISE**.
 
