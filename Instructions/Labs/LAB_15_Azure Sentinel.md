@@ -168,7 +168,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 16. On the **Logic Apps Designer** blade, click **Save** to save your changes.
 
-#### Task 5 Create a custom alert and configure a playbook as an automated response
+#### Task 5: Create a custom alert and configure a playbook as an automated response
 
 1. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
@@ -220,7 +220,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 3. On the **Microsoft Defender for Cloud \| Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
 
-**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
+    >**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
 4. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
