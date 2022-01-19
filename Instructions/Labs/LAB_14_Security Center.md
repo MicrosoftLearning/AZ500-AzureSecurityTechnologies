@@ -42,11 +42,11 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Defender for Cloud** and press the **Enter** key.
 
-3. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade**.
+3. If it hasn't been completed previously, on the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade**.
      
-4. On the **Microsoft Defender for Cloud \| Getting started** blade, in the **Install agents** tab, scroll down and click **Install agents**.
+4. If it hasn't been completed previously, on the **Microsoft Defender for Cloud \| Getting started** blade, in the **Install agents** tab, scroll down and click **Install agents**.
 
-5. On the **Microsoft Defender for Cloud \| Getting started** blade, in the **upgrade** tab >> Select workspaces with enhanced security features >> turn on the **Microsoft Defender plan**. 
+5. On the **Microsoft Defender for Cloud \| Getting started** blade, on the **Upgrade** tab >> in the **Select workspaces with enhanced security features** section >> turn on the **Microsoft Defender plan** by selecting your Log Analytics Workspace. 
 
     >**Note**: Review all the features that are available as part of Microsoft Defender plans. 
 
@@ -70,9 +70,11 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
 
-14. Navigate back to the **Microsoft Defender for Cloud** blade and click the entry representing the Log Analytics workspace you created in the previous lab.
+14. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
 
-15. On the **Settings \| Microsoft Defender plans** blade, ensure that **Microsoft Defender on** is selected and click **Save**.
+15. On the **Settings \| Defender plans** blade, ensure that **Enable all Microsoft Defender for Cloud plans** is selected and click **Save**.
+
+16. Select **Data collection** from the **Microsoft Defender for Cloud \| Settings** blade. Select **All Events** and **Save**.
 
 
 #### Task 2: Review the Microsoft Defender for Cloud recommendation
@@ -102,7 +104,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 2. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time VM access** tile and, on the **Just-in-time VM access blade**, click **Try Just in time VM access**.
 
-**Note:** If the VMs are not listed, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
+    >**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
 3. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
 
@@ -120,5 +122,4 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 > Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
-
->**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
+    >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
