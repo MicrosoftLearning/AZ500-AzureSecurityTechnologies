@@ -94,7 +94,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 10. Click **Next:Notification**.
 
-11. On the **Edit role setting - Global Reader** blade, review the settings and click **Update**.
+11. Review the **Notification** settings, leave everything set by default and click **Update**.
 
     >**Note**: Anyone trying to use the Global Reader role will now need approval from aaduser3. 
 
