@@ -126,6 +126,8 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 7. Review the **Assignment type** settings and click **Assign**.
 
+8. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
+
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
 ### Exercise 2 - Activate PIM roles with and without approval
@@ -277,7 +279,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
    |Start Date|today's date| 
    |Frequency|**One time**|
    |End Date|end of the current month|
-   |Review role membership|**Global Reader**|
+   |Role, Select Privileged Role(s)|**Global Reader**|
    |Reviewers|**Selected users**|
    |Select reviewers|your account|
 
@@ -335,7 +337,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
->**Note**: If you don't see your main Azure AD tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
+    >**Note**: If you don't see your main Azure AD tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
 
 2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
@@ -355,7 +357,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Azure Active Directory Premium P2** and click it to open.
 
-(**Note:** In the Lab 4 - Exercise 2 - Task 4 **Assign Azure AD Premium P2 licenses to Azure AD users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users)
+    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Azure AD Premium P2 licenses to Azure AD users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
 
 9. On the **Azure Active Directory Premium P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Azure Active Directory Premium P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
@@ -363,12 +365,12 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 11. Repeat the same sequence of steps to delete the remaining user accounts you created.
 
-12. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, click **Manage tenant** and then on the next screen, click **Delete tenant**, on the **Delete directory 'AdatumLab500-04'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
+12. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, select **Manage tenants** and then on the next screen, select the checkbox next to **AdatumLab500-04** and select **Delete**. On the **Delete tenant 'AdatumLab500-04'** blade, select **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and select **Save**.
 
 13. Sign out from the Azure portal and sign in back. 
 
 14. Navigate back to the **Delete directory 'AdatumLab500-04'** blade and click **Delete**.
 
-**Note:** Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free Premium P2 license** could be throwing the validation error. Deleting the trial subscription of the Premium P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Azure Active directory and then try to delete the tenant.    
+    >**Note**: Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free Premium P2 license** could be throwing the validation error. Deleting the trial subscription of the Premium P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Azure Active directory and then try to delete the tenant.    
 
 > For any additional  information regarding this task, refer to [https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto)
