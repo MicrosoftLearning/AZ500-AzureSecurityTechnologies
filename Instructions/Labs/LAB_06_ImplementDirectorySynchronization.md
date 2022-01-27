@@ -68,7 +68,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 
 >**Note**: You will need to create a unique password that will be used for creating VMs (virtual machines) for the rest of the course. The password must be at least 12 characters long and meet the defined complexity requirements (Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character). [VM password requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Please make a note of the password.
 
-1. Open another browser tab in the same browser window and navigate to the [https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain](https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain). 
+1. Open another browser tab in the same browser window and navigate to the **https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain**.
 
 2. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
 
@@ -112,7 +112,7 @@ In this task, you will create a new Azure AD tenant to use in this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenant**, and then on the next screen, click **+ Create**.
+2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
 3. On the **Basics** tab of the **Create a directory** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
 
@@ -148,7 +148,7 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 5. On the **Custom domain name** blade, in the **Custom domain name** text box, type **adatum.com** and click **Add Domain**.
 
-6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name. 
+6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then select **Delete** twice. 
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
 
@@ -227,7 +227,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
-8. Start Internet Explorer, navigate to [https://www.microsoft.com/en-us/edge/business/download](`https://www.microsoft.com/en-us/edge/business/download`), download Microsoft Edge installation binaries, run the installation, and configure the web browser with the default settings.
+8. Start Internet Explorer, navigate to **https://www.microsoft.com/en-us/edge/business/download**, download Microsoft Edge installation binaries, run the installation, and configure the web browser with the default settings.
 
 9. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
@@ -253,7 +253,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the [Azure portal](https://portal.azure.com), and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
@@ -397,11 +397,11 @@ In this task, you will verify that directory synchronization is working.
 
 13. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **syncadmin** user account, on the **syncadmin - Profile** blade click **Delete**, and, when prompted to confirm, click **Yes**.
 
-14. Repeat the same sequence of steps to delete the **aduser1** user account.
+14. Repeat the same sequence of steps to delete the **aduser1** user account and the **On-Premises Directory Synchronization Service Account**.
 
 15. Navigate to the **AdatumSync - Overview** blade of the Azure AD tenant, click **Manage tenants** and select the check box of the **AdatumSync** directory, click **Delete**, on the **Delete tenant 'AdatumSync'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and click **Save**.
 
-**Note**: While deleting if you receive any warning sign like **Delete all users** then proceed to delete the users that you have created or if the warning sign says **Delete LinkedIn applications**  click on the warning message and confirm the deletion of the LinkedIn application, all the warning need to be addressed to pass the deletion of the tenant.
+    >**Note**: While deleting if you receive any warning sign like **Delete all users** then proceed to delete the users that you have created or if the warning sign says **Delete LinkedIn applications** click on the warning message and confirm the deletion of the LinkedIn application, all the warning need to be addressed to pass the deletion of the tenant.
 
 16. Sign out from the Azure portal and sign in back. 
 
