@@ -93,9 +93,9 @@ In this task, you will create a Log Analytics workspace.
     |Name|any valid, globally unique name|
     |Region|**(US) East US**|
 
-4. Click **Next: Pricing tier >**, on the **Pricing tier** tab of the **Create Log Analytics workspace** blade, accept the default **Pay-as-you-go (Per GB 2018)** pricing tier, and click **Review + create**.
+4. Select **Review + create**.
 
-5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, click **Create**.
+5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
 #### Task 3: Enable the Log Analytics virtual machine extension
 
@@ -103,7 +103,7 @@ In this task, you will enable the Log Analytics virtual machine extension. This 
 
 1. In the Azure portal, navigate back to the **Log Analytics workspaces** blade, and, in the list of workspaces, click the entry representing the workspace you created in the previous task.
 
-2. On the Log Analytics workspace blade, in the **Connect a Data Source** section, click the **Azure Virtual machines (VMs)** entry.
+2. On the Log Analytics workspace blade, on the **Overview** page, in the **Connect a Data Source** section, click the **Azure Virtual machines (VMs)** entry.
 
     >**Note**: For the agent to be successfully installed, the virtual machine must be running.
 
