@@ -196,7 +196,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2019 Datacenter - Gen2**|
+   |Image|**Windows Server 2022 Datacenter - Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
@@ -234,7 +234,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2019 Datacenter - Gen 2**|
+   |Image|**Windows Server 2022 Datacenter - Gen 2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
