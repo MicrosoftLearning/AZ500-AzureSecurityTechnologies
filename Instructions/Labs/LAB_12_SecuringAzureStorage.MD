@@ -23,6 +23,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Service endpoints and security storage
 
+## Service Endpoints and Securing Storage diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157534201-c7b2e01d-114d-4e1a-a601-23de40220fe0.png)
+
+## Instructions
+
 ### Exercise 1: Service endpoints and security storage
 
 ### Estimated timing: 45 minutes
