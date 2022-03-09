@@ -22,6 +22,12 @@ In this lab, you will complete the following:
 
 - Exercise 1: Implement Azure Policy. 
 
+## Architecture diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157508489-7ea4822f-05e3-4f36-97eb-c36f65eb5972.png)
+
+## Instructions
+
 ### Exercise 1: Implement Azure Policy
 
 #### Estimated timing: 20 minutes
