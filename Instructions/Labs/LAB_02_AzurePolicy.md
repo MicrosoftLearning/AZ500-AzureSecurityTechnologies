@@ -24,7 +24,7 @@ In this lab, you will complete the following:
 
 ## Azure Policy diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157511493-b05e39b0-fc87-4ab7-bcff-db72e306691f.png)
+![image](https://user-images.githubusercontent.com/91347931/157511920-19c1f06c-86bd-440d-80ac-d96aa27aefff.png)
 
 ## Instructions
 
