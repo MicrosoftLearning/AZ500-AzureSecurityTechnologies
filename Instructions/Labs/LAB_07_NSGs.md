@@ -26,6 +26,12 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Create the virtual networking infrastructure
 - Exercise 2: Deploy virtual machines and test the network filters
 
+## Network and Application Security Groups diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157526438-6da4f68b-db88-4931-a041-8474e66d3fe5.png)
+
+## Instructions
+
 ### Exercise 1: Create the virtual networking infrastructure
 
 ### Estimated timing: 20 minutes
