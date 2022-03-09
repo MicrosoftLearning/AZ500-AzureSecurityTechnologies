@@ -25,6 +25,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Deploy and test an Azure Firewall
 
+## Azure Firewall diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157528792-07dd0bca-8ba9-404b-857d-8ae3762ae2c0.png)
+
+## Instructions
+
 ## Lab files:
 
 - **\\Allfiles\\Labs\\08\\template.json**
