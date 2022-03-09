@@ -26,6 +26,12 @@ In this lab, you will complete the following exercises:
 - Exercise 3: Implement Azure AD Conditional Access Policies 
 - Exercise 4: Implement Azure AD Identity Protection
 
+## MFA - Conditional Access - Identity Protection diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157518628-8b4a9efe-0086-4ec0-825e-3d062748fa63.png)
+
+## Instructions
+
 ## Lab files:
 
 - **\\Allfiles\\Labs\\04\\az-500-04_azuredeploy.json**
