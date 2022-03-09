@@ -25,6 +25,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Implement Microsoft Sentinel
 
+## Microsoft Sentinel diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157538440-4953be73-90be-4edd-bd23-b678326ba637.png)
+
+## Instructions
+
 ## Lab files:
 
 - **\\Allfiles\\Labs\\15\\changeincidentseverity.json**
