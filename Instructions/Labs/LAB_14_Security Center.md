@@ -24,6 +24,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Implement Microsoft Defender for Cloud
 
+## Microsoft Defender for Cloud diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157537800-94a64b6e-026c-41b2-970e-f8554ce1e0ab.png)
+
+## Instructions
+
 ### Exercise 1: Implement Microsoft Defender for Cloud
 
 In this exercise, you will complete the following tasks:
