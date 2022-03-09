@@ -24,6 +24,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Configuring and Securing ACR and AKS
 
+## Configuring and Securing ACR and AKS diagram
+
+![image](https://user-images.githubusercontent.com/91347931/157532250-1104a829-792a-4b6d-beff-fe976e2d5d4b.png)
+
+## Intructions
+
 ## Lab files:
 
 - **\\Allfiles\\Labs\\09\\nginxexternal.yaml**
