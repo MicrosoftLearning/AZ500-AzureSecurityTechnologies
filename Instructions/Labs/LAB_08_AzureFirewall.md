@@ -27,7 +27,7 @@ In this lab, you will complete the following exercise:
 
 ## Azure Firewall diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157528792-07dd0bca-8ba9-404b-857d-8ae3762ae2c0.png)
+![image](https://user-images.githubusercontent.com/91347931/157529954-a1bc434b-2eca-41c1-b875-1f0c977d5e20.png)
 
 ## Instructions
 
