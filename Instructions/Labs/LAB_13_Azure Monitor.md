@@ -23,6 +23,12 @@ In this lab, you will complete the following exercise:
 
 - Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
+## Azure Monitor
+
+![image](https://user-images.githubusercontent.com/91347931/157536648-0a286514-a7e2-4058-9dea-e42da21eef76.png)
+
+## Instructions
+
 ### Exercise 1: Collect data from an Azure virtual machine with Azure Monitor
 
 ### Exercise timing: 20 minutes
