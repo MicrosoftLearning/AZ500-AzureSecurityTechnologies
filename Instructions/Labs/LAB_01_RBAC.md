@@ -29,7 +29,7 @@ In this lab, you will complete the following exercises
 
 ## Role-Based Access Control architecture diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157504961-6edabff2-2704-4ab9-8bc5-c58b670cc676.png)
+![image](https://user-images.githubusercontent.com/91347931/157751243-5aa6e521-9bc1-40af-839b-4fd9927479d7.png)
 
 ## Instructions
 
