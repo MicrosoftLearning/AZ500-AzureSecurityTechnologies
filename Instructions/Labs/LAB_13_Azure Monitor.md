@@ -61,6 +61,8 @@ In this exercise, you will complete the following tasks:
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to create a new Azure virtual machine. 
 
+    >**Attention**: The New-AzVm command doesn't work in the Azure CLI version 4.24 and Microsoft is currently investigating for resolution.  The work around in this lab is to install and revert back to Az.Compute version 4.23.0, which is unaffected by this issue.
+
     ```powershell
     New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -OpenPorts 80,3389
     ```
