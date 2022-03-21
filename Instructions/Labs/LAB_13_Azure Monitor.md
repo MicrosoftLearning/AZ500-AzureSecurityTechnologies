@@ -68,7 +68,7 @@ In this exercise, you will complete the following tasks:
    #### Step 1: Download the working version of the module (4.23.0) into your cloud shell session 
    **Type**: Install-Module-Name Az.Compute-Force-RequiredVersion 4.23.0
 
-   #### Step 2: Start a new PowerShell session that will allow the Az.Compute assembply version to be loaded 
+   #### Step 2: Start a new PowerShell session that will allow the Az.Compute assembly version to be loaded 
    **Type**: pwsh
 
    #### Step 3: Verify that version 4.23.0 is loaded
