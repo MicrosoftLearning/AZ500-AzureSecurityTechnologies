@@ -66,13 +66,13 @@ In this exercise, you will complete the following tasks:
     >**Instructions**: Reverting back to Az.Compute version 4.23.0 
   
    #### Step 1: Download the working version of the module (4.23.0) into your cloud shell session 
-   **Type**: Install-Module-Name Az.Compute-Force-RequiredVersion 4.23.0
+   **Type**: Install-Module -Name Az.Compute -Force -RequiredVersion 4.23.0
 
    #### Step 2: Start a new PowerShell session that will allow the Az.Compute assembly version to be loaded 
    **Type**: pwsh
 
    #### Step 3: Verify that version 4.23.0 is loaded
-   **Type**: Get-Module-Name Az.Compute
+   **Type**: Get-Module -Name Az.Compute
    
     ```powershell
     New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -OpenPorts 80,3389
