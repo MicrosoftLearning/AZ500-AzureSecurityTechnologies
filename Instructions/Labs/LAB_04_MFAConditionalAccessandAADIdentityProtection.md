@@ -426,7 +426,7 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 3. On the **Security \| Getting started** blade, in the **Protect** section, click **Identity Protection**.
 
-4. On the **Identity Protection \| Overview** blade, review the **Protect**, **Report**, and **Notify** options. 
+4. On the **Identity Protection \| Overview** blade, review the **New risky users detected** and **New risky sign-ins detected** charts and other information about risky users. 
 
 #### Task 2: Configure a user risk policy
 
