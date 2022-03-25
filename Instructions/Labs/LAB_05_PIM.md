@@ -367,7 +367,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 9. On the **Azure Active Directory Premium P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Azure Active Directory Premium P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
-10. In the Azure portal, navigate to the **Users - All users (Preview)** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
+10. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 
 11. Repeat the same sequence of steps to delete the remaining user accounts you created.
 
