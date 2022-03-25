@@ -56,11 +56,11 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
     >**Note**: Review all the features that are available as part of Microsoft Defender plans. 
 
-6. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans** and click **Save**.
+6. Navigate to **Microsoft Defender for Cloud** and click **Environment Settings** under the Management settings, in the vertical menu bar on the left side.
 
-7. Navigate to **Microsoft Defender for Cloud** and click **Environment Settings** under the Management settings, in the vertical menu bar on the left side.
+7. On the **Microsoft Defender for Cloud | Environment Settings** blade, click the relevant subscription. 
 
-8. On the **Microsoft Defender for Cloud | Environment Settings** blade, click the relevant subscription. 
+8. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans** and click **Save**.
 
 9. On the **Settings | Defender plans** blade, in the vertical menu on the left side, click **Auto provisioning**.
 
