@@ -112,7 +112,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
 4. On the **General** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Set rule logic >**.
 
-5. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Incident settings (Preview) >**.
+5. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Incident settings  >**.
 
 6. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Automated response >**. 
 
