@@ -270,7 +270,7 @@ In this task, you will test the firewall to confirm that it works as expected.
    |Setting|Value|
    |---|---|
    |User name|**localadmin**|
-   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+   |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: The following steps are performed in the Remote Desktop session to the **Srv-Jump** Azure VM. 
 
@@ -287,7 +287,7 @@ In this task, you will test the firewall to confirm that it works as expected.
    |Setting|Value|
    |---|---|
    |User name|**localadmin**|
-   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+   |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the Remote Desktop session to be established and the Server Manager interface to load.
 
