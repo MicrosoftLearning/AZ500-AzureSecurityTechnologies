@@ -83,7 +83,7 @@ In this exercise, you will complete the following tasks:
     |Setting|Value|
     |---|---|
     |User |**localadmin**|
-    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+    |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the deployment to complete. 
 
