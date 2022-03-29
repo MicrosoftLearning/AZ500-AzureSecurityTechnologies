@@ -230,7 +230,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a management server.
 
-1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Create**, and, in the dropdown list, click **+ Virtual machine**.
+1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Create**, and, in the dropdown list, click **+ Azure virtual machine**.
 
 2. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
