@@ -306,7 +306,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Resource group|**AZ500LAB12**|
     |Virtual machine name|**myVmPublic**|
     |Region|**(US)East US**|
-    |Image|**Windows Server 2022 Datacenter - Gen 2**|
+    |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
     |Username|**localadmin**|
     |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
     |Public inbound ports|**None**|
