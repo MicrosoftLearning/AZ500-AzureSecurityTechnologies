@@ -273,7 +273,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Region|**(US)East US**|
     |Image|**Windows Server 2022 Datacenter - Gen 2**|
     |Username|**localadmin**|
-    |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
+    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
     |Public inbound ports|**None**|
     |Already have a Windows Server license|**No**|
 
@@ -308,7 +308,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Region|**(US)East US**|
     |Image|**Windows Server 2022 Datacenter - Gen 2**|
     |Username|**localadmin**|
-    |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
+    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
     |Public inbound ports|**None**|
     |Already have a Windows Server license|**No**|
 
@@ -346,7 +346,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     |Setting|Value|
     |---|---|
     |User name|**localadmin**|
-    |Password|**Please re-use the password you created in the module 6 lab (Exercise 1, Task 2)**|
+    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
 
