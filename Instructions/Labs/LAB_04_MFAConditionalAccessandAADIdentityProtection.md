@@ -189,7 +189,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the full user name and the password.
 
-6. Back on the **Users \| All users (Preview)** blade, click **+ New User**. 
+6. Back on the **Users \| All users** blade, click **+ New User**. 
 
 7. Click **New User**,complete the new user configuration settings, and then click **Create**.
 
