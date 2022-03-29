@@ -452,7 +452,7 @@ You will create a Console application using Visual Studio to load data into the 
     Install-Package Microsoft.IdentityModel.Clients.ActiveDirectory
     ```
     
-9. Minimize the RDP session to your Azure virtual machine, then avigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
+9. Minimize the RDP session to your Azure virtual machine, then navigate to **\\Allfiles\\Labs\\10\\program.cs**, open it in Notepad, and copy its content into Clipboard.
 
 10. Switch to the Visual Studio console, in the **Solution Explorer** window, click **Program.cs** and replace its content with the code you copied into Clipboard.
 
