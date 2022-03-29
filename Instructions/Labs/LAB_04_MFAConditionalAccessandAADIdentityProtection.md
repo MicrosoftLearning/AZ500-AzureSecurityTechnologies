@@ -210,7 +210,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
-1. On the **Users \| All users (Preview)** blade, click the entry representing your user account. 
+1. On the **Users \| All users** blade, click the entry representing your user account. 
 
 2. On the blade displaying the properties of your user account, click **Edit**.  Verify Usage Location is set to **United States** if not set the usage location and click **Save**.
 
