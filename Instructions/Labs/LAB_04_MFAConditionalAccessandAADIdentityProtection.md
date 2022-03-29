@@ -479,7 +479,7 @@ In this task, you will configure a sign-in risk policy.
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|**Please use your personal password created in Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
