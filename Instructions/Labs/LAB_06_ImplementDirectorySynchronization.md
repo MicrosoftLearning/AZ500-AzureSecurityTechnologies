@@ -90,7 +90,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Resource group|click **Create new** and type the name **AZ500LAB06**|
    |Region|the Azure region you identified in the previous task|
    |Admin Username|**Student**|
-   |Admin Password|**Use the password you created in the note above**|
+   |Admin Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
    |Domain Name|**adatum.com**|
    |Dns Prefix|the DNS hostname you identified in the previous task|
    |VM Size|**Standard_D2s_v3**|
@@ -223,7 +223,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|**Unique Password you created in Exercise 1, Task 2**|
+   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
@@ -252,7 +252,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Full Name|**aduser1**|
    |User UPN logon|**aduser1**|
    |User SamAccountName logon|**aduser1**|
-   |Password and Confirm Password|**Pa55w.rd1234**|
+   |Password and Confirm Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
    |Other password options|**Password never expires**|
 
 #### Task 2: Install Azure AD Connect
@@ -288,7 +288,7 @@ In this task, you will install AD Connect on the virtual machine.
    |Setting|Value|
    |---|---|
    |User Name|**ADATUM\\Student**|
-   |Password|**Pa55w.rd1234**|
+   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
 
 14. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
