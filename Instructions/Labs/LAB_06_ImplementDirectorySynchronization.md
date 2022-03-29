@@ -72,8 +72,6 @@ In this task, you will identify a DNS name for your Azure VM deployment.
 
 In this task, you will deploy an Azure VM that will host an Active Directory domain controller
 
->**Note**: You will need to create a unique password that will be used for creating VMs (virtual machines) for the rest of the course. The password must be at least 12 characters long and meet the defined complexity requirements (Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character). [VM password requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Please make a note of the password.
-
 1. Open another browser tab in the same browser window and navigate to the **https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain**.
 
 2. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
@@ -90,7 +88,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
    |Resource group|click **Create new** and type the name **AZ500LAB06**|
    |Region|the Azure region you identified in the previous task|
    |Admin Username|**Student**|
-   |Admin Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+   |Admin Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
    |Domain Name|**adatum.com**|
    |Dns Prefix|the DNS hostname you identified in the previous task|
    |VM Size|**Standard_D2s_v3**|
@@ -223,7 +221,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+   |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
@@ -252,7 +250,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
    |Full Name|**aduser1**|
    |User UPN logon|**aduser1**|
    |User SamAccountName logon|**aduser1**|
-   |Password and Confirm Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+   |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
    |Other password options|**Password never expires**|
 
 #### Task 2: Install Azure AD Connect
