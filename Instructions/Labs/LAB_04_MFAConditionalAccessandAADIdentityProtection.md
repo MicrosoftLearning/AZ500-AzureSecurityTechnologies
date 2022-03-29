@@ -75,6 +75,8 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 9. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
+>**Note**: You will need to create a unique password that will be used for creating VMs (virtual machines) for the rest of the course. The password must be at least 12 characters long and meet the defined complexity requirements (Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character). [VM password requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Please make a note of the password.
+
    |Setting|Value|
    |---|---|
    |Subscription|the name of the Azure subscription you will be using in this lab|
@@ -479,7 +481,7 @@ In this task, you will configure a sign-in risk policy.
    |Setting|Value|
    |---|---|
    |User name|**Student**|
-   |Password|**Please use your personal password created in Exercise 1 > Task 1 > Step 9.**|
+   |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
