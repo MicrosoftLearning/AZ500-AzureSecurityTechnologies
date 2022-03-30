@@ -159,7 +159,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
 
-2. On the **Users \| All users (Preview)** blade, click **+ New User**. 
+2. On the **Users \| All users** blade, click **+ New User**. 
 
 3. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**:
 
@@ -176,7 +176,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the user's password. You will need this later in this lab. 
 
-4. Back on the **Users \| All users (Preview)** blade, click **+ New User**. 
+4. Back on the **Users \| All users** blade, click **+ New User**. 
 
 5. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values):
 
@@ -191,7 +191,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: Record the full user name and the password.
 
-6. Back on the **Users \| All users (Preview)** blade, click **+ New User**. 
+6. Back on the **Users \| All users** blade, click **+ New User**. 
 
 7. Click **New User**,complete the new user configuration settings, and then click **Create**.
 
@@ -212,7 +212,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
 In this task, you will assign each user to the Azure Active Directory Premium P2 license.
 
-1. On the **Users \| All users (Preview)** blade, click the entry representing your user account. 
+1. On the **Users \| All users** blade, click the entry representing your user account. 
 
 2. On the blade displaying the properties of your user account, click **Edit**.  Verify Usage Location is set to **United States** if not set the usage location and click **Save**.
 
