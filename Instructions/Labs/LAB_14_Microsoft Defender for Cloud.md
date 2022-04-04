@@ -56,25 +56,25 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
     >**Note**: Review all the features that are available as part of Microsoft Defender plans. 
 
-6. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans** and click **Save**.
+6. Navigate to **Microsoft Defender for Cloud** and click **Environment Settings** under the Management settings, in the vertical menu bar on the left side.
 
-7. Navigate to **Microsoft Defender for Cloud** and click **Environment Settings** under the Management settings, in the vertical menu bar on the left side.
+7. On the **Microsoft Defender for Cloud | Environment Settings** blade, click the relevant subscription. 
 
-8. On the **Microsoft Defender for Cloud | Environment Settings** blade, click the relevant subscription. 
+8. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans** and click **Save**.
 
-9. On the **Settings | Defender plans** blade, in the vertical menu on the left side, click **Auto provisioning**.
+9. On the **Settings | Defender Plans** blade, in the verticle menu on the left side, click **Auto provisioning**. 
 
-10. On the **Settings | Auto provisioning**  blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
+10. On the **Settings | Auto provisioning** blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
 
-11. On the **Settings \| Workflow automation** blade, click **+ Add workflow automation**.
-
-12. On the **Add workflow automation** blade, review the available settings. 
+11. On the **Settings \| Workflow automation** blade, review the available settings. 
 
     >**Note**: You can trigger actions based threat detection alerts and Microsoft Defender for Cloud recommendations. You can also configure an action based on Logic apps. 
-
-13. On the **Add workflow automation** blade, click **Cancel**.
+| 
+12. On the **Add workflow automation** blade, review the avilable settings.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
+
+13. On the **Add workflow automation** blade, click **Cancel**.
 
 14. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
 
