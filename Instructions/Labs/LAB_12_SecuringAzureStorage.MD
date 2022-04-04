@@ -296,7 +296,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
-8. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Virtual machine**.
+8. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Azure Virtual machine**.
 
 9. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
