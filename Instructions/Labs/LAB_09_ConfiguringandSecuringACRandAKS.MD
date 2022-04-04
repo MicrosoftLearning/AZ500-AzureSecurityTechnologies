@@ -152,7 +152,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
     |Enable virtual nodes|cleared checkbox|
     |VM scale sets|cleared checkbox|
 	
-5. Click **Next: Authentication >**, on the **Authentication** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
+5. Click **Next: Access >**, on the **Access** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
 
 6. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
