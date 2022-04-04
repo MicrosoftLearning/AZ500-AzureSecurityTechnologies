@@ -261,7 +261,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Virtual machine**.
+2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure Virtual machine**
 
 3. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
