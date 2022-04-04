@@ -436,7 +436,7 @@ You will create a Console application using Visual Studio to load data into the 
     |---|---|
     |Project name|**OpsEncrypt**|
     |Solution name|**OpsEncrypt**|
-    |Framework|**.NET Framework 4.7.2.**|
+    |Framework|**.NET Framework 4.7.2**|
 
 6. In the Visual Studio console, click the **Tools** menu, in the drop down menu, click **NuGet Package Manager**, and, in the cascading menu, click **Package Manager Console**.
 
