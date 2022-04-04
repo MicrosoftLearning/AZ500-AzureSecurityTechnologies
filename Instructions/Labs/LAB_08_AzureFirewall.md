@@ -168,7 +168,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
     >**Note**: Azure Firewall is actually a managed service, but virtual appliance works in this situation.
 	
-11.  Click **OK** to add the route. 
+11.  Click **Add** to add the route. 
 
 
 #### Task 4: Configure an application rule
