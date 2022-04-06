@@ -69,7 +69,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 11. On the **Settings | Workflow automation** blade, review the available settings. 
 
     >**Note**: You can trigger actions based threat detection alerts and Microsoft Defender for Cloud recommendations. You can also configure an action based on Logic apps. 
-| 
+    
 12. On the **Add workflow automation** blade, review the avilable settings.
 
     >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
