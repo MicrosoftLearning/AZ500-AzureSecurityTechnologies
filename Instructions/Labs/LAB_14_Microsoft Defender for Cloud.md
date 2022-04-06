@@ -66,7 +66,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 10. On the **Settings | Auto provisioning** blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
 
-11. On the **Settings \| Workflow automation** blade, review the available settings. 
+11. On the **Settings | Workflow automation** blade, review the available settings. 
 
     >**Note**: You can trigger actions based threat detection alerts and Microsoft Defender for Cloud recommendations. You can also configure an action based on Logic apps. 
 | 
