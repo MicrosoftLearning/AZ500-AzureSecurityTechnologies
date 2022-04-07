@@ -130,9 +130,11 @@ In this task, you will create a network security group with two outbound securit
 
     |Setting|Value|
     |---|---|
-    |Source|**VirtualNetwork**|
+    |Source|**Service Tag**|
+    |Source service tag|**VirtualNetwork**|
     |Source port ranges|**\***|
-    |Destination|in the drop-down list, select **Service Tag** and then click **Storage**|
+    |Destination|**Service Tag**|
+    ||Destination service tag**|**Storage**|
     |Destination port ranges|**\***|
     |Protocol|**Any**|
     |Action|**Allow**|
@@ -147,9 +149,11 @@ In this task, you will create a network security group with two outbound securit
 
     |Setting|Value|
     |---|---|
-    |Source|**VirtualNetwork**|
+    |Source|**Service Tag**|
+    |Source service tag|**VirtualNetwork**|
     |Source port ranges|**\***|
-    |Destination|in the drop-down list, select **Service Tag** and then click **Internet**|
+    |Destination|**Service Tag**|
+    ||Destination service tag**|**Internet**|
     |Destination port ranges|**\***|
     |Protocol|**Any**|
     |Action|**Deny**|
@@ -168,7 +172,8 @@ In this task, you will create a network security group with two outbound securit
     |---|---|
     |Source|**Any**|
     |Source port ranges|**\***|
-    |Destination|**VirtualNetwork**|
+    |Destination|**Service Tag**|
+    ||Destination service tag**|**VirtualNetwork**|
     |Destination port ranges|**3389**|
     |Protocol|**TCP**|
     |Action|**Allow**|
