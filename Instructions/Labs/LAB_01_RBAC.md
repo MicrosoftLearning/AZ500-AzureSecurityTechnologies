@@ -306,7 +306,7 @@ In this exercise, you will complete the following tasks:
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
-5. Click **Review + assign** to create the role assignment.
+5. Click **Review + assign** twice to create the role assignment.
 
 6. From the **Access control (IAM)** blade, select **Role assignments**.
 
