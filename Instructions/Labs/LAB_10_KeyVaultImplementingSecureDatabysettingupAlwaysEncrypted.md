@@ -464,7 +464,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 14. In the Visual Studio console, click the **Start** button to initiate the build of the console application and start it.
 
-15. The application will start a Command Prompt window. When prompted for password, type **Pa55w.rd1234** to connect to Azure SQL Database. 
+15. The application will start a Command Prompt window. When prompted for password, type the password that you specified in the deployment in Exercise 1 to connect to Azure SQL Database. 
 
 16. Leave the console app running and switch to the **SQL Management Studio** console. 
 
