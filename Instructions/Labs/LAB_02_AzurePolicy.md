@@ -156,5 +156,12 @@ In this task, you will test the Allowed Locations policy assignment.
     ```powershell
     Remove-AzResourceGroup -Name "AZ500LAB02" -Force -AsJob
     ```
-
 1.  Close the **Cloud Shell** pane. 
+  
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Policy** and press the **Enter** key.
+
+1. In the Authoring section, select **Assignments**.
+
+1. In the list of assignments, select the name of the **Allowed Locations** policy that you created in this lab.
+
+1. On the policy assignment, select **Delete assignment**, and then select **Yes**.
