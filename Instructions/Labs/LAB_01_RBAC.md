@@ -242,7 +242,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
 4. In the Bash session within the Cloud Shell pane, run the following to obtain the objectId property of the user account of Dylan Williams: 
 
     ```cli
-    OBJECTID=$(echo $USER | jq '.[].objectId' | tr -d '"')
+    OBJECTID=$(echo $USER | jq '.[].id' | tr -d '"')
     ```
 
 5. In the Bash session within the Cloud Shell pane, run the following to add the user account of Dylan to the Service Desk group: 
