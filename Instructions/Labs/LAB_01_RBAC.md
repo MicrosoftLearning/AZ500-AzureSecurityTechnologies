@@ -20,7 +20,7 @@ You have been asked to create a proof of concept showing how Azure users and gro
 
 ## Lab objectives
 
-In this lab, you will complete the following exercises
+In this lab, you will complete the following exercises:
 
 - Exercise 1: Create the Senior Admins group with the user account Joseph Price as its member (the Azure portal). 
 - Exercise 2: Create the Junior Admins group with the user account Isabel Garcia as its member (PowerShell).
