@@ -154,6 +154,7 @@ In this task, you will configure collection of the Windows System log and severa
 
     - Memory(\*)\Available Memory Mbytes
     - Process(\*)\%Processor Time
+    - Process(\*)\\% Processor Time
     - Event Tracing for Windows\Total Memory Usage --- Non-Paged Pool
     - Event Tracing for Windows\Total Memory Usage --- Paged Pool
 
