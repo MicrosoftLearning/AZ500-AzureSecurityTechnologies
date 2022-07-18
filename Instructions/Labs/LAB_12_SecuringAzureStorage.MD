@@ -190,13 +190,6 @@ In this task, you will create a network security group with two outbound securit
     |---|---|
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**Private**|
-
-16. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
-
-    |Setting|Value|
-    |---|---|
-    |Virtual network|**myVirtualNetwork**|
-    |Subnet|**Public**|
     
 #### Task 4: Create a storage account with a file share
 
