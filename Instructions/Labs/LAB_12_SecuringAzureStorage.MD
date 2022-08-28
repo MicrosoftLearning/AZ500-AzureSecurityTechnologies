@@ -38,10 +38,11 @@ In this exercise, you will complete the following tasks:
 - Task 1: Create a virtual network
 - Task 2: Add a subnet to the virtual network and configure a storage endpoint
 - Task 3: Configure a network security group to restrict access to the subnet
-- Task 4: Create a storage account with a file share
-- Task 5: Deploy virtual machines into the designated subnets
-- Task 6: Test the storage connection from the private subnet to confirm that access is allowed
-- Task 7: Test the storage connection from the public subnet to confirm that access is denied 
+- Task 4: Configure a network security group to allow rdp on the public subnet
+- Task 5: Create a storage account with a file share
+- Task 6: Deploy virtual machines into the designated subnets
+- Task 7: Test the storage connection from the private subnet to confirm that access is allowed
+- Task 8: Test the storage connection from the public subnet to confirm that access is denied 
 
 #### Task 1: Create a virtual network
 
@@ -190,8 +191,58 @@ In this task, you will create a network security group with two outbound securit
     |---|---|
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**Private**|
+
+#### Task 4: Configure a network security group to allow rdp on the public subnet
+
+In this task, you will create a network security group withone inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
+
+2. On the **Network security groups** blade, click **+ Create**.
+
+3. On the **Basics** tab of the **Create network security group** blade, specify the following settings: 
+
+    |Setting|Value|
+    |---|---|
+    |Subscription|the name of the Azure subscription you are using in this lab|
+    |Resource group|**AZ500LAB12**|
+    |Name|**myNsgPublic**|
+    |Region|**East US**|
+
+4. Click **Review + create** and then click **Create**.
+
+    >**Note**: In the next steps, you will create an outbound security rule that allows communication to the Azure Storage service. 
+
+5. In the Azure portal, navigate back to the **Network security groups** blade and click the **myNsgPublic** entry.
+
+6. On the **myNsgPublic** blade, in the **Settings** section, click **Inbound security rules** and then click **+ Add**.
+
+7. On the **Add inbound security rule** blade, specify the following settings (leave all other values with their default values): 
+
+    |Setting|Value|
+    |---|---|
+    |Source|**Any**|
+    |Source port ranges|**\***|
+    |Destination|**Service Tag**|
+    |Destination service tag|**VirtualNetwork**|
+    |Destination port ranges|**3389**|
+    |Protocol|**TCP**|
+    |Action|**Allow**|
+    |Priority|**1200**|                                                    
+    |Name|**Allow-RDP-All**|
+
+8. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
+
+    >**Note**: Now you will associate the network security group with the Public subnet.
+
+9. On the **Subnets** blade, select **+ Associate** and specify the following settings in the **Associate subnet** section and then click **OK**:
+
+    |Setting|Value|
+    |---|---|
+    |Virtual network|**myVirtualNetwork**|
+    |Subnet|**Public**|
     
-#### Task 4: Create a storage account with a file share
+#### Task 5: Create a storage account with a file share
 
 In this task, you will create a storage account with a file share and obtain the storage account key.  
 
@@ -258,7 +309,7 @@ In this task, you will create a storage account with a file share and obtain the
 
     >**Note**: At this point in the lab you have configured a virtual network, a network security group, and a storage account with a file share. 
 
-#### Task 5: Deploy virtual machines into the designated subnets
+#### Task 6: Deploy virtual machines into the designated subnets
 
 In this task, you will create two virtual machines one in the Private subnet and one in the Public subnet. 
 
@@ -336,7 +387,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
 
-#### Task 6: Test the storage connection from the private subnet to confirm that access is allowed
+#### Task 7: Test the storage connection from the private subnet to confirm that access is allowed
 
 In this task, you will connect to the myVMPrivate virtual machine via Remote Desktop and map a drive to the file share. 
 
@@ -388,7 +439,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
     >**Note**: At this point, you have confirmed that the virtual machine in the Private subnet can access the storage account. 
 
-####  Task 7: Test the storage connection from the public subnet to confirm that access is denied 
+####  Task 8: Test the storage connection from the public subnet to confirm that access is denied 
 
 1. Navigate back to the **Virtual machines** blade. 
 
@@ -421,7 +472,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     Test-NetConnection -ComputerName www.bing.com -Port 80
     ```
 
-    >**Note**: The test will succeed because there is no network security group associated with the Public subnet.
+    >**Note**: The test will succeed because there is no outbound security rule to deny internet on the Public subnet.
 
 8. Terminate the Remote Desktop session to the **myVMPublic** Azure VM.
 
@@ -443,4 +494,4 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     ```
 
 4.  Close the **Cloud Shell** pane. 
- 
+
