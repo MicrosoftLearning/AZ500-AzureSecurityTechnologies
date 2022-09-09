@@ -212,7 +212,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 9. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule** blade, accept the default settings and click **Next: Automated response >**. 
 
-10. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, in the **Alert automation** dropdown list, select the checkbox next to the **Change-Incident-Severity** entry and click **Next: Review >**. 
+10. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, in the **Alert automation (classic)** dropdown list, select the checkbox next to the **Change-Incident-Severity** entry and click **Next: Review >**. 
 
 11. On the **Review and create** tab of the **Analytic rule wizard - Create new rule** blade, click **Create**.
 
