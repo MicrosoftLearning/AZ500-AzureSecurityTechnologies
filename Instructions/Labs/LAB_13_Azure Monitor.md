@@ -140,7 +140,7 @@ In this task, you will configure collection of the Windows System log and severa
 
 1. In the Azure portal, navigate back to the Log Analytics workspace you created earlier in this exercise.
 
-2. On the Log Analytics workspace blade, in the **Settings** section, click **Agents configuration**.
+2. On the Log Analytics workspace blade, in the **Settings** section, click **Legacy agents management**.
 
 3. On the **Agents configuration** blade, review the configurable settings including Windows Event Logs, Windows Performance Counters, Linux Performance Counters, IIS Logs, and Syslog. 
 
