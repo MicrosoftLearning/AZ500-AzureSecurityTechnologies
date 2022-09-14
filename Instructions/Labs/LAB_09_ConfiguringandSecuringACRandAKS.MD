@@ -107,7 +107,7 @@ In this task, you will create a Dockerfile, build an image from the Dockerfile, 
     ```sh
     ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
 
-    az acr build --image sample/nginx:v1 --registry $ACRNAME --file Dockerfile .
+    az acr build --resource-group AZ500LAB09 --image sample/nginx:v1 --registry $ACRNAME --file Dockerfile .
     ```
 
     >**Note**: Wait for the command to successfully complete. This might take about 2 minutes.
