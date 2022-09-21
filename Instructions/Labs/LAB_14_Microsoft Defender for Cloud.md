@@ -128,4 +128,4 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 > Results: You have on-boarded Microsoft Defender for Cloud and implemented virtual machine recommendations. 
 
-    >**Note**: Do not remove the resources from this lab as they are needed for the Azure Sentinel lab.
+    >**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Sentinel lab.
