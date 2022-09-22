@@ -141,7 +141,7 @@ In this task, you will create a network security group.
     |Virtual network|**myVirtualNetwork**|
     |Subnet|**default**|
 
-#### Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the management servers. 
+#### Task 4: Create inbound NSG security rules to all traffic to web servers and RDP to the servers. 
 
 1. On the **myNsg** blade, in the **Settings** section, click **Inbound security rules**.
 
@@ -218,7 +218,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 6. Under **NIC network security group** select **None**.
 
-7. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, verify the following setting:
+7. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
@@ -255,7 +255,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 5. Under **NIC network security group** select **None**.
 
-6. Click **Next: Management >**, on the **Management** tab of the **Create a virtual machine** blade, specify the following settings
+6. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
