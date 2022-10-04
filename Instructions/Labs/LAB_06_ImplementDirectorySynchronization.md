@@ -189,7 +189,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 6. Sign out as **syncadmin** and close the InPrivate browser window.
 
-> **Result**: After you completed this exercise, you have created an Azure AD tenant, added a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
+> **Result**: After you completed this exercise, you have created an Azure AD tenant, seen how to add a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
 
 ### Exercise 3: Synchronize Active Directory forest with an Azure Active Directory tenant
