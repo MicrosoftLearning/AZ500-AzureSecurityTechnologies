@@ -331,7 +331,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Username|**localadmin**|
     |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
     |Public inbound ports|**None**|
-    |Already have a Windows Server license|**No**|
+    |Already have a Windows Server license|**Not selected**|
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
@@ -366,7 +366,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Username|**localadmin**|
     |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
     |Public inbound ports|**None**|
-    |Already have a Windows Server license|**No**|
+    |Already have a Windows Server license|**Not selected**|
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
