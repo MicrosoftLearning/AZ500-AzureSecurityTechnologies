@@ -194,7 +194,7 @@ In this task, you will create a network security group with two outbound securit
 
 #### Task 4: Configure a network security group to allow rdp on the public subnet
 
-In this task, you will create a network security group withone inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
+In this task, you will create a network security group with one inbound security rule (RDP). You will also associate the network security group with the Public subnet. This will allow RDP access to the Public VM.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
 
