@@ -423,7 +423,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
        Write-Error -Message "Unable to reach the Azure storage account via port 445. Check to make sure your organization or ISP is not blocking port 445, or use Azure P2S VPN, Azure S2S VPN, or Express Route to tunnel SMB traffic over a different port."
     }
     ```
-    >**Note**: The `<storage-account-name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_name>` one its primary key
+    >**Note**: The `<storage_account_name>` placeholder represents the name of the storage account hosting the file share and `<storage_account_key>` one its primary key
 
 7. Start File Explorer and verify that the Z: drive mapping has been successfully created.
 
