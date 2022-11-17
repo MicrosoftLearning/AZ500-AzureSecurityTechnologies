@@ -121,7 +121,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 7. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
-8. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Add Access Policy**.
+8. On the Key Vault blade, in the **Overview** section, click **Access Policies** and then click **+ Create**.
 
 9. On the **Add access policy** blade, specify the following settings (leave all others with their default values): 
 
