@@ -128,13 +128,15 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Setting|Value|
     |----|----|
     |Configure from template (optional)|**Key, Secret, & Certificate Management**|
-    |Key permissions|click **Select all** resulting in **17 selected** permissions (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) |
-    |Secret permissions|click **Select all** resulting in total of **8 selected** permissions|
-    |Certification permissions|click **Select all** resulting in total of **16 selected** permissions|
-    |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Select**|
-
-10. Back on the **Add access policy** blade, click **Add** to add the access policy and, back on the access policies blade of the Key Vault, click **Save** to your changes. 
-
+    |Key permissions|click **Select all** resulting in **12 selected** permissions (Make sure the permissions for **Rotation Policy Operations** are **unchecked**) |
+    |Secret permissions|click **Select all** resulting in total of **7 selected** permissions|
+    |Certification permissions|click **Select all** resulting in total of **15 selected** permissions|
+    |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Next**|
+    |Application (optional)|click **Next**|
+    |Review + create|click **Create**|
+    
+    >**Note**: The previous Review + create operation returns to the Access policies page that lists Application, Email, Key Permissions, Secret Permissions, and Certificate Permissions.
+      
 #### Task 2: Add a key to Key Vault
 
 In this task, you will add a key to the Key Vault and view information about the key. 
@@ -167,7 +169,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 6. Minimize the Cloud Shell pane. 
 
-7. Back in the Azure portal, on the Key Vault blade, in the **Settings** section, click **Keys**.
+7. Back in the Azure portal, on the Key Vault blade, in the **Objects** section, click **Keys**.
 
 8. In the list of keys, click the **MyLabKey** entry and then, on the **MyLabKey** blade, click the entry representing the current version of the key.
 
@@ -202,7 +204,7 @@ In this task, you will add a key to the Key Vault and view information about the
 
 5. Minimize the Cloud Shell pane. 
 
-6. In the Azure portal, navigate back to the Key Vault blade, in the **Settings** section, click **Secrets**.
+6. In the Azure portal, navigate back to the Key Vault blade, in the **Objects** section, click **Secrets**.
 
 7. In the list of secrets, click the **SQLPassword** entry and then, on the **SQLPassword** blade, click the entry representing the current version of the secret.
 
