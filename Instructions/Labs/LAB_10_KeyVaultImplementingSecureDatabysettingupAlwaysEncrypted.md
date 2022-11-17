@@ -69,7 +69,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |---|---|
    |Subscription|the name of the Azure subscription you will be using in this lab|
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
-   |Location|**(US) East US**|
+   |Location|**East US**|
    |Admin Username|**Student**|
    |Admin Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
    
