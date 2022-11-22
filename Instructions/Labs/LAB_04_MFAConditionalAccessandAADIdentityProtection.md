@@ -214,17 +214,17 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Users \| All users** blade, click the entry representing your user account. 
 
-2. On the blade displaying the properties of your user account, click **Edit**.  Verify Usage Location is set to **United States** if not set the usage location and click **Save**.
+2. On the blade displaying the properties of your user accounts, click **Edit properties**.  Verify Usage Location is set to **United States** if not set the usage location and click **Save**.
 
 3. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
 4. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
 
-5. On the **Assign licenses** blade, click **+ Add users and groups**.
+5. On the **Assign license** blade, click **+ Add users and groups**.
 
 6. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-7. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + asssign**, click **Assign**.
+7. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + assign**, click **Assign**.
 
 8. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
 
@@ -240,13 +240,13 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 2. On the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Security**.
 
-3. On the **Security \| Getting started** blade, in the **Manage** section, click **MFA**.
+3. On the **Security \| Getting started** blade, in the **Manage** section, click **Multifactor authentication**.
 
-4. On the **Multi-Factor Authentication \| Getting started** blade, click the **Additional cloud-based MFA settings** link. 
+4. On the **Multi-Factor Authentication \| Getting started** blade, click the **Additional cloud-based multifactor authentication settings** link. 
 
-    >**Note**: This will open a new browser tab, displaying **multi-factor authentication** page.
+    >**Note**: This will open a new browser tab, displaying **Multifactor authentication** page.
 
-5. On the **multi-factor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
+5. On the **Multifactor authentication** page, click the **service settings** tab. Review **verification options**. Note that **Text message to phone**, **Notification through mobile app**, and **Verification code from mobile app or hardware token** are enabled. Click **Save** and then click **close**.
 
 6. Switch to the **users** tab, click **aaduser1** entry, click the **Enable** link, and, when prompted, click **enable multi-factor auth**.
 
