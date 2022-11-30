@@ -129,7 +129,7 @@ In this task, you will test the Allowed Locations policy assignment.
     |---|---|
     |Resource group|**AZ500LAB02**|
     |Name|**myVnet**|
-    |Region|**(US) East US**|
+    |Region|**East US**|
 
 1. Click **Review + create**. 
 
@@ -139,7 +139,7 @@ In this task, you will test the Allowed Locations policy assignment.
 
 1. On the **Basics** tab, click the error message link to open the **Policy Assignment** blade. You will see the policy assignment that restricts the location.
 
-1. Close the **Policy Assignment** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **(Europe) UK South**.
+1. Close the **Policy Assignment** blade, on the **Create virtual network** blade, click the **Basics** tab, and, in the **Region** drop-down list, select **UK South**.
 
 1. Click **Review + create**, verify that validation passed, click **Create**, and verify that the virtual network was created successfully. 
 
