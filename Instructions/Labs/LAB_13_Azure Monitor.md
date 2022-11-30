@@ -110,7 +110,7 @@ In this task, you will create a Log Analytics workspace.
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB131415**|
     |Name|any valid, globally unique name|
-    |Region|**(US) East US**|
+    |Region|**East US**|
 
 4. Select **Review + create**.
 
