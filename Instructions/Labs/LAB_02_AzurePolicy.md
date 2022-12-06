@@ -54,7 +54,12 @@ In this task, you will create a resource group for the lab.
 
     ```powershell
     New-AzResourceGroup -Name AZ500LAB02 -Location 'East US'
+    
+    Confirm
+    Provided resource group already exists. Are you sure you want to update it?
+    [Y] Yes [N] No [S] Suspend [?] Help (default is "Y"): Y
     ```
+1. In the PowerShell session within the Cloud Shell pane, type **Y**.
 
 1. In the PowerShell session within the Cloud Shell pane, run the following to list resource groups to verify that the new resource group was created:
 
