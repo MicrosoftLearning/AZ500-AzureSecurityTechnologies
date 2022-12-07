@@ -60,28 +60,13 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 7. On the **Microsoft Defender for Cloud \| Environment Settings** blade, click the relevant subscription. 
 
-8. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans** and click **Save**.
+8. On the **Defender plans** blade, select **Enable all Microsoft Defender for Cloud Plans**.
 
-9. On the **Settings \| Defender Plans** blade, in the verticle menu on the left side, click **Auto provisioning**. 
+9. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
 
-10. On the **Settings \| Auto provisioning** blade, make sure that Auto provisioning is set to **On** for the first item **Log Analytics agent for Azure VMs**.
+10. On the **Settings \| Defender plans** blade, ensure that **Enable all Microsoft Defender for Cloud plans**.
 
-11. On the **Settings \| Workflow automation** blade, review the available settings. 
-
-    >**Note**: You can trigger actions based threat detection alerts and Microsoft Defender for Cloud recommendations. You can also configure an action based on Logic apps. 
-    
-12. On the **Add workflow automation** blade, review the avilable settings.
-
-    >**Note**: Microsoft Defender for Cloud provides many insights into virtual machines including system update status, OS security configurations, and endpoint protection.
-
-13. On the **Add workflow automation** blade, click **Cancel**.
-
-14. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
-
-15. On the **Settings \| Defender plans** blade, ensure that **Enable all Microsoft Defender for Cloud plans**.
-
-16. Select **Data collection** from the **Microsoft Defender for Cloud \| Settings** blade. Select **All Events** and **Save**.
-
+11. Select **Data collection** from the **Microsoft Defender for Cloud \| Settings** blade. Select **All Events** and **Save**.
 
 #### Task 2: Review the Microsoft Defender for Cloud recommendation
 
@@ -101,22 +86,19 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
     
 5. On the **Resource health** blade, on the **Recommendations** tab, review the list of recommendations for **myVM**.
 
-
 #### Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access
 
 In this task, you will implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access on the virtual machine. 
 
-1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade and select the **Workload protections** under **Cloud Security** tile.
+1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud | Overview** blade and select the **Workload protections** under **Cloud Security** tile.
 
-2. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time VM access** tile and, on the **Just-in-time VM access blade**, click **Try Just in time VM access**.
+2. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time VM access** tile and, on the **Just-in-time VM access** blade.
 
-    >**Note**: If the VMs are not listed, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
+3. On the **Just in time VM access** blade, under the **Virtual machines** section, select **Not Configured** and then click the **myVM** entry.
 
-3. On the **Just in time VM access**, select **Not Configured** and then click the **myVM** entry.
+4. Click the **Enable JIT on 1 VM** option on the far right of the **Virtual machines** section.
 
     >**Note**: You might have to wait a few minutes before the **myVM** entry becomes available.
-
-4. Select **Enable JIT on 1 VM**.
 
 5. On the **JIT VM access configuration** blade, on the far right of the row referencing the port **22**, click the ellipsis button and then click **Delete**.
 
