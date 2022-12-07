@@ -78,7 +78,7 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 14. Navigate back to the **Microsoft Defender for Cloud \| Environment Settings** blade, expand your subscription, and click the entry representing the Log Analytics workspace you created in the previous lab.
 
-15. On the **Settings \| Defender plans** blade, ensure that **Enable all Microsoft Defender for Cloud plans** is selected and click **Save**.
+15. On the **Settings \| Defender plans** blade, ensure that **Enable all Microsoft Defender for Cloud plans**.
 
 16. Select **Data collection** from the **Microsoft Defender for Cloud \| Settings** blade. Select **All Events** and **Save**.
 
