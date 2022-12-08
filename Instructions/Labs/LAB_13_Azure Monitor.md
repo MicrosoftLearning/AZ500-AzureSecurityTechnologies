@@ -64,7 +64,7 @@ In this exercise, you will complete the following tasks:
     ```powershell
     New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -PublicIpSku Standard -OpenPorts 80,3389
     ```
-
+    
 6.  When prompted for credentials:
 
     |Setting|Value|
