@@ -60,7 +60,7 @@ In this exercise, you will complete the following tasks:
     >**Note**: This resource group will be used for labs 13, 14, and 15. 
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to create a new Azure virtual machine. 
-  
+
     ```powershell
     New-AzVm -ResourceGroupName "AZ500LAB131415" -Name "myVM" -Location 'EastUS' -VirtualNetworkName "myVnet" -SubnetName "mySubnet" -SecurityGroupName   "myNetworkSecurityGroup" -PublicIpAddressName "myPublicIpAddress" -PublicIpSku Standard -OpenPorts 80,3389
     ```
