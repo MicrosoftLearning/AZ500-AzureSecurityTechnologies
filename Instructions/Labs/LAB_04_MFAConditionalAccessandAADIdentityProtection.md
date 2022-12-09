@@ -82,7 +82,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
    |Subscription|the name of the Azure subscription you will be using in this lab|
    |Resource group|click **Create new** and type the name **AZ500LAB04**|
    |Location|**East US**|
-   |Vm Size|**Standard_DS1v2**|
+   |Vm Size|**Standard_D2s_v3**|
    |Vm Name|**az500-04-vm1**|
    |Admin Username|**Student**|
    |Admin Password|**Please create your own password and record it for future reference. You will be prompted for this password for the required lab access.**|
