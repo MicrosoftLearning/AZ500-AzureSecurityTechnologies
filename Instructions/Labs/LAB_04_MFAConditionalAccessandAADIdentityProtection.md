@@ -492,17 +492,21 @@ In this task, you will create a user risk policy.
 
 9. Under **Select the sign-in risk level this policy will apply to**, select **High** and **Medium**.
 
-10. Click **Select**
+10. Click **Done**.
 
 11. Under **Access controls** > **Grant**.	
 
-12. Select **Grant access**, **Require multifactor authentication** and **Require password change**.
+12. Select **Grant access**, **Require multifactor authentication**.
+
+13. Click **Select**.
 
 13. Under **Session**, select **Sign-in frequency** and ensure **Everytime** is enabled.
 
-14. Confirm your settings and set **Enable policy** to **Report-only**.
+14. Click **Select**.
 
-15. Select **Create** to enable your policy.
+15. Confirm your settings and set **Enable policy** to **Report-only**.
+
+16. Click **Create** to enable your policy.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
