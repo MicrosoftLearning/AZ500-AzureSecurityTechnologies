@@ -430,11 +430,11 @@ In this task, you will create a user risk policy.
 
 2. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
 
-3. Click **New policy**
+3. Click **New policy**.
 
 4. Type the following policy name in the **Name** text box, type **AZ500Policy2**.
 
-5. Under **Assignments**, select **Users**
+5. Under **Assignments**, select **Users**.
 
 6. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
 
