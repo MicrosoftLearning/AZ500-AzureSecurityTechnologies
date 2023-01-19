@@ -472,7 +472,7 @@ In this task, you will create a user risk policy.
 
 22. Click **Create** to enable your policy.
 
-#### Task 3: Configure sign-in risk policy
+#### Task 3: Configure a sign-in risk policy
 
 1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
 
