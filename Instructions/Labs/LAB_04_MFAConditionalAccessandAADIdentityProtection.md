@@ -438,7 +438,7 @@ In this task, you will create a user risk policy.
 
 6. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
 
-7. Under **Exclude** click **Users and groups** select **aaduser1**. 
+7. Under **Exclude** click **Users and groups**, select **aaduser1**. 
 
 8. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
 
@@ -446,17 +446,17 @@ In this task, you will create a user risk policy.
 
 10. Under **Configure user risk levels needed for policy to be enforced**, select **High**.
 
-11. Click **Done**
+11. Click **Done**.
 
 12. Under **Access controls** > ensure **Grant** is enabled.	
 
 13. Select **Require multifactor authentication** and **Require password change**.
 
-14. Click **Select**
+14. Click **Select**.
 
 15. Under **Session**, click **Sign-in frequency** and ensure **Everytime** is enabled.
 
-16. Click **Select**
+16. Click **Select**.
 
 17. Confirm your settings and set **Enable policy** to **Report-only**.
 
