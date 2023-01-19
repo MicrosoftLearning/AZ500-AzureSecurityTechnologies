@@ -424,45 +424,85 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
-2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
-
-3. On the **Security \| Getting started** blade, in the **Protect** section, click **Identity Protection**.
-
-4. On the **Identity Protection \| Overview** blade, review the **New risky users detected** and **New risky sign-ins detected** charts and other information about risky users. 
-
 #### Task 2: Configure a user risk policy
 
 In this task, you will create a user risk policy. 
 
-1. On the **Identity Protection \| Overview** blade, in the **Protect** section, click **user risk policy**
+2. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
 
-2. Configure the **User risk remediation policy** with the following settings: 
+3. Click **New policy**
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+4. Type the following policy name in the **Name** field: **AZ500Policy2**
 
-   - On the **Users** blade, switch to the **Exclude** tab, click **Select excluded users**, select your user account, and then click **Select**. 
+5. Under **Assignments**, select **Users**
 
-   - Click **User risk**; on the **User risk** blade, select **Low and above**, and then click **Done**. 
+6. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require password change** checkbox are selected and click **Done**.
+7. Under **Exclude** click **Users and groups** select **aaduser1**. 
 
-   - Set **Enforce policy** to **On** and click **Save**.
+8. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+
+9. Under **Conditions** > **User risk**, set **Configure** to **Yes**.
+
+10. Under **Configure user risk levels needed for policy to be enforced**, select **High**.
+
+11. Click **Done**
+
+12. Under **Access controls** > ensure **Grant** is enabled.	
+
+13. Select **Require multifactor authentication** and **Require password change**.
+
+14. Click **Select**
+
+15. Under **Session**, click **Sign-in frequency** and ensure **Everytime** is enabled.
+
+16. Click **Select**
+
+17. Confirm your settings and set **Enable policy** to **Report-only**.
+
+	>**Note**: The following message to **disable security defaults** will diplay at the bottom of the page. **It looks like you’re about to manage your organization’s security configurations. That’s great? You must first disable security defaults before enabling a Conditional Access policy**.
+
+18. Click on the message the reads **disable security defaults**
+
+19. Change **Enable security defaults** from Yes to **No**.
+
+20. Click **Other**, and type the following in the field: **AZ500 lab use**.
+
+21. Click **Save**.
+
+22. Click **Create** to enable your policy.
 
 #### Task 3: Configure sign-in risk policy
 
-In this task, you will configure a sign-in risk policy. 
+1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
 
-1. On the **Identity Protection \| User risk policy** blade, in the **Protect** section, click **Sign-in risk policy**
+2. Select **New policy**.
 
-2. Configure the **Sign-in risk remediation policy** with the following settings: 
+3. Type the following policy name in the **Name** field: **AZ500Policy3**.
 
-   - Click **Users**; on the **Include** tab of the **Users** blade, ensure that the **All users** option is selected.
+4. Under **Assignments**, select **Users**.
 
-   - Click **Sign-in risk**; on the **Sign-in risk** blade, select **Medium and above**, and then click **Done**. 
+5. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
 
-   - Click **Access**; on the **Access** blade, ensure that the **Allow access** option and the **Require multi-factor authentication** checkbox are selected and click **Done**.
+6. Under **Exclude** click **Users and groups** select **aaduser1**. 
 
-   - Set **Enforce Policy** to **On** and click **Save**.
+7. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+
+8. Under **Conditions** > **Sign-in risk**, set **Configure** to **Yes**.
+
+9. Under **Select the sign-in risk level this policy will apply to**, select **High** and **Medium**.
+
+10. Click **Select**
+
+11. Under **Access controls** > **Grant**.	
+
+12. Select **Grant access**, **Require multifactor authentication** and **Require password change**.
+
+13. Under **Session**, select **Sign-in frequency** and ensure **Everytime** is enabled.
+
+14. Confirm your settings and set **Enable policy** to **Report-only**.
+
+15. Select **Create** to enable your policy.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
