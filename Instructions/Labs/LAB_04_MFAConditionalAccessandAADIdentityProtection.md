@@ -460,7 +460,7 @@ In this task, you will create a user risk policy.
 
 17. Confirm your settings and set **Enable policy** to **Report-only**.
 
-	>**Note**: The following message to **disable security defaults** will diplay at the bottom of the page. **It looks like you’re about to manage your organization’s security configurations. That’s great? You must first disable security defaults before enabling a Conditional Access policy**.
+	>**Note**: The following message to **disable security defaults** will display at the bottom of the page. **It looks like you’re about to manage your organization’s security configurations. That’s great? You must first disable security defaults before enabling a Conditional Access policy**.
 
 18. Click on the message the reads **disable security defaults**.
 
