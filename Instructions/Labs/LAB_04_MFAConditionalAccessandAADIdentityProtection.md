@@ -462,7 +462,7 @@ In this task, you will create a user risk policy.
 
 	>**Note**: The following message to **disable security defaults** will display at the bottom of the page: **"It looks like you’re about to manage your organization’s security configurations. That’s great? You must first disable security defaults before enabling a Conditional Access policy"**.
 
-18. Click on the portion of the message that reads **disable security defaults**.
+18. Click on the portion of the message that reads: **disable security defaults**.
 
 19. Change **Enable security defaults** from Yes to **No**.
 
