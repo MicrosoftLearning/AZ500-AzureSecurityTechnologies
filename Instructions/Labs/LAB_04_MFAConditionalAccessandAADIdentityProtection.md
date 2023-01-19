@@ -432,7 +432,7 @@ In this task, you will create a user risk policy.
 
 3. Click **New policy**
 
-4. Type the following policy name in the **Name** field: **AZ500Policy2**
+4. Type the following policy name in the **Name** text box, type **AZ500Policy2**.
 
 5. Under **Assignments**, select **Users**
 
