@@ -1,6 +1,6 @@
 ---
 lab:
-    title: '04 - MFA, Conditional Access and AAD Identity Protection'
+    title: '04 - MFA, and Conditional Access'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
@@ -404,7 +404,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 >Result: You have configured and tested Azure AD conditional access.
 
-### Exercise 4: Implement Azure AD Identity Protection
+### Exercise 4: Deploy risk-based policies in Conditional Access
 
 ### Estimated timing: 30 minutes
 
