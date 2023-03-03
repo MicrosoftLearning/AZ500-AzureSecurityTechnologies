@@ -494,7 +494,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure portal. 
 
-2. In the upper-left drop-down menu of the Cloud Shell pane, select **PowerShell** and, when prompted, click **Confirm**.
+2. In the upper-left drop-down menu of the Cloud Shell pane, if needed select **PowerShell** and, when prompted, click **Confirm**.
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
   
