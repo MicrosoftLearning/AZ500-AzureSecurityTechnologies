@@ -202,7 +202,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
-   |Image|**Windows Server 2022 Datacenter: Azure Edition- Gen2**|
+   |Image|**Windows Server 2022 Datacenter: Azure Edition- x64 Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
@@ -218,7 +218,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 6. Under **NIC network security group** select **None**.
 
-7. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
+7. Click **Next: Management >**, then click **Next: Monitoring > on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
@@ -240,7 +240,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVMMgmt**|
    |Region|(US)East US|
-   |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
+   |Image|**Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
    |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
@@ -255,7 +255,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 5. Under **NIC network security group** select **None**.
 
-6. Click **Next: Management >**, then click **Next: Monitoring >**on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
+6. Click **Next: Management >**, then click **Next: Monitoring > on the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
