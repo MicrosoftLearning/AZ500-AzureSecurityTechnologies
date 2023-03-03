@@ -152,8 +152,6 @@ In this task, you will test the Delete lock. You should be able to modify the st
 
 1. On the storage account blade, select **Overview** and, on the **Overview** blade, click **Delete**.
 
-1. On the **Delete storage account** blade, type in the name of the storage account to confirm that you intend to proceed and then click **Delete**.
-
 1. Review the notification that resembles the following text: 
 
 	> **'xxxxxx' can't be deleted because this resource or its parent has a delete lock. Locks must be removed before this resource can be deleted"**
