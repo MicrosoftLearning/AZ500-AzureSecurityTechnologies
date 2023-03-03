@@ -332,7 +332,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: Record the server name. You will need the server name later in this task.
 
-2. On the **Firewall settings** blade, scroll down to **Rule Name**, and specify the following settings: 
+2. On the **Firewall settings** blade, scroll down to Rule Name, click **+ Add a firewall rule**, and specify the following settings: 
 
     |Setting|Value|
     |---|---|
@@ -340,7 +340,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Start IP|the Public IP Address of the az500-10-vm1|
     |End IP|the Public IP Address of the az500-10-vm1|
 
-3. Click **Save** and **OK** to save the change and close the confirmation pane. 
+3. Click **Save** to save the change and close the confirmation pane. 
 
     >**Note**: This modifies the server firewall settings, allowing connections to the medical database from the Azure VM's public IP address you deployed in this lab.
 
