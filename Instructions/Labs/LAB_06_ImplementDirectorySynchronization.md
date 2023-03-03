@@ -74,7 +74,7 @@ In this task, you will deploy an Azure VM that will host an Active Directory dom
 
 1. Open another browser tab in the same browser window and navigate to the **https://github.com/Azure/azure-quickstart-templates/tree/master/application-workloads/active-directory/active-directory-new-domain**.
 
-2. On the **Create a new Windows VM and create a new AD Forest, Domain and DC** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal.
+2. On the **Create an Azure VM with a new AD Forest** page, click **Deploy to Azure**. This will automatically redirect the browser to the **Create an Azure VM with a new AD Forest** blade in the Azure portal. 
 
 3. On the **Create an Azure VM with a new AD Forest** blade, click **Edit parameters**.
 
@@ -162,7 +162,7 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
 
-2. On the **Users \| All users** blade, click **+ New User**. 
+2. On the **Users | All users** blade, click **+ New User** and then **Create new user**.
 
 3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
 
@@ -317,7 +317,7 @@ In this task, you will verify that directory synchronization is working.
 
 2. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
 
->**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
+   >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
 3. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
 
@@ -337,7 +337,7 @@ In this task, you will verify that directory synchronization is working.
     Start-ADSyncSyncCycle -PolicyType Delta
     ```
 
-9. Switch to the Microsoft Edge window displaying the **aduser1 \| Profile** blade, refresh the page and note that the **Department** property is set to **Sales**.
+9. Switch to the Microsoft Edge window displaying the **aduser1** blade, refresh the page and note that the Department property is set to Sales.
 
     >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
 
