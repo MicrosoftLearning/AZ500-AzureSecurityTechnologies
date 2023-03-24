@@ -192,5 +192,5 @@ In this task, you will run a log search on your data collection.
 
 **Clean up resources**
 
->**Note**: Do not remove the resources from this lab as they are needed for the Azure Security Center lab and the Azure Sentinel lab.
+>**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Defender for Cloud lab and the Microsoft Sentinel lab.
  
