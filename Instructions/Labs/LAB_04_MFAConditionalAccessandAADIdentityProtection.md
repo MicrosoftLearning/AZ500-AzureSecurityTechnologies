@@ -597,11 +597,11 @@ Use the following steps to disable the identity protection policies in the **Ada
 
 4. On the **Identity Protection \| Overview** blade, click **User risk policy**.
 
-5. On the **Identity Protection \| User risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
+5. On the **Identity Protection \| User risk policy** blade, set **Policy Enforcement** to **Disable** and then click **Save**.
 
 6. On the **Identity Protection \| User risk policy** blade, click **Sign-in risk policy**
 
-7. On the **Identity Protection \| Sign-in risk policy** blade, set **Enforce policy** to **Off** and then click **Save**.
+7. On the **Identity Protection \| Sign-in risk policy** blade, set **Policy Enforcement** to **Disable** and then click **Save**.
 
 Use the following steps to stop the Azure VM you provisioned earlier in the lab.
 
