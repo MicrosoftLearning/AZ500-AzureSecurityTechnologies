@@ -310,7 +310,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
     >**Note**: The interface includes connection strings for ADO.NET, JDBC, ODBC, PHP, and Go. 
    
-4. Record the **ADO.NET Connection String**. You will need it later.
+4. Record the **ADO.NET (SQL authentication) Connection String**. You will need it later.
 
     >**Note**: When you use the connection string, make sure to replace the `{your_password}` placeholder with the password that you configured with the deployment in Exercise 1.
 
