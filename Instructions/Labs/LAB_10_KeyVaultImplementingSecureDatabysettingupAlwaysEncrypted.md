@@ -16,7 +16,7 @@ You have been asked to create a proof of concept application that makes use of t
 
 >**Note**: For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 2018.
+To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 19.
 
 ## Lab objectives
 
@@ -49,7 +49,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Deploy an Azure VM and an Azure SQL database
 
-In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 2018 as part of the deployment. 
+In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 19 as part of the deployment. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
@@ -221,7 +221,7 @@ In this exercise, you will complete the following tasks:
 - Task 1: Enable a client application to access the Azure SQL Database service.
 - Task 2: Create a policy allowing the application access to the Key Vault.
 - Task 3: Retrieve SQL Azure database ADO.NET Connection String 
-- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+- Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 19
 - Task 5: Create a table in the SQL Database and select data columns for encryption
 
 
@@ -315,9 +315,9 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
     >**Note**: When you use the connection string, make sure to replace the `{your_password}` placeholder with the password that you configured with the deployment in Exercise 1.
 
-#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 2018
+#### Task 4: Log on to the Azure VM running Visual Studio 2019 and SQL Management Studio 19
 
-In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 2018.
+In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 19.
 
     >**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
 
@@ -358,7 +358,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: The remaining steps in this lab are performed within the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
-6. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 18** folder, and click the **Micosoft SQL Server Management Studio** menu item.
+6. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 19** folder, and click the **Micosoft SQL Server Management Studio** menu item.
 
 7. In the **Connect to Server** dialog box, specify the following settings: 
 
