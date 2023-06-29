@@ -195,7 +195,7 @@
               "autoUpgradeMinorVersion":true,
               "settings": {
                   "fileUris": [
-                     "https://raw.githubusercontent.com/pdtit/ARMtemplates/master/AZ-500-Lab10VM/configurevm.ps1"
+                     "https://raw.githubusercontent.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/master/Allfiles/Labs/10/configurevm.ps1"
                   ],
                   "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File configurevm.ps1"
               }
