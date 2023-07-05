@@ -496,13 +496,13 @@ In this task, you will create a user risk policy.
 
 13. Click **Select**.
 
-13. Under **Session**, select **Sign-in frequency** and ensure **Everytime** is enabled.
+14. Under **Session**, select **Sign-in frequency** and ensure **Everytime** is enabled.
 
-14. Click **Select**.
+15. Click **Select**.
 
-15. Confirm your settings and set **Enable policy** to **Report-only**.
+16. Confirm your settings and set **Enable policy** to **On**.
 
-16. Click **Create** to enable your policy.
+17. Click **Create** to enable your policy.
 
 #### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
 
