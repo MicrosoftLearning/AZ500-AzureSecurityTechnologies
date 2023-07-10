@@ -273,7 +273,7 @@ In this task, you will create a storage account with a file share and obtain the
 
 8. On the storage account **Overview** blade, click **File Shares** under the **Data storage** tab, and then click **+ File Share**.
 
-9. On the **New file share** blade, untick the **Enable backup** backup option in the backup tab. 
+9. On the **New file share** blade, untick the **Enable backup** option in the backup tab. 
 
 10. On the **New file share** blade, specify the following settings:
 
