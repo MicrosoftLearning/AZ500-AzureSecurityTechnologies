@@ -273,29 +273,31 @@ In this task, you will create a storage account with a file share and obtain the
 
 8. On the storage account **Overview** blade, click **File Shares** under the **Data storage** tab, and then click **+ File Share**.
 
-9. On the **New file share** blade, specify the following settings:
+9. On the **New file share** blade, untick the **Enable backup** backup option in the backup tab. 
+
+10. On the **New file share** blade, specify the following settings:
 
     |Setting|Value|
     |---|---|
     |Name|**my-file-share**|
 
-10. On the **New file share** blade, click **Create**.
+11. On the **New file share** blade, click **Create**.
 
     >**Note**: Now, retrieve and record the PowerShell script that creates a drive mapping to the Azure file share. 
 
-11. On the storage account blade, in the list of file shares, click **my-file-share**.
+12. On the storage account blade, in the list of file shares, click **my-file-share**.
 
-12. On the **my-file-share** blade, click **Connect**.
+13. On the **my-file-share** blade, click **Connect**.
 
-13. On the **Connect** blade, on the **Windows** tab, copy the PowerShell script that creates a Z drive mapping to the file share. 
+14. On the **Connect** blade, on the **Windows** tab, copy the PowerShell script that creates a Z drive mapping to the file share. 
 
     >**Note**: Record this script. You will need this in a later in this lab in order to map the file share from the Azure virtual machine on the **Private** subnet.
 
-14. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
+15. Navigate back to the storage account blade, then in the **Security + networking** section, click **Networking**.
 
-15. Under **Firewalls and virtual networks** blade, select the **Enabled from selected virtual networks and IP addresses** option and click the **+ Add existing virtual network** link. 
+16. Under **Firewalls and virtual networks** blade, select the **Enabled from selected virtual networks and IP addresses** option and click the **+ Add existing virtual network** link. 
 
-16. On the **Add networks** blade, specify the following settings:
+17. On the **Add networks** blade, specify the following settings:
 
     |Setting|Value|
     |---|---|
@@ -303,9 +305,9 @@ In this task, you will create a storage account with a file share and obtain the
     |Virtual networks|**myVirtualNetwork**|
     |Subnets|**Private**|
 
-17. On the **Add networks** blade, click **Add**. 
+18. On the **Add networks** blade, click **Add**. 
 
-18. Back on the storage account blade, click **Save**.
+19. Back on the storage account blade, click **Save**.
 
     >**Note**: At this point in the lab you have configured a virtual network, a network security group, and a storage account with a file share. 
 
