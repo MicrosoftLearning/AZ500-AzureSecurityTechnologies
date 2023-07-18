@@ -212,9 +212,11 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 9. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule** blade, accept the default settings and click **Next: Automated response >**. 
 
-10. On the **Automated response** tab of the **Analytic rule wizard - Create new rule** blade, in the **Alert automation (classic)** dropdown list, select the checkbox next to the **Change-Incident-Severity** entry and click **Next: Review >**. 
+10. On the **Automated response** tab of the **Analytic rule wizard - Create a new Scheduled rule** blade, select the plus symbol **+** to **Add new**.
 
-11. On the **Review and create** tab of the **Analytic rule wizard - Create new rule** blade, click **Create**.
+11. In the **Create new automation rule** template, enter an **Automation rule name**; under the **Trigger** field, click the dropdown menu and select **When alert is created**; under **Actions**, select the second dropdown to reflect the name of the **Azure subscription** you are using in this lab and previously created **Resource group AZ500LAB1314151**, then click **Apply**.
+
+12. On the **Automated response** tab of the **Analytic rule wizard - Create a new Scheduled rule** blade, click **Next: Review and create >** and click **Save**
 
     >**Note**: You now have a new active rule called **Playbook Demo**. If an event identified by the rue logic occurs, it will result in a medium severity alert, which will generate a corresponding incident.
 
