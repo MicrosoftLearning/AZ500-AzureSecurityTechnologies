@@ -266,11 +266,11 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 12. On the **Multi-Factor Authentication \| Fraud alert** blade, configure the following settings:
 
-   |Setting|Value|
-   |---|---|
-   |Allow users to submit fraud alerts|**On**|
-   |Automatically block users who report fraud|**On**|
-   |Code to report fraud during initial greeting|**0**|
+    |Setting|Value|
+    |---|---|
+    |Allow users to submit fraud alerts|**On**|
+    |Automatically block users who report fraud|**On**|
+    |Code to report fraud during initial greeting|**0**|
 
 13. Click **Save**
 
