@@ -175,7 +175,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
-5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + cretate**
+5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**
 
 6. Back on the **Users \| All users** blade, click **+ New User**. 
 
