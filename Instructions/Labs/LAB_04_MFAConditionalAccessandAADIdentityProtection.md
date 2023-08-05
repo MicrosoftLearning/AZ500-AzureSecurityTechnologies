@@ -210,7 +210,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 1. On the **Users \| All users** blade, click the entry representing your user account. 
 
-2. On the blade displaying the properties of your user accounts, click **Edit properties**.  Verify Usage Location is set to **United States** if not set the usage location and click **Save**.
+2. On the blade displaying the properties of your user accounts, click **Edit properties**.  Confirm that the Usage Location is set to **United States**. If not, set the usage location and click **Save**.
 
 3. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
 
@@ -330,27 +330,27 @@ In this task, you will review conditional access policy settings and create a po
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-3. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**.
+3. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**. In the left navigation panel, click **Policies**.
 
-4. On the **Conditional Access \| Policies** blade, click **+ New policy** select the **Create new policy** from the drop-down list. 
+4. On the **Conditional Access \| Policies** blade, click **+ New policy**. 
 
 5. On the **New** blade, configure the following settings:
 
    - In the **Name** text box, type **AZ500Policy1**
 	
-   - Click **Users or workload identities selected**. On the right side under the What does this policy apply to >> Users and groups >> Include >> Enable **Select users and groups** >> select the **Users and Groups** checkbox, on the **Select** blade, click **aaduser2**, and click **Select**.
+   - Under **Users**, click **0 Users and groups selected**. On the right side under Include, Enable **Select users and groups** >> select the **Users and Groups** checkbox, on the **Select users and groups** blade, select the **aaduser2** checkbox, and click **Select**.
 	
-   - Click **Cloud apps or actions**, click **Select apps**, on the **Select** blade, click **Microsoft Azure Management**, and click **Select**. 
+   - Under **Target resources**, click **No target resources selected**, click **Select apps**, under Select, click **None**. On the **Select** blade, select the checkbox for **Microsoft Azure Management** and click **Select**. 
 
-    >**Note**: Review the warning that this policy impacts access to the Azure Portal.
+     >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
-   - Click **Conditions**, click **Sign-in risk**, on the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
+   - Under **Conditions**, click **0 conditions selected**, under **Sign-in risk** click **Not configured**. On the **Sign-in risk** blade, review the risk levels but do not make any changes and close the **Sign-in risk** blade.
 	
-   - Click **Device platforms**, review the device platforms that can be included and click **Done**.
+   - Under **Device platforms**, click **Not configured**, review the device platforms that can be included but do not make any changes and click **Done**.
 	
-   - Click **Locations** and review the location options without making any changes.
+   - Under **Locations**, click **Not configured** and review the location options without making any changes.
 	
-   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
+   - Under **Grant** in the **Access controls** section, click **0 controls selected**. On the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
 	
    - Set the **Enable policy** to **On**.
 
@@ -392,7 +392,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 13. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
-14. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**.
+14. On the **Security \| Getting started** blade, in the **Protect** section, click **Conditional Access**. In the left navigation panel, click **Policies**.
 
 15. On the **Conditional Access \| Policies** blade, click the ellipsis next to **AZ500Policy1**, click **Delete**, and, when prompted to confirm, click **Yes**.
 
@@ -424,79 +424,69 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 In this task, you will create a user risk policy. 
 
-2. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
+2. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access** > **Policies**.
 
-3. Click **New policy**.
+3. Click **+ New policy**.
 
 4. Type the following policy name in the **Name** text box, type **AZ500Policy2**.
 
-5. Under **Assignments**, select **Users**.
+5. Under **Assignments** > **Users**, click **0 Users and groups selected**.
 
-6. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
+6. Under **Include**, click **Select Users and groups**, click **Users and groups**, select **aaduser2** and **aaduser3** and then click **Select**.
 
-7. Under **Exclude** click **Users and groups**, select **aaduser1**. 
+7. Under **Exclude** click **Users and groups**, select **aaduser1** and then click **Select**. 
 
-8. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+8. Under **Target resources**, click **No target resources selected**, confirm that **Cloud apps** is selected in the drop-down and, under **Include**, select **All cloud apps**.
 
-9. Under **Conditions** > **User risk**, set **Configure** to **Yes**.
+9. Under **Conditions**, click **0 conditions selected**, under **User risk** click **Not configured**. On the **User risk** blade, set **Configure** to **Yes**.
 
 10. Under **Configure user risk levels needed for policy to be enforced**, select **High**.
 
 11. Click **Done**.
 
-12. Under **Access controls** > ensure **Grant** is enabled.	
+12. Under **Grant** in the **Access controls** section, click **0 controls selected**. On the **Grant** blade, confirm that **Grant access** is selected.
 
 13. Select **Require multifactor authentication** and **Require password change**.
 
 14. Click **Select**.
 
-15. Under **Session**, click **Sign-in frequency** and ensure **Everytime** is enabled.
+15. Under **Session**,  click **0 controls selected**. Select **Sign-in frequency** and then select **Every time**.
 
 16. Click **Select**.
 
-17. Confirm your settings and set **Enable policy** to **Report-only**.
+17. Confirm **Enable policy** is set to **Report-only**.
 
-	>**Note**: The following message will display at the bottom of the page: **"It looks like you’re about to manage your organization’s security configurations. That’s great? You must first disable security defaults before enabling a Conditional Access policy"**.
-
-18. Click on the portion of the message that reads: **disable security defaults**.
-
-19. Change **Enable security defaults** from Yes to **No**.
-
-20. Click **Other**, and type the following in the field: **AZ500 lab use**.
-
-21. Click **Save**.
-
-22. Click **Create** to enable your policy.
+18. Click **Create** to enable your policy.
 
 #### Task 3: Configure a sign-in risk policy
 
-1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**.
+1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**> **Policies**.
 
-2. Select **New policy**.
+2. Select **+ New policy**.
 
 3. Type the following policy name in the **Name** text box, type **AZ500Policy3**.
 
-4. Under **Assignments**, select **Users**.
+4. Under **Assignments** > **Users**, click **0 Users and groups selected**.
 
-5. Under **Include**, click **Select Users and groups**, select **aaduser2** and **aaduser3**.
+5. Under **Include**, click **Select Users and groups**, click **Users and groups**, select **aaduser2** and **aaduser3** and click **Select**.
 
-6. Under **Exclude** click **Users and groups** select **aaduser1**. 
+6. Under **Exclude** click **Users and groups** select **aaduser1** and click **Select**. 
 
-7. Under **Cloud apps or actions** > **Include**, select **All cloud apps**.
+7. Under **Target resources**, click **No target resources selected**, confirm that **Cloud apps** is selected in the drop-down and, under **Include**, select **All cloud apps**.
 
-8. Under **Conditions** > **Sign-in risk**, set **Configure** to **Yes**.
+8. Under **Conditions**, click **0 conditions selected**, under **Sign-in risk** click **Not configured**. On the **Sign-in risk** blade, set **Configure** to **Yes**.
 
 9. Under **Select the sign-in risk level this policy will apply to**, select **High** and **Medium**.
 
 10. Click **Done**.
 
-11. Under **Access controls** > **Grant**.	
+11. Under **Grant** in the **Access controls** section, click **0 controls selected**. On the **Grant** blade, confirm that **Grant access** is selected.	
 
-12. Select **Grant access**, **Require multifactor authentication**.
+12. Select **Require multifactor authentication**.
 
 13. Click **Select**.
 
-14. Under **Session**, select **Sign-in frequency** and ensure **Everytime** is enabled.
+14. Under **Session**,  click **0 controls selected**. Select **Sign-in frequency** and then select **Every time**.
 
 15. Click **Select**.
 
@@ -514,7 +504,7 @@ In this task, you will create a user risk policy.
 
 3. On the **Virtual machines** blade, click the **az500-04-vm1** entry. 
 
-4. On the **az500-04-vm1** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+4. On the **az500-04-vm1** blade, click **Connect**. Confirm that you are on the **RDP** tab.
 
 5. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
@@ -535,15 +525,15 @@ In this task, you will create a user risk policy.
 
 9. In the InPrivate Internet Explorer window, navigate to the ToR Browser Project at **https://www.torproject.org/projects/torbrowser.html.en**.
 
-10. Download and install the Windows version of the ToR Browser with the default settings. 
+10. Download and install the Windows version of the ToR browser with the default settings. 
 
-11. Once the installation completes, start the ToR Browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at **https://myapps.microsoft.com**.
+11. Once the installation completes, start the ToR browser, use the **Connect** option on the initial page, and browse to the Application Access Panel at **https://myapps.microsoft.com**.
 
 12. When prompted, attempt to sign in with the **aaduser3** account. 
 
-    >**Note**: You will be presented with the message **Your sign-in was blocked**. This is expected, since this account is not configured with multi-factor authentication, which is required due to increased sign-in risk associated with the use of ToR Browser.
+    >**Note**: You will be presented with the message **Your sign-in was blocked**. This is expected, since this account is not configured with multi-factor authentication, which is required due to increased sign-in risk associated with the use of ToR browser.
 
-13. Use the **Sign out and sign in with a different account option** or select the back arrow to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
+13. In the ToR browser, select the back arrow to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
 
     >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentiation. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
@@ -553,7 +543,7 @@ In this task, you will create a user risk policy.
 
 16. Close your RDP session. 
 
-    >**Note**: At this point, you attempted two different sign ins. Next, you will review the Azure Identity Protection reports.
+    >**Note**: At this point, you attempted two different sign-ins. Next, you will review the Azure Identity Protection reports.
 
 #### Task 5: Review the Azure AD Identity Protection reports
 
