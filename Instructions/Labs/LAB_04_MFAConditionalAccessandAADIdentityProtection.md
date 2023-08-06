@@ -302,7 +302,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 7. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-8. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
+8. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop-down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 9. When prompted, change your password. Make sure to record the new password.
 
@@ -514,7 +514,7 @@ In this task, you will create a user risk policy.
 
 3. On the **Virtual machines** blade, click the **az500-04-vm1** entry. 
 
-4. On the **az500-04-vm1** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+4. On the **az500-04-vm1** blade, click **Connect** and, in the drop-down menu, click **RDP**. 
 
 5. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
