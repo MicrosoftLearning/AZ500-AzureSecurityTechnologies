@@ -101,7 +101,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 ### Estimated timing: 30 minutes
 
-In this exercise, you will complete the following tasks
+In this exercise, you will complete the following tasks:
 
 - Task 1: Create a new Azure AD tenant.
 - Task 2: Activate Azure AD Premium P2 trial.
@@ -175,7 +175,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
-5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**
+5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**.
 
 6. Back on the **Users \| All users** blade, click **+ New User**. 
 
