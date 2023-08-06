@@ -585,7 +585,7 @@ Use the following steps to disable the identity protection policies in the **Ada
 
 5. On the **Identity Protection \| User risk policy** blade, set **Policy Enforcement** to **Disable** and then click **Save**.
 
-6. On the **Identity Protection \| User risk policy** blade, click **Sign-in risk policy**
+6. On the **Identity Protection \| User risk policy** blade, click **Sign-in risk policy**.
 
 7. On the **Identity Protection \| Sign-in risk policy** blade, set **Policy Enforcement** to **Disable** and then click **Save**.
 
