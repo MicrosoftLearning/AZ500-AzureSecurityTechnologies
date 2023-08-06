@@ -368,7 +368,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 3. When prompted, in the **More information required** dialog box, click **Next**.
 
-    >**Note**: The browser seesion will be redirected to the **Keep your account secure** page.
+    >**Note**: The browser session will be redirected to the **Keep your account secure** page.
     
 4. On the **Keep your account secure** page, select the **I want to set up a different method** link, in the **Which method would you like to use?** drop-down list, select **Phone**, and select **Confirm**.
 
