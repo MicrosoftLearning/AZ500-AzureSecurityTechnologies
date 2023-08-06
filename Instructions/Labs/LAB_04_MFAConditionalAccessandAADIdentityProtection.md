@@ -286,7 +286,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 1. Open an InPrivate browser window.
 
-2. Navigate to the Azure portal and sign in using the **aaduser1** user account. 
+2. Navigate to the Azure portal, **`https://portal.azure.com/`**, and sign in using the **aaduser1** user account. 
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser1** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser1@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
@@ -364,7 +364,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 1. Open an InPrivate Microsoft Edge window.
 
-2. In the new browser window, navigate to the Azure portal and sign in with the **aaduser2** user account.
+2. In the new browser window, navigate to the Azure portal, **`https://portal.azure.com/`**, and sign in with the **aaduser2** user account.
 
 3. When prompted, in the **More information required** dialog box, click **Next**.
 
