@@ -424,39 +424,39 @@ In this task, you will view the Azure AD Identity Protection options in the Azur
 
 In this task, you will create a user risk policy. 
 
-2. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access** > **Policies**.
+1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access** > **Policies**.
 
-3. Click **+ New policy**.
+2. Click **+ New policy**.
 
-4. Type the following policy name in the **Name** text box, type **AZ500Policy2**.
+3. Type the following policy name in the **Name** text box, type **AZ500Policy2**.
 
-5. Under **Assignments** > **Users**, click **0 Users and groups selected**.
+4. Under **Assignments** > **Users**, click **0 Users and groups selected**.
 
-6. Under **Include**, click **Select Users and groups**, click **Users and groups**, select **aaduser2** and **aaduser3** and then click **Select**.
+5. Under **Include**, click **Select Users and groups**, click **Users and groups**, select **aaduser2** and **aaduser3** and then click **Select**.
 
-7. Under **Exclude** click **Users and groups**, select **aaduser1** and then click **Select**. 
+6. Under **Exclude** click **Users and groups**, select **aaduser1** and then click **Select**. 
 
-8. Under **Target resources**, click **No target resources selected**, confirm that **Cloud apps** is selected in the drop-down and, under **Include**, select **All cloud apps**.
+7. Under **Target resources**, click **No target resources selected**, confirm that **Cloud apps** is selected in the drop-down and, under **Include**, select **All cloud apps**.
 
-9. Under **Conditions**, click **0 conditions selected**, under **User risk** click **Not configured**. On the **User risk** blade, set **Configure** to **Yes**.
+8. Under **Conditions**, click **0 conditions selected**, under **User risk** click **Not configured**. On the **User risk** blade, set **Configure** to **Yes**.
 
-10. Under **Configure user risk levels needed for policy to be enforced**, select **High**.
+9. Under **Configure user risk levels needed for policy to be enforced**, select **High**.
 
-11. Click **Done**.
+10. Click **Done**.
 
-12. Under **Grant** in the **Access controls** section, click **0 controls selected**. On the **Grant** blade, confirm that **Grant access** is selected.
+11. Under **Grant** in the **Access controls** section, click **0 controls selected**. On the **Grant** blade, confirm that **Grant access** is selected.
 
-13. Select **Require multifactor authentication** and **Require password change**.
+12. Select **Require multifactor authentication** and **Require password change**.
 
-14. Click **Select**.
+13. Click **Select**.
 
-15. Under **Session**,  click **0 controls selected**. Select **Sign-in frequency** and then select **Every time**.
+14. Under **Session**,  click **0 controls selected**. Select **Sign-in frequency** and then select **Every time**.
 
-16. Click **Select**.
+15. Click **Select**.
 
-17. Confirm **Enable policy** is set to **Report-only**.
+16. Confirm **Enable policy** is set to **Report-only**.
 
-18. Click **Create** to enable your policy.
+17. Click **Create** to enable your policy.
 
 #### Task 3: Configure a sign-in risk policy
 
