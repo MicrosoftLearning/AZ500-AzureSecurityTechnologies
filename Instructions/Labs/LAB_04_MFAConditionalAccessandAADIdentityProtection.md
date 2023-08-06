@@ -506,7 +506,7 @@ In this task, you will create a user risk policy.
 
 4. On the **az500-04-vm1** blade, click **Connect**. Confirm that you are on the **RDP** tab.
 
-5. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. Click **Download RDP File** and use it to connect to the **az500-04-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
