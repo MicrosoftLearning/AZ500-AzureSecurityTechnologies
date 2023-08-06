@@ -317,7 +317,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 ### Estimated timing: 15 minutes
 
-In this exercise, you will complete the following tasks 
+In this exercise, you will complete the following tasks: 
 
 - Task 1: Configure a conditional access policy.
 - Task 2: Test the conditional access policy.
@@ -350,7 +350,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Click **Locations** and review the location options without making any changes.
 	
-   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**
+   - Click **Grant** in the **Access controls** section, on the **Grant** blade, select the **Require multi-factor authentication** checkbox and click **Select**.
 	
    - Set the **Enable policy** to **On**.
 
@@ -404,7 +404,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 ### Estimated timing: 30 minutes
 
-In this exercise, you will complete the following tasks 
+In this exercise, you will complete the following tasks:
 
 - Task 1: View Azure AD Identity Protection options in the Azure portal
 - Task 2: Configure a user risk policy
