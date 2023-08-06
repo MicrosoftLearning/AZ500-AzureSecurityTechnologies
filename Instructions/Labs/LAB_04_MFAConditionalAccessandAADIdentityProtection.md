@@ -169,9 +169,9 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    |Name|**aaduser1**|
    |Password|ensure that the option **Auto-generate password** is selected|
    
-      >**Note**: Record the full User principal name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. You will need this later in this lab.
+      >**Note**: Record the full User principal name. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the drop-down list displaying the domain name. You will need this later in this lab.
    
-      >**Note**: Record the user's password. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the text box. You will need this later in this lab. 
+      >**Note**: Record the user's password. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the text box. You will need this later in this lab. 
    
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
