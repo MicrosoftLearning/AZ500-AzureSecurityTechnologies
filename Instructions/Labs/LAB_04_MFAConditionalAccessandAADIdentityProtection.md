@@ -535,7 +535,7 @@ In this task, you will create a user risk policy.
 
 13. In the ToR browser, select the back arrow to sign in as **aaduser1** account you created and configured for multi-factor authentication earlier in this lab.
 
-    >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentiation. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
+    >**Note**: This time, you will be presented with the **Suspicious activity detected** message. Again, this is expected, since this account is configured with multi-factor authentication. Considering the increased sign-in risk associated with the use of ToR Browser, you will have to use multi-factor authentication.
 
 14. Use the **Verify** option and specify whether you want to verify your identity via text or a call.
 
