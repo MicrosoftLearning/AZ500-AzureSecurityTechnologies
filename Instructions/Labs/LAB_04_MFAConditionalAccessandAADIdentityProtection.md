@@ -75,7 +75,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 9. On the **Custom deployment** blade, ensure that the following settings are configured (leave any others with their default values):
 
->**Note**: You will need to create a unique password that will be used for creating VMs (virtual machines) for the rest of the course. The password must be at least 12 characters long and meet the defined complexity requirements (Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character). [VM password requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Please make a note of the password.
+   >**Note**: You will need to create a unique password that will be used for creating VMs (virtual machines) for the rest of the course. The password must be at least 12 characters long and meet the defined complexity requirements (Password must have 3 of the following: 1 lower case character, 1 upper case character, 1 number, and 1 special character). [VM password requirements](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/faq#what-are-the-password-requirements-when-creating-a-vm-). Please make a note of the password.
 
    |Setting|Value|
    |---|---|
@@ -88,7 +88,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
    |Admin Password|**Please create your own password and record it for future reference. You will be prompted for this password for the required lab access.**|
    |Virtual Network Name|**az500-04-vnet1**|
 
-    >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
+   >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
 10. Click **Review + create**, and then click **Create**.
 
@@ -101,7 +101,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 ### Estimated timing: 30 minutes
 
-In this exercise, you will complete the following tasks
+In this exercise, you will complete the following tasks:
 
 - Task 1: Create a new Azure AD tenant.
 - Task 2: Activate Azure AD Premium P2 trial.
@@ -155,52 +155,55 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
 #### Task 3: Create Azure AD users and groups.
 
-In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user). You will need each user's principal name and password for later tasks. 
+In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user). You will need each user's User principal name and password for later tasks. 
 
 1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
 
 2. On the **Users | All users** blade, click **+ New User** and then **Create new user**. 
 
-3. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**:
+3. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings on the Basics tab (leave all others with their default values) and click **Next: Properties >**:
 
    |Setting|Value|
    |---|---|
    |User principal name|**aaduser1**|
    |Name|**aaduser1**|
-   |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Groups|**0 groups selected**|
-   |Roles|click **User**, then click **Global administrator**, and click **Select**|
-   |Usage Location|**United States**|  
+   |Password|ensure that the option **Auto-generate password** is selected|
+   
+      >**Note**: Record the full User principal name. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the drop-down list displaying the domain name. You will need this later in this lab.
+   
+      >**Note**: Record the user's password. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the text box. You will need this later in this lab. 
+   
+4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
-    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
+5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**.
 
-    >**Note**: Record the user's password. You will need this later in this lab. 
+6. Back on the **Users \| All users** blade, click **+ New User**. 
 
-4. Back on the **Users \| All users** blade, click **+ New User**. 
-
-5. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**.
+7. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Next: Properties >**:
 
    |Setting|Value|
    |---|---|
    |User principal name|**aaduser2**|
    |Name|**aaduser2**|
-   |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Usage Location|**United States**|  
+   |Password|ensure that the option **Auto-generate password** is selected| 
 
-    >**Note**: Record the full user name and the password.
+    >**Note**: Record the full User principal name and the password.
 
-6. Back on the **Users \| All users** blade, click **+ New User**. 
+8. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Review + create** and then **Create**.
 
-7. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Create**. 
+9. Back on the **Users \| All users** blade, click **+ New User**. 
 
-   |Setting|Value|
-   |---|---|
-   |User principal name|**aaduser3**|
-   |Name|**aaduser3**|
-   |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Usage Location|**United States**|  
+10. On the **New user** blade, ensure that the **Create user** option is selected, and specify the following settings (leave all others with their default values) and click **Next: Properties >**:
 
-    >**Note**: Record the full user name and the password.
+    |Setting|Value|
+    |---|---|
+    |User principal name|**aaduser3**|
+    |Name|**aaduser3**|
+    |Password|ensure that the option **Auto-generate password** is selected|
+
+    >**Note**: Record the full User principal name and the password.
+
+11. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Review + create** and then **Create**.
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
@@ -222,7 +225,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 7. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + assign**, click **Assign**.
 
-8. Sign out from the Azure portal and sign back in using the same account. This step is necessary in order for the license assignment to take effect.
+8. Sign out from the Azure portal and sign back in using the same account. (This step is necessary in order for the license assignment to take effect.)
 
     >**Note**: At this point, you assigned Azure Active Directory Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
 
