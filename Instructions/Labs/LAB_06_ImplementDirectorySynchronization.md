@@ -178,13 +178,13 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
-5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**.
+5. On the **Assignments** tab, click **+ Add role**, search for and select **Global Administrator**, and then click **Select**. Click **Review + create** and then click **Create**.
    
     >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Azure AD Connect.
 
 6. Open an InPrivate browser window.
 
-7. Navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to **Pa55w.rd1234**.
+7. Navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to your own password that meets the complexity requirements and record it for future reference. You will be prompted for this password in later tasks.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
