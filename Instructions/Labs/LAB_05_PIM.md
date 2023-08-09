@@ -48,7 +48,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will make a user eligible for an Azure AD directory role.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Sign-in to the Azure portal at **`https://portal.azure.com/`**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
     
@@ -86,7 +86,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 3. On the **AdatumLab500-04 \| Roles** blade, click the **Global reader** role entry. 
 
-4. On the **Global Reader \| Assignments** blade, click **Settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
+4. On the **Global Reader \| Assignments** blade, click the **Role settings** icon in the toolbar of the blade and review configuration settings for the role, including Azure Multi-Factor Authentication requirements.
 
 5. Click **Edit**.
 
@@ -132,7 +132,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 7. Review the **Assignment type** settings and click **Assign**.
 
-8. On the **Assignments** page on the **Eligible Assignments** tab, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
+8. In the left navigation panel, click **Assignments**. On the **Eligible Assignments** tab, under **Security Administrator**, select **Update** for the **aaduser2** assignment. Select **Permanently Eligible** and **Save**.
 
     >**Note**: User aaduser2 is now permanently eligible for the Security Administrator role.
 	
@@ -151,7 +151,7 @@ In this task, you will activate a role that does not require approval.
 
 1. Open an InPrivate browser window.
 
-2. In the InPrivate browser window, navigate to the Azure portal and sign in using the **aaduser2** user account.
+2. In the InPrivate browser window, navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **aaduser2** user account.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser2** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser2@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
@@ -202,49 +202,47 @@ In this task, you will activate a role that requires approval.
 
 6. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click **Activate**. 
 
-7. Click the warning **Additional verification required. Click to continue**. 
-
-8. Follow the instructions to verify your identity.
+7. If needed, click the warning **Additional verification required. Click to continue** and follow the instructions to verify your identity.
 
     >**Note**: You only have to authenticate once per session. 
 
-9. Once you are back in the Azure Portal interface, on the **Activate - Security Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
+8. Once you are back in the Azure Portal interface, on the **Activate - Security Administrator** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
     >**Note**: The auto approval process should complete.
 
-10. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
+9. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
-11. Sign out of the Azure portal as **aaduser2**.
+10. Sign out of the Azure portal as **aaduser2**.
 
-12. Sign into the Azure portal as **aaduser3**.
+11. In the InPrivate browser, sign into the Azure portal at **`https://portal.azure.com/`** as **aaduser3**.
 
     >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account to reset their passwords or reconfigure their sign-in options.
 
-13. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
+12. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
 
-14. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
+13. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-15. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+14. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
-16. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
+15. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
 
     >**Note**: You also have the option of denying requests.
 
-17. Sign out of the Azure portal as **aaduser3**.
+16. Sign out of the Azure portal as **aaduser3**.
 
-18. Sign into the Azure portal as **aaduser2**
+17. In the InPrivate browser, sign into the Azure portal at **`https://portal.azure.com/`** as **aaduser2**
 
-19. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
+18. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
 
-20. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
+19. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-21. On the **My roles \| Azure AD roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
+20. On the **My roles \| Azure AD roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
 
     >**Note**: You might have to refresh the page to view the updated list of active assignments.
 
-22. Sign out and close the InPrivate browser window.
+21. Sign out and close the InPrivate browser window.
 
 > Result: You have practiced activating PIM roles with and without approval. 
 
