@@ -164,30 +164,31 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 2. On the **Users | All users** blade, click **+ New User** and then **Create new user**.
 
-3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
+3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings on the Basics tab (leave all others with their default values) and click **Next: Properties >**:
 
    |Setting|Value|
    |---|---|
    |User name|**syncadmin**|
    |Name|**syncadmin**|
    |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Groups|**0 groups selected**|
-   |Roles|click **User**, then click **Global administrator**, and click **Select**|
-   |Usage Location|**United States**|  
 
     >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
 
-    >**Note**: Record the user's password. You will need this later in this lab. 
+    >**Note**: Record the user's password. You will need this later in this lab.
 
+4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
+
+5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**.
+   
     >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Azure AD Connect.
 
-4. Open an InPrivate browser window.
+6. Open an InPrivate browser window.
 
-5. Navigate to the Azure portal and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to **Pa55w.rd1234**.
+7. Navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to **Pa55w.rd1234**.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
-6. Sign out as **syncadmin** and close the InPrivate browser window.
+8. Sign out as **syncadmin** and close the InPrivate browser window.
 
 > **Result**: After you completed this exercise, you have created an Azure AD tenant, seen how to add a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
@@ -225,33 +226,33 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
-    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM. 
+    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM.
+
+    >**Note**: If the **Load balancer public IP address** is not available in the drop-down of the RDP blade, in the Azure Portal search for **Public IP addresses**, select **adPublicIP**, note its IP address. Click the Start button, type **MSTSC** and hit **Enter** to launch the remote desktop client. Type the load balancer's public IP address in the **Computer:** text box and click **Connect**.
 
 6. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
 
 7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
 
-8. Start Internet Explorer, navigate to **https://www.microsoft.com/en-us/edge/business/download**, download Microsoft Edge installation binaries, run the installation, and configure the web browser with the default settings.
+8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-9. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
+9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
-10. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
-11. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
+11. Double-click the newly crated **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
-12. Double-click the newly crated **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
+12. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
 
-13. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
-
-14. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
-
-   |Setting|Value|
-   |---|---|
-   |Full Name|**aduser1**|
-   |User UPN logon|**aduser1**|
-   |User SamAccountName logon|**aduser1**|
-   |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
-   |Other password options|**Password never expires**|
+13. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
+    
+    |Setting|Value|
+    |---|---|
+    |Full Name|**aduser1**|
+    |User UPN logon|**aduser1**|
+    |User SamAccountName logon|**aduser1**|
+    |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
+    |Other password options|**Password never expires**|
 
 #### Task 2: Install Azure AD Connect
 
@@ -283,10 +284,10 @@ In this task, you will install AD Connect on the virtual machine.
 
 13. In the **AD forest account** window, ensure that the option to **Create new AD account** is selected, specify the following credentials, and click **OK**:
 
-   |Setting|Value|
-   |---|---|
-   |User Name|**ADATUM\\Student**|
-   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+    |Setting|Value|
+    |---|---|
+    |User Name|**ADATUM\\Student**|
+    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
 
 14. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
