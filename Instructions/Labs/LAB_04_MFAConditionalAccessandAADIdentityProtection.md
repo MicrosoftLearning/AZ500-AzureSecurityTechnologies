@@ -175,7 +175,7 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
    
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
-5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create**.
+5. On the **Assignments** tab, click **+ Add role** and search for and select **Global Administrator**. Click **Select** then **Review + create** and then **Create**.
 
 6. Back on the **Users \| All users** blade, click **+ New User**. 
 
@@ -223,7 +223,7 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 6. On the **Users** blade, select **aaduser1**, **aaduser2**, **aaduser3**, and your user account and click **Select**.
 
-7. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + assign**, click **Assign**.
+7. Back on the **Assign licenses** blade, click **Assignment options**, ensure that all options are enabled, click **Review + assign**, and then click **Assign**.
 
 8. Sign out from the Azure portal and sign back in using the same account. (This step is necessary in order for the license assignment to take effect.)
 
@@ -279,7 +279,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     >**Note**: At this point, you have enabled MFA for aaduser1 and setup fraud alert settings. 
 
-14. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **Disabled**. Select **My Organization is using Conditional Access** as the reason, click **Save**, read the warning, and then click **Disable**.
+14. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **Disabled**. Select **My Organization is using Conditional Access** as the *Reason for disabling*, click **Save**, read the warning, and then click **Disable**.
 
     >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
 
@@ -305,7 +305,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 7. On the **Keep your account secure** page, ensure that the verification was successful and click **Next**.
 
-8. On the **Keep your account secure** page, click **I want to use a different method**, select **Email** from the drop-down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
+8. If prompted for an additional authentication method, click **I want to use a different method**, select **Email** from the drop-down list, click **Confirm**, provide the  email address you intend to use, and click **Next**. Once you receive the corresponding email, identify the code in the email body, provide it, and then click **Done**.
 
 9. When prompted, change your password. Make sure to record the new password.
 
