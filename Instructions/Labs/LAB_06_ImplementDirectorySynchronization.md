@@ -240,7 +240,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
-11. Double-click the newly crated **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
+11. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
 12. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
 
