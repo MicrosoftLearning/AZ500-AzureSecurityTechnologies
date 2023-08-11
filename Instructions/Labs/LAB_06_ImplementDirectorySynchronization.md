@@ -230,21 +230,17 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: If the **Load balancer public IP address** is not available in the **IP address** drop-down of the RDP blade, in the Azure Portal search for **Public IP addresses**, select **adPublicIP** and note its IP address. Click the Start button, type **MSTSC** and hit **Enter** to launch the remote desktop client. Type the load balancer's public IP address in the **Computer:** text box and click **Connect**.
 
-6. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
+6. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
+7. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
-8. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
+8. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
-9. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+9. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
-10. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
+10. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
 
-11. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
-
-12. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
-
-13. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
+11. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
     
     |Setting|Value|
     |---|---|
@@ -253,6 +249,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
     |User SamAccountName logon|**aduser1**|
     |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
     |Other password options|**Password never expires**|
+
 
 #### Task 2: Install Azure AD Connect
 
