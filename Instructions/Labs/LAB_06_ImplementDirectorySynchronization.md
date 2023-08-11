@@ -172,9 +172,9 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
    |Name|**syncadmin**|
    |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
 
-    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
+    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the drop-down list displaying the domain name and pasting it into a notepad document. You will need this later in this lab.
 
-    >**Note**: Record the user's password. You will need this later in this lab.
+    >**Note**: Record the user's password by clicking the **Copy to clipboard** button on the right-hand side of the Password text box and pasting it into a notepad document. You will need this later in this lab.
 
 4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
 
@@ -217,7 +217,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 4. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. In the **IP address** drop-down, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
@@ -228,7 +228,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM.
 
-    >**Note**: If the **Load balancer public IP address** is not available in the drop-down of the RDP blade, in the Azure Portal search for **Public IP addresses**, select **adPublicIP**, note its IP address. Click the Start button, type **MSTSC** and hit **Enter** to launch the remote desktop client. Type the load balancer's public IP address in the **Computer:** text box and click **Connect**.
+    >**Note**: If the **Load balancer public IP address** is not available in the **IP address** drop-down of the RDP blade, in the Azure Portal search for **Public IP addresses**, select **adPublicIP** and note its IP address. Click the Start button, type **MSTSC** and hit **Enter** to launch the remote desktop client. Type the load balancer's public IP address in the **Computer:** text box and click **Connect**.
 
 6. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
 
@@ -258,15 +258,15 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full User principal name and password that you recorded in the previous exercise.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-3. In the Azure portal, on the **AdatumSync \| Overview** blade, click **Azure AD Connect**.
+3. In the Azure portal, on the **AdatumSync \| Overview** blade, in the left navigation panel under **Manage**, click **Azure AD Connect**.
 
-4. On the **AdatumSync \| Azure AD Connect** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
+4. On the **AAD Connect \| Get started** blade, click **Connect Sync** in the left navigation panel and then click the **Download Azure AD Connect** link. You will be redirected to the **Azure AD Connect** download page.
 
-5. On the **Microsoft Azure Active Directory Connect** download page, click **Download**.
+5. On the **Azure AD Connect** download page, click **Download**.
 
 6. When prompted, click **Run** to start the **Microsoft Azure Active Directory Connect** wizard.
 
@@ -295,7 +295,7 @@ In this task, you will install AD Connect on the virtual machine.
 
     >**Note**: As explained earlier, this is expected, since you could not verify the custom Azure AD DNS domain **adatum.com**.
 
-16. On the **Domain and OU filtering** page, click the option **Sync selected domains and OUs**, domain name **adatum.com** will be checked, expand the **adatum.com** to view the **ToSync**. Clear all checkboxes, click only the checkbox next to the **ToSync** OU, and click **Next**.
+16. On the **Domain and OU filtering** page, click the option **Sync selected domains and OUs** and clear the checkbox next to the domain name **adatum.com**. Click to expand **adatum.com**, select only the checkbox next to the **ToSync** OU, and then click **Next**.
 
 17. On the **Uniquely identifying your users** page, accept the default settings, and click **Next**.
 
@@ -320,11 +320,11 @@ In this task, you will verify that directory synchronization is working.
 
    >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
-3. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
+3. Click the **aduser1** account and select the **Properties** tab. Scroll down to the **On-premises** section, note that the **On-premises sync enabled** attribute is set to **Yes**.
 
-4. On the **aduser1 \| Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
+4. On the **aduser1** blade, in the **Job Information** section, note that the **Department** attribute is not set.
 
-5. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
+5. Within the Remote Desktop session to **adVM**, switch to the **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
 
 6. In the **aduser1** window, in the **Organization** section, in the **Department** text box, type **Sales**, and select **OK**.
 
@@ -340,7 +340,7 @@ In this task, you will verify that directory synchronization is working.
 
 9. Switch to the Microsoft Edge window displaying the **aduser1** blade, refresh the page and note that the Department property is set to Sales.
 
-    >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
+    >**Note**: You might need to wait for up to three minutes and refresh the page again if the **Department** attribute remains not set.
 
 > **Result**: After you completed this exercise, you have prepared AD DS for directory synchronization, installed Azure AD Connect, and verified directory synchronization.
 
