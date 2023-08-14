@@ -164,30 +164,31 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 2. On the **Users | All users** blade, click **+ New User** and then **Create new user**.
 
-3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings (leave all others with their default values) and click **Create**:
+3. On the **New user** blade, ensure that the **Create user** option is selected, specify the following settings on the Basics tab (leave all others with their default values) and click **Next: Properties >**:
 
    |Setting|Value|
    |---|---|
    |User name|**syncadmin**|
    |Name|**syncadmin**|
    |Password|ensure that the option **Auto-generate password** is selected and click **Show Password**|
-   |Groups|**0 groups selected**|
-   |Roles|click **User**, then click **Global administrator**, and click **Select**|
-   |Usage Location|**United States**|  
 
-    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right hand side of the drop-down list displaying the domain name. 
+    >**Note**: Record the full user name. You can copy its value by clicking the **Copy to clipboard** button on the right-hand side of the drop-down list displaying the domain name and pasting it into a notepad document. You will need this later in this lab.
 
-    >**Note**: Record the user's password. You will need this later in this lab. 
+    >**Note**: Record the user's password by clicking the **Copy to clipboard** button on the right-hand side of the Password text box and pasting it into a notepad document. You will need this later in this lab.
 
+4. On the **Properties** tab, scroll to the bottom and specify the Usage Location: **United States** (leave all others with their default values) and click **Next: Assignments >**.
+
+5. On the **Assignments** tab, click **+ Add role**, search for and select **Global Administrator**, and then click **Select**. Click **Review + create** and then click **Create**.
+   
     >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Azure AD Connect.
 
-4. Open an InPrivate browser window.
+6. Open an InPrivate browser window.
 
-5. Navigate to the Azure portal and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to **Pa55w.rd1234**.
+7. Navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to your own password that meets the complexity requirements and record it for future reference. You will be prompted for this password in later tasks.
 
     >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
 
-6. Sign out as **syncadmin** and close the InPrivate browser window.
+8. Sign out as **syncadmin** and close the InPrivate browser window.
 
 > **Result**: After you completed this exercise, you have created an Azure AD tenant, seen how to add a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
 
@@ -216,7 +217,7 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
 4. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-5. In the **IP address** parameter, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. In the **IP address** drop-down, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
@@ -225,47 +226,44 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
-    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM. 
+    >**Note**: The following steps are performed in the Remote Desktop session to the **adVM** Azure VM.
 
-6. In **Server Manager**, click **Local Server** and then click **IE Enhanced Security Configuration**.
+    >**Note**: If the **Load balancer public IP address** is not available in the **IP address** drop-down of the RDP blade, in the Azure Portal search for **Public IP addresses**, select **adPublicIP** and note its IP address. Click the Start button, type **MSTSC** and hit **Enter** to launch the remote desktop client. Type the load balancer's public IP address in the **Computer:** text box and click **Connect**.
 
-7. In the **Internet Explorer Enhanced Security Configuration** dialog box, set both options to **Off** and click **OK**.
+6. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
 
-8. Start Internet Explorer, navigate to **https://www.microsoft.com/en-us/edge/business/download**, download Microsoft Edge installation binaries, run the installation, and configure the web browser with the default settings.
+7. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
-9. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Active Directory Administrative Center**.
+8. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
-10. In **Active Directory Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+9. Double-click the newly created **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
 
-11. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
+10. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
 
-12. Double-click the newly crated **ToSync** organizational unit such that its content appears in the details pane of the Active Directory Administrative Center console. 
+11. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
+    
+    |Setting|Value|
+    |---|---|
+    |Full Name|**aduser1**|
+    |User UPN logon|**aduser1**|
+    |User SamAccountName logon|**aduser1**|
+    |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
+    |Other password options|**Password never expires**|
 
-13. In the **Tasks** pane, within the **ToSync** section, click **New**, and, in the cascading menu, click **User**.
-
-14. In the **Create User** window, create a new user account with the following settings (leave others with their existing values) and click **OK**:
-
-   |Setting|Value|
-   |---|---|
-   |Full Name|**aduser1**|
-   |User UPN logon|**aduser1**|
-   |User SamAccountName logon|**aduser1**|
-   |Password and Confirm Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
-   |Other password options|**Password never expires**|
 
 #### Task 2: Install Azure AD Connect
 
 In this task, you will install AD Connect on the virtual machine. 
 
-1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full user name you recorded and the **Pa55w.rd1234** password.
+1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full User principal name and password that you recorded in the previous exercise.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
 
-3. In the Azure portal, on the **AdatumSync \| Overview** blade, click **Azure AD Connect**.
+3. In the Azure portal, on the **AdatumSync \| Overview** blade, in the left navigation panel under **Manage**, click **Azure AD Connect**.
 
-4. On the **AdatumSync \| Azure AD Connect** blade, click the **Download Azure AD Connect** link. You will be redirected to the **Microsoft Azure Active Directory Connect** download page.
+4. On the **AAD Connect \| Get started** blade, click **Connect Sync** in the left navigation panel and then click the **Download Azure AD Connect** link. You will be redirected to the **Azure AD Connect** download page.
 
-5. On the **Microsoft Azure Active Directory Connect** download page, click **Download**.
+5. On the **Azure AD Connect** download page, click **Download**.
 
 6. When prompted, click **Run** to start the **Microsoft Azure Active Directory Connect** wizard.
 
@@ -283,10 +281,10 @@ In this task, you will install AD Connect on the virtual machine.
 
 13. In the **AD forest account** window, ensure that the option to **Create new AD account** is selected, specify the following credentials, and click **OK**:
 
-   |Setting|Value|
-   |---|---|
-   |User Name|**ADATUM\\Student**|
-   |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+    |Setting|Value|
+    |---|---|
+    |User Name|**ADATUM\\Student**|
+    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
 
 14. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
@@ -294,7 +292,7 @@ In this task, you will install AD Connect on the virtual machine.
 
     >**Note**: As explained earlier, this is expected, since you could not verify the custom Azure AD DNS domain **adatum.com**.
 
-16. On the **Domain and OU filtering** page, click the option **Sync selected domains and OUs**, domain name **adatum.com** will be checked, expand the **adatum.com** to view the **ToSync**. Clear all checkboxes, click only the checkbox next to the **ToSync** OU, and click **Next**.
+16. On the **Domain and OU filtering** page, click the option **Sync selected domains and OUs** and clear the checkbox next to the domain name **adatum.com**. Click to expand **adatum.com**, select only the checkbox next to the **ToSync** OU, and then click **Next**.
 
 17. On the **Uniquely identifying your users** page, accept the default settings, and click **Next**.
 
@@ -319,11 +317,11 @@ In this task, you will verify that directory synchronization is working.
 
    >**Note**: You might have to wait a few minutes and select **Refresh** for the **aduser1** user account to appear.
 
-3. Select the **aduser1** account and, in the **Profile > Identity** section, note that the **Source** attribute is set to **Windows Server AD**.
+3. Click the **aduser1** account and select the **Properties** tab. Scroll down to the **On-premises** section, note that the **On-premises sync enabled** attribute is set to **Yes**.
 
-4. On the **aduser1 \| Profile** blade, in the **Job info** section, note that the **Department** attribute is not set.
+4. On the **aduser1** blade, in the **Job Information** section, note that the **Department** attribute is not set.
 
-5. Within the Remote Desktop session to **adVM**, switch to **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
+5. Within the Remote Desktop session to **adVM**, switch to the **Active Directory Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
 
 6. In the **aduser1** window, in the **Organization** section, in the **Department** text box, type **Sales**, and select **OK**.
 
@@ -339,7 +337,7 @@ In this task, you will verify that directory synchronization is working.
 
 9. Switch to the Microsoft Edge window displaying the **aduser1** blade, refresh the page and note that the Department property is set to Sales.
 
-    >**Note**: You might need to wait for another minute and refresh the page again if the **Department** attribute remains not set.
+    >**Note**: You might need to wait for up to three minutes and refresh the page again if the **Department** attribute remains not set.
 
 > **Result**: After you completed this exercise, you have prepared AD DS for directory synchronization, installed Azure AD Connect, and verified directory synchronization.
 
