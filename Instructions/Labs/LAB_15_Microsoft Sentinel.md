@@ -230,27 +230,29 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: Check your secure score. By now it should have updated. 
 
-2. On the **Microsoft Defender for Cloud \| Workload protections** blade, click **Just-in-time VM access** section under the **Advanced protection**.
+2. On the **Microsoft Defender for Cloud \| Overview** blade, click **Workload protections** under **Cloud Security** in the left navigation.
 
-3. On the **Microsoft Defender for Cloud \| Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses** button,  click **Remove** and then click **Yes**.
+3. On the **Microsoft Defender for Cloud \| Workload protections** blade, scroll down and click **Just-in-time VM access** card under **Advanced protection**.
+
+4. On the **Just in time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipses (...)** button, click **Remove** and then click **Yes**.
 
     >**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
-4. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
+5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 
-5. Navigate to the **Activity log** blade, note an **Delete JIT Network Access Policies** entry. 
+6. Navigate to the **Activity log** blade, note an **Delete JIT Network Access Policies** entry. 
 
-    >**Note**: This may take a minute to appear. 
+    >**Note**: This may take a few minutes to appear. **Refresh** the page if it does not appear.
 
-6. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
+7. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
-7. On the **Microsoft Sentinel \| Overview** blade, review the dashboard and verify that it displays an alert corresponding to the deletion of the Just in time VM access policy.
+8. On the **Microsoft Sentinel \| Overview** blade, review the dashboard and verify that it displays an incident corresponding to the deletion of the Just in time VM access policy.
 
     >**Note**: It can take up to 5 minutes for alerts to appear on the **Microsoft Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Microsoft Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
 
-8. On the **Microsoft Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
+9. On the **Microsoft Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
 
-9. Verify that the blade displays an incident with either medium or high severity level.
+10. Verify that the blade displays an incident with either medium or high severity level.
 
     >**Note**: It can take up to 5 minutes for the incident to appear on the **Microsoft Sentinel \| Incidents** blade. 
 
