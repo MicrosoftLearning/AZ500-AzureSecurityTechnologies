@@ -13,7 +13,7 @@ You have been asked to create a proof of concept of Microsoft Defender for Cloud
 
 - Configure Microsoft Defender for Cloud to monitor a virtual machine.
 - Review Microsoft Defender for Cloud recommendations for the virtual machine.
-- Implement recommendations for guest configuration and Just in time VM access. 
+- Implement recommendations for guest configuration and Just-in-time VM access. 
 - Review how the Secure Score can be used to determine progress toward creating a more secure infrastructure.
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
@@ -36,7 +36,7 @@ In this exercise, you will complete the following tasks:
 
 - Task 1: Configure Microsoft Defender for Cloud
 - Task 2: Review the Microsoft Defender for Cloud recommendations
-- Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access
+- Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just-in-time VM Access
 
 #### Task 1: Configure Microsoft Defender for Cloud
 
@@ -86,15 +86,15 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
     
 5. On the **Resource health** blade, on the **Recommendations** tab, review the list of recommendations for **myVM**.
 
-#### Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access
+#### Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just-in-time VM Access
 
-In this task, you will implement the Microsoft Defender for Cloud recommendation to enable Just in time VM Access on the virtual machine. 
+In this task, you will implement the Microsoft Defender for Cloud recommendation to enable Just-in-time VM Access on the virtual machine. 
 
 1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade and select the **Workload protections** under **Cloud Security** tile.
 
-2. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time VM access** tile and, on the **Just-in-time VM access** blade.
+2. On the **Workload protections** blade, in the **Advanced protection** section, click the **Just-in-time VM access** tile.
 
-3. On the **Just in time VM access** blade, under the **Virtual machines** section, select **Not Configured** and then click the **myVM** entry.
+3. On the **Just-in-time VM access** blade, under the **Virtual machines** section, select **Not Configured** and then click the **myVM** entry.
 
 4. Click the **Enable JIT on 1 VM** option on the far right of the **Virtual machines** section.
 
