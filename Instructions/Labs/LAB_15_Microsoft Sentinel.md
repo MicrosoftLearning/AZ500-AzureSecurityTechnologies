@@ -110,17 +110,17 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: This rule has the medium severity. 
 
-4. On the **General** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Set rule logic >**.
+4. On the **General** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Set rule logic >**.
 
-5. On the **Set rule logic** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Incident settings (Preview) >**.
+5. On the **Set rule logic** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Incident settings (Preview) >**.
 
-6. On the **Incident settings** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Automated response >**. 
+6. On the **Incident settings** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Automated response >**. 
 
     >**Note**: This is where you can add a playbook, implemented as a Logic App, to a rule to automate the remediation of an issue.
 
-7. On the **Automated response** tab of the **Analytic rule wizard - Create new rule from template** blade, accept the default settings and click **Next: Review >**. 
+7. On the **Automated response** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Review >**. 
 
-8. On the **Review and create** tab of the **Analytic rule wizard - Create new rule from template** blade, click **Create**.
+8. On the **Review and create** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, click **Save**.
 
     >**Note**: You now have an active rule.
 
