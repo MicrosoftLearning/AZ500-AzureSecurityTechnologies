@@ -95,6 +95,54 @@ In this task, you will create a Log Analytics workspace.
 
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
+
+#### Task 5: Create a storage account
+
+In this task, you will create a storage account with a file share and obtain the storage account key.  
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
+
+2. On the **Storage accounts** blade, click **+ Create**.
+
+3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+
+    |Setting|Value|
+    |---|---|
+    |Subscription|the name of the Azure subscription you are using in this lab|
+    |Resource group|**AZ500LAB131415**|
+    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
+    |Location|**(US) EastUS**|
+    |Performance|**Standard (general-purpose v2 account)**|
+    |Redundency|**Locally redundant storage (LRS)**|
+
+4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+
+    >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
+    
+   
+#### Task 6: Create a diagnostic setting
+
+In this task, you will create and define where to send resource logs for a particular resource. 
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
+
+2. On the **Storage accounts** blade, click **+ Create**.
+
+3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+
+    |Setting|Value|
+    |---|---|
+    |Subscription|the name of the Azure subscription you are using in this lab|
+    |Resource group|**AZ500LAB131415**|
+    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
+    |Location|**(US) EastUS**|
+    |Performance|**Standard (general-purpose v2 account)**|
+    |Redundency|**Locally redundant storage (LRS)**|
+
+4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+
+    >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
+
 > Results: You deployed an Azure virtual machine and created a Log Analytics workspace.
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Defender for Cloud lab and the Microsoft Sentinel lab.
