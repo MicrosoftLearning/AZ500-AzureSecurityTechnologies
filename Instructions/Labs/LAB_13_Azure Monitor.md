@@ -14,6 +14,7 @@ You have been asked to creating an Azure virtual machione and Log Analytics work
 
 - Deploy an Azure virtual machine.
 - Create a Log Analytics workspace.
+- Create a Storage account.
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
@@ -96,7 +97,7 @@ In this task, you will create a Log Analytics workspace.
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
 
-#### Task 5: Create a storage account
+#### Task 3: Create a storage account
 
 In this task, you will create a storage account.
 
@@ -124,7 +125,7 @@ In this task, you will create a storage account.
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
     
    
-#### Task 6: Create a diagnostic setting
+#### Task 4: Create a diagnostic setting
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
