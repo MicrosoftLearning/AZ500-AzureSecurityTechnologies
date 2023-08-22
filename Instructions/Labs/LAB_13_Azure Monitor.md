@@ -98,7 +98,7 @@ In this task, you will create a Log Analytics workspace.
 
 #### Task 5: Create a storage account
 
-In this task, you will create a storage account with a file share and obtain the storage account key.  
+In this task, you will create a storage account.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
