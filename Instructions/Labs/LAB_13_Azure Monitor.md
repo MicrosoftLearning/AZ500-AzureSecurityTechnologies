@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '13 - Deploy an Azure VM and Log Analytics workspace' 
+    title: '13 - Azure Monitor' 
     module: 'Module 04 - Manage security operations'
 ---
 
-# Lab 13: Deploy an Azure VM and Log Analytics workspace
+# Lab 13: Azure Monitor
 
 # Student lab manual
 
