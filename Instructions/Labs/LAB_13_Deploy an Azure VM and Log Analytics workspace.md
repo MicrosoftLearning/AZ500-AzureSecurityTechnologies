@@ -4,7 +4,7 @@ lab:
     module: 'Module 04 - Manage security operations'
 ---
 
-# Lab 13: Azure VM and Log Analytics workspace deployment
+# Lab 13: Deploy an Azure VM and Log Analytics workspace
 
 # Student lab manual
 
