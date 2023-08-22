@@ -128,7 +128,10 @@ In this task, you will create and define where to send resource logs for a parti
 
 2. On the **Storage accounts** blade, click **+ Create**.
 
-3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/73eb9241-d642-455a-a1ff-b504670395c0)
+
+
+4. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -139,7 +142,10 @@ In this task, you will create and define where to send resource logs for a parti
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+5. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+
+  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
+
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
