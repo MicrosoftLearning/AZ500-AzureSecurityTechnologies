@@ -157,7 +157,7 @@ In this task, you will create a storage account.
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
-1. Under the Monitoring section of your previously created storage resource, select **Diagnostic settings.**
+1. In the left navigation panel of your previously created storage account resource, under the Monitoring section, select **Diagnostic settings.**
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d552991-305a-44bf-b8a5-7d4acae97257)
 
