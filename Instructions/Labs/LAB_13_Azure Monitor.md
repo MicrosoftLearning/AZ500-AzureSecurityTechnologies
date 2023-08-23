@@ -204,24 +204,25 @@ In this task, you will create a storage account.
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2184da69-12c2-476b-b2b2-b80620e822a6)
 
 
-3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
+    |Rule details|
+    |Rule Name|**DCR1**|
     |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB131415**|
-    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
-    |Location|**(US) EastUS**|
-    |Performance|**Standard (general-purpose v2 account)**|
-    |Redundency|**Locally redundant storage (LRS)**|
+    |Resource Group|**AZ500LAB131415**|
+    |Region|**EastUS**|
+    |Platform Type|**Windows**|
+    |Data Collection Endpoint|*Leave Blank*|
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
+5. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
 
      ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
-5. On the **Your deployment is complete** blade, select **Go to resource**.
+6. On the **Your deployment is complete** blade, select **Go to resource**.
 
  ### Exercise 4: Create a diagnostic setting 
  
