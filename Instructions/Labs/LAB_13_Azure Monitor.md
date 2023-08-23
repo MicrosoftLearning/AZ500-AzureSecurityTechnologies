@@ -159,16 +159,18 @@ In this task, you will create and define where to send resource logs for a parti
 
 1. In the left navigation panel of your previously created storage account resource, under the Monitoring section, select **Diagnostic settings.**
   
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d552991-305a-44bf-b8a5-7d4acae97257)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e5908a8d-94fe-4d01-aaf8-e67333a0f3fb)
 
 
 2. Select your previously created storage resource.
   
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8a745437-6408-49be-85af-a18a24218f32)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f23d98dc-c561-4d7e-88ee-d156bac2b4c5)
+
 
 3. Select **+ Add diagnostic setting.**
 
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/0ec0b760-f43d-4269-9d4f-ccba6bd7709d)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf5f3082-11e5-4296-b689-ec887adbaa77)
+
 
 4. Select the following **Diagnostic setting** details:
 
@@ -180,7 +182,8 @@ In this task, you will create and define where to send resource logs for a parti
      - Log Analytics workspace: Select your previously created Log Analytics workspace in the drop-down menu. 
      - Select **Save** to save the diagnostic settings.
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/56dc517f-7db6-44bc-83ae-03ae7bb3b44a)
+
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
 
