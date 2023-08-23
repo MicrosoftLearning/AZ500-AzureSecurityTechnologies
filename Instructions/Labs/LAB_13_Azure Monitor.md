@@ -76,6 +76,8 @@ In this exercise, you will complete the following tasks:
 
 8. Close the Cloud Shell pane. 
 
+### Exercise 2: Create a Log Analytics workspace
+
 #### Task 2: Create a Log Analytics workspace
 
 In this task, you will create a Log Analytics workspace. 
