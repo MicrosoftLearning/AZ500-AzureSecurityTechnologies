@@ -124,7 +124,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: This is where you can add a playbook, implemented as a Logic App, to a rule to automate the remediation of an issue.
 
-7. On the **Automated response** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Review >**. 
+7. On the **Automated response** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Review and create >**. 
 
 8. On the **Review and create** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, click **Save**.
 
@@ -166,17 +166,17 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 10. On the **Change-Incident-Severity** blade, click **Edit**.
 
-    >**Note**: On the **Logic Apps Designer** blade, each of the four connections displays a warning. This means that each needs to reviewed and configured.
+    >**Note**: On the **Logic Apps Designer** blade, each of the four s displays a warning. This means that each needs to reviewed and configured.
 
-11. On the **Logic Apps Designer** blade, click the first **Connections** step.
+11. On the **Logic Apps Designer** blade, click the first **s** step.
 
 12. Click **Add new**, ensure that the entry in the **Tenant** drop down list contains your Azure AD tenant name and click **Sign-in**.
 
 13. When prompted, sign in with the user account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-14. Click the second **Connection** step and, in the list of connections, select the second entry, representing the connection you created in the previous step.
+14. Click the second **s** step and, in the list of s, select the second entry, representing the  you created in the previous step.
 
-15. Repeat the previous steps in for the remaining two **Connection** steps.
+15. Repeat the previous step for the remaining two **s** steps.
 
     >**Note**: Ensure there are no warnings displayed on any of the steps.
 
@@ -207,7 +207,7 @@ In this task, you will create a playbook. A security playbook is a collection of
      | where OperationNameValue =~ "Microsoft.Security/locations/jitNetworkAccessPolicies/delete" 
     ```
 
-    >**Note**: This rule identifies removal of Just in time VM access policies.
+    >**Note**: This rule identifies removal of Just-in-time VM access policies.
 
     >**Note** if you receive a parse error, intellisense may have added values to your query. Ensure the query matches otherwise paste the query into notepad and then from notepad to the rule query. 
 
@@ -220,7 +220,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 10. On the **Automated response** tab of the **Analytic rule wizard - Create a new Scheduled rule** blade, under **Automation rules**, click **+ Add new**.
 
-11. In the **Create new automation rule** window, enter**Run Change-Severity Playbook** for the **Automation rule name**; under the **Trigger** field, click the drop-down menu and select **When alert is created**.
+11. In the **Create new automation rule** window, enter **Run Change-Severity Playbook** for the **Automation rule name**; under the **Trigger** field, click the drop-down menu and select **When alert is created**.
 
 12. In the **Create new automation rule** window, under **Actions**, read the note and then click **Manage playbook permissions**. On the **Manage permissions** window, select the checkbox next to the previously created **Resource group AZ500LAB1314151** and then click **Apply**.
 
@@ -252,9 +252,9 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 7. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
-8. On the **Microsoft Sentinel \| Overview** blade, review the dashboard and verify that it displays an incident corresponding to the deletion of the Just in time VM access policy.
+8. On the **Microsoft Sentinel \| Overview** blade, review the dashboard and verify that it displays an incident corresponding to the deletion of the Just-in-time VM access policy.
 
-    >**Note**: It can take up to 5 minutes for alerts to appear on the **Microsoft Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just In Time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Microsoft Sentinel instance. If that is not the case, re-create the Just in time VM access policy and delete it again.
+    >**Note**: It can take up to 5 minutes for alerts to appear on the **Microsoft Sentinel \| Overview** blade. If you are not seeing an alert at that point, run the query rule referenced in the previous task to verify that the Just-in-time access policy deletion activity has been propagated to the Log Analytics workspace associated with your Microsoft Sentinel instance. If that is not the case, re-create the Just-in-time VM access policy and delete it again.
 
 9. On the **Microsoft Sentinel \| Overview** blade, in the **Threat Management** section, click **Incidents**.
 
@@ -266,7 +266,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: You have the option of assigning a different severity level and status to an incident.
 
-> Results: You have created an Microsoft Sentinel workspace, connected it to Azure Activity logs, created a playbook and custom alerts that are triggered in response to the removal of Just in time VM access policies, and verified that the configuration is valid.
+> Results: You have created an Microsoft Sentinel workspace, connected it to Azure Activity logs, created a playbook and custom alerts that are triggered in response to the removal of Just-in-time VM access policies, and verified that the configuration is valid.
 
 **Clean up resources**
 
