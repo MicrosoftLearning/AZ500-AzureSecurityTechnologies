@@ -98,7 +98,7 @@ In this task, you will create a Log Analytics workspace.
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
 
-#### Task 3: Create a storage account
+#### Task 3: Create an Azure storage account
 
 In this task, you will create a storage account.
 
@@ -155,7 +155,7 @@ In this task, you will create and define where to send resource logs for a parti
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
 
-> Results: You deployed an Azure virtual machine and created a Log Analytics workspace.
+> Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Defender for Cloud lab and the Microsoft Sentinel lab.
  
