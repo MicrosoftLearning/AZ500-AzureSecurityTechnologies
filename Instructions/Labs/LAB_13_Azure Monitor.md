@@ -36,7 +36,7 @@ In this lab, you will complete the following exercise:
 
 In this exercise, you will complete the following tasks: 
 
-- Task 1: Deploy an Azure virtual machine 
+- Task 1: Deploy an Azure virtual machine. 
 
 #### Task 1: Deploy an Azure virtual machine
 
