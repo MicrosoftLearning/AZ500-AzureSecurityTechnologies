@@ -101,7 +101,7 @@ In this task, you will create a Log Analytics workspace.
 
 ### Exercise 3: Create an Azure storage account
 
-    Estimated timing: 10 minutes
+### Estimated timing: 10 minutes
 
     In this exercise, you will complete the following tasks:
 
@@ -133,8 +133,8 @@ In this task, you will create a storage account.
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
  ### Exercise 4: Create a diagnostic setting 
-
-    Estimated timing: 10 minutes
+ 
+ ### Estimated timing: 10 minutes
 
     In this exercise, you will complete the following tasks:
 
