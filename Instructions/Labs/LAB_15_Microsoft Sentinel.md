@@ -124,7 +124,7 @@ In this task, you will review and create a rule that uses the Azure Activity dat
 
     >**Note**: This is where you can add a playbook, implemented as a Logic App, to a rule to automate the remediation of an issue.
 
-7. On the **Automated response** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Review >**. 
+7. On the **Automated response** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, accept the default settings and click **Next: Review and create >**. 
 
 8. On the **Review and create** tab of the **Analytics rule wizard - Create a new Scheduled rule** blade, click **Save**.
 
