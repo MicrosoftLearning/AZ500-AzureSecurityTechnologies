@@ -48,9 +48,9 @@ In this task, you will on-board and configure Microsoft Defender for Cloud.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Defender for Cloud** and press the **Enter** key.
 
-3. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade**.
+3. In the left navigation panel, select **Getting started**. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade**.
      
-4. On the **Microsoft Defender for Cloud \| Getting started** blade, in the Install agents tab, scroll down and click Install agents. 
+4. On the **Microsoft Defender for Cloud \| Getting started** blade, in the Install agents tab, scroll down and click **Install agents**. 
 
 5. On the **Microsoft Defender for Cloud \| Getting started** blade, on the **Upgrade** tab >> scroll down until the **Select workspaces with enhanced security features** section is visible >> turn on the **Microsoft Defender plan** by selecting your Log Analytics Workspace, then click the large Blue Upgrade button.  
 
