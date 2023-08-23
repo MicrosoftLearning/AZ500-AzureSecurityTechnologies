@@ -145,46 +145,6 @@ In this task, you will create a storage account.
 
 5. On the **Your deployment is complete** blade, select **Go to resource**.
 
- ### Exercise 4: Create a diagnostic setting 
- 
- ### Estimated timing: 10 minutes
- 
- In this exercise, you will complete the following tasks:
-
- - Task 1: Create a diagnostic setting. 
-
-#### Task 1: Create a diagnostic setting 
-
-In this task, you will create and define where to send resource logs for a particular resource. 
-
-1. In the left navigation panel of your previously created storage account resource, under the Monitoring section, select **Diagnostic settings.**
-  
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e5908a8d-94fe-4d01-aaf8-e67333a0f3fb)
-
-
-2. Select your previously created storage resource.
-  
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f23d98dc-c561-4d7e-88ee-d156bac2b4c5)
-
-
-3. Select **+ Add diagnostic setting.**
-
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf5f3082-11e5-4296-b689-ec887adbaa77)
-
-
-4. Select the following **Diagnostic setting** details:
-
-   - Enter a Diagnostic settings name.
-   - Metrics: select **Transaction.**
-   - Destination details
-     - Select: **Send to Log Analytics workspace.**
-     - Subscription: Enter your **subscription.**
-     - Log Analytics workspace: Select your previously created Log Analytics workspace in the drop-down menu.
-    - Click **Save** to save Diagnostic settings.
-    - Click the **X** in the top right corner of the page to exit.
-
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bb5bb596-0eeb-40b2-b50f-44c13def1f38)
-
 ### Exercise 3: Create a Data Collection Rule
 
 ### Estimated timing: 10 minutes
@@ -208,7 +168,7 @@ In this task, you will create a storage account.
 
     |Setting|Value|
     |---|---|
-    |Rule details|
+    |**Rule details**|
     |Rule Name|**DCR1**|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource Group|**AZ500LAB131415**|
@@ -216,13 +176,16 @@ In this task, you will create a storage account.
     |Platform Type|**Windows**|
     |Data Collection Endpoint|*Leave Blank*|
 
-5. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
+4. Click, **Next: Resources >**
 
-     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e10fb6f5-887f-46d4-b8f2-16a0827f67bd)
 
-    >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
+7. On the Resources tab, select **+ Add resources** and associate resources to the data collection rule. 
 
-6. On the **Your deployment is complete** blade, select **Go to resource**.
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/019c0a10-250c-4699-bc29-4cd1ff3239ea)
+
+
+8. On the **Your deployment is complete** blade, select **Go to resource**.
 
  ### Exercise 4: Create a diagnostic setting 
  
