@@ -23,7 +23,10 @@ You have been asked to create an Azure virtual machine, Log Analytics workspace,
 
 In this lab, you will complete the following exercise:
 
-- Exercise 1: Create an Azure virtual machine
+- Exercise 1: Deploy an Azure virtual machine
+- Exercise 2: Create a Log Analytics workspace
+- Exercise 3: Create an Azure storage account
+- Exercise 4: Create a diagnostic setting
   
 ## Instructions
 
