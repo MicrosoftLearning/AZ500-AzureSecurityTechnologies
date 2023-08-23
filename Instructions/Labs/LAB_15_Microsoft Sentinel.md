@@ -166,17 +166,17 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 10. On the **Change-Incident-Severity** blade, click **Edit**.
 
-    >**Note**: On the **Logic Apps Designer** blade, each of the four connections displays a warning. This means that each needs to reviewed and configured.
+    >**Note**: On the **Logic Apps Designer** blade, each of the four s displays a warning. This means that each needs to reviewed and configured.
 
-11. On the **Logic Apps Designer** blade, click the first **Connections** step.
+11. On the **Logic Apps Designer** blade, click the first **s** step.
 
 12. Click **Add new**, ensure that the entry in the **Tenant** drop down list contains your Azure AD tenant name and click **Sign-in**.
 
 13. When prompted, sign in with the user account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-14. Click the second **Connection** step and, in the list of connections, select the second entry, representing the connection you created in the previous step.
+14. Click the second **s** step and, in the list of s, select the second entry, representing the  you created in the previous step.
 
-15. Repeat the previous steps in for the remaining two **Connection** steps.
+15. Repeat the previous step for the remaining two **s** steps.
 
     >**Note**: Ensure there are no warnings displayed on any of the steps.
 
