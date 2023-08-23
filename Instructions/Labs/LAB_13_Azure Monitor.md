@@ -180,18 +180,21 @@ In this task, you will create a storage account.
    
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e10fb6f5-887f-46d4-b8f2-16a0827f67bd)
 
-5. On the Resources tab, select **+ Add resources** and associate resources to the data collection rule. 
+5. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/436cdd35-cf5c-4329-8876-0024c2b947c9)
 
-6. Click, **Next: Collect and deliver >**
+6. Click, **Next: Collect and deliver >.**
+
+7. Change the **Data source type** drop-down meun to display **Performance Counters.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-7. On the **Your deployment is complete** blade, select **Go to resource**.
+8. Click, **Next: Destination >.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
+9. Change the **Destination type** drop-down menu to display **Azure Monitor Logs**, the Subscription window should display your **Subscription**, then change the Account of namespace drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the add data source page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
