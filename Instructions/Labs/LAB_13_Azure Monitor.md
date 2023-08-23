@@ -151,7 +151,7 @@ In this task, you will create and define where to send resource logs for a parti
          - Select: **Send to Log Analytics workspace**
          - Subscription: Enter your **subscription**
          - Log Analytics workspace: Select your previously created Log Analytics workspace from the drop-down
-     - Click: **Save.**
+     - Slect **Save** to save the diagnostic settings.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
 
