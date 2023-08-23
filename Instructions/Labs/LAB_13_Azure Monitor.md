@@ -145,12 +145,12 @@ In this task, you will create and define where to send resource logs for a parti
 
 4. Select the following **Diagnostic setting** details:
 
-   - Enter a Diagnostic settings name
-   - Metrics: select **Transaction**
+   - Enter a Diagnostic settings name.
+   - Metrics: select **Transaction.**
    - Destination details
-     - Select: **Send to Log Analytics workspace**
-     - Subscription: Enter your **subscription**
-     - Log Analytics workspace: Select your previously created Log Analytics workspace from the drop-down
+     - Select: **Send to Log Analytics workspace.**
+     - Subscription: Enter your **subscription.**
+     - Log Analytics workspace: Select your previously created Log Analytics workspace in the drop-down menu. 
      - Select **Save** to save the diagnostic settings.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
