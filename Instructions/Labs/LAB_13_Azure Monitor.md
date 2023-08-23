@@ -155,25 +155,6 @@ In this task, you will create and define where to send resource logs for a parti
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
 
-4. Select **Save + create**.
-
-
-    |Setting|Value|
-    |---|---|
-    |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB131415**|
-    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
-    |Location|**(US) EastUS**|
-    |Performance|**Standard (general-purpose v2 account)**|
-    |Redundency|**Locally redundant storage (LRS)**|
-
-8. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
-
-  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
-
-
-    >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
-
 > Results: You deployed an Azure virtual machine and created a Log Analytics workspace.
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Defender for Cloud lab and the Microsoft Sentinel lab.
