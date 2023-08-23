@@ -177,15 +177,21 @@ In this task, you will create a storage account.
     |Data Collection Endpoint|*Leave Blank*|
 
 4. Click, **Next: Resources >**
-
+   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e10fb6f5-887f-46d4-b8f2-16a0827f67bd)
 
-7. On the Resources tab, select **+ Add resources** and associate resources to the data collection rule. 
+5. On the Resources tab, select **+ Add resources** and associate resources to the data collection rule. 
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/019c0a10-250c-4699-bc29-4cd1ff3239ea)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/436cdd35-cf5c-4329-8876-0024c2b947c9)
 
+6. Click, **Next: Collect and deliver >**
 
-8. On the **Your deployment is complete** blade, select **Go to resource**.
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
+
+7. On the **Your deployment is complete** blade, select **Go to resource**.
+
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f7166024-20e7-40ef-a24e-3487d2789ea7)
+
 
  ### Exercise 4: Create a diagnostic setting 
  
