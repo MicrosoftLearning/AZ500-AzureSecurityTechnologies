@@ -99,7 +99,7 @@ In this task, you will create a Log Analytics workspace.
 
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
-### Exercise 3: Deploy virtual machines and test network filters
+### Exercise 3: Create an Azure storage account
 
     Estimated timing: 10 minutes
 
