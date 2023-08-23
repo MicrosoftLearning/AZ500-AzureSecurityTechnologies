@@ -129,14 +129,19 @@ In this task, you will create a storage account.
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
-
-2. On the **Storage accounts** blade, click **+ Create**.
-
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/73eb9241-d642-455a-a1ff-b504670395c0)
+1. Under the Monitoring section of your previously created storage resource, select **Diagnostic settings.**
+  
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d552991-305a-44bf-b8a5-7d4acae97257)
 
 
-4. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+2. Click your previously created storage resource.
+  
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8a745437-6408-49be-85af-a18a24218f32)
+
+3. Then select **+ Add diagnostic setting.**
+
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/0ec0b760-f43d-4269-9d4f-ccba6bd7709d)
+
 
     |Setting|Value|
     |---|---|
@@ -147,7 +152,7 @@ In this task, you will create and define where to send resource logs for a parti
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
-5. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+8. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
 
   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
 
