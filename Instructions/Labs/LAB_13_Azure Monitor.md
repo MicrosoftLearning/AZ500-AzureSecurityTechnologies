@@ -182,7 +182,7 @@ In this task, you will create and define where to send resource logs for a parti
      - Log Analytics workspace: Select your previously created Log Analytics workspace in the drop-down menu. 
      - Select **Save** to save the diagnostic settings.
 
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/56dc517f-7db6-44bc-83ae-03ae7bb3b44a)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bb5bb596-0eeb-40b2-b50f-44c13def1f38)
 
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
