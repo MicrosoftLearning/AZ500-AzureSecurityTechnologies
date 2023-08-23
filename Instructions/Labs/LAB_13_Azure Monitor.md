@@ -103,7 +103,7 @@ In this task, you will create a Log Analytics workspace.
 
 ### Estimated timing: 10 minutes
 
-    In this exercise, you will complete the following tasks:
+In this exercise, you will complete the following tasks:
 
 #### Task 1: Create an Azure storage account
 
@@ -135,8 +135,8 @@ In this task, you will create a storage account.
  ### Exercise 4: Create a diagnostic setting 
  
  ### Estimated timing: 10 minutes
-
-    In this exercise, you will complete the following tasks:
+ 
+ In this exercise, you will complete the following tasks:
 
 #### Task 1: Create a diagnostic setting
 
