@@ -198,9 +198,11 @@ In this task, you will create a storage account.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
-
+10. Click **Review + create.**
+    
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2ea0e907-1250-4ccb-9a43-5694d1c168c0)
 
+11. Click **Create.**
 
  ### Exercise 4: Create a diagnostic setting 
  
