@@ -107,7 +107,7 @@ In this task, you will create a storage account.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/73eb9241-d642-455a-a1ff-b504670395c0)
 
-4. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |---|---|
@@ -118,7 +118,7 @@ In this task, you will create a storage account.
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
-5. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
 
      ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
 
@@ -134,13 +134,28 @@ In this task, you will create and define where to send resource logs for a parti
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d552991-305a-44bf-b8a5-7d4acae97257)
 
 
-2. Click your previously created storage resource.
+2. Select your previously created storage resource.
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8a745437-6408-49be-85af-a18a24218f32)
 
 3. Then select **+ Add diagnostic setting.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/0ec0b760-f43d-4269-9d4f-ccba6bd7709d)
+
+
+4. Select the following **Diagnostic setting** details:
+
+   - Enter a Diagnostic settings name
+   - Metrics: select **Transaction**
+   - Destination details
+         - Select: **Send to Log Analytics workspace**
+         - Subscription: Enter your **subscription**
+         - Log Analytics workspace: Select your previously created Log Analytics workspace from the drop-down
+     - Click: **Save.**
+
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e7bcbc07-4d0b-4a00-ae8a-589b0ad9cfff)
+
+4. Select **Save + create**.
 
 
     |Setting|Value|
