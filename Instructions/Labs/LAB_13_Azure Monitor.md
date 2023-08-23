@@ -10,7 +10,7 @@ lab:
 
 ## Lab scenario
 
-You have been asked to create an Azure virtual machine, Log Analytics workspace, Azure storage account, and a diagnostic setting.
+You have been asked to collect and analyze resource logs from an Azure resource.
 
 - Deploy an Azure virtual machine.
 - Create a Log Analytics workspace.
@@ -81,6 +81,12 @@ In this exercise, you will complete the following tasks:
 
 ### Exercise 2: Create a Log Analytics workspace
 
+### Exercise timing: 10 minutes
+
+In this exercise, you will complete the following tasks: 
+
+- Task 1: Create a Log Analytics workspace.
+
 #### Task 1: Create a Log Analytics workspace
 
 In this task, you will create a Log Analytics workspace. 
@@ -107,6 +113,8 @@ In this task, you will create a Log Analytics workspace.
 ### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
+
+- Task 1: Create an Azure storage account.
 
 #### Task 1: Create an Azure storage account
 
@@ -141,7 +149,9 @@ In this task, you will create a storage account.
  
  In this exercise, you will complete the following tasks:
 
-#### Task 1: Create a diagnostic setting
+ - Task 1: Create a diagnostic setting. 
+
+#### Task 1: Create a diagnostic setting 
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
