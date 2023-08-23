@@ -99,6 +99,11 @@ In this task, you will create a Log Analytics workspace.
 
 5. On the **Review + create** tab of the **Create Log Analytics workspace** blade, select **Create**.
 
+### Exercise 3: Deploy virtual machines and test network filters
+
+    Estimated timing: 10 minutes
+
+    In this exercise, you will complete the following tasks:
 
 #### Task 3: Create an Azure storage account
 
@@ -126,8 +131,13 @@ In this task, you will create a storage account.
      ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
-    
-   
+
+ ### Exercise 4: Create a diagnostic setting 
+
+    Estimated timing: 10 minutes
+
+    In this exercise, you will complete the following tasks:
+
 #### Task 4: Create a diagnostic setting
 
 In this task, you will create and define where to send resource logs for a particular resource. 
