@@ -10,7 +10,7 @@ lab:
 
 ## Lab scenario
 
-You have been asked to creating an Azure virtual machione and Log Analytics workspace.
+You have been asked to create an Azure virtual machine, Log Analytics workspace, Azure storage account, and a diagnostic setting.
 
 - Deploy an Azure virtual machine.
 - Create a Log Analytics workspace.
