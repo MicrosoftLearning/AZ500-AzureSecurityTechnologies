@@ -190,7 +190,8 @@ In this task, you will create a storage account.
 
 7. On the **Your deployment is complete** blade, select **Go to resource**.
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f7166024-20e7-40ef-a24e-3487d2789ea7)
+   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
+
 
 
  ### Exercise 4: Create a diagnostic setting 
