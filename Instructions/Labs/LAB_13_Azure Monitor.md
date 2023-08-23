@@ -78,7 +78,7 @@ In this exercise, you will complete the following tasks:
 
 ### Exercise 2: Create a Log Analytics workspace
 
-#### Task 2: Create a Log Analytics workspace
+#### Task 1: Create a Log Analytics workspace
 
 In this task, you will create a Log Analytics workspace. 
 
@@ -105,7 +105,7 @@ In this task, you will create a Log Analytics workspace.
 
     In this exercise, you will complete the following tasks:
 
-#### Task 3: Create an Azure storage account
+#### Task 1: Create an Azure storage account
 
 In this task, you will create a storage account.
 
@@ -138,7 +138,7 @@ In this task, you will create a storage account.
 
     In this exercise, you will complete the following tasks:
 
-#### Task 4: Create a diagnostic setting
+#### Task 1: Create a diagnostic setting
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
