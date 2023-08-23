@@ -96,7 +96,7 @@ In this task, you will implement the Microsoft Defender for Cloud recommendation
 
 3. On the **Just-in-time VM access** blade, under the **Virtual machines** section, select **Not Configured** and then select the checkbox for the **myVM** entry.
 
-    >**Note**: You might have to wait a few minutes and refresh the browser page for the entry to appear.
+    >**Note**: You might have to wait a few minutes, refresh the browser page and select **Not Configured** again for the entry to appear.
 
 4. Click the **Enable JIT on 1 VM** option on the far right of the **Virtual machines** section.
 
