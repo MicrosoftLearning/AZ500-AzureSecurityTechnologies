@@ -185,23 +185,24 @@ In this task, you will create and define where to send resource logs for a parti
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bb5bb596-0eeb-40b2-b50f-44c13def1f38)
 
-### Exercise 3: Create Data Collection Rule
+### Exercise 3: Create a Data Collection Rule
 
 ### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Create Data Collection Rule.
+- Task 1: Create a Data Collection Rule.
 
-#### Task 1: Create an Azure storage account
+#### Task 1: Create a Data Collection Rule.
 
 In this task, you will create a storage account.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Monitor** and press the **Enter** key.
 
-2. On the Monitor stettings blade, click **+ Data Collection Rules.**
+2. On the **Monitor Settings** blade, click **Data Collection Rules.**
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/73eb9241-d642-455a-a1ff-b504670395c0)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2184da69-12c2-476b-b2b2-b80620e822a6)
+
 
 3. On the **Basics** tab of the **Create storage account** blade, specify the following settings (leave others with their default values):
 
