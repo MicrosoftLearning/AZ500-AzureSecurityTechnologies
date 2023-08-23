@@ -138,7 +138,7 @@ In this task, you will create and define where to send resource logs for a parti
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8a745437-6408-49be-85af-a18a24218f32)
 
-3. Then select **+ Add diagnostic setting.**
+3. Select **+ Add diagnostic setting.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/0ec0b760-f43d-4269-9d4f-ccba6bd7709d)
 
