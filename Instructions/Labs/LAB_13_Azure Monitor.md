@@ -137,11 +137,13 @@ In this task, you will create a storage account.
     |Performance|**Standard (general-purpose v2 account)**|
     |Redundency|**Locally redundant storage (LRS)**|
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review + Create**, wait for the validation process to complete, and click **Create**.
+4. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
 
      ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/13c7a0f6-1057-4498-817a-6ccb569a49db)
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
+
+5. On the **Your deployment is complete** blade, select **Go to resource**.
 
  ### Exercise 4: Create a diagnostic setting 
  
@@ -155,7 +157,7 @@ In this task, you will create a storage account.
 
 In this task, you will create and define where to send resource logs for a particular resource. 
 
-1. Under the Monitoring section of your previously created storage resource, select **Diagnostic settings.**
+1. In the left navigation panel of your previously created storage account resource, under the Monitoring section, select **Diagnostic settings.**
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d552991-305a-44bf-b8a5-7d4acae97257)
 
