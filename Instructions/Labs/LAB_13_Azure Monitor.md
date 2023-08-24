@@ -168,7 +168,7 @@ In this task, you will create a data collection rule.
     |Platform Type|**Windows**|
     |Data Collection Endpoint|*Leave Blank*|
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c838eec0-d092-48b7-a639-742b296a668d)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/9b58c4ce-b7a8-4acf-8289-d95b270a6083)
 
 
 4. Click on the button labeled **Next: Resources >** to proceed.
