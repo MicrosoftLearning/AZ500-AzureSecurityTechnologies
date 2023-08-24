@@ -164,24 +164,36 @@ In this task, you will create a storage account.
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2184da69-12c2-476b-b2b2-b80620e822a6)
 
 3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings (leave others with their default values):
+  
+    |Setting|Value|
+    |---|---|
+    |**Rule details**|
+    |Rule Name|**DCR1**|
+    |Subscription|the name of the Azure subscription you are using in this lab|
+    |Resource Group|**AZ500LAB131415**|
+    |Region|**EastUS**|
+    |Platform Type|**Windows**|
+    |Data Collection Endpoint|*Leave Blank*|
 
-5. Click, **Next: Resources >**
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/1a643234-b422-4e6b-b81b-e0ae885421d7)
 
-6. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
+6. Click, **Next: Resources >**
+
+7. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/436cdd35-cf5c-4329-8876-0024c2b947c9)
 
-7. Click, **Next: Collect and deliver >.**
+8. Click, **Next: Collect and deliver >.**
 
-8. Change the **Data source type** drop-down meun to display **Performance Counters.**
+9. Change the **Data source type** drop-down meun to display **Performance Counters.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-9. Click, **Next: Destination >.**
+10. Click, **Next: Destination >.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
+11. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
