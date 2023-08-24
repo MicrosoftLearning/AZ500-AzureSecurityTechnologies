@@ -219,16 +219,13 @@ In this task, you will create and define where to send resource logs for a parti
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e5908a8d-94fe-4d01-aaf8-e67333a0f3fb)
 
-
 2. Select your previously created storage resource.
   
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f23d98dc-c561-4d7e-88ee-d156bac2b4c5)
 
-
 3. Select **+ Add diagnostic setting.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf5f3082-11e5-4296-b689-ec887adbaa77)
-
 
 4. Select the following **Diagnostic setting** details:
 
@@ -242,7 +239,6 @@ In this task, you will create and define where to send resource logs for a parti
     - Click the **X** in the top right corner of the page to exit.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bb5bb596-0eeb-40b2-b50f-44c13def1f38)
-
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
 
