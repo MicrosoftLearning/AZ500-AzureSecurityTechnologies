@@ -189,23 +189,25 @@ In this task, you will create a storage account.
 
 7. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the follwing default settings:
 
-    - **Performance counter | Sample rate (seconds)**
-      - CPU                                 60                     
-      - Memory                              60                     
-      - Disk                                60                        
-      - Network                             60                     
+    |Setting|Value|
+    |---|---|
+    |**Performance counter**|**Sample rate (seconds)**|
+    |CPU|60|
+    |Memory|60|
+    |Disk|60|
+    |Network|60|
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-8. Click, **Next: Destination >.**
+9. Click, **Next: Destination >.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-9. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
+10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
-10. Click **Review + create.**
+11. Click **Review + create.**
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
 
