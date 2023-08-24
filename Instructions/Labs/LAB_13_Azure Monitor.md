@@ -175,9 +175,9 @@ In this task, you will create a storage account.
     |Platform Type|**Windows**|
     |Data Collection Endpoint|*Leave Blank*|
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/1a643234-b422-4e6b-b81b-e0ae885421d7)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/80481dc6-8a67-4dab-97eb-144e4186c44f)
 
-6. Click, **Next: Resources >**
+4. Click, **Next: Resources >**
 
 7. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
 
