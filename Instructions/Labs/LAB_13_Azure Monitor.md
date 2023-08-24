@@ -10,12 +10,12 @@ lab:
 
 ## Lab scenario
 
-You have been asked to collect and analyze resource logs from an Azure resource.
+You have been asked to collect events and performance counters from virtual machines with Azure Monitor Agent.
 
 - Deploy an Azure virtual machine.
 - Create a Log Analytics workspace.
 - Create a Storage account.
-- Create a diagnostic setting.
+- Create a data collection rule.
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
@@ -26,7 +26,7 @@ In this lab, you will complete the following exercise:
 - Exercise 1: Deploy an Azure virtual machine
 - Exercise 2: Create a Log Analytics workspace
 - Exercise 3: Create an Azure storage account
-- Exercise 4: Create a diagnostic setting
+- Exercise 4: Create a data colllection rule.
   
 ## Instructions
 
@@ -79,7 +79,7 @@ In this exercise, you will complete the following tasks:
 
 8. Close the Cloud Shell pane. 
 
-### Exercise 2: Create a Log Analytics workspace
+### Exercise 2: Create an Log Analytics workspace
 
 ### Exercise timing: 10 minutes
 
@@ -145,7 +145,7 @@ In this task, you will create a storage account.
 
 ### Exercise 3: Create a Data Collection Rule
 
-### Estimated timing: 10 minutes
+### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
 
@@ -153,7 +153,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Create a Data Collection Rule.
 
-In this task, you will create a storage account.
+In this task, you will create a data collection rule.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Monitor** and press the **Enter** key.
 
@@ -212,7 +212,7 @@ In this task, you will create a storage account.
 
 14. Click **Create.**
 
-> Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
+> Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a data collection rule to collect events and performance counters from virtual machines with Azure Monitor Agent.
 
 >**Note**: Do not remove the resources from this lab as they are needed for the Microsoft Defender for Cloud lab and the Microsoft Sentinel lab.
  
