@@ -203,14 +203,14 @@ In this task, you will create a storage account.
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
 10. Click, **Add data source** at the bottom of the page.
+   
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
-
-11. Click **Review + create.**
+13. Click **Review + create.**
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
 
-12. Click **Create.**
+14. Click **Create.**
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
 
