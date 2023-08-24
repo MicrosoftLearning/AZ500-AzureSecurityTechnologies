@@ -163,7 +163,7 @@ In this task, you will create a storage account.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2184da69-12c2-476b-b2b2-b80620e822a6)
 
-3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings:
   
     |Setting|Value|
     |---|---|
@@ -182,7 +182,8 @@ In this task, you will create a storage account.
 
 7. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/436cdd35-cf5c-4329-8876-0024c2b947c9)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c8388619-c254-4c80-a1ff-dde2f35ed350)
+
 
 8. Click, **Next: Collect and deliver >.**
 
