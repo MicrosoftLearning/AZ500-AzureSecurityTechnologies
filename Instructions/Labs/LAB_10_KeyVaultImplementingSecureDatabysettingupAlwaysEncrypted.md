@@ -294,13 +294,16 @@ In this task, you will grant the newly registered app permissions to access secr
     Install-Module Az.KeyVault -Repository PSGallery -Force -AllowClobber
     ```
 
-6. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
+6. **Relaunch** the **Cloud Shell** session.
+
+
+7. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
 
     ```powershell
     Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10 -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
     ```
 
-7. Close the Cloud Shell pane. 
+8. Close the Cloud Shell pane. 
 
 
 #### Task 3: Retrieve SQL Azure database ADO.NET Connection String 
