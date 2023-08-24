@@ -203,7 +203,7 @@ In this task, you will create a storage account.
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
 10. Click, **Add data source** at the bottom of the page.
-   
+    
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
 13. Click **Review + create.**
