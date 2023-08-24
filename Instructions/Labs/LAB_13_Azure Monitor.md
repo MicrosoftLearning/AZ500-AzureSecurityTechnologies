@@ -187,7 +187,7 @@ In this task, you will create a storage account.
 
 6. Click, **Next: Collect and deliver >.**
 
-7. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the follwing default settings:
+7. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
 
     |Setting|Value|
     |---|---|
