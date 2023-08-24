@@ -175,7 +175,8 @@ In this task, you will create a storage account.
     |Platform Type|**Windows**|
     |Data Collection Endpoint|*Leave Blank*|
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/80481dc6-8a67-4dab-97eb-144e4186c44f)
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c838eec0-d092-48b7-a639-742b296a668d)
+
 
 4. Click, **Next: Resources >**
 
