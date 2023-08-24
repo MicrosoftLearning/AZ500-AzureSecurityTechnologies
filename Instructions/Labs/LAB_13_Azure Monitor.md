@@ -191,7 +191,7 @@ In this task, you will create a data collection rule.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-8. Click on the button labeled **Next: Destiation >** to proceed.
+8. Click on the button labeled **Next: Destination >** to proceed.
   
 9. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
 
