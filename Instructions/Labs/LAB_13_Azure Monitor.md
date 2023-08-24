@@ -173,7 +173,7 @@ In this task, you will create a data collection rule.
 
 4. Click on the button labeled **Next: Resources >** to proceed.
 
-5. On the **Resources** tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
+5. On the **Resources** tab, select **+ Add resources**, then check **Enable Data Collection Endpoints.**
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c8388619-c254-4c80-a1ff-dde2f35ed350)
 
