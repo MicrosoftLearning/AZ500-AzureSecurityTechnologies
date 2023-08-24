@@ -12,11 +12,6 @@ lab:
 
 You have been asked to collect events and performance counters from virtual machines with Azure Monitor Agent.
 
-- Deploy an Azure virtual machine.
-- Create a Log Analytics workspace.
-- Create a Storage account.
-- Create a data collection rule.
-
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
 ## Lab objectives
