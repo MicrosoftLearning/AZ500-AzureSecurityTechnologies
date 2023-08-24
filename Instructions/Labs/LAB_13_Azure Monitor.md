@@ -117,7 +117,7 @@ In this task, you will create a storage account.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Storage accounts** and press the **Enter** key.
 
-2. On the **Storage accounts** blade, click **+ Create**.
+2. On the **Storage accounts** blade in the Azure portal, click the **+ Create** button to create a new storage account.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/73eb9241-d642-455a-a1ff-b504670395c0)
 
