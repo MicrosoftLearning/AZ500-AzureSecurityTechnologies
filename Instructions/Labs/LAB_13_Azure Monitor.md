@@ -16,7 +16,7 @@ You have been asked to collect events and performance counters from virtual mach
 
 ## Lab objectives
 
-In this lab, you will complete the following exercise:
+In this lab, you will complete the following exercises:
 
 - Exercise 1: Deploy an Azure virtual machine
 - Exercise 2: Create a Log Analytics workspace
