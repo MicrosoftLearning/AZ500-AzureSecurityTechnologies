@@ -177,27 +177,27 @@ In this task, you will create a storage account.
    
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e10fb6f5-887f-46d4-b8f2-16a0827f67bd)
 
-4. Click, **Next: Resources >**
+5. Click, **Next: Resources >**
 
-5. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
+6. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/436cdd35-cf5c-4329-8876-0024c2b947c9)
 
-6. Click, **Next: Collect and deliver >.**
+7. Click, **Next: Collect and deliver >.**
 
-7. Change the **Data source type** drop-down meun to display **Performance Counters.**
+8. Change the **Data source type** drop-down meun to display **Performance Counters.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-8. Click, **Next: Destination >.**
+9. Click, **Next: Destination >.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-9. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
+10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
-10. Click **Review + create.**
+11. Click **Review + create.**
     
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/2ea0e907-1250-4ccb-9a43-5694d1c168c0)
 
