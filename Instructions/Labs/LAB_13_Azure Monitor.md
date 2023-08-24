@@ -190,10 +190,10 @@ In this task, you will create a storage account.
 7. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the follwing default settings:
 
     - **Performance counter | Sample rate (seconds)**
-          - CPU                         
-          - Memory                     
-          - Disk                       
-          - Network                    
+      - CPU
+      - Memory
+      - Disk
+      - Network
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
