@@ -165,18 +165,6 @@ In this task, you will create a storage account.
 
 3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings (leave others with their default values):
 
-    |Setting|Value|
-    |---|---|
-    |**Rule details**|
-    |Rule Name|**DCR1**|
-    |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource Group|**AZ500LAB131415**|
-    |Region|**EastUS**|
-    |Platform Type|**Windows**|
-    |Data Collection Endpoint|*Leave Blank*|
-   
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e10fb6f5-887f-46d4-b8f2-16a0827f67bd)
-
 5. Click, **Next: Resources >**
 
 6. On the Resources tab, select **+ Add resources** then check **Enable Data Collection Endpoints.** 
