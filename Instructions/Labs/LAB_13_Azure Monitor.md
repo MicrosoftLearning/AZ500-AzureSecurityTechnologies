@@ -143,8 +143,6 @@ In this task, you will create a storage account.
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
-5. On the **Your deployment is complete** blade, select **Go to resource**.
-
 ### Exercise 3: Create a Data Collection Rule
 
 ### Estimated timing: 10 minutes
@@ -199,13 +197,13 @@ In this task, you will create a storage account.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-9. Click, **Next: Destination >.**
-
-10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**
+8. Click, **Next: Destination >.**
+  
+9. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-11. Click, **Add data source** at the bottom of the page.
+10. Click, **Add data source** at the bottom of the page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
@@ -214,43 +212,6 @@ In this task, you will create a storage account.
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
 
 12. Click **Create.**
-
- ### Exercise 4: Create a diagnostic setting 
- 
- ### Estimated timing: 10 minutes
- 
- In this exercise, you will complete the following tasks:
-
- - Task 1: Create a diagnostic setting. 
-
-#### Task 1: Create a diagnostic setting 
-
-In this task, you will create and define where to send resource logs for a particular resource. 
-
-1. In the left navigation panel of your previously created storage account resource, under the Monitoring section, select **Diagnostic settings.**
-  
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/e5908a8d-94fe-4d01-aaf8-e67333a0f3fb)
-
-2. Select your previously created storage resource.
-  
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f23d98dc-c561-4d7e-88ee-d156bac2b4c5)
-
-3. Select **+ Add diagnostic setting.**
-
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf5f3082-11e5-4296-b689-ec887adbaa77)
-
-4. Select the following **Diagnostic setting** details:
-
-   - Enter a Diagnostic settings name.
-   - Metrics: select **Transaction.**
-   - Destination details
-     - Select: **Send to Log Analytics workspace.**
-     - Subscription: Enter your **subscription.**
-     - Log Analytics workspace: Select your previously created Log Analytics workspace in the drop-down menu.
-    - Click **Save** to save Diagnostic settings.
-    - Click the **X** in the top right corner of the page to exit.
-
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bb5bb596-0eeb-40b2-b50f-44c13def1f38)
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a defined a diagnostic setting to send resource logs for a particular resource.
 
