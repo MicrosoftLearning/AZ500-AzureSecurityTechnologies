@@ -187,7 +187,7 @@ In this task, you will create a storage account.
 
 8. Click, **Next: Collect and deliver >.**
 
-9. Change the **Data source type** drop-down meun to display **Performance Counters.**
+9. Click **+ Add data source**, on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.**
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
@@ -195,7 +195,7 @@ In this task, you will create a storage account.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-11. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
+11. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
