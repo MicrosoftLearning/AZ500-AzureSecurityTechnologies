@@ -201,9 +201,11 @@ In this task, you will create a storage account.
 
 9. Click, **Next: Destination >.**
 
+10. 10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**
+
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
-10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** The Subscription window should display your **Subscription**, then change the **Account or namespace** drop-down menu to reflect your previously created **Log Analytics Workspace.**, then click the **Add data source** at the bottom of the **Add data source** page.
+11. Click, **Add data source** at the bottom of the page.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
