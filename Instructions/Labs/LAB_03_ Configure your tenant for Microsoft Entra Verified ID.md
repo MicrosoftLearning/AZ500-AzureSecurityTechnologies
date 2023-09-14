@@ -215,7 +215,7 @@ After Azure Key Vault is setup, and the service have a signing key, you must com
 
 ## Verify domain ownership and distribute did-configuration.json file
 
-The domain you verify ownership of to your DID is defined in the [overview section](verifiable-credentials-configure-tenant.md#set-up-verified-id). The domain needs to be a domain under your control and it should be in the format `https://www.example.com/`. 
+The domain needs to be a domain under your control and it should be in the format `https://www.example.com/`. 
 
 1. From the Azure portal, navigate to the VerifiedID page.
 
