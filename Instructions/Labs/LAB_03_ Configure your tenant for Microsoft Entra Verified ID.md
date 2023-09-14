@@ -33,8 +33,8 @@ The following diagram illustrates the Verified ID architecture and the component
 
 ## Prerequisites
 
-- Ensure that you have the [global administrator](../../active-directory/roles/permissions-reference.md#global-administrator) or the [authentication policy administrator](../../active-directory/roles/permissions-reference.md#authentication-policy-administrator) permission for the directory you want to configure. If you're not the global administrator, you need the [application administrator](../../active-directory/roles/permissions-reference.md#application-administrator) permission to complete the app registration including granting admin consent.
-- Ensure that you have the [contributor](../../role-based-access-control/built-in-roles.md#contributor) role for the Azure subscription or the resource group where you are deploying Azure Key Vault.
+- Ensure that you have the global administrator or the authentication policy administrator permission for the directory you want to configure. If you're not the global administrator, you need the application administrator permission to complete the app registration including granting admin consent.
+- Ensure that you have the contributor role for the Azure subscription or the resource group where you are deploying Azure Key Vault.
 
 ## Create a key vault
 
