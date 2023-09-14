@@ -38,7 +38,7 @@ The following diagram illustrates the Verified ID architecture and the component
 
 ## Create a key vault
 
-[Azure Key Vault](../../key-vault/general/basic-concepts.md) is a cloud service that enables the secure storage and access of secrets and keys. The Verified ID service stores public and private keys in Azure Key Vault. These keys are used to sign and verify credentials.
+Azure Key Vault is a cloud service that enables the secure storage and access of secrets and keys. The Verified ID service stores public and private keys in Azure Key Vault. These keys are used to sign and verify credentials.
 
 ### Use the Azure portal to create an Azure Key Vault.
 
