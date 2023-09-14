@@ -276,33 +276,25 @@ In this task, you will grant the newly registered app permissions to access secr
 
 2. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
 
-3. In the PowerShell session within the Cloud Shell pane, run the following to update the Az.KeyVault module to the latest available version.
-
-    ```powershell
-    Install-Module Az.KeyVault -Repository PSGallery -Force -AllowClobber
-    ```
-
-4. **Relaunch** the **Cloud Shell** session.
-
-5. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the **Application (client) ID** you recorded in the previous task (replace the `<Azure_AD_Application_ID>` placeholder with the value of the **Application (client) ID**):
+3. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the **Application (client) ID** you recorded in the previous task (replace the `<Azure_AD_Application_ID>` placeholder with the value of the **Application (client) ID**):
    
     ```powershell
     $applicationId = '<Azure_AD_Application_ID>'
     ```
-6. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
+4. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
 	```
     $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10').VaultName
 
     $kvName
     ```
 
-7. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
+5. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
 
     ```powershell
     Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10 -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
     ```
 
-8. Close the Cloud Shell pane. 
+6. Close the Cloud Shell pane. 
 
 
 #### Task 3: Retrieve SQL Azure database ADO.NET Connection String 
