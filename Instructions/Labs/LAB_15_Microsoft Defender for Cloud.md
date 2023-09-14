@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '14 - Microsoft Defender for Cloud'
+    title: '15 - Microsoft Defender for Cloud'
     module: 'Module 04 - Microsoft Defender for Cloud'
 ---
 
-# Lab 14: Microsoft Defender for Cloud
+# Lab 15: Microsoft Defender for Cloud
 # Student lab manual
 
 ## Lab scenario
