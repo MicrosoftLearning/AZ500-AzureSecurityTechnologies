@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '05 - Azure AD Privileged Identity Management'
+    title: '06 - Azure AD Privileged Identity Management'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 05: Azure AD Privileged Identity Management
+# Lab 06: Azure AD Privileged Identity Management
 # Student lab manual
 
 ## Lab scenario
