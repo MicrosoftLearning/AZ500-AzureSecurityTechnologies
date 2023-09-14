@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '03 - Resource Manager Locks'
+    title: '04 - Resource Manager Locks'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 03: Resource Manager Locks
+# Lab 04: Resource Manager Locks
 # Student lab manual
 
 ## Lab scenario 
