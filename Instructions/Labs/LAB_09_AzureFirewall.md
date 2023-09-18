@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '08 - Azure Firewall'
+    title: '09 - Azure Firewall'
     module: 'Module 02 - Implement Platform Protection'
 ---
 
-# Lab 08: Azure Firewall
+# Lab 09: Azure Firewall
 # Student lab manual
 
 ## Lab scenario
