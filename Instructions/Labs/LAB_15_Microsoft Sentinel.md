@@ -27,7 +27,8 @@ In this lab, you will complete the following exercise:
 
 ## Microsoft Sentinel diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157538440-4953be73-90be-4edd-bd23-b678326ba637.png)
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/ec6d48a3-ecda-4c3c-880f-3453d2e991ab)
+
 
 ## Instructions
 
