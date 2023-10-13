@@ -1,0 +1,18 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "keyVaultName": {
+      "value": "Contoso-vault2"
+    },
+    "objectId": {
+      "value": "YOUR-OBJECT-ID-HERE" // Get this from the Service Principal you created
+    },
+    "secretName": {
+      "value": ""
+    },
+    "secretValue": {
+      "value": ""
+    }
+  }
+}
