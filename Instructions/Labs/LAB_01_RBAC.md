@@ -50,9 +50,9 @@ In this task, you will create a user account for Joseph Price.
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
 
-2. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
+2. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
-3. On the **Overview** blade of the Azure Active Directory tenant, in the **Manage** section, select **Users**, and then select **+ New user**.
+3. On the **Overview** blade of the Microsoft Entra ID tenant, in the **Manage** section, select **Users**, and then select **+ New user**.
 
 4. On the **New User** blade, ensure that the **Create user** option is selected, and specify the following settings:
 
@@ -73,7 +73,7 @@ In this task, you will create a user account for Joseph Price.
 
 In this task, you will create the *Senior Admins* group, add the user account of Joseph Price to the group, and configure it as the group owner.
 
-1. In the Azure portal, navigate back to the blade displaying your Azure Active Directory tenant. 
+1. In the Azure portal, navigate back to the blade displaying your Microsoft Entra ID tenant. 
 
 2. In the **Manage** section, click **Groups**, and then select **+ New group**.
  
@@ -123,7 +123,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
     $passwordProfile.Password = "Pa55w.rd1234"
     ```
 
-5. In the PowerShell session within the Cloud Shell pane, run the following to connect to Azure Active Directory:
+5. In the PowerShell session within the Cloud Shell pane, run the following to connect to Microsoft Entra ID:
 
     ```powershell
     Connect-AzureAD
