@@ -9,11 +9,11 @@ lab:
 
 ## Lab scenario
 
-You have been asked to create a proof of concept of features that enhance Azure Active Directory (Azure AD) authentication. Specifically, you want to evaluate:
+You have been asked to create a proof of concept of features that enhance Microsoft Entra ID authentication. Specifically, you want to evaluate:
 
-- Azure AD multi-factor authentication
-- Azure AD conditional access
-- Azure AD conditional access risk-based policies
+- Microsoft Entra ID multi-factor authentication
+- Microsoft Entra ID conditional access
+- Microsoft Entra ID conditional access risk-based policies
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
@@ -23,8 +23,8 @@ In this lab, you will complete the following exercises:
 
 - Exercise 1: Deploy an Azure VM by using an Azure Resource Manager template
 - Exercise 2: Implement Azure MFA
-- Exercise 3: Implement Azure AD Conditional Access Policies 
-- Exercise 4: Implement Azure AD Identity Protection
+- Exercise 3: Implement Microsoft Entra ID Conditional Access Policies 
+- Exercise 4: Implement Microsoft Entra ID Identity Protection
 
 ## MFA - Conditional Access - Identity Protection diagram
 
@@ -51,7 +51,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
+    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Microsoft Entra ID tenant associated with that subscription.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template**.
 
@@ -103,22 +103,22 @@ In this task, you will create a virtual machine by using an ARM template. This v
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Create a new Azure AD tenant.
-- Task 2: Activate Azure AD Premium P2 trial.
-- Task 3: Create Azure AD users and groups.
-- Task 4: Assign Azure AD Premium P2 licenses to Azure AD users.
+- Task 1: Create a new Microsoft Entra ID tenant.
+- Task 2: Activate Microsoft Entra ID Premium P2 trial.
+- Task 3: Create Microsoft Entra ID users and groups.
+- Task 4: Assign Microsoft Entra ID Premium P2 licenses to Microsoft Entra ID users.
 - Task 5: Configure Azure MFA settings.
 - Task 6: Validate MFA configuration
 
-#### Task 1: Create a new Azure AD tenant
+#### Task 1: Create a new Microsoft Entra ID tenant
 
-In this task, you will create a new Azure AD tenant. 
+In this task, you will create a new Microsoft Entra ID tenant. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
-2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
+2. On the blade displaying **Overview** of your current Microsoft Entra ID tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
-3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Azure Active Directory** is selected and click **Next: Configuration >**.
+3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Microsoft Entra ID** is selected and click **Next: Configuration >**.
 
 4. On the **Configuration** tab of the **Create a tenant** blade, specify the following settings:
 
@@ -136,9 +136,9 @@ In this task, you will create a new Azure AD tenant.
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 
-#### Task 2: Activate Azure AD Premium P2 trial
+#### Task 2: Activate Microsoft Entra ID Premium P2 trial
 
-In this task, you will sign up for the Azure AD Premium P2 free trial. 
+In this task, you will sign up for the Microsoft Entra ID Premium P2 free trial. 
 
 1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
 
@@ -146,18 +146,18 @@ In this task, you will sign up for the Azure AD Premium P2 free trial.
 
     >**Note**: You may need to refresh the browser window if the **AdatumLab500-04** entry does not appear in the **Directory + subscription** filter list.
 
-3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure Active Directory** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
+3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key. On the **AdatumLab500-04** blade, in the **Manage** section, click **Licenses**.
 
 4. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
-5. On the **Activate** blade, in the Azure AD Premium P2 section, click **Free Trial** and then click **Activate**.
+5. On the **Activate** blade, in the Microsoft Entra ID Premium P2 section, click **Free Trial** and then click **Activate**.
 
 
-#### Task 3: Create Azure AD users and groups.
+#### Task 3: Create Microsoft Entra ID users and groups.
 
 In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (user), and aaduser3 (user). You will need each user's User principal name and password for later tasks. 
 
-1. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Users**.
+1. Navigate back to the **AdatumLab500-04** Microsoft Entra ID blade and, in the **Manage** section, click **Users**.
 
 2. On the **Users \| All users** blade, click **+ New User** and then **Create new user**. 
 
@@ -207,17 +207,17 @@ In this task, you will create three users: aaduser1 (Global Admin), aaduser2 (us
 
     >**Note**: At this point, you should have three new users listed on the **Users** page. 
 	
-#### Task 4: Assign Azure AD Premium P2 licenses to Azure AD users
+#### Task 4: Assign Microsoft Entra ID Premium P2 licenses to Microsoft Entra ID users
 
-In this task, you will assign each user to the Azure Active Directory Premium P2 license.
+In this task, you will assign each user to the Microsoft Entra ID Premium P2 license.
 
 1. On the **Users \| All users** blade, click the entry representing your user account. 
 
 2. On the blade displaying the properties of your user accounts, click **Edit properties**.  Confirm that the Usage Location is set to **United States**. If not, set the usage location and click **Save**.
 
-3. Navigate back to the **AdatumLab500-04** Azure Active Directory blade and, in the **Manage** section, click **Licenses**.
+3. Navigate back to the **AdatumLab500-04** Microsoft Entra ID blade and, in the **Manage** section, click **Licenses**.
 
-4. On the **Licenses \| Overview** blade, click **All products**, select the **Azure Active Directory Premium P2** checkbox, and click **+ Assign**.
+4. On the **Licenses \| Overview** blade, click **All products**, select the **Microsoft Entra ID Premium P2** checkbox, and click **+ Assign**.
 
 5. On the **Assign license** blade, click **+ Add users and groups**.
 
@@ -227,17 +227,17 @@ In this task, you will assign each user to the Azure Active Directory Premium P2
 
 8. Sign out from the Azure portal and sign back in using the same account. (This step is necessary in order for the license assignment to take effect.)
 
-    >**Note**: At this point, you assigned Azure Active Directory Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
+    >**Note**: At this point, you assigned Microsoft Entra ID Premium P2 licenses to all user accounts you will be using in this lab. Be sure to sign out and then sign back in. 
 
 #### Task 5: Configure Azure MFA settings.
 
 In this task, you will configure MFA and enable MFA for aaduser1. 
 
-1. In the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
+1. In the Azure portal, navigate back to the **AdatumLab500-04** Microsoft Entra ID tenant blade.
 
-    >**Note**: Make sure you are using the AdatumLab500-04 Azure AD tenant.
+    >**Note**: Make sure you are using the AdatumLab500-04 Microsoft Entra ID tenant.
 
-2. On the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Security**.
+2. On the **AdatumLab500-04** Microsoft Entra ID tenant blade, in the **Manage** section, click **Security**.
 
 3. On the **Security \| Getting started** blade, in the **Manage** section, click **Multifactor authentication**.
 
@@ -253,7 +253,7 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
 8. Click **aaduser1** and notice that, at this point, you also have the **Enforce** option. 
 
-    >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Azure AD integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
+    >**Note**: Changing the user status from Enabled to Enforced impacts only legacy Microsoft Entra ID integrated apps which do not support Azure MFA and, once the status changes to Enforced, require the use of app passwords.
 
 9. With the **aaduser1** entry selected, click **Manage user settings** and review the available options: 
 
@@ -279,9 +279,9 @@ In this task, you will configure MFA and enable MFA for aaduser1.
 
     >**Note**: At this point, you have enabled MFA for aaduser1 and setup fraud alert settings. 
 
-14. Navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **Disabled**. Select **My Organization is using Conditional Access** as the *Reason for disabling*, click **Save**, read the warning, and then click **Disable**.
+14. Navigate back to the **AdatumLab500-04** Microsoft Entra ID tenant blade, in the **Manage** section, click **Properties**, next click the **Manage Security defaults** link at the bottom of the blade, on the **Enable Security Defaults** blade, click **Disabled**. Select **My Organization is using Conditional Access** as the *Reason for disabling*, click **Save**, read the warning, and then click **Disable**.
 
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
+    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Microsoft Entra ID tenant. You can use the **Directory + subscription** filter to switch between Microsoft Entra ID tenants. Ensure you are signed in as a user with the Global Administrator role in the Microsoft Entra ID tenant.
 
 #### Task 6: Validate MFA configuration
 
@@ -291,7 +291,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 
 2. Navigate to the Azure portal, **`https://portal.azure.com/`**, and sign in using the **aaduser1** user account. 
 
-    >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser1** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser1@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
+    >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser1** user account, including the Microsoft Entra ID tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser1@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Microsoft Entra ID tenant name. 
 
 3. When prompted, in the **More information required** dialog box, click **Next**.
 
@@ -316,7 +316,7 @@ In this task, you will validate the MFA configuration by testing sign in of the 
 > Result: You have created a new AD tenant, configured AD users, configured MFA, and tested the MFA experience for a user. 
 
 
-### Exercise 3: Implement Azure AD Conditional Access Policies 
+### Exercise 3: Implement Microsoft Entra ID Conditional Access Policies 
 
 ### Estimated timing: 15 minutes
 
@@ -329,7 +329,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will review conditional access policy settings and create a policy that requires MFA when signing in to the Azure portal. 
 
-1. In the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
+1. In the Azure portal, navigate back to the **AdatumLab500-04** Microsoft Entra ID tenant blade.
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
@@ -391,7 +391,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
     >**Note**: You have now verified that the newly created conditional access policy enforces MFA when aaduser2 signs into the Azure portal.
 
-12. Back in the browser window displaying the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
+12. Back in the browser window displaying the Azure portal, navigate back to the **AdatumLab500-04** Microsoft Entra ID tenant blade.
 
 13. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
@@ -401,7 +401,7 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
     >**Note**: Result: In this exercise you implement a conditional access policy to require MFA when a user signs into the Azure portal. 
 
->Result: You have configured and tested Azure AD conditional access.
+>Result: You have configured and tested Microsoft Entra ID conditional access.
 
 ### Exercise 4: Deploy risk-based policies in Conditional Access
 
@@ -409,25 +409,25 @@ In this task, you will sign in to the Azure portal as **aaduser2** and verify MF
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: View Azure AD Identity Protection options in the Azure portal
+- Task 1: View Microsoft Entra ID Identity Protection options in the Azure portal
 - Task 2: Configure a user risk policy
 - Task 3: Configure a sign-in risk policy
-- Task 4: Simulate risk events against the Azure AD Identity Protection policies 
-- Task 5: Review the Azure AD Identity Protection reports
+- Task 4: Simulate risk events against the Microsoft Entra ID Identity Protection policies 
+- Task 5: Review the Microsoft Entra ID Identity Protection reports
 
-#### Task 1: Enable Azure AD Identity Protection
+#### Task 1: Enable Microsoft Entra ID Identity Protection
 
-In this task, you will view the Azure AD Identity Protection options in the Azure portal. 
+In this task, you will view the Microsoft Entra ID Identity Protection options in the Azure portal. 
 
 1. If needed, sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role in the Azure AD tenant.
+    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Microsoft Entra ID tenant. You can use the **Directory + subscription** filter to switch between Microsoft Entra ID tenants. Ensure you are signed in as a user with the Global Administrator role in the Microsoft Entra ID tenant.
 
 #### Task 2: Configure a user risk policy
 
 In this task, you will create a user risk policy. 
 
-1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access** > **Policies**.
+1. Browse to **AdatumLab500-04** Microsoft Entra ID tenant > **Security** > **Conditional Access** > **Policies**.
 
 2. Click **+ New policy**.
 
@@ -463,7 +463,7 @@ In this task, you will create a user risk policy.
 
 #### Task 3: Configure a sign-in risk policy
 
-1. Browse to **AdatumLab500-04** Azure AD tenant > **Security** > **Conditional Access**> **Policies**.
+1. Browse to **AdatumLab500-04** Microsoft Entra ID tenant > **Security** > **Conditional Access**> **Policies**.
 
 2. Select **+ New policy**.
 
@@ -497,11 +497,11 @@ In this task, you will create a user risk policy.
 
 17. Click **Create** to enable your policy.
 
-#### Task 4: Simulate risk events against the Azure AD Identity Protection policies 
+#### Task 4: Simulate risk events against the Microsoft Entra ID Identity Protection policies 
 
 > Before you start this task, ensure that the template deployment you started in Exercise 1 has completed. The deployment includes an Azure VM named **az500-04-vm1**. 
 
-1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the Microsoft Entra ID tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
@@ -548,11 +548,11 @@ In this task, you will create a user risk policy.
 
     >**Note**: At this point, you attempted two different sign-ins. Next, you will review the Azure Identity Protection reports.
 
-#### Task 5: Review the Azure AD Identity Protection reports
+#### Task 5: Review the Microsoft Entra ID Identity Protection reports
 
-In this task, you will review the Azure AD Identity Protection reports generated from the ToR browser logins.
+In this task, you will review the Microsoft Entra ID Identity Protection reports generated from the ToR browser logins.
 
-1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** Azure Active Directory tenant.
+1. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** Microsoft Entra ID tenant.
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
@@ -570,15 +570,15 @@ In this task, you will review the Azure AD Identity Protection reports generated
 
     >**Note**: It may take 10-15 minutes for risks to show up in reports.
 
-> **Result**: You have enabled Azure AD Identity Protection, configured user risk policy and sign-in risk policy, as well as validated Azure AD Identity Protection configuration by simulating risk events.
+> **Result**: You have enabled Microsoft Entra ID Identity Protection, configured user risk policy and sign-in risk policy, as well as validated Microsoft Entra ID Identity Protection configuration by simulating risk events.
 
 **Clean up resources**
 
 > We need to remove identity protection resources that you no longer use. 
 
-Use the following steps to disable the identity protection policies in the **AdatumLab500-04** Azure AD tenant.
+Use the following steps to disable the identity protection policies in the **AdatumLab500-04** Microsoft Entra ID tenant.
 
-1. In the Azure portal, navigate back to the **AdatumLab500-04** Azure Active Directory tenant blade.
+1. In the Azure portal, navigate back to the **AdatumLab500-04** Microsoft Entra ID tenant blade.
 
 2. On the **AdatumLab500-04** blade, in the **Manage** section, click **Security**.
 
@@ -594,7 +594,7 @@ Use the following steps to disable the identity protection policies in the **Ada
 
 Use the following steps to stop the Azure VM you provisioned earlier in the lab.
 
-1. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the Microsoft Entra ID tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
