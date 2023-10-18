@@ -166,12 +166,11 @@ In this task, you will first configure server level auditing and then configure 
     >**Note**: Audits can be written to an Azure storage account, to a Log Analytics workspace, or to the Event Hub. You can configure any combination of these options.
 
     >**Note**: If storage-based auditing is enabled on the server, it will always apply to the database, regardless of the database settings.
+13. On your SQL database Overview page in the Azure portal, select **Query editor (preview)** from the left menu. Try to sign in, you might fail on password, firewall rule for your IP address, everything gets audited. Try successfull login as well, run query and you might find more detials in audit logs
 
-13. Click **View Audit Logs**.
+14. switch back to DB, Auditing and Click **View Audit Logs**.
 
-14. On the **Audit records** blade, note that you can switch between Server audit and Database audit. 
-
-    >**Note**: Since this SQL server and database were created recently, it is unlikely that any events will be available at this point. 
+15. On the **Audit records** blade, note that you can switch between Server audit and Database audit. 
 
 > Results: You have created a SQL server and database, configured data classification, and auditing. 
 
