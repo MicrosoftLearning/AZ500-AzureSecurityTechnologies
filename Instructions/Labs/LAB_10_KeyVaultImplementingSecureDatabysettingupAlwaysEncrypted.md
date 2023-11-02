@@ -29,7 +29,7 @@ In this lab, you will complete the following exercises:
 
 ## Key Vault diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157532938-c724cc40-f64f-4d69-9e91-d75344c5e0a2.png)
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/38c4ba6d-2fc7-45e5-b9a2-d5dbb4fbbcbc)
 
 ## Instructions
 
