@@ -150,7 +150,9 @@ In this task, you will sign up for the Microsoft Entra ID P2 free trial.
 
 4. On the **Licenses \| Overview** blade, in the **Manage** section, click **All products** and then click **+ Try / Buy**.
 
-5. On the **Activate** blade, in the Microsoft Entra ID Premium P2 section, click **Free Trial** and then click **Activate**.
+5. On the **Activate** blade, in the Microsoft Entra ID Premium P2 section, click **Free Trial** and then under **Quick tasks**, click **Get a free trial**.
+
+6. Expand MICROSFT ENTRA ID P2, then click **Activate.**
 
 
 #### Task 3: Create Microsoft Entra ID users and groups.
