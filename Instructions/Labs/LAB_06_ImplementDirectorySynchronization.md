@@ -13,7 +13,7 @@ You have been asked to create a proof of concept demonstrating how to integrate 
 
 - Implement a single-domain Microsoft Entra Domain Services forest by deploying an Azure VM hosting an Microsoft Entra Domain Services domain controller
 - Create and configure an Azure AD tenant
-- Synchronize the AD DS forest with the Microsoft Entra tenant
+- Synchronize the Microsoft Entra Domain Services forest with the Microsoft Entra tenant
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
@@ -116,7 +116,7 @@ In this task, you will create a new Microsoft Entra tenant to use in this lab.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
-2. On the blade displaying **Overview** of your current Azure AD tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
+2. On the blade displaying **Overview** of your current Microsoft Entra tenant, click **Manage tenants**, and then on the next screen, click **+ Create**.
 
 3. On the **Basics** tab of the **Create a tenant** blade, ensure that the option **Microsoft Entra ID** is selected and click **Next: Configuration >**.
 
@@ -154,13 +154,13 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then select **Delete** twice. 
 
-    >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** AD DS domain with the Azure AD tenant. You will use for this purpose the initial DNS name of the Azure AD tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the AD DS domain and the DNS name of the Azure AD tenant will differ. This means that Adatum users will need to use different names when signing in to the AD DS domain and when signing in to Azure AD tenant.
+    >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** Microsoft Entra Domain Services domain with the Microsoft Entra tenant. You will use for this purpose the initial DNS name of the Microsoft Entra tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the Microsoft Entra Domain Services domain and the DNS name of the Microsoft Entra tenant will differ. This means that Adatum users will need to use different names when signing in to the Microsoft Entra Domain Services domain and when signing in to Microsoft Entra tenant.
 
 #### Task 3: Create an Azure AD user with the Global Administrator role
 
 In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
 
-1. On the **AdatumSync** Azure AD tenant blade, in the **Manage** section, click **Users**.
+1. On the **AdatumSync** Microsoft Entra tenant blade, in the **Manage** section, click **Users**.
 
 2. On the **Users | All users** blade, click **+ New User** and then **Create new user**.
 
@@ -180,17 +180,17 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 5. On the **Assignments** tab, click **+ Add role**, search for and select **Global Administrator**, and then click **Select**. Click **Review + create** and then click **Create**.
    
-    >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Azure AD Connect.
+    >**Note**: An Azure AD user with the Global Administrator role is required in order to implement Microsoft Entra Connect.
 
 6. Open an InPrivate browser window.
 
 7. Navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **syncadmin** user account. When prompted, change the password you recorded earlier in this task to your own password that meets the complexity requirements and record it for future reference. You will be prompted for this password in later tasks.
 
-    >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
+    >**Note**: To sign in you will need to provide a fully qualified name of the **syncadmin** user account, including the Microsoft Entra tenant DNS domain name, which you recorded earlier in this task. This user name is in the format syncadmin@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Microsoft Entra tenant name. 
 
 8. Sign out as **syncadmin** and close the InPrivate browser window.
 
-> **Result**: After you completed this exercise, you have created an Azure AD tenant, seen how to add a custom DNS name to the new Azure AD tenant, and created an Azure AD user with the Global Administrator role.
+> **Result**: After you completed this exercise, you have created an AMicrosoft Entra tenant, seen how to add a custom DNS name to the new Microsoft Entra tenant, and created an Azure AD user with the Global Administrator role.
 
 
 ### Exercise 3: Synchronize Microsoft Entra ID forest with a Microsoft Entra tenant
@@ -199,17 +199,17 @@ In this task, you will add a new Azure AD user and assign them to the Global Adm
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Prepare AD DS for directory synchronization
-- Task 2: Install Azure AD Connect
+- Task 1: Prepare Microsoft Entra Domain Services for directory synchronization
+- Task 2: Install Microsoft Entra Connect
 - Task 3: Verify directory synchronization
 
-#### Task 1: Prepare AD DS for directory synchronization
+#### Task 1: Prepare Microsoft Entra Domain Services for directory synchronization
 
-In this task, you will connect to the Azure VM running AD DS domain controller and create a directory synchronization account. 
+In this task, you will connect to the Azure VM running Microsoft Entra Domain Services domain controller and create a directory synchronization account. 
 
    > Before you start this task, ensure that the template deployment you started in the first exercise of this lab has completed.
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
+1. In the Azure portal, set the **Directory + subscription** filter to the the Microsoft Entra tenant associated with the Azure subscription into which you deployed the Azure VM in the first exercise of this lab.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
@@ -251,23 +251,23 @@ In this task, you will connect to the Azure VM running AD DS domain controller a
     |Other password options|**Password never expires**|
 
 
-#### Task 2: Install Azure AD Connect
+#### Task 2: Install Microsoft Entra Connect
 
-In this task, you will install AD Connect on the virtual machine. 
+In this task, you will install Microsoft Entra Connect on the virtual machine. 
 
 1. Within the Remote Desktop session to **adVM**, use Microsoft Edge to navigate to the Azure portal at **https://portal.azure.com**, and sign in by using the **syncadmin** user account you created the previous exercise. When prompted, specify the full User principal name and password that you recorded in the previous exercise.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
-3. In the Azure portal, on the **AdatumSync \| Overview** blade, in the left navigation panel under **Manage**, click **Azure AD Connect**.
+3. In the Azure portal, on the **AdatumSync \| Overview** blade, in the left navigation panel under **Manage**, click **Microsoft Entra Connect**.
 
-4. On the **AAD Connect \| Get started** blade, click **Connect Sync** in the left navigation panel and then click the **Download Azure AD Connect** link. You will be redirected to the **Azure AD Connect** download page.
+4. On the **Microsoft Entra Connect \| Get started** blade, click **Connect Sync** in the left navigation panel and then click the **Download Microsoft Entra Connect** link. You will be redirected to the **Microsoft Entra Connect** download page.
 
-5. On the **Azure AD Connect** download page, click **Download**.
+5. On the **Microsoft Entra Connect** download page, click **Download**.
 
 6. When prompted, click **Run** to start the **Microsoft Entra Connect** wizard.
 
-7. On the **Welcome to Azure AD Connect** page of the **Microsoft Entra Connect** wizard, click the checkbox **I agree to the license terms and privacy notice** and click **Continue**.
+7. On the **Welcome to Microsoft Entra Connect** page of the **Microsoft Entra Connect** wizard, click the checkbox **I agree to the license terms and privacy notice** and click **Continue**.
 
 8. On the **Express Settings** page of the **Microsoft Entra Connect** wizard, click the **Customize** option.
 
@@ -327,7 +327,7 @@ In this task, you will verify that directory synchronization is working.
 
 7. Within the Remote Desktop session to **adVM**, start **Windows PowerShell**.
 
-8. From the **Administrator: Windows PowerShell** console, run the following to start Azure AD Connect delta synchronization:
+8. From the **Administrator: Windows PowerShell** console, run the following to start Microsoft Entra Connect delta synchronization:
 
     ```powershell
     Import-Module -Name 'C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync\ADSync.psd1'
@@ -339,7 +339,7 @@ In this task, you will verify that directory synchronization is working.
 
     >**Note**: You might need to wait for up to three minutes and refresh the page again if the **Department** attribute remains not set.
 
-> **Result**: After you completed this exercise, you have prepared Microsoft Entra Domain Services for directory synchronization, installed Azure AD Connect, and verified directory synchronization.
+> **Result**: After you completed this exercise, you have prepared Microsoft Entra Domain Services for directory synchronization, installed Microsoft Entra Connect, and verified directory synchronization.
 
 
 **Clean up resources**
@@ -356,13 +356,13 @@ In this task, you will verify that directory synchronization is working.
     Install-Module MsOnline -Force
     ```
 
-3. From the Windows PowerShell console, connect to the AdatumSync Azure AD tenant by running the following (when prompted, sign in with the **syncadmin** credentials):
+3. From the Windows PowerShell console, connect to the AdatumSync Microsoft Entra tenant by running the following (when prompted, sign in with the **syncadmin** credentials):
 
     ```powershell
     Connect-MsolService
     ```
 
-4. From the Windows PowerShell console, disable the Azure AD Connect synchronization by running the following:
+4. From the Windows PowerShell console, disable the Microsoft Entra Connect synchronization by running the following:
 
     ```powershell
     Set-MsolDirSyncEnabled -EnableDirSync $false -Force
@@ -378,7 +378,7 @@ In this task, you will verify that directory synchronization is working.
     >**Note**: Next, remove the Azure resources
 6. Close the Remote desktop session.
 
-7. In the Azure portal, set the **Directory + subscription** filter to the Azure AD tenant associated with the Azure subscription into which you deployed the **adVM** Azure VM.
+7. In the Azure portal, set the **Directory + subscription** filter to the Microsoft Entra tenant associated with the Azure subscription into which you deployed the **adVM** Azure VM.
 
 8. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. 
 
@@ -391,7 +391,7 @@ In this task, you will verify that directory synchronization is working.
     ```
 11. Close the **Cloud Shell** pane.
 
-    >**Note**: Finally, remove the Azure AD tenant
+    >**Note**: Finally, remove the Microsoft Entra tenant
     
     >**Note 2**: Deleting a tenant is meant to be a very hard process, so it can never accidentally or maliciously be done.  That means that removing the tenant as part of this lab often does not work.  While we have the steps here to delete the tenant, it is not required to consider yourself as completing this lab. If you ever have a need to remove a tenant in the real world, there are articles on DOCS.Microsoft.com to help you.
 
@@ -401,7 +401,7 @@ In this task, you will verify that directory synchronization is working.
 
 14. Repeat the same sequence of steps to delete the **aduser1** user account and the **On-Premises Directory Synchronization Service Account**.
 
-15. Navigate to the **AdatumSync - Overview** blade of the Azure AD tenant, click **Manage tenants** and select the check box of the **AdatumSync** directory, click **Delete**, on the **Delete tenant 'AdatumSync'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of AMicrosoft Entra, set **Access management for Azure resources** to **Yes** and click **Save**.
+15. Navigate to the **AdatumSync - Overview** blade of the Microsoft Entra tenant, click **Manage tenants** and select the check box of the **AdatumSync** directory, click **Delete**, on the **Delete tenant 'AdatumSync'** blade, click the **Get permission to delete Azure resources** link, on the **Properties** blade of AMicrosoft Entra, set **Access management for Azure resources** to **Yes** and click **Save**.
 
     >**Note**: While deleting if you receive any warning sign like **Delete all users** then proceed to delete the users that you have created or if the warning sign says **Delete LinkedIn applications** click on the warning message and confirm the deletion of the LinkedIn application, all the warning need to be addressed to pass the deletion of the tenant.
 
