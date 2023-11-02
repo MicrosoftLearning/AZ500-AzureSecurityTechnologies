@@ -302,7 +302,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 4. In the Azure portal, navigate to the **myVMWeb** virtual machine blade.
 
-5. On the **myVMWeb** blade, in the **Operations** section, click **Run command** and then click **RunPowerShellScript**.
+5. On the **myVMWeb** blade, in the **Payload** section, click **Run command** and then click **RunPowerShellScript**.
 
 6. On the **Run Command Script** pane, run the following to install the Web server role on **myVmWeb**:
 
