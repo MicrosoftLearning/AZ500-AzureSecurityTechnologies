@@ -27,7 +27,7 @@ In this lab, you will complete the following exercises:
 
 ## Implement Directory Synchronization
 
-![image](https://user-images.githubusercontent.com/91347931/157525374-8f740f14-c2db-47b3-98f8-7feb9bc122b5.png)
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/5d9cc4c7-7dcd-4d88-920d-9c97d5a482a2)
 
 ## Instructions
 
