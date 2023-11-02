@@ -104,9 +104,9 @@ In this task, you will create a virtual machine by using an ARM template. This v
 In this exercise, you will complete the following tasks:
 
 - Task 1: Create a new Microsoft Entra ID tenant.
-- Task 2: Activate Microsoft Entra ID Premium P2 trial.
+- Task 2: Activate Microsoft Entra ID P2 trial.
 - Task 3: Create Microsoft Entra ID users and groups.
-- Task 4: Assign Microsoft Entra ID Premium P2 licenses to Microsoft Entra ID users.
+- Task 4: Assign Microsoft Entra ID P2 licenses to Microsoft Entra ID users.
 - Task 5: Configure Azure MFA settings.
 - Task 6: Validate MFA configuration
 
