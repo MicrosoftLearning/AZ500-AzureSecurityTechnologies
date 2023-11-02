@@ -273,15 +273,15 @@ In this task, you will associate each virtual machines network interface with th
 
 2. In the list of virtual machines, click the **myVMWeb** entry.
 
-3. On the **myVMWeb** blade, in the **Settings** section, click **Networking** and then, on the **myVMWeb \| Networking** blade, click the **Application security groups** tab.
+3. On the **myVMWeb** blade, in the **Networking** section, click **Network settings** and then, on the **myVMWeb \| Networking settings** blade, click the **Application security groups** tab.
 
-4. Click **Configure the application security groups**, in the **Application security group** drop-down list, select **myAsgWebServers**, and then click **Save**.
+4. Click + **Add application security groups**, in the **Application security group** list, select **myAsgWebServers**, and then click **Save**.
 
 5. Navigate back to the **Virtual machines** blade and in the list of virtual machines, click the **myVMMgmt** entry.
 
-6. On the **myVMMgmt** blade, in the **Settings** section, click **Networking** and then, on the **myVMMgmt \| Networking** blade, click the **Application security groups** tab.
+6. On the **myVMMgmt** blade, in the **Networking** section, click **Networking settings** and then, on the **myVMMgmt \| Networking settings** blade, click the **Application security groups** tab.
 
-7. Click **Configure the application security groups**, in the **Application security group** drop-down list, select **myAsgMgmtServers**, and then click **Save**.
+7. Click + **Add application security groups**, in the **Application security group** list, select **myAsgMgmtServers**, and then click **Save**.
 
 #### Task 4: Test the network traffic filtering
 
