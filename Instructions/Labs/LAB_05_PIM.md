@@ -30,7 +30,7 @@ In this lab, you will complete the following exercises:
 
 ## Azure AD Privileged Identity Management diagram
 
-
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/aef34a22-8ebd-4015-a04a-7ac3c357b862)
 
 ## Instructions
 
