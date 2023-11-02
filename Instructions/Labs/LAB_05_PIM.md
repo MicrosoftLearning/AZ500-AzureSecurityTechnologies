@@ -355,21 +355,21 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 5. Close the **Cloud Shell** pane. 
 
-6. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** Azure Active Directory tenant.
+6. Back in the Azure portal, use the **Directory + subscription** filter to switch to the **AdatumLab500-04** AMicrosoft Entra tenant.
 
-7. Navigate to the **AdatumLab500-04 Azure Active Directory** blade and, in the **Manage** section, click **Licenses**.
+7. Navigate to the **AdatumLab500-04 Microsoft Entra** blade and, in the **Manage** section, click **Licenses**.
 
-8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Azure Active Directory Premium P2** and click it to open.
+8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Microsoft Entra ID P2** and click it to open.
 
     >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Microsoft Entra P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
 
-9. On the **Microsoft Entra P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Azure Active Directory Premium P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
+9. On the **Microsoft Entra P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **AMicrosoft Entra ID P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
 10. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 
 11. Repeat the same sequence of steps to delete the remaining user accounts you created.
 
-12. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, select **Manage tenants** and then on the next screen, select the checkbox next to **AdatumLab500-04** and select **Delete**. On the **Delete tenant 'AdatumLab500-04'** blade, select **Get permission to delete Azure resources** link, on the **Properties** blade of Azure Active Directory, set **Access management for Azure resources** to **Yes** and select **Save**.
+12. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, select **Manage tenants** and then on the next screen, select the checkbox next to **AdatumLab500-04** and select **Delete**. On the **Delete tenant 'AdatumLab500-04'** blade, select **Get permission to delete Azure resources** link, on the **Properties** blade of AMicrosoft Entra ID, set **Access management for Azure resources** to **Yes** and select **Save**.
 
 13. Sign out from the Azure portal and sign in back. 
 
