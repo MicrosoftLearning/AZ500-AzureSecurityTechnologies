@@ -11,9 +11,9 @@ lab:
 
 You have been asked to create a proof of concept that uses Microsoft Entra Privileged Identity Management (PIM) to enable just-in-time administration and control the number of users who can perform privileged operations. The specific requirements are:
 
-- Create a permanent assignment of the aaduser2 Azure AD user to the Security Administrator role. 
-- Configure the aaduser2 Azure AD user to be eligible for the Billing Administrator and Global Reader roles.
-- Configure the Global Reader role activation to require an approval of the aaduser3 Azure AD user
+- Create a permanent assignment of the aaduser2 Microsoft Entra ID user to the Security Administrator role. 
+- Configure the aaduser2 Microsoft Entra ID user to be eligible for the Billing Administrator and Global Reader roles.
+- Configure the Global Reader role activation to require an approval of the aaduser3 Microsoft Entra ID user
 - Configure an access review of the Global Reader role and review auditing capabilities.
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
@@ -46,17 +46,17 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Make a user eligible for a role
 
-In this task, you will make a user eligible for an Azure AD directory role.
+In this task, you will make a user eligible for an Microsoft Entra ID directory role.
 
 1. Sign-in to the Azure portal at **`https://portal.azure.com/`**.
 
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
+    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Microsoft Entra tenant. You can use the **Directory + subscription** filter to switch between Microsoft Entra tenants. Ensure you are signed in as a user with the Global Administrator role.
     
     >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
 
 2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra Privileged Identity Management** and press the **Enter** key.
 
-3. On the **Privileged Identity Management** blade, in the **Manage** section, click **Azure AD roles**.
+3. On the **Privileged Identity Management** blade, in the **Manage** section, click **Microsoft Entra ID roles**.
 
 4. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
@@ -80,7 +80,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
 
 #### Task 2: Configure a role to require approval to activate and add an eligible member
 
-1. In the Azure Portal, navigate back to the **Privileged Identity Management** blade and click **Azure AD roles**.
+1. In the Azure Portal, navigate back to the **Privileged Identity Management** blade and click **Microsoft Entra ID roles**.
 
 2. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
@@ -118,7 +118,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
  
 #### Task 3: Give a user permanent assignment to a role.
 
-1. In the Azure Portal, navigate back to the **Privileged Identity Management** blade and click **Azure AD roles**.
+1. In the Azure Portal, navigate back to the **Privileged Identity Management** blade and click **Microsoft Entra ID roles**.
 
 2. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Roles**.
 
@@ -153,9 +153,9 @@ In this task, you will activate a role that does not require approval.
 
 2. In the InPrivate browser window, navigate to the Azure portal at **`https://portal.azure.com/`** and sign in using the **aaduser2** user account.
 
-    >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser2** user account, including the Azure AD tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser2@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Azure AD tenant name. 
+    >**Note**: To sign in you will need to provide a fully qualified name of the **aaduser2** user account, including the Microsoft Entra tenant DNS domain name, which you recorded earlier in this lab. This user name is in the format aaduser2@`<your_tenant_name>`.onmicrosoft.com, where `<your_tenant_name>` is the placeholder representing your unique Microsoft Entra tenant name. 
 
-3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
+3. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra Privileged Identity Management** and press the **Enter** key.
 
 4. On the **Privileged Identity Management** blade, in the **Tasks** section, click **My roles**.
 
@@ -173,7 +173,7 @@ In this task, you will activate a role that does not require approval.
 
 9. Navigate back to the **Privileged Identity Management** blade and, in the **Tasks** section, click **My roles**.
 
-10. On the **My roles \| Azure AD roles** blade, switch to the **Active assignments** tab. Notice the **Billing Administrator** role is **Activated**.
+10. On the **My roles \| Microsoft Entra ID roles** blade, switch to the **Active assignments** tab. Notice the **Billing Administrator** role is **Activated**.
 
     >**Note**: Once a role has been activated, it automatically deactivates when its time limit under **End time**(eligible duration) is reached.
 
@@ -192,7 +192,7 @@ In this task, you will activate a role that requires approval.
 
 2. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-3. On the **My roles \| Azure AD roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
+3. On the **My roles \| Microsoft Entra ID roles** blade, in the list of **Eligible assignments**, in the row displaying the **Global Reader** role, click **Activate**. 
 
 4. On the **Activate - Global Reader** blade, in the **Reason** text box, type a text providing justification for the activation, and then click **Activate**.
 
@@ -200,7 +200,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: As the Privileged role administrator you can review and cancel requests at any time. 
 
-6. On the **My roles \| Azure AD roles** blade, locate the **Security Administrator** role, and click **Activate**. 
+6. On the **My roles \| Microsoft Entra ID roles** blade, locate the **Security Administrator** role, and click **Activate**. 
 
 7. If needed, click the warning **Additional verification required. Click to continue** and follow the instructions to verify your identity.
 
@@ -210,7 +210,7 @@ In this task, you will activate a role that requires approval.
 
     >**Note**: The auto approval process should complete.
 
-9. Back on the **My roles \| Azure AD roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
+9. Back on the **My roles \| Microsoft Entra ID roles** blade, click the **Active assignments** tab and notice that the listing of **active assignments** includes **Security Administrator** but not the **Global Reader** role.
 
     >**Note**: You will now approve the Global Reader role.
 
@@ -218,13 +218,13 @@ In this task, you will activate a role that requires approval.
 
 11. In the InPrivate browser, sign into the Azure portal at **`https://portal.azure.com/`** as **aaduser3**.
 
-    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Azure AD tenant by using your user account to reset their passwords or reconfigure their sign-in options.
+    >**Note**: If you run into problems with authenticating by using any of the user accounts, you can sign in to the Microsoft Entra tenant by using your user account to reset their passwords or reconfigure their sign-in options.
 
-12. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
+12. In the Azure portal, navigate to **Microsoft Entra Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Microsoft Entra Privileged Identity Management and press the Enter key).
 
 13. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **Approve requests**.
 
-14. On the **Approve requests \| Azure AD roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
+14. On the **Approve requests \| Microsoft Entra ID roles** blade, in the **Requests for role activations** section, select the checkbox for the entry representing the role activation request to the **Global Reader** role by **aaduser2**.
 
 15. Click **Approve**. On the **Approve Request** blade, in the **Justification** text box, type a reason for activation, note the start and end times, and then click **Confirm**. 
 
@@ -234,11 +234,11 @@ In this task, you will activate a role that requires approval.
 
 17. In the InPrivate browser, sign into the Azure portal at **`https://portal.azure.com/`** as **aaduser2**
 
-18. In the Azure portal, navigate to **Azure AD Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Azure AD Privileged Identity Management and press the Enter key).
+18. In the Azure portal, navigate to **Microsoft Entra Privileged Identity Management** (In the Search resources, services, and docs text box at the top of the Azure portal page, type Microsoft Entra Privileged Identity Management and press the Enter key).
 
 19. On the **Privileged Identity Management \| Quick start** blade, in the **Tasks** section, click **My roles**.
 
-20. On the **My roles \| Azure AD roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
+20. On the **My roles \| Microsoft Entra ID roles** blade, click the **Active Assignments** tab and verify that the Global Reader role is now active.
 
     >**Note**: You might have to refresh the page to view the updated list of active assignments.
 
@@ -252,24 +252,24 @@ In this task, you will activate a role that requires approval.
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Configure security alerts for Azure AD directory roles in PIM
+- Task 1: Configure security alerts for Microsoft Entra ID roles in PIM
 - Task 2: Review PIM alerts, summary information, and detailed audit information
 
-#### Task 1: Configure security alerts for Azure AD directory roles in PIM
+#### Task 1: Configure security alerts for Microsoft Entra ID roles in PIM
 
 In this task, you will reduce the risk associated with "stale" role assignments. You will do this by creating a PIM access review to ensure that assigned roles are still valid. Specifically, you will review the Global Reader role. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`** using your account.
 
-    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Azure AD tenant. You can use the **Directory + subscription** filter to switch between Azure AD tenants. Ensure you are signed in as a user with the Global Administrator role.
+    >**Note**: Ensure that you are signed-in to the **AdatumLab500-04** Microsoft Entra tenant. You can use the **Directory + subscription** filter to switch between Microsoft Entra tenants. Ensure you are signed in as a user with the Global Administrator role.
     
     >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
+2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra Privileged Identity Management** and press the **Enter** key.
 
 3. Navigate to the **Privileged Identity Management** blade. 
 
-4. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Azure AD Roles**.
+4. On the **Privileged Identity Management \| Quick start** blade, in the **Manage** section, click **Microsoft Entra Roles**.
 
 5. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
@@ -307,7 +307,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 16. In the **Reason** text box, type a rationale for approval and then click either **Approve** to maintain the current role membership or **Deny** to revoke it. 
 
-17. Navigate back to the **Privileged Identity Management** blade and, in the **Manage** section, click **Azure AD roles**.
+17. Navigate back to the **Privileged Identity Management** blade and, in the **Manage** section, click **Microsoft Entra ID roles**.
 
 18. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Access reviews**.
 
@@ -317,7 +317,7 @@ In this task, you will reduce the risk associated with "stale" role assignments.
 
 In this task, you will review PIM alerts, summary information, and detailed audit information. 
 
-1. Navigate back to the **Privileged Identity Management** blade and, in the **Manage** section, click **Azure AD roles**.
+1. Navigate back to the **Privileged Identity Management** blade and, in the **Manage** section, click **Microsoft Entra ID roles**.
 
 2. On the **AdatumLab500-04 \| Quick start** blade, in the **Manage** section, click **Alerts**, and then click **Setting**.
 
@@ -339,9 +339,9 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 > Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
 
-1. In the Azure portal, set the **Directory + subscription** filter to the the Azure AD tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
+1. In the Azure portal, set the **Directory + subscription** filter to the the Microsoft Entra tenant associated with the Azure subscription into which you deployed the **az500-04-vm1** Azure VM.
 
-    >**Note**: If you don't see your main Azure AD tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
+    >**Note**: If you don't see your main Microsoft Entra tenant entry, click on the Switch Diretory link, select your main tenant line and click the Switch button.
 
 2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **PowerShell** and **Create storage**.
 
@@ -369,7 +369,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 11. Repeat the same sequence of steps to delete the remaining user accounts you created.
 
-12. Navigate to the **AdatumLab500-04 - Overview** blade of the Azure AD tenant, select **Manage tenants** and then on the next screen, select the checkbox next to **AdatumLab500-04** and select **Delete**. On the **Delete tenant 'AdatumLab500-04'** blade, select **Get permission to delete Azure resources** link, on the **Properties** blade of AMicrosoft Entra ID, set **Access management for Azure resources** to **Yes** and select **Save**.
+12. Navigate to the **AdatumLab500-04 - Overview** blade of the Microsoft Entra tenant, select **Manage tenants** and then on the next screen, select the checkbox next to **AdatumLab500-04** and select **Delete**. On the **Delete tenant 'AdatumLab500-04'** blade, select **Get permission to delete Azure resources** link, on the **Properties** blade of AMicrosoft Entra ID, set **Access management for Azure resources** to **Yes** and select **Save**.
 
 13. Sign out from the Azure portal and sign in back. 
 
