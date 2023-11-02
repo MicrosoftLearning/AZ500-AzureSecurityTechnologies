@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '05 - Azure AD Privileged Identity Management'
+    title: '05 - Microsoft Entra Privileged Identity Management'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 05: Azure AD Privileged Identity Management
+# Lab 05: Microsoft Entra Privileged Identity Management
 # Student lab manual
 
 ## Lab scenario
@@ -28,7 +28,7 @@ In this lab, you will complete the following exercises:
 - Exercise 2: Activate PIM roles with and without approval.
 - Exercise 3: Create an Access Review and review PIM auditing features.
 
-## Azure AD Privileged Identity Management diagram
+## Microsoft Entra Privileged Identity Management diagram
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/aef34a22-8ebd-4015-a04a-7ac3c357b862)
 
@@ -54,7 +54,7 @@ In this task, you will make a user eligible for an Azure AD directory role.
     
     >**Note**: If you still don't see the AdatumLab500-04 entry, click on the Switch Diretory link, select the AdatumLab500-04 line and click the Switch button.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Azure AD Privileged Identity Management** and press the **Enter** key.
+2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra Privileged Identity Management** and press the **Enter** key.
 
 3. On the **Privileged Identity Management** blade, in the **Manage** section, click **Azure AD roles**.
 
@@ -361,9 +361,9 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Azure Active Directory Premium P2** and click it to open.
 
-    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Azure AD Premium P2 licenses to Azure AD users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
+    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Microsoft Entra P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
 
-9. On the **Azure Active Directory Premium P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Azure Active Directory Premium P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
+9. On the **Microsoft Entra P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Azure Active Directory Premium P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
 10. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 
@@ -375,6 +375,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 14. Navigate back to the **Delete directory 'AdatumLab500-04'** blade and click **Delete**.
 
-    >**Note**: Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free Premium P2 license** could be throwing the validation error. Deleting the trial subscription of the Premium P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Azure Active directory and then try to delete the tenant.    
+    >**Note**: Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free P2 license** could be throwing the validation error. Deleting the trial subscription of the P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Microsoft Entra ID directory and then try to delete the tenant.    
 
 > For any additional  information regarding this task, refer to [https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto)
