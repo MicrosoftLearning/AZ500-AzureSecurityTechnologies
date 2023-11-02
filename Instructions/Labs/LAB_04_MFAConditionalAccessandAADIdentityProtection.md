@@ -136,9 +136,9 @@ In this task, you will create a new Microsoft Entra ID tenant.
     >**Note**: Wait for the new tenant to be created. Use the **Notification** icon to monitor the deployment status. 
 
 
-#### Task 2: Activate Microsoft Entra ID Premium P2 trial
+#### Task 2: Activate Microsoft Entra ID P2 trial
 
-In this task, you will sign up for the Microsoft Entra ID Premium P2 free trial. 
+In this task, you will sign up for the Microsoft Entra ID P2 free trial. 
 
 1. In the Azure portal, in the toolbar, click the **Directory + subscription** icon, located to the right of the Cloud Shell icon. 
 
