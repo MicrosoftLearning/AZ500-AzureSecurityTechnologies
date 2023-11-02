@@ -46,7 +46,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Make a user eligible for a role
 
-In this task, you will make a user eligible for an Microsoft Entra ID directory role.
+In this task, you will make a user eligible for an Microsoft Entra ID role.
 
 1. Sign-in to the Azure portal at **`https://portal.azure.com/`**.
 
@@ -361,9 +361,9 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Microsoft Entra ID P2** and click it to open.
 
-    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Microsoft Entra P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
+    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Microsoft Entra ID P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
 
-9. On the **Microsoft Entra P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **AMicrosoft Entra ID P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
+9. On the **Microsoft Entra ID P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Microsoft Entra ID P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
 10. In the Azure portal, navigate to the **Users - All users** blade, click the entry representing the **aaduser1** user account, on the **aaduser1 - Profile** blade click **Delete**, and, when prompted to confirm, select **Yes**.
 
@@ -375,6 +375,6 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 14. Navigate back to the **Delete directory 'AdatumLab500-04'** blade and click **Delete**.
 
-    >**Note**: Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free P2 license** could be throwing the validation error. Deleting the trial subscription of the P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit the Microsoft Entra ID directory and then try to delete the tenant.    
+    >**Note**: Still not able to delete the tenant and throwing an error **Delete all license-based and subscriptions**, then it might be due to any subscriptions that have been linked to the tenant. Here **Free P2 license** could be throwing the validation error. Deleting the trial subscription of the P2 License using the Global admin id from the M365 admin>> **Your Products** and from the **Business Store** portal would solve this issue. Also note that deleting the tenant takes more time. Check the End date of the subscription, once after the end of the trial period, revisit Microsoft Entra ID and then try to delete the tenant.    
 
 > For any additional  information regarding this task, refer to [https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto](https://docs.microsoft.com/en-us/azure/active-directory/users-groups-roles/directory-delete-howto)
