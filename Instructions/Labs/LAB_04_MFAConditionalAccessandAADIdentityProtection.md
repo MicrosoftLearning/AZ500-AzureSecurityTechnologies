@@ -28,7 +28,7 @@ In this lab, you will complete the following exercises:
 
 ## MFA - Conditional Access - Identity Protection diagram
 
-
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/246a3798-6f50-4a41-99c2-71e9ab6a4c8f)
 
 ## Instructions
 
