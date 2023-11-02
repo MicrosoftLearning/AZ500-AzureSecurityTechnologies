@@ -48,7 +48,7 @@ In this task, you will create a user account for Joseph Price.
 
 1. Start a browser session and sign-in to the Azure portal **`https://portal.azure.com/`**.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Azure AD tenant associated with that subscription.
+    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Microsoft Entra tenant associated with that subscription.
 
 2. In the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
@@ -67,7 +67,7 @@ In this task, you will create a user account for Joseph Price.
 
 7. Click **Create**.
 
-8. Refresh the **Users \| All users** blade to verify the new user was created in your Azure AD tenant.
+8. Refresh the **Users \| All users** blade to verify the new user was created in your Microsoft Entra tenant.
 
 #### Task2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
@@ -129,7 +129,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
     Connect-AzureAD
     ```
       
-6. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Azure AD tenant: 
+6. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant: 
 
     ```powershell
     $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
@@ -141,7 +141,7 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
     New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
     ```
 
-8. In the PowerShell session within the Cloud Shell pane, run the following to list Azure AD users (the accounts of Joseph and Isabel should appear on the listed): 
+8. In the PowerShell session within the Cloud Shell pane, run the following to list Microsoft Entra ID users (the accounts of Joseph and Isabel should appear on the listed): 
 
     ```powershell
     Get-AzureADUser 
@@ -157,7 +157,7 @@ In this task, you will create the Junior Admins group and add the user account o
     New-AzureADGroup -DisplayName 'Junior Admins' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
     ```
 
-2. In the PowerShell session within the Cloud Shell pane, run the following to list the groups in your Azure AD tenant (the list should include the Senior Admins and Junior Admins groups):
+2. In the PowerShell session within the Cloud Shell pane, run the following to list the groups in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups):
 
     ```powershell
     Get-AzureADGroup
@@ -199,7 +199,7 @@ In this task, you will create a user account for Dylan Williams.
 
 1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
 
-2. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Azure AD tenant:
+2. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant:
 
     ```cli
     DOMAINNAME=$(az ad signed-in-user show --query 'userPrincipalName' | cut -d '@' -f 2 | sed 's/\"//')
@@ -211,7 +211,7 @@ In this task, you will create a user account for Dylan Williams.
     az ad user create --display-name "Dylan Williams" --password "Pa55w.rd1234" --user-principal-name Dylan@$DOMAINNAME
     ```
       
-4. In the Bash session within the Cloud Shell pane, run the following to list Azure AD user accounts (the list should include user accounts of Joseph, Isabel, and Dylan)
+4. In the Bash session within the Cloud Shell pane, run the following to list Microsoft Entra ID user accounts (the list should include user accounts of Joseph, Isabel, and Dylan)
 	
     ```cli
     az ad user list --output table
@@ -227,7 +227,7 @@ In this task, you will create the Service Desk group and assign Dylan to the gro
     az ad group create --display-name "Service Desk" --mail-nickname "ServiceDesk"
     ```
  
-2. In the Bash session within the Cloud Shell pane, run the following to list the Azure AD groups (the list should include Service Desk, Senior Admins, and Junior Admins groups):
+2. In the Bash session within the Cloud Shell pane, run the following to list the Microsoft Entra ID groups (the list should include Service Desk, Senior Admins, and Junior Admins groups):
 
     ```cli
     az ad group list -o table
