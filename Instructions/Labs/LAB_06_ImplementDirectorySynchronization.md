@@ -12,7 +12,7 @@ lab:
 You have been asked to create a proof of concept demonstrating how to integrate on-premises Microsoft Entra Domain Services environment with an Microsoft Entra tenant. Specifically, you want to:
 
 - Implement a single-domain Microsoft Entra Domain Services forest by deploying an Azure VM hosting an Microsoft Entra Domain Services domain controller
-- Create and configure an Azure AD tenant
+- Create and configure an Microsoft Entra tenant
 - Synchronize the Microsoft Entra Domain Services forest with the Microsoft Entra tenant
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
@@ -152,13 +152,13 @@ In this task, you will add your custom DNS name to the new Azure AD tenant.
 
 5. On the **Custom domain name** blade, in the **Custom domain name** text box, type **adatum.com** and click **Add Domain**.
 
-6. On the **adatum.com** blade, review the information necessary to perform verification of the Azure AD domain name and then select **Delete** twice. 
+6. On the **adatum.com** blade, review the information necessary to perform verification of the Microsoft Entra domain name and then select **Delete** twice. 
 
     >**Note**: You will not be able to complete the validation process because you do not own the **adatum.com** DNS domain name. This will not prevent you from synchronizing the **adatum.com** Microsoft Entra Domain Services domain with the Microsoft Entra tenant. You will use for this purpose the initial DNS name of the Microsoft Entra tenant (the name ending with the **onmicrosoft.com** suffix), which you identified in the previous task. However, keep in mind that, as a result, the DNS domain name of the Microsoft Entra Domain Services domain and the DNS name of the Microsoft Entra tenant will differ. This means that Adatum users will need to use different names when signing in to the Microsoft Entra Domain Services domain and when signing in to Microsoft Entra tenant.
 
-#### Task 3: Create an Azure AD user with the Global Administrator role
+#### Task 3: Create an Microsoft Entra ID user with the Global Administrator role
 
-In this task, you will add a new Azure AD user and assign them to the Global Administrator role. 
+In this task, you will add a new Microsoft Entra ID user and assign them to the Global Administrator role. 
 
 1. On the **AdatumSync** Microsoft Entra tenant blade, in the **Manage** section, click **Users**.
 
@@ -275,7 +275,7 @@ In this task, you will install Microsoft Entra Connect on the virtual machine.
 
 10. On the **User sign-in** page, ensure that only the **Password Hash Synchronization** is enabled and click **Next**.
 
-11. On the **Connect to Azure AD** page, authenticate by using the credentials of the **syncadmin** user account you created in the previous exercise and click **Next**. 
+11. On the **Connect to Microsoft Entra ID** page, authenticate by using the credentials of the **syncadmin** user account you created in the previous exercise and click **Next**. 
 
 12. On the **Connect your directories** page, click the **Add Directory** button to the right of the **adatum.com** forest entry.
 
@@ -288,9 +288,9 @@ In this task, you will install Microsoft Entra Connect on the virtual machine.
 
 14. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
-15. On the **Azure AD sign-in configuration** page, note the warning stating **Users will not be able to sign-in to Azure AD with on-premises credentials if the UPN suffix does not match a verified domain name**, enable the checkbox **Continue without matching all UPN suffixes to verified domain**, and click **Next**.
+15. On the **Microsoft Entra ID sign-in configuration** page, note the warning stating **Users will not be able to sign-in to Microsoft Entra ID with on-premises credentials if the UPN suffix does not match a verified domain name**, enable the checkbox **Continue without matching all UPN suffixes to verified domain**, and click **Next**.
 
-    >**Note**: As explained earlier, this is expected, since you could not verify the custom Azure AD DNS domain **adatum.com**.
+    >**Note**: As explained earlier, this is expected, since you could not verify the custom Microsoft Entra ID DNS domain **adatum.com**.
 
 16. On the **Domain and OU filtering** page, click the option **Sync selected domains and OUs** and clear the checkbox next to the domain name **adatum.com**. Click to expand **adatum.com**, select only the checkbox next to the **ToSync** OU, and then click **Next**.
 
@@ -311,7 +311,7 @@ In this task, you will install Microsoft Entra Connect on the virtual machine.
 
 In this task, you will verify that directory synchronization is working. 
 
-1. Within the Remote Desktop session to **adVM**, in the Microsoft Edge window displaying the Azure portal, navigate to the **Users - All users (Preview)** blade of the Adatum Lab Azure AD tenant.
+1. Within the Remote Desktop session to **adVM**, in the Microsoft Edge window displaying the Azure portal, navigate to the **Users - All users (Preview)** blade of the Adatum Lab AMicrosoft Entra ID tenant.
 
 2. On the **Users \| All users** blade, note that the list of user objects includes the **aduser1** account. 
 
@@ -344,7 +344,7 @@ In this task, you will verify that directory synchronization is working.
 
 **Clean up resources**
 
->**Note**: Start by disabling Azure AD synchronization
+>**Note**: Start by disabling Microsoft Entra ID synchronization
 
 1. Within the Remote Desktop session to **adVM**, start Windows PowerShell as Administrator.
 
