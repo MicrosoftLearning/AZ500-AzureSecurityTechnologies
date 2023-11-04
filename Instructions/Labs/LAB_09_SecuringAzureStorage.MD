@@ -1,10 +1,10 @@
 ---
 lab:
-    title: ' 12 - Service Endpoints and Securing Storage'
+    title: ' 09 - Service Endpoints and Securing Storage'
     module: 'Module 03 - Secure data and applications'
 ---
 
-# Lab 12: Service Endpoints and Securing Storage
+# Lab 09: Service Endpoints and Securing Storage
 # Student lab manual
 
 ## Lab scenario
