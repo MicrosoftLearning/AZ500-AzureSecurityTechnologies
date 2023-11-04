@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '04 - MFA, and Conditional Access'
+    title: '02 - MFA, and Conditional Access'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 04: MFA, and Conditional Access
+# Lab 02: MFA, and Conditional Access
 # Student lab manual
 
 ## Lab scenario
