@@ -38,6 +38,11 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/55f82963-e2e3-4925-9be6-f04d3c7078e9)
 
+
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f4a9036d-c88b-4228-9833-5b897e3237fe)
+
+
+
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/3e15c072-96ec-4c77-af9a-895ae65f9936)
 
 
