@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Exercise 01 - Create a tenant'
-    module: 'Module 01 - Create a new tenant in Microsoft Entra ID'
+    module: 'Module 00 - Create a new tenant in Microsoft Entra ID'
 ---
 
 
@@ -14,7 +14,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 ## Skilling tasks
 
-- Use the Microsoft Entra admin center, including creating a new tenant for your organization
+- Use the Microsoft Entra admin center to create a new tenant for your organization
 
 ## Exercise instructions
 
