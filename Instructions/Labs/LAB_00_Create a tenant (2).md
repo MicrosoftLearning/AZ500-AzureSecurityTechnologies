@@ -47,6 +47,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
    |Initial domain name|Enter **az500entratenant**|
    |Location|Leave the default of **United States**|
   
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8643fdcd-f89f-49c1-8360-a5193a83949b)
 
 
 8. Select **Review + create.**
