@@ -1,22 +1,20 @@
 ---
 lab:
-    title: 'Exercise 03a - Enable Defender for Cloud on your Azure subscription'
-    module: 'Module 03 - Set up Microsoft Defender for Cloud'
+    title: 'Exercise 01 - Create a tenant'
+    module: 'Module 01 - Create a new tenant in Microsoft Entra ID'
 ---
 
 
 >**Note**: To complete this lab, you will need an [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access. 
 
 
-The main goal of this exercise is to provide hands-on experience in configuring and enabling Microsoft Defender for Cloud within an Azure subscription. This will allow you to monitor and protect your cloud resources against security threats. 
+The main goal of this exercise is to provide hands-on experience in Create a new tenant for your organization. 
 
 ---
 
 ## Skilling tasks
 
-- Upgrade your subscription for Microsoft Defender for Cloud.
-  
-- Deploy the Microsoft Monitoring Agent to necessary machines for comprehensive coverage.
+- Use the Microsoft Entra admin center, including creating a new tenant for your organization
 
 ## Exercise instructions
 
