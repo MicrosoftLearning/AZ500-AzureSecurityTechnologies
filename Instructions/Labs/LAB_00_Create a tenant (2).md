@@ -30,11 +30,14 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
 
+5. On the Basics tab, select the type of tenant you want to create, either Microsoft Entra ID or Microsoft Entra ID (B2C).
+
+6. Select Next: Configuration to move to the Configuration tab.
+
+7. On the Configuration tab, enter the following information:
 
        
-6. On the **Microsoft Defender for Cloud**, **Getting started** blade, go to the **Install agents** tab, and scroll down.
 
-    ![image](https://github.com/MicrosoftLearning/Secure-Azure-services-and-workloads-with-Microsoft-Cloud-Security-Benchmark/assets/91347931/8120ec8f-23dc-4636-bc45-b415c7894b8c)
 
 7. Check the box that is associated with the subscription on which agents will be installed, and click **Install agents.**
    
