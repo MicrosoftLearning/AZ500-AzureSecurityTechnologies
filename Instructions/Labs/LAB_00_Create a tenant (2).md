@@ -40,7 +40,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 7. Select Next: Configuration to move to the Configuration tab.
 
-8. On the Configuration tab, enter the following information:
+8. On the **Configuration tab,** enter the following information:
 
    |Setting|Value|
    |---|---|
@@ -51,13 +51,13 @@ The main goal of this exercise is to provide hands-on experience in Create a new
   
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8643fdcd-f89f-49c1-8360-a5193a83949b)
 
-9. Select Next: Review + Create. 
+9. Select **Next: Review + Create.** 
 
-10. Enter the displayed Captcha verification characters, then select 'submit.
+10. Complete the Captcha challenge-response test, then select submit.
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/3e15c072-96ec-4c77-af9a-895ae65f9936)
 
-
+**Note:** Tenant creation may take a few minutes as the Captcha challenge-response test validates your response.
 
 
 
