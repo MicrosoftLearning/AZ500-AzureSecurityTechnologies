@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '15 - Microsoft Sentinel'
+    title: '13 - Microsoft Sentinel'
     module: 'Module 04 - Manage Security Operations'
 ---
 
-# Lab 15: Microsoft Sentinel
+# Lab 13: Microsoft Sentinel
 # Student lab manual
 
 ## Lab scenario
