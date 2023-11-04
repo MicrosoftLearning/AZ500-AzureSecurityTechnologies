@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '06 - Implement Directory Synchronization'
+    title: '04 - Implement Directory Synchronization'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 06: Implement Directory Synchronization
+# Lab 04: Implement Directory Synchronization
 # Student lab manual
 
 ## Lab scenario
