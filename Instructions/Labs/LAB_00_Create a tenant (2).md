@@ -28,7 +28,8 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 4. Select **Create.**
 
- 
+ ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
+
 
        
 6. On the **Microsoft Defender for Cloud**, **Getting started** blade, go to the **Install agents** tab, and scroll down.
