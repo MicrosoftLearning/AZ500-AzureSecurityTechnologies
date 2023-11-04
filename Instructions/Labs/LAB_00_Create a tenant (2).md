@@ -40,9 +40,16 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 7. On the Configuration tab, enter the following information:
 
-![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/f4a9036d-c88b-4228-9833-5b897e3237fe)
+   |Setting|Value|
+   |---|---|
+   |**Directory details**|
+   |Organization name|AZ500ENTRALAB01.|
+   |Initial domain name|Enter **az500entratenant**|
+   |Location|Leave the default of **United States**|
+  
 
 
+8. Select **Review + create.**
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/3e15c072-96ec-4c77-af9a-895ae65f9936)
 
