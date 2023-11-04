@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '05 - Microsoft Entra Privileged Identity Management'
+    title: '03 - Microsoft Entra Privileged Identity Management'
     module: 'Module 01 - Manage Identity and Access'
 ---
 
-# Lab 05: Microsoft Entra Privileged Identity Management
+# Lab 03: Microsoft Entra Privileged Identity Management
 # Student lab manual
 
 ## Lab scenario
