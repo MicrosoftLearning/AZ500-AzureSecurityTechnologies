@@ -55,7 +55,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 10. Complete the Captcha challenge-response test, then select **submit.**
 
-
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d4813080-1ce0-4b4b-867d-fb95b182af55)
 
 **Note:** Tenant creation may take a few minutes as the Captcha challenge-response test validates your response.
 
