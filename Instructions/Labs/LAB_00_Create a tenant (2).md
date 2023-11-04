@@ -59,4 +59,4 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 **Note:** Tenant creation may take a few minutes as the Captcha challenge-response test validates your response.
 
-> **Results**: Your new tenant is created with the domain contoso.onmicrosoft.com.
+> **Results**: Your new tenant is created in Microsoft Entra ID.
