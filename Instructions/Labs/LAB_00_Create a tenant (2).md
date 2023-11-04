@@ -59,21 +59,4 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 **Note:** Tenant creation may take a few minutes as the Captcha challenge-response test validates your response.
 
-
-
-
-
-
-5. On the Basics tab, select the type of tenant you want to create, either Microsoft Entra ID or Microsoft Entra ID (B2C).
-
-6. Select Next: Configuration to move to the Configuration tab.
-
-7. On the Configuration tab, enter the following information:
-
- 
-
-
-
-7. Check the box that is associated with the subscription on which agents will be installed, and click **Install agents.**
-   
-> **Results**: You have upgraded and enabled Defender for Cloud on your Azure subscription.
+> **Results**: Your new tenant is created with the domain contoso.onmicrosoft.com.
