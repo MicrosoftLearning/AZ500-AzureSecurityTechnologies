@@ -28,7 +28,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 4. Select **Create.**
 
-5. Click the large blue **Upgrade** button at the bottom of the page.
+
    
     
    
