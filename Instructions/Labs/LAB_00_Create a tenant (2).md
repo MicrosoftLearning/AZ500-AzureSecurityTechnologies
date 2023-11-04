@@ -27,6 +27,8 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 3. On the overview page, select **Manage tenants.**
 
 4. Select **Create.**
+
+   
     
    
 6. On the **Microsoft Defender for Cloud**, **Getting started** blade, go to the **Install agents** tab, and scroll down.
