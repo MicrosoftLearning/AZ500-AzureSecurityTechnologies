@@ -24,11 +24,11 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 2. From the Azure portal menu, select **Microsoft Entra ID** and press the Enter key.
 
-3. On the overview page, select **Manage tenants.**
+  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
 
-4. Select **Create.**
+4. On the overview page, select **Manage tenants.**
 
- ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
+5. Select **Create.**
 
  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bd34cd8a-d378-4d2c-80c8-37f58015641e)
 
