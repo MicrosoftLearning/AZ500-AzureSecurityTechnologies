@@ -38,7 +38,9 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/55f82963-e2e3-4925-9be6-f04d3c7078e9)
 
-7. On the Configuration tab, enter the following information:
+7. Select Next: Configuration to move to the Configuration tab.
+
+8. On the Configuration tab, enter the following information:
 
    |Setting|Value|
    |---|---|
