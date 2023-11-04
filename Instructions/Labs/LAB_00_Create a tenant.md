@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 01 - Create a tenant'
+    title: '01 - Create a tenant'
     module: 'Module 00 - Create a new tenant in Microsoft Entra ID'
 ---
 
