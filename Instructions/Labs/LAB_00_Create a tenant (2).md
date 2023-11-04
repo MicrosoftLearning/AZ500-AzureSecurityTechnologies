@@ -30,7 +30,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bd34cd8a-d378-4d2c-80c8-37f58015641e)
 
-6. Select **Create.**
+6. On the Manage tenants page, select **Create.**
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a270bc01-ca41-488c-85b9-358d233ee4b1)
 
