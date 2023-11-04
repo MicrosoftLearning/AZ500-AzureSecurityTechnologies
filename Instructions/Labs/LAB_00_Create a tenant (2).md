@@ -30,6 +30,9 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
 
+ ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bd34cd8a-d378-4d2c-80c8-37f58015641e)
+
+
 5. On the Basics tab, select the type of tenant you want to create, either Microsoft Entra ID or Microsoft Entra ID (B2C).
 
 6. Select Next: Configuration to move to the Configuration tab.
