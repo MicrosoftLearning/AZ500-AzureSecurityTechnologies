@@ -5,9 +5,6 @@ lab:
 ---
 
 
->**Note**: To complete this lab, you will need an [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access. 
-
-
 The main goal of this exercise is to provide hands-on experience in Create a new tenant for your organization. 
 
 ---
