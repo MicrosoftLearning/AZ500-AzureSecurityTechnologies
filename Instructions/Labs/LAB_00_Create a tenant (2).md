@@ -32,6 +32,7 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
 6. Select **Create.**
 
+![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a270bc01-ca41-488c-85b9-358d233ee4b1)
 
 
 
