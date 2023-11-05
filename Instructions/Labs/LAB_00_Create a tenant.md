@@ -23,21 +23,21 @@ The main goal of this exercise is to provide hands-on experience in Create a new
 
   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/6e896fbe-28b9-4766-9081-54990d636c35)
 
-4. On the overview page, select **Manage tenants.**
+3. On the overview page, select **Manage tenants.**
 
  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/bd34cd8a-d378-4d2c-80c8-37f58015641e)
 
-5. On the Manage tenants page, select **Create.**
+4. On the Manage tenants page, select **Create.**
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a270bc01-ca41-488c-85b9-358d233ee4b1)
 
-6. On the Basics tab, select **Microsoft Entra ID.**
+5. On the Basics tab, select **Microsoft Entra ID.**
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/55f82963-e2e3-4925-9be6-f04d3c7078e9)
 
-7. Select **Next: Configuration** to move to the Configuration tab.
+6. Select **Next: Configuration** to move to the Configuration tab.
 
-8. On the **Configuration tab,** enter the following information:
+7. On the **Configuration tab,** enter the following information:
 
    |Setting|Value|
    |---|---|
@@ -48,9 +48,9 @@ The main goal of this exercise is to provide hands-on experience in Create a new
   
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8643fdcd-f89f-49c1-8360-a5193a83949b)
 
-9. Select **Next: Review + Create.** 
+8. Select **Next: Review + Create.** 
 
-10. Complete the Captcha challenge-response test, then select **submit.**
+9. Complete the Captcha challenge-response test, then select **submit.**
 
 ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d4813080-1ce0-4b4b-867d-fb95b182af55)
 
