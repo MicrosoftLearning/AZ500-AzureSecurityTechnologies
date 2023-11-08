@@ -232,7 +232,7 @@ In this task, you will connect to the Azure VM running Microsoft Entra Domain Se
 
 6. In **Server Manager**, click **Tools** and, in the drop-down menu, click **Microsoft Entra ID Administrative Center**.
 
-7. In **Microsoft Entra ID Administrative Center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
+7. In **Microsoft Entra admin center**, click **adatum (local)**, in the **Tasks** pane, under the domain name **adatum (local)** click **New**, and, in the cascading menu, click **Organizational Unit**.
 
 8. In the **Create Organizational Unit** window, in the **Name** text box, type **ToSync** and click **OK**.
 
@@ -321,7 +321,7 @@ In this task, you will verify that directory synchronization is working.
 
 4. On the **aduser1** blade, in the **Job Information** section, note that the **Department** attribute is not set.
 
-5. Within the Remote Desktop session to **adVM**, switch to the **Microsoft Entra ID Administrative Center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
+5. Within the Remote Desktop session to **adVM**, switch to the **Microsoft Entra admin center**, select the **aduser1** entry in the list of objects in the **ToSync** OU, and, in the **Tasks** pane, in the **aduser1** section, select **Properties**.
 
 6. In the **aduser1** window, in the **Organization** section, in the **Department** text box, type **Sales**, and select **OK**.
 
