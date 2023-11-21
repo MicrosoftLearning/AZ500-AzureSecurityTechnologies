@@ -176,15 +176,18 @@ In this task, you will create a data collection rule.
 
 5. On the **Resources** tab, select **+ Add resources**, then check **Enable Data Collection Endpoints.**
 
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/b085f345-ff79-486f-bb3f-5a02ce872146)
+
+
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c8388619-c254-4c80-a1ff-dde2f35ed350)
 
-6. In the Select a scope template, check **AZ500LAB131415** as the scope, and click **Apply.**
+8. In the Select a scope template, check **AZ500LAB131415** as the scope, and click **Apply.**
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf214664-b261-41c0-8963-b93291541f6d)
 
-7. Click on the button labeled **Next: Collect and deliver >** to proceed.
+9. Click on the button labeled **Next: Collect and deliver >** to proceed.
 
-8. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
+10. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
 
     |Setting|Value|
     |---|---|
@@ -196,9 +199,9 @@ In this task, you will create a data collection rule.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-9. Click on the button labeled **Next: Destination >** to proceed.
+11. Click on the button labeled **Next: Destination >** to proceed.
   
-10. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
+12. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
