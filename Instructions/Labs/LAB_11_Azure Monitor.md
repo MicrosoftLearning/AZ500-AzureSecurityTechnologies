@@ -178,8 +178,9 @@ In this task, you will create a data collection rule.
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/c8388619-c254-4c80-a1ff-dde2f35ed350)
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf214664-b261-41c0-8963-b93291541f6d)
+6. In the Select a scope template, check **AZ500LAB131415** as the scope, and click **Apply.**
 
+    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/cf214664-b261-41c0-8963-b93291541f6d)
 
 7. Click on the button labeled **Next: Collect and deliver >** to proceed.
 
