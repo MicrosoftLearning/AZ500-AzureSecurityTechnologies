@@ -18,7 +18,7 @@ You have been asked to create a proof of concept that uses Microsoft Entra Privi
 
 > For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-> Before you proceed, ensure that you have completed Lab 04: MFA, Conditional Access and Microsoft Entra Identity Protection . You will need the Microsoft Entra tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
+> Before you proceed, ensure that you have completed Lab 02: MFA, Conditional Access and Microsoft Entra Identity Protection . You will need the Microsoft Entra tenant, AdatumLab500-04, and the aaduser1, aaduser2, and aaduser3 user accounts.
 
 ## Lab objectives
 
@@ -361,7 +361,7 @@ In this task, you will review PIM alerts, summary information, and detailed audi
 
 8. On the **Licenses** | Overview blade, click **All products**, select the checkbox of **Microsoft Entra ID P2** and click it to open.
 
-    >**Note**: In the Lab 4 - Exercise 2 - Task 4 **Assign Microsoft Entra ID P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
+    >**Note**: In the Lab 2 - Exercise 2 - Task 4 **Assign Microsoft Entra ID P2 licenses to Microsoft Entra users** was to assign the Premium Licenses to the users **aaduser1, aaduser2, and aaduser3**, make sure we remove those licenses from the assigned users
 
 9. On the **Microsoft Entra ID P2 - Licensed users** blade, select the checkboxes of the user accounts to which you assigned **Microsoft Entra ID P2** licenses. Click **Remove license** from the top pane and when prompted to confirm, select **Yes**.
 
