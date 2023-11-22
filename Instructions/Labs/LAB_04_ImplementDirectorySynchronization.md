@@ -284,7 +284,7 @@ In this task, you will install Microsoft Entra Connect on the virtual machine.
     |Setting|Value|
     |---|---|
     |User Name|**ADATUM\\Student**|
-    |Password|**Please use your personal password created in Lab 06 > Exercise 1 > Task 2**|
+    |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 2**|
 
 14. Back on the **Connect your directories** page, ensure that the **adatum.com** entry appears as a configured directory and click **Next**
 
