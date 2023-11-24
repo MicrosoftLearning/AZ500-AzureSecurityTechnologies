@@ -514,7 +514,7 @@ In this task, you will create a user risk policy.
     |Setting|Value|
     |---|---|
     |User name|**Student**|
-    |Password|**Please use your personal password created in Lab 04 > Exercise 1 > Task 1 > Step 9.**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load.  
 
