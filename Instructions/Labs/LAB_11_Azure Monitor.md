@@ -49,7 +49,13 @@ In this exercise, you will complete the following tasks:
     New-AzResourceGroup -Name AZ500LAB131415 -Location 'EastUS'
     ```
 
-    >**Note**: This resource group will be used for labs 13, 14, and 15. 
+    >**Note**: This resource group will be used for labs 13, 14, and 15.
+
+5. Manually enable encryption at host (EAH) with the following command.
+   
+   ```powershell
+    Register-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace Microsoft.Compute 
+    ```
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to create a new Azure virtual machine. 
 
