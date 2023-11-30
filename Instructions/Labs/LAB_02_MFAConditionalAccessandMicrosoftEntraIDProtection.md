@@ -343,7 +343,7 @@ In this task, you will review conditional access policy settings and create a po
 	
    - Under **Users**, click **0 Users and groups selected**. On the right side under Include, Enable **Select users and groups** >> select the **Users and Groups** checkbox, on the **Select users and groups** blade, select the **aaduser2** checkbox, and click **Select**.
 	
-   - Under **Target resources**, click **No target resources selected**, click **Select apps**, under Select, click **None**. On the **Select** blade, select the checkbox for **Microsoft Azure Management** and click **Select**. 
+   - Under **Target resources**, click **No target resources selected**, click **Select apps**, under Select, click **None**. On the **Select** blade, select the checkbox for **Windows Azure Service Management API** and click **Select**. 
 
      >**Note**: Review the warning that this policy impacts access to the Azure Portal.
 	
