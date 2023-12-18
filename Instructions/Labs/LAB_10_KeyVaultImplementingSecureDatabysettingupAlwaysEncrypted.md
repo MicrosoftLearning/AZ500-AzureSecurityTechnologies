@@ -70,14 +70,15 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Subscription|the name of the Azure subscription you will be using in this lab|
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
    |Location|**East US**|
-   |Admin Username|**Student**|
-   |Admin Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+   |Username|Enter **Tenantadmin1**|
+   |Password|Enter **Superuser#150**|
+   
    
     >**Note**: While you can change the administrative credentials used for logging on to the Virtual Machine, you don't have to.
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-7. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
+8. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
@@ -351,32 +352,34 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     |Setting|Value|
     |---|---|
-    |User name|**Student**|
-    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+    |Username|Enter **Tenantadmin1**|
+    |Password|Enter **Superuser#150**|
+    
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load. Close Server Manager. 
 
     >**Note**: The remaining steps in this lab are performed within the Remote Desktop session to the **az500-10-vm1** Azure VM. 
 
-6. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 19** folder, and click the **Micosoft SQL Server Management Studio** menu item.
+7. Click **Start**, in the **Start** menu, expand the **Microsoft SQL Server Tools 19** folder, and click the **Micosoft SQL Server Management Studio** menu item.
 
-7. In the **Connect to Server** dialog box, specify the following settings: 
+8. In the **Connect to Server** dialog box, specify the following settings: 
 
     |Setting|Value|
     |---|---|
     |Server Type|**Database Engine**|
     |Server Name|the server name you identified earlier in this task|
     |Authentication|**SQL Server Authentication**|
-    |Login|**Student**|
-    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+    |Username|Enter **Tenantadmin1**|
+    |Password|Enter **Superuser#150**|
 
-8. In the **Connect to Server** dialog box, click **Connect**.
 
-9. Within the **SQL Server Management Studio** console, in the **Object Explorer** pane, expand the **Databases** folder.
+10. In the **Connect to Server** dialog box, click **Connect**.
 
-10. In the **Object Explorer** pane, right-click the **medical** database and click **New Query**.
+11. Within the **SQL Server Management Studio** console, in the **Object Explorer** pane, expand the **Databases** folder.
 
-11. Paste the following code into the query window and click **Execute**. This will create a **Patients** table.
+12. In the **Object Explorer** pane, right-click the **medical** database and click **New Query**.
+
+13. Paste the following code into the query window and click **Execute**. This will create a **Patients** table.
 
      ```sql
      CREATE TABLE [dbo].[Patients](
@@ -392,25 +395,25 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 		[BirthDate] [date] NOT NULL 
      PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
-12. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
+14. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
 
     >**Note**: This will initiate the **Always Encrypted** wizard.
 
-13. On the **Introduction** page, click **Next**.
+15. On the **Introduction** page, click **Next**.
 
-14. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
+16. On the **Column Selection** page, select the **SSN** and **Birthdate** columns, set the **Encryption Type** of the **SSN** column to **Deterministic** and of the **Birthdate** column to **Randomized**, and click **Next**.
 
     >**Note**: While performing the encryption if any error thrown like **Exception has been thrown by the target of an innvocation** related to **Rotary(Microsoft.SQLServer.Management.ServiceManagement)** then make sure the **Key Permission's** values of **Rotation Policy Operations** are **unchecked**, if not in the Azure portal navigate to the **Key Vault** >> **Access Policies** >> **Key Permissions** >> Uncheck all the values under the **Rotation Policy Operations** >> Under **Privileged Key Operations** >> Uncheck **Release**.
 
-15. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
+17. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
-16. On the **Run Settings** page, click **Next**.
+18. On the **Run Settings** page, click **Next**.
 	
-17. On the **Summary** page, click **Finish** to proceed with the encryption. When prompted, sign in again by using the same user account you used to provision the Azure Key Vault instance earlier in this lab.
+19. On the **Summary** page, click **Finish** to proceed with the encryption. When prompted, sign in again by using the same user account you used to provision the Azure Key Vault instance earlier in this lab.
 
-18. Once the encryption process is complete, on the **Results** page, click **Close**.
+20. Once the encryption process is complete, on the **Results** page, click **Close**.
 
-19. In the **SQL Server Management Studio** console, in the **Object Explorer** pane, under the **medical** node, expand the **Security** and **Always Encrypted Keys** subnodes. 
+21. In the **SQL Server Management Studio** console, in the **Object Explorer** pane, under the **medical** node, expand the **Security** and **Always Encrypted Keys** subnodes. 
 
     >**Note**: The **Always Encrypted Keys** subnode contains the **Column Master Keys** and **Column Encryption Keys** subfolders.
 
