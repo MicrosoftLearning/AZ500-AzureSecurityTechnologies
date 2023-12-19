@@ -70,8 +70,8 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Subscription|the name of the Azure subscription you will be using in this lab|
    |Resource group|click **Create new** and type the name **AZ500LAB10**|
    |Location|**East US**|
-   |Username|Enter **Tenantadmin1**|
-   |Password|Enter **Superuser#150**|
+   |Username|**Student**|
+   |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
    
    
     >**Note**: While you can change the administrative credentials used for logging on to the Virtual Machine, you don't have to.
@@ -352,8 +352,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     |Setting|Value|
     |---|---|
-    |Username|Enter **Tenantadmin1**|
-    |Password|Enter **Superuser#150**|
+    |Username|**Student**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
     
 
     >**Note**: Wait for the Remote Desktop session and **Server Manager** to load. Close Server Manager. 
@@ -369,8 +369,8 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Server Type|**Database Engine**|
     |Server Name|the server name you identified earlier in this task|
     |Authentication|**SQL Server Authentication**|
-    |Username|Enter **Tenantadmin1**|
-    |Password|Enter **Superuser#150**|
+    |Username|**Student**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
 
 
 10. In the **Connect to Server** dialog box, click **Connect**.
