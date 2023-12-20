@@ -217,12 +217,14 @@ In this task, you will grant the AKS cluster permission to access the ACR and ma
 
     ```sh
     RG_AKS=AZ500LAB09
-    
-    AKS_VNET_NAME=AZ500LAB09-vnet
+
+    RG_VNET=MC_AZ500LAB09_MyKubernetesCluster_eastus	
+
+    AKS_VNET_NAME=aks-vnet-30198516
     
     AKS_CLUSTER_NAME=MyKubernetesCluster
     
-    AKS_VNET_ID=$(az network vnet show --name $AKS_VNET_NAME --resource-group $RG_AKS --query id -o tsv)
+    AKS_VNET_ID=$(az network vnet show --name $AKS_VNET_NAME --resource-group $RG_VNET --query id -o tsv)
     
     AKS_MANAGED_ID=$(az aks show --name $AKS_CLUSTER_NAME --resource-group $RG_AKS --query identity.principalId -o tsv)
     
