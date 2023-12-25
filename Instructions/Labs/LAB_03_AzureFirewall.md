@@ -1,7 +1,7 @@
 ---
 lab:
     title: '03 - Azure Firewall'
-    module: 'Module 02 - Implement Platform Protection'
+    module: 'Module 02 - Plan and implement security for public access to Azure resources'
 ---
 
 # Lab 03: Azure Firewall
