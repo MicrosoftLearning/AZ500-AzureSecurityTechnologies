@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '08 - Securing Azure SQL Database'
-    module: 'Module 03 - Secure data and applications'
+    title: '05 - Securing Azure SQL Database'
+    module: 'Module 02 - Secure data and applications'
 ---
 
-# Lab 08: Securing Azure SQL Database
+# Lab 05: Securing Azure SQL Database
 # Student lab manual
 
 ## Lab scenario
