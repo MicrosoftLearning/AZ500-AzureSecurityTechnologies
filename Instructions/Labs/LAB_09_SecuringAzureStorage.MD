@@ -331,7 +331,7 @@ In this task, you will create two virtual machines one in the Private subnet and
     |Region|**(US)East US**|
     |Image|**Windows Server 2022 Datacenter: Azure Edition - Gen 2**|
     |Username|**Student**|
-    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
     |Public inbound ports|**None**|
     |Already have a Windows Server license|**Not selected**|
 
