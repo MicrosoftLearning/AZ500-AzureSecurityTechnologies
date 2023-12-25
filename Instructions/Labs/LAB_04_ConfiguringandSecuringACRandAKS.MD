@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '07 - Configuring and Securing ACR and AKS'
+    title: '04 - Configuring and Securing ACR and AKS'
     module: 'Module 02 - Implement Platform Protection'
 ---
 
-# Lab 07: Configuring and Securing ACR and AKS
+# Lab 04: Configuring and Securing ACR and AKS
 # Student lab manual
 
 ## Lab scenario
