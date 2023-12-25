@@ -205,7 +205,7 @@ In this task, you will create a virtual machine to use as a web server.
    |Image|**Windows Server 2022 Datacenter: Azure Edition- x64 Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
-   |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+   |Password|**Please create your own password and record it for future reference in subsequent labs**|
    |Confirm password|**Retype your password**|
    |Public inbound ports|**None**|
    |Would you like to use an existing Windows Server License |**No**|
