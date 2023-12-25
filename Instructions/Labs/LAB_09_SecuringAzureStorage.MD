@@ -455,7 +455,7 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
     |Setting|Value|
     |---|---|
     |Username|**Student**|
-    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
 
 
     >**Note**: Wait for the Remote Desktop session to open and Server Manager to load.
