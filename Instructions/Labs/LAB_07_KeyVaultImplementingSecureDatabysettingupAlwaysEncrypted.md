@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '10 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 03 - Secure Data and Applications'
+    title: '07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
+    module: 'Module 01 - Manage security operations'
 ---
 
-# Lab 10: Key Vault (Implementing Secure Data by setting up Always Encrypted)
+# Lab 07: Key Vault (Implementing Secure Data by setting up Always Encrypted)
 # Student lab manual
 
 ## Lab scenario
