@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '11 - Azure Monitor' 
-    module: 'Module 04 - Manage security operations'
+    title: '08 - Azure Monitor' 
+    module: 'Module 02 - Configure data collection in Azure Monitor'
 ---
 
-# Lab 11: Azure Monitor
+# Lab 08: Azure Monitor
 
 # Student lab manual
 
