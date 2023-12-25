@@ -370,7 +370,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
     |Server Name|the server name you identified earlier in this task|
     |Authentication|**SQL Server Authentication**|
     |Username|**Student**|
-    |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+    |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
 
 
 10. In the **Connect to Server** dialog box, click **Connect**.
