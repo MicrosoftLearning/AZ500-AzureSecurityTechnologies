@@ -243,7 +243,7 @@ In this task, you will create a virtual machine to use as a management server.
    |Image|**Windows Server 2022 Datacenter: Azure Edition - x64 Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
-   |Password|**Please use your personal password created in Lab 02 > Exercise 1 > Task 1 > Step 9.**|
+   |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
    |Public inbound ports|**None**|
    |Already have a Windows Server license|**No**|
 
