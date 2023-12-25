@@ -1,10 +1,10 @@
 ---
 lab:
     title: '02 - Network Security Groups and Application Security Groups'
-    module: 'Module 02 - Implement Platform Protection'
+    module: 'Module 01 - Plan and implement security for virtual networks'
 ---
 
-# Lab 05: Network Security Groups and Application Security Groups
+# Lab 02: Network Security Groups and Application Security Groups
 # Student lab manual
 
 ## Lab scenario
