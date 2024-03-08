@@ -154,31 +154,31 @@ In this task, you will create the Junior Admins group and add the user account o
 1. In the same PowerShell session within the Cloud Shell pane, run the following to create a new security group named Junior Admins:
 	
     ```powershell
-    New-AzureADGroup -DisplayName 'Junior Admins' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
+    New-MgGroup -DisplayName 'Junior Admins' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
     ```
 
 2. In the PowerShell session within the Cloud Shell pane, run the following to list the groups in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups):
 
     ```powershell
-    Get-AzureADGroup
+    Get-MgGroup
     ```
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to obtain a reference to the user account of Isabel Garcia:
 
     ```powershell
-    $user = Get-AzureADUser -Filter "MailNickName eq 'Isabel'"
+    $user = Get-MgUser -Filter "MailNickName eq 'Isabel'"
     ```
 
 4. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins group:
 	
     ```powershell
-    Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins" 
+    New-MgGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins" 
     ```
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins group contains the user account of Isabel:
 
     ```powershell
-    Get-AzADGroupMember -GroupDisplayName "Junior Admins"
+    Get-MgGroupMember -GroupDisplayName "Junior Admins"
     ```
 
 > Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
