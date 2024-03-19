@@ -120,13 +120,15 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 
 4. In the PowerShell session within the Cloud Shell pane, run the following to set the value of the password within the profile object:
     ```powershell
-    $passwordProfile.Password = "Pa55w.rd1234"
+    $passwordProfile.Password = "Helo123!"
+    ForceChangePasswordNextSignIn = $true
+    ForceChangePasswordNextSignInWithMfa = $true
     ```
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to connect to Microsoft Entra ID:
 
     ```powershell
-    Connect-MgGraph
+    Connect-MgGraph -Scopes "User.ReadWrite.All", "AuditLog.Read.All", "RoleManagement.Read.Directory"
     ```
       
 6. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant: 
