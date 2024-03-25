@@ -157,7 +157,7 @@ In this task, you will create the Junior Admins group and add the user account o
 
 1. In the same PowerShell session within the Cloud Shell pane, run the following to create a new security group named Junior Admins:
    ```powershell
-   $group = Get-MgGroup -Filter "DisplayName eq 'Junior Admins'"
+   $group = Get-MgGroup -Filter "DisplayName eq 'Junior Admins'" -MailEnabled:$false -SecurityEnabled:$true -MailNickName JuniorAdmins
    ```
    
    ```powershell
