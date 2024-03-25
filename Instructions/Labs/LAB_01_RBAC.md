@@ -162,11 +162,11 @@ In this task, you will create the Junior Admins group and add the user account o
    
    ```powershell
    $group = Get-MgGroup -Filter "DisplayName eq 'Junior Admins'"
-    New-MgGroupMemeber -GroupId $group.Id -DirectoryObjectId $user.Id  
+    New-MgGroupMember -GroupId $group.Id -DirectoryObjectId $user.Id  
    ```
 
    ```powershell
-    New-MgGroup -DisplayName 'Junior Admins' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
+    New-MgGroup -DisplayName 'Junior Admins' -MailEnabled:$false -SecurityEnabled:$true -MailNickName JuniorAdmins
     ```
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to list the groups in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups):
