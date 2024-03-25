@@ -155,31 +155,31 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 
 In this task, you will create the Junior Admins group and add the user account of Isabel Garcia to the group by using PowerShell.
 
-1. In the same PowerShell session within the Cloud Shell pane, run the following to "create a new security group" named Junior Admins:
+1. In the same PowerShell session within the Cloud Shell pane, run the following to **create a new security group** named Junior Admins:
    
    ```powershell
    Get-MgGroup -"DisplayName 'Junior Admins'" -MailEnabled:$false -SecurityEnabled:$true -MailNickName JuniorAdmins
    ```
    
-2. In the PowerShell session within the Cloud Shell pane, run the following to "list groups" in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups)
+2. In the PowerShell session within the Cloud Shell pane, run the following to **list groups** in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups)
    
    ```powershell
    Get-MgGroup
    ```
 
-3. In the PowerShell session within the Cloud Shell pane, run the following to "obtain a reference" to the user account of Isabel Garcia:
+3. In the PowerShell session within the Cloud Shell pane, run the following to **obtain a reference** to the user account of Isabel Garcia:
 
    ```powershell
    $user =Get-MgUser -Filter "MailNickName eq 'Isabel'"
    ```
 
-4. In the PowerShell session within the Cloud Shell pane, run the following to "add the user account of Isabel" to the Junior Admins group:
+4. In the PowerShell session within the Cloud Shell pane, run the following to **add the user account of Isabel** to the Junior Admins group:
    
    ```powershell
     New-MgGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins" 
     ```
    
-5. In the PowerShell session within the Cloud Shell pane, run the following to "verify" that the Junior Admins group contains the user account of Isabel:
+5. In the PowerShell session within the Cloud Shell pane, run the following to **verify** that the Junior Admins group contains the user account of Isabel:
    
     ```powershell
     Get-MgGroupMember -GroupDisplayName "Junior Admins"
