@@ -94,7 +94,7 @@ In this task, you will create another subnet and enable a service endpoint on th
     |---|---|
     |Subnet name|**Private**|
     |Subnet address range|**10.0.1.0/24**|
-    |Service endpoints|**Microsoft.Storage**|
+    |Service endpoints|**Leave the default of None**|
 
 6. On the **Add subnet** blade, click **Save** to add the new subnet.
 
