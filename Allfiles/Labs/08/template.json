@@ -2,6 +2,13 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
+        "adminUsername": {
+            "defaultValue": "localadmin",
+            "type": "string"
+        },
+        "adminPassword": {
+            "type": "secureString"
+        },
         "virtualMachines_Srv_Jump_name": {
             "defaultValue": "Srv-Jump",
             "type": "string"
@@ -433,8 +440,8 @@
                 },
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_Srv_Jump_name')]",
-                    "adminUsername": "localadmin",
-                    "adminPassword" : "Pa55w.rd1234",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword" : "[parameters('adminPassword')]",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
                         "enableAutomaticUpdates": true
@@ -485,8 +492,8 @@
                 },
                 "osProfile": {
                     "computerName": "[parameters('virtualMachines_Srv_Work_name')]",
-                    "adminUsername": "localadmin",
-                    "adminPassword": "Pa55w.rd1234",
+                    "adminUsername": "[parameters('adminUsername')]",
+                    "adminPassword" : "[parameters('adminPassword')]",
                     "windowsConfiguration": {
                         "provisionVMAgent": true,
                         "enableAutomaticUpdates": true

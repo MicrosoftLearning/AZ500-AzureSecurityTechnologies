@@ -78,6 +78,7 @@ In this task, you will create a virtual machine by using an ARM template. This v
    |Subscription|the name of the Azure subscription you will be using in this lab|
    |Resource group|click **Create new** and type the name **AZ500LAB08**|
    |Location|**(US) East US**|
+   |adminPassword|A secure password of your own choosing for the virtual machines. Remember the password. You will need it later to connect to the VMs.|
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
@@ -271,7 +272,7 @@ In this task, you will test the firewall to confirm that it works as expected.
    |Setting|Value|
    |---|---|
    |User name|**localadmin**|
-   |Password|**Pa55w.rd1234**|
+   |Password|The secure password you chose during deployment of the custom template in task 1 step 6.|
 
     >**Note**: The following steps are performed in the Remote Desktop session to the **Srv-Jump** Azure VM. 
 
@@ -288,7 +289,7 @@ In this task, you will test the firewall to confirm that it works as expected.
    |Setting|Value|
    |---|---|
    |User name|**localadmin**|
-   |Password|**Pa55w.rd1234**|
+   |Password|The secure password you chose during deployment of the custom template in task 1 step 6.|
 
     >**Note**: Wait for the Remote Desktop session to be established and the Server Manager interface to load.
 
