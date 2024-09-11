@@ -120,35 +120,31 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 
 4. In the PowerShell session within the Cloud Shell pane, run the following to set the value of the password within the profile object:
     ```powershell
-    $PasswordProfile = @{
-      Password = 'Helo123!'
-      ForceChangePasswordNextSignIn = $true
-      ForceChangePasswordNextSignInWithMfa = $true
-    }
+    $passwordProfile.Password = "Pa55w.rd1234"
     ```
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to connect to Microsoft Entra ID:
 
     ```powershell
-    Connect-MgGraph -Scopes "User.ReadWrite.All", "Group.ReadWrite.All", "AuditLog.Read.All", "RoleManagement.Read.Directory"
+    Connect-AzureAD
     ```
       
 6. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant: 
 
     ```powershell
-    $domainName = ((Get-MgOrganization).VerifiedDomains)[0].Name
+    $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
     ```
 
 7. In the PowerShell session within the Cloud Shell pane, run the following to create a user account for Isabel Garcia: 
 
     ```powershell
-    New-MgUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -MailNickName 'Isabel' -AccountEnabled
+    New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
     ```
 
 8. In the PowerShell session within the Cloud Shell pane, run the following to list Microsoft Entra ID users (the accounts of Joseph and Isabel should appear on the listed): 
 
     ```powershell
-    Get-MgUser 
+    Get-AzureADUser -All $true | Where-Object {$_.UserPrincipalName -like "*43846135@LOD*"} 
     ```
 
 #### Task2: Use PowerShell to create the Junior Admins group and add the user account of Isabel Garcia to the group.
@@ -158,38 +154,32 @@ In this task, you will create the Junior Admins group and add the user account o
 1. In the same PowerShell session within the Cloud Shell pane, run the following to **create a new security group** named Junior Admins:
    
    ```powershell
-   New-MgGroup -DisplayName "Junior Admins" -MailEnabled:$false -SecurityEnabled:$true -MailNickName JuniorAdmins
+   New-AzureADGroup -DisplayName 'Junior Admins43846135' -MailEnabled $false -SecurityEnabled $true -MailNickName JuniorAdmins
    ```
    
 2. In the PowerShell session within the Cloud Shell pane, run the following to **list groups** in your Microsoft Entra tenant (the list should include the Senior Admins and Junior Admins groups)
    
    ```powershell
-   Get-MgGroup
+   Get-AzureADGroup
    ```
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to **obtain a reference** to the user account of Isabel Garcia:
 
    ```powershell
-   $user =Get-MgUser -Filter "MailNickName eq 'Isabel'"
+   $user = Get-AzureADUser -Filter "UserPrincipalName eq 'Isabel-43846135@LODSPRODMCA.onmicrosoft.com'"
    ```
 
-4. In the PowerShell session within the Cloud Shell pane, run the following to **obtain a reference** to the Junior Admins group:
+4. In the PowerShell session within the Cloud Shell pane, run the following to add the user account of Isabel to the Junior Admins43846135 group:
    ```powershell
-   $targetGroup = Get-MgGroup -ConsistencyLevel eventual -Search '"DisplayName:Junior Admins"'
+   Add-AzADGroupMember -MemberUserPrincipalName $user.userPrincipalName -TargetGroupDisplayName "Junior Admins43846135"
    ```
 
-5. In the PowerShell session within the Cloud Shell pane, run the following to **add the user account of Isabel** to the Junior Admins group:
+5. In the PowerShell session within the Cloud Shell pane, run the following to verify that the Junior Admins43846135 group contains the user account of Isabel:
    
    ```powershell
-    New-MgGroupMember -DirectoryObjectId $user.id -GroupId $targetGroup.id
+    Get-AzADGroupMember -GroupDisplayName "Junior Admins43846135"
     ```
    
-5. In the PowerShell session within the Cloud Shell pane, run the following to **verify** that the Junior Admins group contains the user account of Isabel:
-   
-    ```powershell
-    Get-MgGroupMember -GroupId $targetGroup.id
-    ```
- 
 > Result: You used PowerShell to create a user and a group account, and added the user account to the group account. 
 
 ### Exercise 3: Create a Service Desk group containing the user account of Dylan Williams as its member.
