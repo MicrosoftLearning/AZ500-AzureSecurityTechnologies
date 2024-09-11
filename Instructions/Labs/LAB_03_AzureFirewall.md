@@ -245,7 +245,7 @@ In this task, you will configure the primary and secondary DNS addresses for the
 
 2. On the **AZ500LAB08** blade, in the list of resources, click the **Srv-Work** virtual machine.
 
-3. On the **Srv-Work** blade, in the **Settings** section, click **Networking**.
+3. On the **Srv-Work** blade, click **Networking**.
 
 4. On the **Srv-Work \| Networking** blade, click the link next to the **Network interface** entry.
 
