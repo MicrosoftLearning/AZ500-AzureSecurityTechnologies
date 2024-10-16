@@ -202,6 +202,8 @@ In this task, you will create a virtual machine to use as a web server.
    |Resource group|**AZ500LAB07**|
    |Virtual machine name|**myVmWeb**|
    |Region|**(US)East US**|
+   |Availability options|**No infrastructure redundancy required**
+   |Security type|**Standard**
    |Image|**Windows Server 2022 Datacenter: Azure Edition- x64 Gen2**|
    |Size|**Standard D2s v3**|
    |Username|**Student**|
@@ -212,19 +214,19 @@ In this task, you will create a virtual machine to use as a web server.
 
     >**Note**: For public inbound ports, we will rely on the precreated NSG. 
 
-4. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
+5. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-5. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
+6. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
 
-6. Under **NIC network security group** select **None**.
+7. Under **NIC network security group** select **None**.
 
-7. Click **Next: Management >**, then click **Next: Monitoring >**. On the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
+8. Click **Next: Management >**, then click **Next: Monitoring >**. On the **Monitoring** tab of the **Create a virtual machine** blade, verify the following setting:
 
    |Setting|Value|
    |---|---|
    |Boot diagnostics|**Enabled with managed storage account (recommended)**|
 
-8. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
+9. Click **Review + create**, on the **Review + create** blade, ensure that validation was successful and click **Create**.
 
 #### Task 2: Create a virtual machine to use as a management server. 
 
