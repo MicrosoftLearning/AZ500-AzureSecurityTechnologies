@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-**Note:** **Azure Sentinel** is renamed to **Microsoft Sentinel** 
+**Note:** **Microsoft Sentinel** is renamed to **Microsoft Sentinel** 
 
 You have been asked to create a proof of concept of Microsoft Sentinel-based threat detection and response. Specifically, you want to:
 
@@ -64,7 +64,7 @@ In this task, you will on-board Microsoft Sentinel and connect the Log Analytics
 
 4. On the **Add Microsoft Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
-    >**Note**: Microsoft Sentinel has very specific requirements for workspaces. For example, workspaces created by Microsoft Defender for Cloud can not be used. Read more at [Quickstart: On-board Microsoft Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
+    >**Note**: Microsoft Sentinel has very specific requirements for workspaces. For example, workspaces created by Microsoft Defender for Cloud can not be used. Read more at [Quickstart: On-board Microsoft Sentinel](https://docs.microsoft.com/en-us/microsoft/sentinel/quickstart-onboard)
 	
 #### Task 2: Configure Microsoft Sentinel to use the Azure Activity data connector. 
 
