@@ -48,7 +48,7 @@ In this exercise, you will complete the following tasks:
 - Task 5: Create a custom alert and configure the playbook as an automated response.
 - Task 6: Invoke an incident and review the associated actions.
 
-#### Task 1: On-board Azure Sentinel
+#### Task 1: On-board Microsoft Sentinel
 
 In this task, you will on-board Microsoft Sentinel and connect the Log Analytics workspace. 
 
@@ -64,7 +64,7 @@ In this task, you will on-board Microsoft Sentinel and connect the Log Analytics
 
 4. On the **Add Microsoft Sentinel to a workspace** blade, select the Log Analytics workspace you created in the Azure Monitor lab and click **Add**.
 
-    >**Note**: Microsoft Sentinel has very specific requirements for workspaces. For example, workspaces created by Microsoft Defender for Cloud can not be used. Read more at [Quickstart: On-board Azure Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
+    >**Note**: Microsoft Sentinel has very specific requirements for workspaces. For example, workspaces created by Microsoft Defender for Cloud can not be used. Read more at [Quickstart: On-board Microsoft Sentinel](https://docs.microsoft.com/en-us/azure/sentinel/quickstart-onboard)
 	
 #### Task 2: Configure Microsoft Sentinel to use the Azure Activity data connector. 
 
