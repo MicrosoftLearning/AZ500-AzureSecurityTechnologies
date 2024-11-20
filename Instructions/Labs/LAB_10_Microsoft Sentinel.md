@@ -2,6 +2,7 @@
 lab:
     title: '10 - Microsoft Sentinel'
     module: 'Module 05 - Configure and manage security monitoring and automation solutions'
+    demo: propose a change
 ---
 
 # Lab 10: Microsoft Sentinel
