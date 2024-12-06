@@ -42,7 +42,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will on-board and configure Microsoft Defender for Cloud Enhanced Security Features for Servers.
 
-1. Start a browser session and sign-in to the Azure portal menu.
+1. Start a browser session and sign-in to the  [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access.
 
 2. In the Azure portal, in the Search resources, services, and docs text box at the top of the Azure portal page, type Microsoft Defender for Cloud and press the Enter key.
 
