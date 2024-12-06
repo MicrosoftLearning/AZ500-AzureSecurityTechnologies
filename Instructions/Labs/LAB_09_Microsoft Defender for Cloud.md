@@ -38,35 +38,23 @@ In this exercise, you will complete the following tasks:
 - Task 2: Review the Microsoft Defender for Cloud recommendations
 - Task 3: Implement the Microsoft Defender for Cloud recommendation to enable Just-in-time VM Access
 
-#### Task 1: Configure Microsoft Defender for Cloud
+#### Task 1: Configure Microsoft Defender for Cloud Enhanced Security Features for Servers
 
-In this task, you will on-board and configure Microsoft Defender for Cloud.
+In this task, you will on-board and configure Microsoft Defender for Cloud Enhanced Security Features for Servers.
 
-1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
+1. Start a browser session and sign-in to the Azure portal menu.
 
-    >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
+2. In the Azure portal, in the Search resources, services, and docs text box at the top of the Azure portal page, type Microsoft Defender for Cloud and press the Enter key.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Defender for Cloud** and press the **Enter** key.
+3. On the Microsoft Defender for Cloud, Management blade, go to the Environment settings. Expand the environment settings folders until the subscription section is displayed, then click the subscription to view details.
 
-3. In the left navigation panel, click **Getting started**. On the **Microsoft Defender for Cloud \| Getting started** blade, click **Upgrade**.
-     
-4. On the **Microsoft Defender for Cloud \| Getting started** blade, in the Install agents tab, scroll down and click **Install agents**. 
+4. In the Settings blade, under Defender plans, expand Cloud Workload Protection (CWP).
+  
+5. From the Cloud Workload Protection (CWP) Plan list, select Servers. On the right side of the page, change the Status from Off to On, then click Save.
+  
+6. To review the details of Microsoft Defender for Servers Plan 2, select Change plan >.
 
-5. On the **Microsoft Defender for Cloud \| Getting started** blade, on the **Upgrade** tab >> scroll down until the **Select workspaces with enhanced security features** section is visible >> turn on the **Microsoft Defender plan** by selecting your Log Analytics Workspace, then click the large Blue Upgrade button.  
-
-    >**Note**: Review all the features that are available as part of Microsoft Defender plans. 
-
-6. Navigate to **Microsoft Defender for Cloud** and, in the left navigation panel under the Management section, click **Environment Settings**.
-
-7. On the **Microsoft Defender for Cloud \| Environment settings** blade, scroll down, expand until your subscription appears and click the relevant subscription. 
-
-8. On the **Settings \| Defender plans** blade, select **Enable all plans** and, if needed, click **Save**.
-
-9. Navigate back to the **Microsoft Defender for Cloud \| Environment settings** blade, expand until your subscription appears, and click the entry representing the Log Analytics workspace you created in the previous lab.
-
-10. On the **Settings \| Defender plans** blade, ensure that all options are "On". If needed, click **Enable all plans** and then click **Save**.
-
-11. Select **Data collection** from the **Settings \| Defender plans** blade. Click **All Events** and **Save**.
+>**Note**: Enabling the Cloud Workload Protection (CWP) Servers plan from Off to On enables Microsoft Defender for Servers Plan 2.
 
 #### Task 2: Review the Microsoft Defender for Cloud recommendation
 
