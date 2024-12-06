@@ -11,7 +11,7 @@ lab:
 
 You have been asked to create a proof of concept of Microsoft Defender for Cloud-based environment. Specifically, you want to:
 
-- Configure Microsoft Defender for Cloud to monitor a virtual machine.
+- Configure Microsoft Defender for Cloud enhanced security features for servers to monitor a virtual machine.
 - Review Microsoft Defender for Cloud recommendations for the virtual machine.
 - Implement recommendations for guest configuration and Just-in-time VM access. 
 - Review how the Secure Score can be used to determine progress toward creating a more secure infrastructure.
