@@ -49,7 +49,7 @@ In this exercise, you will complete the following tasks:
     New-AzResourceGroup -Name AZ500LAB131415 -Location 'EastUS'
     ```
 
-    >**Note**: This resource group will be used for labs 13, 14, and 15.
+    >**Note**: This resource group will be used for labs 8, 9, and 10.
 
 5. In the PowerShell session within the Cloud Shell pane, run the following to enable encryption at host (EAH)
    
@@ -163,7 +163,9 @@ In this task, you will create a data collection rule.
   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d43e8f94-efb2-4255-9320-210c976fd45e)
 
 
-3. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings:
+3. Click the **+ Create** button to create a new data collection rule.
+
+4. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings:
   
     |Setting|Value|
     |---|---|
@@ -202,7 +204,7 @@ In this task, you will create a data collection rule.
 
 11. Click on the button labeled **Next: Destination >** to proceed.
   
-12. Change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
+12. Click **+ Add destination**, change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/481843f5-94c4-4a8f-bf51-a10d49130bf8)
 
