@@ -9,7 +9,7 @@ lab:
 
 ## Lab scenario
 
-**Note:** **Microsoft Sentinel** is renamed to **Microsoft Sentinel** 
+**Note:** **Azure Sentinel** is renamed to **Microsoft Sentinel** 
 
 You have been asked to create a proof of concept of Microsoft Sentinel-based threat detection and response. Specifically, you want to:
 
@@ -242,7 +242,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 4. On the **Just-in-time VM access** blade, on the right hand side of the row referencing the **myVM** virtual machine, click the **ellipsis (...)** button, click **Remove** and then click **Yes**.
 
-    >**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virutal Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
+    >**Note:** If the VM is not listed in the **Just-in-time VMs**, navigate to **Virtual Machine** blade and click the **Configuration**, Click the **Enable the Just-in-time VMs** option under the **Just-in-time Vm's access**. Repeat the above step to navigate back to the **Microsoft Defender for Cloud** and refresh the page, the VM will appear.
 
 5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Activity log** and press the **Enter** key.
 

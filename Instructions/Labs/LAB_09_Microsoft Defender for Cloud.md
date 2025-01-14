@@ -62,7 +62,7 @@ In this task, you will review the Microsoft Defender for Cloud recommendations.
 
 1. In the Azure portal, navigate back to the **Microsoft Defender for Cloud \| Overview** blade. 
 
-2. On the **Microsoft Defender for Cloud \| Overview** blade, review the **Secure Score** tile.
+2. On the **Microsoft Defender for Cloud \| Overview** blade, review the **Security Posture** tile and the Total secure score within it.
 
     >**Note**: Record the current score if it is available.
 
