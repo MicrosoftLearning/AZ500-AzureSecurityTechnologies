@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '08 - Azure Monitor' 
+    title: '08 - Create a Log Analytics workspace and Data Collection Rule (DCR)' 
     module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
 ---
 
-# Lab 08: Azure Monitor
+# Lab 08: Create a Log Analytics workspace and Data Collection Rule (DCR)
 
 # Student lab manual
 
