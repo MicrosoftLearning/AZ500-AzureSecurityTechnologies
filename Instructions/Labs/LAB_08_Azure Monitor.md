@@ -1,7 +1,7 @@
 ---
 lab:
     title: '08 - Azure Monitor' 
-    module: 'Module 02 - Configure data collection in Azure Monitor'
+    module: 'Module 03 - Configure data collection in Azure Monitor'
 ---
 
 # Lab 08: Azure Monitor
