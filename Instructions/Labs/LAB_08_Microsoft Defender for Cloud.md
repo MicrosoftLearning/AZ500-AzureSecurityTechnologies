@@ -4,6 +4,12 @@ lab:
     module: 'Module 02 - Enable workload protection services in Microsoft Defender for Cloud'
 ---
 
+# Lab 08: Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
+
+# Student lab manual
+
+## Lab scenario
+
 
 >**Note**: To complete this lab, you will need an [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access. 
 
