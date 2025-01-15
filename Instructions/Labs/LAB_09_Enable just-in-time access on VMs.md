@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '09 - Enable just-in-time access on VMs'    
+    title: '09 - Enable just-in-time access on a VM'    
     module: 'Module 03 - Explore just-in-time VM access'
 ---
 
-# Lab 09: Enable just-in-time access on VMs
+# Lab 09: Enable just-in-time access on a VM
 
 # Student lab manual
 
