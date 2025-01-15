@@ -12,13 +12,17 @@ lab:
 
 As an Azure Security Engineer at a financial services company, you're responsible for securing Azure resources, including virtual machines (VMs) that host critical applications. The security team has identified that continuous open access to VMs increases the risk of brute-force attacks and unauthorized access. To mitigate this, the Chief Information Security Officer (CISO) has requested that you enable Just-in-Time (JIT) VM access on a specific Azure VM used for processing financial transactions.
 
-- Enable JIT on your VMs from the Azure portal.
+## Lab objectives
 
-- Request access to a VM that has JIT enabled from the Azure portal.
+In this lab, you will complete the following exercises:
+
+- Exercise 1: Enable JIT on your VMs from the Azure portal.
+
+- Exercise 2: Request access to a VM that has JIT enabled from the Azure portal.
 
 ## Exercise instructions 
 
-### Enable JIT on your VMs from Azure virtual machines
+### Exercise 1: Enable JIT on your VMs from Azure virtual machines
 
 >**Note**: You can enable JIT on a VM from the Azure virtual machines pages of the Azure portal.
 
@@ -54,7 +58,7 @@ As an Azure Security Engineer at a financial services company, you're responsibl
    - Under **JIT VM access configuration,** you can either edit the existing settings of an already protected port or add a new custom port.
    - When you've finished editing the ports, select **Save.**   
 
-### Request access to a JIT-enabled VM from the Azure virtual machine's connect page.
+### Exercise 2: Request access to a JIT-enabled VM from the Azure virtual machine's connect page.
 
 >**Note**: When a VM has a JIT enabled, you have to request access to connect to it. You can request access in any of the supported ways, regardless of how you enabled JIT.
    
