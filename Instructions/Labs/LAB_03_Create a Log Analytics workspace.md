@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 03 - Create a Log Analytics workspace'
+    title: 'Exercise 0x - Create a Log Analytics workspace'
     module: 'Module 04 - Create a Log Analytics workspace'
 ---
 
