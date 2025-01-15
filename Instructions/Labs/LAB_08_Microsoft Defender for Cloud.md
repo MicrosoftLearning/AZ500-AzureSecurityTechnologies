@@ -1,6 +1,6 @@
 ---
 lab:
-    title: 'Exercise 08 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
+    title: '08 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
     module: 'Module 02 - Enable workload protection services in Microsoft Defender for Cloud'
 ---
 
@@ -9,10 +9,6 @@ lab:
 # Student lab manual
 
 ## Lab scenario
-
-
->**Note**: To complete this lab, you will need an [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access. 
-
 
 The main goal of this exercise is to provide hands-on experience in configuring and enabling Microsoft Defender for Servers Plan 2 within an Azure subscription. This will allow you to monitor and protect your cloud resources against security threats. 
 
