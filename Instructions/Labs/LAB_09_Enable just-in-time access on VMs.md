@@ -22,19 +22,17 @@ You can use Microsoft Defender for Cloud's just-in-time (JIT) access to protect 
 
 >**Note**: You can enable JIT on a VM from the Azure virtual machines pages of the Azure portal.
 
-1. Start a browser session and sign-in to the [Azure portal menu.](https://portal.azure.com/).
-  
-2. In the search box at the top of the portal, enter **virtual machines.** Select **Virtual machines** in the search results.
+1. In the search box at the top of the portal, enter **virtual machines.** Select **Virtual machines** in the search results.
 
-3. Select **myVM.**
+2. Select **myVM.**
  
-4. Select **Configuration** from the **Settings** section of **myVM.**
+3. Select **Configuration** from the **Settings** section of **myVM.**
    
-5. Under **Just-in-time VM access,** select **Enable just-in-time.**
+4. Under **Just-in-time VM access,** select **Enable just-in-time.**
 
-6. Under **Just-in-time VM access,** click on the link that reads **Open Microsoft Defender for Cloud.**
+5. Under **Just-in-time VM access,** click on the link that reads **Open Microsoft Defender for Cloud.**
 
-7. By default, just-in-time access for the VM uses these settings:
+6. By default, just-in-time access for the VM uses these settings:
 
    - Windows machines
    
@@ -47,7 +45,7 @@ You can use Microsoft Defender for Cloud's just-in-time (JIT) access to protect 
      - Maximum allowed access: Three hours
      - Allowed source IP addresses: Any
    
-8. By default, just-in-time access for the VM uses these settings:
+7. By default, just-in-time access for the VM uses these settings:
 
    - From the **Configured** tab, right-click on the VM to which you want to add a port, and select edit.
 
