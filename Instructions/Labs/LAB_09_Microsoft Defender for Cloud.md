@@ -1,7 +1,7 @@
 ---
 lab:
     title: 'Exercise 09 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
-    module: 'Module 02 - Implement Microsoft Defender for Cloudn'
+    module: 'Module 02 - Enable workload protection services in Microsoft Defender for Cloud'
 ---
 
 
