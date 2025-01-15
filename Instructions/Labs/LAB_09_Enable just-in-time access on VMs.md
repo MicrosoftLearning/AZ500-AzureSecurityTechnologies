@@ -28,7 +28,7 @@ You can use Microsoft Defender for Cloud's just-in-time (JIT) access to protect 
 
 3. Select **myVM.**
  
-4. Select **Configuration** from the **Settings** section of myVM.
+4. Select **Configuration** from the **Settings** section of **myVM.**
    
 5. Under **Just-in-time VM access,** select **Enable just-in-time.**
 
