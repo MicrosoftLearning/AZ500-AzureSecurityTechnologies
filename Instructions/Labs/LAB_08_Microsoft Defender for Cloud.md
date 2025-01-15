@@ -10,7 +10,7 @@ lab:
 
 ## Lab scenario
 
-The main goal of this exercise is to provide hands-on experience in configuring and enabling Microsoft Defender for Servers Plan 2 within an Azure subscription. This will allow you to monitor and protect your cloud resources against security threats. 
+As an Azure Security Engineer for a global e-commerce company, you are responsible for securing the company’s cloud infrastructure. The organization relies heavily on Azure virtual machines (VMs) and on-premises servers to run critical applications, manage customer data, and process transactions. The Chief Information Security Officer (CISO) has identified the need for enhanced security measures to protect these resources against cyber threats, vulnerabilities, and misconfigurations. You have been tasked with enabling Microsoft Defender for Servers in Microsoft Defender for Cloud to provide advanced threat protection and security monitoring for both Azure VMs and hybrid servers.
 
 ## Lab objectives
 
