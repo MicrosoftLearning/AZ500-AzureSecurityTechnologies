@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Exercise 01 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
-    module: 'Module 02 - Enable Defender for Cloud on Your Azure Subscription'
+    title: 'Exercise 0x - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
+    module: 'Module 0x - Enable Defender for Cloud on Your Azure Subscription'
 ---
 
 
