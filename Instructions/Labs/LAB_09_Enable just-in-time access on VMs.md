@@ -1,7 +1,7 @@
 ---
 lab:
-    title: 'Exercise 05 - Enable just-in-time access on VMs'    
-    module: 'Module 06 - Explore just-in-time VM access'
+    title: 'Exercise 0x - Enable just-in-time access on VMs'    
+    module: 'Module 02 - Explore just-in-time VM access'
 ---
 
 
