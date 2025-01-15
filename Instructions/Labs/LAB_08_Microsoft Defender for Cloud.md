@@ -12,9 +12,7 @@ lab:
 
 The main goal of this exercise is to provide hands-on experience in configuring and enabling Microsoft Defender for Servers Plan 2 within an Azure subscription. This will allow you to monitor and protect your cloud resources against security threats. 
 
----
-
-## Skilling tasks
+## Lab objectives
 
 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
   
