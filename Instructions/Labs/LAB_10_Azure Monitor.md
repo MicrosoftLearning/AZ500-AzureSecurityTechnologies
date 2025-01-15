@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '10 - Azure Monitor' 
+    title: '08 - Azure Monitor' 
     module: 'Module 02 - Configure data collection in Azure Monitor'
 ---
 
-# Lab 10: Azure Monitor
+# Lab 08: Azure Monitor
 
 # Student lab manual
 
