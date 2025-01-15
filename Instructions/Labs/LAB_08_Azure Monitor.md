@@ -1,7 +1,7 @@
 ---
 lab:
     title: '08 - Azure Monitor' 
-    module: 'Module 03 - Configure data collection in Azure Monitor'
+    module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
 ---
 
 # Lab 08: Azure Monitor
