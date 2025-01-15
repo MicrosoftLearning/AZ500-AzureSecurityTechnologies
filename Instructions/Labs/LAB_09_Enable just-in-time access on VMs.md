@@ -4,6 +4,9 @@ lab:
     module: 'Module 03 - Explore just-in-time VM access'
 ---
 
+# Lab 09: Enable just-in-time access on VMs
+
+# Student lab manual
 
 >**Note**: To complete this lab, you will need an [Azure subscription.](https://azure.microsoft.com/en-us/free/?azure-portal=true) in which you have administrative access. 
 
