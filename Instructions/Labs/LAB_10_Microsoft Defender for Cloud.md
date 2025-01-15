@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '08 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
+    title: '10 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
     module: 'Module 02 - Enable workload protection services in Microsoft Defender for Cloud'
 ---
 
-# Lab 08: Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
+# Lab 10: Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
 
 # Student lab manual
 
