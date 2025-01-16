@@ -1,10 +1,10 @@
 ---
 lab:
-    title: '08 - Create a Log Analytics workspace and Data Collection Rule (DCR)' 
+    title: '08 - Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)' 
     module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
 ---
 
-# Lab 08: Create a Log Analytics workspace and Data Collection Rule (DCR)
+# Lab 08: Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)
 
 # Student lab manual
 
