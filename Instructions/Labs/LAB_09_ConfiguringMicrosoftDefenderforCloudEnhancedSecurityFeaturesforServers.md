@@ -14,7 +14,7 @@ As an Azure Security Engineer for a global e-commerce company, you are responsib
 
 ## Lab objectives
 
-- Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
+- Configure Microsoft Defender for Cloud Enhanced Security Features for Servers
   
 - Review the ehanced security features for Microsoft Defender for Servers Plan 2
 
