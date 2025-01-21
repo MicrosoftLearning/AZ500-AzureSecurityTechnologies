@@ -20,7 +20,7 @@ As an Azure Security Engineer for a global e-commerce company, you are responsib
 
 ## Exercise instructions
 
-### Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
+### Configure Microsoft Defender for Cloud Enhanced Security Features for Servers
 
 1. In the Azure portal, in the Search resources, services, and docs text box at the top of the Azure portal page, type **Microsoft Defender for Cloud** and press the **Enter** key.
 
