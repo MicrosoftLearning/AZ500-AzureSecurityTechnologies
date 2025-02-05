@@ -104,21 +104,22 @@ In this task you will deploy the Azure firewall into the virtual network.
    |Firewall SKU|**Standard**|
    |Firewall management|**Use Firewall rules (classic) to manage this firewall**|
    |Choose a virtual network|click the **Use existing** option and, in the drop-down list, select **Test-FW-VN**|
+   |Firewall Management NIC|To disable this feature, **deselect** the **Enable Firewall Management NIC** option.|
    |Public IP address|clck **Add new** and type the name **TEST-FW-PIP** and click **OK**|
 
-4. Click **Review + create** and then click **Create**. 
+5. Click **Review + create** and then click **Create**. 
 
     >**Note**: Wait for the deployment to complete. This should take about 5 minutes. 
 
-5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+6. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-6. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB08** entry.
+7. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB08** entry.
 
     >**Note**: On the **AZ500LAB08** resource group blade, review the list of resources. You can sort by **Type**.
 
-7. In the list of resources, click the entry representing the **Test-FW01** firewall.
+8. In the list of resources, click the entry representing the **Test-FW01** firewall.
 
-8. On the **Test-FW01** blade, identify the **Private IP** address that was assigned to the firewall. 
+9. On the **Test-FW01** blade, identify the **Private IP** address that was assigned to the firewall. 
 
     >**Note**: You will need this information in the next task.
 
