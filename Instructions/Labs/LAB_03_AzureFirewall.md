@@ -94,7 +94,7 @@ In this task you will deploy the Azure firewall into the virtual network.
 
 2. On the **Firewalls** blade, click **+ Create**.
 
-3. On the **Basics** tab of the **Create a firewall** blade, specify the following settings (leave others with their default values):
+3. On the **Basics** tab of the **Create a firewall** blade, specify the following settings: 
 
    |Setting|Value|
    |---|---|
