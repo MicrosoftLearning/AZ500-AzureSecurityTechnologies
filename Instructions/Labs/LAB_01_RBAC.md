@@ -106,42 +106,44 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a user account for Isabel Garcia by using PowerShell.
 
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
+1. **Open the Cloud Shell** by clicking the **Cloud Shell icon** in the top-right corner of the Azure portal.
 
-2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
+2. **If prompted, set up Cloud Shell by creating a storage account**. This is required **only the first time** you launch Cloud Shell.
+
+3. In the Cloud Shell pane, **ensure PowerShell is selected** from the drop-down menu in the upper-left corner.
 
    >**Note**: To paste copied text into the Cloud Shell, right-click within the pane window and select **Paste**. Alternatively, you can use the **Shift+Insert** key combination.
 
-3. In the PowerShell session within the Cloud Shell pane, run the following to create a password profile object:
+4. In the PowerShell session within the Cloud Shell pane, run the following to create a password profile object:
 
     ```powershell
     $passwordProfile = New-Object -TypeName Microsoft.Open.AzureAD.Model.PasswordProfile
     ```
 
-4. In the PowerShell session within the Cloud Shell pane, run the following to set the value of the password within the profile object:
+5. In the PowerShell session within the Cloud Shell pane, run the following to set the value of the password within the profile object:
     ```powershell
     $passwordProfile.Password = "Pa55w.rd1234"
     ```
 
-5. In the PowerShell session within the Cloud Shell pane, run the following to connect to Microsoft Entra ID:
+6. In the PowerShell session within the Cloud Shell pane, run the following to connect to Microsoft Entra ID:
 
     ```powershell
     Connect-AzureAD
     ```
       
-6. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant: 
+7. In the PowerShell session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant: 
 
     ```powershell
     $domainName = ((Get-AzureAdTenantDetail).VerifiedDomains)[0].Name
     ```
 
-7. In the PowerShell session within the Cloud Shell pane, run the following to create a user account for Isabel Garcia: 
+8. In the PowerShell session within the Cloud Shell pane, run the following to create a user account for Isabel Garcia: 
 
     ```powershell
     New-AzureADUser -DisplayName 'Isabel Garcia' -PasswordProfile $passwordProfile -UserPrincipalName "Isabel@$domainName" -AccountEnabled $true -MailNickName 'Isabel'
     ```
 
-8. In the PowerShell session within the Cloud Shell pane, run the following to list Microsoft Entra ID users (the accounts of Joseph and Isabel should appear on the listed): 
+9. In the PowerShell session within the Cloud Shell pane, run the following to list Microsoft Entra ID users (the accounts of Joseph and Isabel should appear on the listed): 
 
     ```powershell
     Get-AzureADUser -All $true | Where-Object {$_.UserPrincipalName -like "*43846135@LOD*"} 
