@@ -296,7 +296,9 @@ In this exercise, you will complete the following tasks:
 
 3. On the **AZ500Lab01 \| Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
 
-4. On the **Add role assignment** blade, specify the following settings and click **Next** after each step:
+4. On the **Add role assignment** blade, complete each of the following settings before clicking Next:
+
+   **Note:** After completing all the steps, click **Next**.
 
    |Setting|Value|
    |---|---|
@@ -304,17 +306,17 @@ In this exercise, you will complete the following tasks:
    |Assign access to (Under Members Pane)|**User, group, or service principal**|
    |Select (+Select Members)|**Service Desk**|
 
-5. Click **Review + assign** twice to create the role assignment.
+6. Click **Review + assign** twice to create the role assignment.
 
-6. From the **Access control (IAM)** blade, select **Role assignments**.
+7. From the **Access control (IAM)** blade, select **Role assignments**.
 
-7. On the **AZ500Lab01 \| Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
+8. On the **AZ500Lab01 \| Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
 
-8. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
+9. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
 
-9. Close the **Dylan Williams assignments - AZ500Lab01** blade.
+10. Close the **Dylan Williams assignments - AZ500Lab01** blade.
 
-10. Repeat the same last two steps to check access for **Joseph Price**. 
+11. Repeat the same last two steps to check access for **Joseph Price**. 
 
 > Result: You have assigned and checked RBAC permissions. 
 
