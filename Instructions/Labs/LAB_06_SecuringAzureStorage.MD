@@ -387,7 +387,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 13. On the **Review + create** blade, ensure that validation was successful and click **Create**.
 
-    >**Note**: You can continue to the next task once the deployment of the **myVMPrivate** Azure VM is completed.
+    >**Note**: You can continue to the next task once the deployment of the **myVMPublic** Azure VM is completed.
 
 #### Task 7: Test the storage connection from the private subnet to confirm that access is allowed
 

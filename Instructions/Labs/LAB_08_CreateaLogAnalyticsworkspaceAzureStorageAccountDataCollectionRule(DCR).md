@@ -146,7 +146,7 @@ In this task, you will create a storage account.
 
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
-### Exercise 3: Create a Data Collection Rule
+### Exercise 4: Create a Data Collection Rule
 
 ### Estimated timing: 15 minutes
 
