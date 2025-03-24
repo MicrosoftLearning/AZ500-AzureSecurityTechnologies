@@ -164,7 +164,7 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
    |Setting|Value|
    |---|---|
    |Route name|**FW-DG**|
-   |Address prefix destination|**IP Address**|
+   |Destination Type|**IP Address**|
    |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
    |Next hop type|**Virtual appliance**|
    |Next hop address|the private IP address of the firewall that you identified in the previous task|
@@ -248,7 +248,7 @@ In this task, you will configure the primary and secondary DNS addresses for the
 
 3. On the **Srv-Work** blade, click **Networking**.
 
-4. On the **Srv-Work \| Networking** blade, click the link next to the **Network interface** entry.
+4. On the **Srv-Work \| Networking Settings** blade, click the link next to the **Network interface** entry.
 
 5. On the network interface blade, in the **Settings** section, click **DNS servers**, select the **Custom** option, add the two DNS servers referenced in the network rule: **209.244.0.3** and **209.244.0.4**, and click **Save** to save the change.
 
