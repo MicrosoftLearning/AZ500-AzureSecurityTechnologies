@@ -293,7 +293,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 2. On the **myVMMgmt** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-3. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+3. Click **Download RDP File** and use it to connect to the **myVMMgmt** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|
