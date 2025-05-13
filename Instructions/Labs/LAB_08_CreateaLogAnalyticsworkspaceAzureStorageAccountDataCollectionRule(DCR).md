@@ -179,9 +179,13 @@ In this task, you will create a data collection rule.
    
 6. On the **Resources** page, select + **Add resources.**
 
-7. Click on the button labeled **Next: Collect and deliver >** to proceed.
+7. In the **Select a scope** template, check the **Subscription** box in the **Scope.**
 
-8. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
+8. At the bottom of the **Select a scope** template, click **Apply.**
+
+9. At the bottom of the **Resources** page, select **Next: Collect and deliver >.**
+
+10. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
 
     |Setting|Value|
     |---|---|
@@ -193,19 +197,19 @@ In this task, you will create a data collection rule.
 
    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
 
-9. Click on the button labeled **Next: Destination >** to proceed.
+11. Click on the button labeled **Next: Destination >** to proceed.
   
-10. Click **+ Add destination**, change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
+12. Click **+ Add destination**, change the **Destination type** drop-down menu to display **Azure Monitor Logs.** In the **Subscription** window, ensure that your *Subscription* is displayed, then change the **Account or namespace** drop-down menu to reflect your previously created Log Analytics Workspace.
 
-11. Click on **Add data source** at the bottom of the page.
+13. Click on **Add data source** at the bottom of the page.
     
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
 
-13. Click **Review + create.**
+14. Click **Review + create.**
 
     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
 
-14. Click **Create.**
+15. Click **Create.**
 
 > Results: You deployed an Azure virtual machine, Log Analytics workspace, Azure storage account, and a data collection rule to collect events and performance counters from virtual machines with Azure Monitor Agent.
 
