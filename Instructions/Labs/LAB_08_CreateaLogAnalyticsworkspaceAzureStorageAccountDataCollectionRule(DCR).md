@@ -181,8 +181,6 @@ In this task, you will create a data collection rule.
 
 7. Click on the button labeled **Next: Collect and deliver >** to proceed.
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/8294d300-f910-4757-ad52-43c7594ac822)
-
 8. Click **+ Add data source**, then on the **Add data source** page, change the **Data source type** drop-down menu to display **Performance Counters.** Leave the following default settings:
 
     |Setting|Value|
