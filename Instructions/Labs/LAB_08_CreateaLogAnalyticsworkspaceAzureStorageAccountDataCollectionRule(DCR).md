@@ -43,7 +43,13 @@ In this exercise, you will complete the following tasks:
 
 3. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-4. In the PowerShell session within the Cloud Shell pane, run the following to create a resource group that will be used in this lab:
+4. In the **Getting started** window, leave the default setting as is: **Select a subscription to get started. You can optionally mount a storage account to persist files between sessions. No storage account required.**
+
+5. From the **Subscription** drop-down menu, select your **lodsubscription.**
+
+6. Leave **Use an existing private virtual network** unchecked, then click **Apply.**
+
+7. In the PowerShell session within the Cloud Shell pane, run the following to create a resource group that will be used in this lab:
   
     ```powershell
     New-AzResourceGroup -Name AZ500LAB131415 -Location 'EastUS'
@@ -51,7 +57,7 @@ In this exercise, you will complete the following tasks:
 
     >**Note**: This resource group will be used for labs 8, 9, and 10.
 
-5. In the PowerShell session within the Cloud Shell pane, run the following to enable encryption at host (EAH)
+8. In the PowerShell session within the Cloud Shell pane, run the following to enable encryption at host (EAH)
    
    ```powershell
     Register-AzProviderFeature -FeatureName "EncryptionAtHost" -ProviderNamespace Microsoft.Compute 
