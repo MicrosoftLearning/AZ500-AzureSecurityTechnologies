@@ -129,12 +129,14 @@ In this task, you will create a storage account.
     |---|---|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB131415**|
+    |Instance details|
     |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
-    |Location|**(US) EastUS**|
+    |Region|**(US) EastUS**|
+    |Primary service|**Azure Blob Storage or Azure Data Lake Storage Gen 2**|
     |Performance|**Standard (general-purpose v2 account)**|
-    |Redundency|**Locally redundant storage (LRS)**|
+    |Redundancy|**Locally redundant storage (LRS)**|
 
-4. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
+5. On the **Basics** tab of the **Create storage account** blade, click **Review**, wait for the validation process to complete, and click **Create**.
 
      ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d443821c-2ddf-4794-87fa-bfc092980eba)
 
