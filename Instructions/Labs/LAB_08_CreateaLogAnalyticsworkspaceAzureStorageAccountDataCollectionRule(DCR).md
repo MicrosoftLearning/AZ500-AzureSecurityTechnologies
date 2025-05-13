@@ -160,9 +160,6 @@ In this task, you will create a data collection rule.
 
 2. On the **Monitor Settings** blade, click **Data Collection Rules.**
 
-  ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d43e8f94-efb2-4255-9320-210c976fd45e)
-
-
 3. Click the **+ Create** button to create a new data collection rule.
 
 4. On the **Basics** tab of the **Create Data Collection Rule** blade, specify the following settings:
