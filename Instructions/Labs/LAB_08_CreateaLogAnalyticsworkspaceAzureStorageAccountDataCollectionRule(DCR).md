@@ -33,8 +33,6 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will complete the following tasks: 
 
-- Task 1: Deploy an Azure virtual machine. 
-
 #### Task 1: Deploy an Azure virtual machine
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
@@ -88,8 +86,6 @@ In this exercise, you will complete the following tasks:
 
 In this exercise, you will complete the following tasks: 
 
-- Task 1: Create a Log Analytics workspace.
-
 #### Task 1: Create a Log Analytics workspace
 
 In this task, you will create a Log Analytics workspace. 
@@ -116,8 +112,6 @@ In this task, you will create a Log Analytics workspace.
 ### Estimated timing: 10 minutes
 
 In this exercise, you will complete the following tasks:
-
-- Task 1: Create an Azure storage account.
 
 #### Task 1: Create an Azure storage account
 
@@ -151,8 +145,6 @@ In this task, you will create a storage account.
 ### Estimated timing: 15 minutes
 
 In this exercise, you will complete the following tasks:
-
-- Task 1: Create a Data Collection Rule.
 
 #### Task 1: Create a Data Collection Rule.
 
