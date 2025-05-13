@@ -142,8 +142,6 @@ In this task, you will create a storage account.
 
 5. On the **Basics** tab of the **Create storage account** blade, click **Review + create.** After the validation process completes, click **Create.**
 
-     ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/d443821c-2ddf-4794-87fa-bfc092980eba)
-
     >**Note**: Wait for the Storage account to be created. This should take about 2 minutes.
 
 ### Exercise 4: Create a Data Collection Rule
