@@ -165,7 +165,7 @@ In this task, you will create a data collection rule.
   
     |Setting|Value|
     |---|---|
-    |**Rule details**|
+    **Rule details**
     |Rule Name|**DCR1**|
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource Group|**AZ500LAB131415**|
