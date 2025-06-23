@@ -24,7 +24,6 @@ param publicIpName string = 'myPublicIpAddress'
 
 @description('Allocation method for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Dynamic'
   'Static'
 ])
 param publicIPAllocationMethod string = 'Static'
