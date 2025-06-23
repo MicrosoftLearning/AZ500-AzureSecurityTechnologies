@@ -96,10 +96,9 @@ param publicIpName string = 'myVmPrivate-ip'
 
 @description('Allocation method for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Dynamic'
   'Static'
 ])
-param publicIPAllocationMethod string = 'Dynamic'
+param publicIPAllocationMethod string = 'Static'
 
 @description('SKU for the Public IP used to access the Virtual Machine.')
 @allowed([
