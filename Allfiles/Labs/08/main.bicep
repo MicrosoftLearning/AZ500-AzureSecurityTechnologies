@@ -298,7 +298,7 @@ resource publicIPAddresses_Srv_Jump_PIP_name_resource 'Microsoft.Network/publicI
   name: publicIPAddresses_Srv_Jump_PIP_name
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Static'
     tier: 'Regional'
   }
   properties: {
