@@ -344,7 +344,7 @@
             "name": "[parameters('publicIPAddresses_Srv_Jump_PIP_name')]",
             "location": "eastus",
             "sku": {
-                "name": "Basic",
+                "name": "Standard",
                 "tier": "Regional"
             },
             "properties": {
