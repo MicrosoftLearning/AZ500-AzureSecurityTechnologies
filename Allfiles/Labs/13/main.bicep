@@ -20,7 +20,6 @@ param publicIPAllocationMethod string = 'Static'
 
 @description('SKU for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Basic'
   'Standard'
 ])
 param publicIpSku string = 'Standard'
