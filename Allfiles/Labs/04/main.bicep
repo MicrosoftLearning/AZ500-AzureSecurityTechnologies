@@ -20,10 +20,9 @@ param publicIpName2 string = 'myPublicIP2'
 
 @description('Allocation method for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Dynamic'
   'Static'
 ])
-param publicIPAllocationMethod string = 'Dynamic'
+param publicIPAllocationMethod string = 'Static'
 
 @description('SKU for the Public IP used to access the Virtual Machine.')
 @allowed([
