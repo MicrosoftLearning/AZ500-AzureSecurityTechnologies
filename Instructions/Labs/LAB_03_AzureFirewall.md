@@ -161,13 +161,14 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
 10. On the **Add route** blade, specify the following settings:  
 
-   |Setting|Value|
-   |---|---|
-   |Route name|**FW-DG**|
-   |Destination Type|**IP Address**|
-   |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
-   |Next hop type|**Virtual appliance**|
-   |Next hop address|the private IP address of the firewall that you identified in the previous task|
+    |Setting|Value|
+    |---|---|
+    |Route name|**FW-DG**|
+    |Destination Type|**IP Address**|
+    |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
+    |Next hop type|**Virtual appliance**|
+    |Next hop address|the private IP address of the firewall that you identified in the previous task|
+
 
     >**Note**: Azure Firewall is actually a managed service, but virtual appliance works in this situation.
 	
