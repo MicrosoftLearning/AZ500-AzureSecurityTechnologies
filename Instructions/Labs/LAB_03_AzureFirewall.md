@@ -269,7 +269,7 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 3. On the **Srv-Jump** blade, click **Connect** and, in the drop down menu, click **Connect**. 
 
-4. Click **Connect via RDP** and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Download the RDP file and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
