@@ -349,7 +349,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 4. Navigate back to the **az500-10-vm1** blade, click **Overview**, next click **Connect** and, in the drop down menu, click **Connect**. 
 
-5. Download the RDP file and use it to connect to the **az500-10-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. Download the RDP file and use it to connect to the **az500-10-vm1** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
     |Setting|Value|
     |---|---|
@@ -431,7 +431,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. From the RDP session to the **az500-10-vm1**, launch **Visual Studio 2019** from the **Start menu**.
 
-2. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credntials you used to authenticate to the Azure subscription you are using in this lab.
+2. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab.
 
 3. On the **Get started** page, click **Create a new project**. 
 
