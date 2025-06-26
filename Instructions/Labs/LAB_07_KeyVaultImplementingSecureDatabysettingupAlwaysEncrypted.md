@@ -99,9 +99,9 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create an Azure Key Vault resource. You will also configure the Azure Key Vault permissions.
 
-1. Open the Cloud Shell by clicking the first icon (next to the search bar) at the top right of the Azure portal. If prompted, select **PowerShell** and **Create storage**.
+1. Open the Cloud Shell by clicking the first icon (next to the search bar) at the top right of the Azure portal. If prompted, select **PowerShell** and **No storage account required**, select your subscription and click **Apply**.
 
-2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
+2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane. (If PowerShell is selected the drop-down will say "Switch to Bash".)
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
@@ -134,7 +134,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
     |Key permissions/Cryptographic Operations|click **Sign** resulting in total of **1 selected** permissions|
     |Secret permissions|click **Select all** resulting in total of **7 selected** permissions|
     |Certification permissions|click **Select all** resulting in total of **15 selected** permissions|
-    |Select principal|click **None selected**, on the **Principal** blade, select your user account, and click **Next**|
+    |Select principal|On the **Principal** blade, search for and select your user account, and click **Next**|
     |Application (optional)|click **Next**|
     |Review + create|click **Create**|
     
@@ -231,9 +231,9 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will enable a client application to access the Azure SQL Database service. This will be done by setting up the required authentication and acquiring the Application ID and Secret that you will need to authenticate your application.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **App Registrations** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Microsoft Entra ID** and press the **Enter** key.
 
-2. On the **App Registrations** blade, click **+ New registration**. 
+2. Under Manage, select **App Registrations**. On the **App Registrations** blade, click **+ New registration**. 
 
 3. On the **Register an application** blade, specify the following settings (leave all others with their default values):
 
@@ -276,7 +276,7 @@ In this task, you will grant the newly registered app permissions to access secr
 
 1. In the Azure portal, open a PowerShell session in the Cloud Shell pane.
 
-2. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane.
+2. Ensure **PowerShell** is selected in the upper-left drop-down menu of the Cloud Shell pane. (If PowerShell is selected, the drop-down may say: **Switch to Bash**.)
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the **Application (client) ID** you recorded in the previous task (replace the `<Azure_AD_Application_ID>` placeholder with the value of the **Application (client) ID**):
    
@@ -499,7 +499,7 @@ You will create a Console application using Visual Studio to load data into the 
 
 1. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure portal. 
 
-2. In the upper-left drop-down menu of the Cloud Shell pane, if needed select **PowerShell** and, when prompted, click **Confirm**.
+2. In the upper-left drop-down menu of the Cloud Shell pane, if needed select **Switch to PowerShell** and, when prompted, click **Confirm**.
 
 3. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
   
