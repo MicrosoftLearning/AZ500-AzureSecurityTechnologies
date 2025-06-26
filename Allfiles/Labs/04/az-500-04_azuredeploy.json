@@ -154,7 +154,7 @@
             "location": "[resourceGroup().location]",
             "comments": "Public IP for Primary NIC",
             "properties": {
-                "publicIpAllocationMethod": "Dynamic"
+                "publicIpAllocationMethod": "Static"
             }
         },
         {

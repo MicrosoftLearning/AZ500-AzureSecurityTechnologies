@@ -96,17 +96,15 @@ param publicIpName string = 'myVmPrivate-ip'
 
 @description('Allocation method for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Dynamic'
   'Static'
 ])
-param publicIPAllocationMethod string = 'Dynamic'
+param publicIPAllocationMethod string = 'Static'
 
 @description('SKU for the Public IP used to access the Virtual Machine.')
 @allowed([
-  'Basic'
   'Standard'
 ])
-param publicIpSku string = 'Basic'
+param publicIpSku string = 'Standard'
 
 @description('The Windows version for the VM. This will pick a fully patched image of this given Windows version.')
 @allowed([

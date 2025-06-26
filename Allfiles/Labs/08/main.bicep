@@ -298,7 +298,7 @@ resource publicIPAddresses_Srv_Jump_PIP_name_resource 'Microsoft.Network/publicI
   name: publicIPAddresses_Srv_Jump_PIP_name
   location: location
   sku: {
-    name: 'Basic'
+    name: 'Static'
     tier: 'Regional'
   }
   properties: {
@@ -306,7 +306,7 @@ resource publicIPAddresses_Srv_Jump_PIP_name_resource 'Microsoft.Network/publicI
     resourceGuid: '66fb9d13-8893-4ec8-af11-b1a11919e948'
     ipAddress: '13.90.148.203'
     publicIPAddressVersion: 'IPv4'
-    publicIPAllocationMethod: 'Dynamic'
+    publicIPAllocationMethod: 'Static'
     idleTimeoutInMinutes: 4
     ipTags: []
   }

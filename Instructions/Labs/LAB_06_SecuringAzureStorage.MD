@@ -399,9 +399,9 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 2. On the **Virtual machines** blade, click the **myVMPrivate** entry.
 
-3. On the **myVMPrivate** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+3. On the **myVMPrivate** blade, click **Connect** and, in the drop down menu, click **Connect**. 
 
-4. Click **Download RDP File** and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Download the RDP file and use it to connect to the **myVMPrivate** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
     |Setting|Value|
     |---|---|
@@ -450,9 +450,9 @@ In this task, you will connect to the myVMPrivate virtual machine via Remote Des
 
 2. On the **Virtual machines** blade, click the **myVMPublic** entry.
 
-3. On the **myVMPublic** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+3. On the **myVMPublic** blade, click **Connect** and, in the drop down menu, click **Connect**. 
 
-4. Click **Download RDP File** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Click **Connect via RDP** and use it to connect to the **myVMPublic** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
     |Setting|Value|
     |---|---|

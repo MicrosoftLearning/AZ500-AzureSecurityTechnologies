@@ -161,13 +161,14 @@ In this task, you will create a default route for the **Workload-SN** subnet. Th
 
 10. On the **Add route** blade, specify the following settings:  
 
-   |Setting|Value|
-   |---|---|
-   |Route name|**FW-DG**|
-   |Destination Type|**IP Address**|
-   |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
-   |Next hop type|**Virtual appliance**|
-   |Next hop address|the private IP address of the firewall that you identified in the previous task|
+    |Setting|Value|
+    |---|---|
+    |Route name|**FW-DG**|
+    |Destination Type|**IP Address**|
+    |Destination IP addresses/CIDR ranges|**0.0.0.0/0**
+    |Next hop type|**Virtual appliance**|
+    |Next hop address|the private IP address of the firewall that you identified in the previous task|
+
 
     >**Note**: Azure Firewall is actually a managed service, but virtual appliance works in this situation.
 	
@@ -266,9 +267,9 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 2. On the **AZ500LAB08** blade, in the list of resources, click the **Srv-Jump** virtual machine.
 
-3. On the **Srv-Jump** blade, click **Connect** and, in the drop down menu, click **RDP**. 
+3. On the **Srv-Jump** blade, click **Connect** and, in the drop down menu, click **Connect**. 
 
-4. Click **Download RDP File** and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Download the RDP file and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
 
    |Setting|Value|
    |---|---|
