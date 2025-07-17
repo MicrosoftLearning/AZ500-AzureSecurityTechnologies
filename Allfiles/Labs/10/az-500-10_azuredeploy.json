@@ -23,7 +23,7 @@
   "variables": {
     "imagePublisher": "MicrosoftVisualStudio",
     "imageOffer": "VisualStudio2019latest",
-    "imageSku": "vs-2019-comm-latest-ws2019",
+    "imageSku": "active-dummyplan-for-deprecation-requirement-vs19",
     "OSDiskName": "jumpvmosdisk",
     "nicName": "az500-10-nic1",
     "addressPrefix": "10.110.0.0/16",
