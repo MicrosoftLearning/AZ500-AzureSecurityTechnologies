@@ -74,7 +74,6 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Username|**Student**|
    |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
    
-   
     >**Note**: While you can change the administrative credentials used for logging on to the Virtual Machine, you don't have to.
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
@@ -84,6 +83,18 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
     >**Note**: Do not wait for the ARM template deployment to be completed, but instead continue to the next exercise. The deployment might take between **20-25 minutes**. 
+
+#### Install the az500-10-DB.json Custom Template
+
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Deploy a custom template** and press the **Enter** key.
+
+2. On the **Custom deployment** blade, click the **Build your own template in the editor** option.
+
+3. On the **Edit template** blade, click **Load file**, locate the **\Allfiles\Labs\10\az-500-10_DB.json** file and click **Open**.
+
+4. Ensure the correct Resource Group is selected.
+
+5. Set the **Admin Password** to the same password you used for the previous step.
 
 ### Exercise 2: Configure the Key Vault resource with a key and a secret
 
@@ -418,14 +429,35 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: The **Always Encrypted Keys** subnode contains the **Column Master Keys** and **Column Encryption Keys** subfolders.
 
-
 ### Exercise 4: Demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
+- Task 1: Install Visutal Studio 2022
+- Task 2: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
-#### Task 1: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
+#### Task 1: Install Visual Studio 2022
+
+1. Switch to your Server virtual machine if you are not already there.
+
+2. Open Server Manager.
+
+3. Select Local Servers.
+
+4. Set **IE Enhanced Security Configuration** to **Off**.
+
+5. Open the Browser and bypass the warning about IE ESC being turned off.
+
+6. Go to https://visualstudio.microsoft.com/downloads.
+
+7. In the **Visual Studio 2022** box, under **Community** select **Free download**.
+
+8. When the download finishes, select **Open File**.
+
+9. Select continue to start the install.
+  - Install takes about 10 minutes
+
+#### Task 2: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
 You will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
 
