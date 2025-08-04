@@ -1,6 +1,7 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
+
   "parameters": {
     "adminUsername": {
       "type": "string",
@@ -17,13 +18,12 @@
         "description": "Password for the Virtual Machine."
       }
     }
-    
   },
 
   "variables": {
-    "imagePublisher": "MicrosoftVisualStudio",
-    "imageOffer": "VisualStudio2019latest",
-    "imageSku": "active-dummyplan-for-deprecation-requirement-vs19",
+    "imagePublisher": "MicrosoftWindowsServer",
+    "imageOffer": "WindowsServer",
+    "imageSku": "2022-datacenter",
     "OSDiskName": "jumpvmosdisk",
     "nicName": "az500-10-nic1",
     "addressPrefix": "10.110.0.0/16",
@@ -44,7 +44,7 @@
     "databaseName": "medical",
     "databaseEdition": "Basic",
     "databaseCollation": "SQL_Latin1_General_CP1_CI_AS",
-    "databaseServiceObjectiveName": "Basic"    
+    "databaseServiceObjectiveName": "Basic"
   },
 
   "resources": [
@@ -106,8 +106,8 @@
         "displayName": "NetworkInterface"
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",
-        "[resourceId('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+        "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))]",
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]"
       ],
       "properties": {
         "ipConfigurations": [
@@ -124,9 +124,9 @@
             }
           }
         ],
-                "networkSecurityGroup": {
-                    "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
-                }
+        "networkSecurityGroup": {
+          "id": "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
+        }
       }
     },
     {
@@ -138,8 +138,8 @@
         "displayName": "JumpVM"
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Storage/storageAccounts/', variables('vhdStorageAccountName'))]",
-        "[resourceId('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
+        "[resourceId('Microsoft.Storage/storageAccounts', variables('vhdStorageAccountName'))]",
+        "[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]"
       ],
       "properties": {
         "hardwareProfile": {
@@ -183,52 +183,51 @@
         {
           "apiVersion": "2018-06-01",
           "type": "Microsoft.Compute/virtualMachines/extensions",
-          "name": "[concat(variables('vmName'),'/', 'VMConfig')]",
+          "name": "[concat(variables('vmName'), '/', 'VMConfig')]",
           "location": "[resourceGroup().location]",
           "dependsOn": [
-              "[concat('Microsoft.Compute/virtualMachines/',variables('vmName'))]"
+            "[concat('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
           ],
           "properties": {
-              "publisher": "Microsoft.Compute",
-              "type": "CustomScriptExtension",
-              "typeHandlerVersion": "1.7",
-              "autoUpgradeMinorVersion":true,
-              "settings": {
-                  "fileUris": [
-                     "https://raw.githubusercontent.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/master/Allfiles/Labs/10/configurevm.ps1"
-                  ],
-                  "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File configurevm.ps1"
-              }
+            "publisher": "Microsoft.Compute",
+            "type": "CustomScriptExtension",
+            "typeHandlerVersion": "1.7",
+            "autoUpgradeMinorVersion": true,
+            "settings": {
+              "fileUris": [
+                "https://raw.githubusercontent.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/master/Allfiles/Labs/10/configurevm.ps1"
+              ],
+              "commandToExecute": "powershell.exe -ExecutionPolicy Unrestricted -File configurevm.ps1"
+            }
           }
-      }
+        }
       ]
     },
     {
-            "name": "[variables('networkSecurityGroupName')]",
-            "type": "Microsoft.Network/networkSecurityGroups",
-            "apiVersion": "2018-08-01",
-            "location": "[resourceGroup().location]",
-            "comments": "Network Security Group (NSG) for Primary NIC",
+      "name": "[variables('networkSecurityGroupName')]",
+      "type": "Microsoft.Network/networkSecurityGroups",
+      "apiVersion": "2018-08-01",
+      "location": "[resourceGroup().location]",
+      "comments": "Network Security Group (NSG) for Primary NIC",
+      "properties": {
+        "securityRules": [
+          {
+            "name": "default-allow-rdp",
             "properties": {
-                "securityRules": [
-                    {
-                        "name": "default-allow-rdp",
-                        "properties": {
-                            "priority": 1000,
-                            "sourceAddressPrefix": "*",
-                            "protocol": "Tcp",
-                            "destinationPortRange": "3389",
-                            "access": "Allow",
-                            "direction": "Inbound",
-                            "sourcePortRange": "*",
-                            "destinationAddressPrefix": "*"
-                        }
-                    }
-                ]
+              "priority": 1000,
+              "sourceAddressPrefix": "*",
+              "protocol": "Tcp",
+              "destinationPortRange": "3389",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*"
             }
-        },
-
-        {
+          }
+        ]
+      }
+    },
+    {
       "name": "[variables('sqlServerName')]",
       "type": "Microsoft.Sql/servers",
       "apiVersion": "2019-06-01-preview",
@@ -237,8 +236,8 @@
         "displayName": "SqlServer"
       },
       "properties": {
-        "administratorLogin": "[parameters('AdminUsername')]",
-        "administratorLoginPassword": "[parameters('AdminPassword')]",
+        "administratorLogin": "[parameters('adminUsername')]",
+        "administratorLoginPassword": "[parameters('adminPassword')]",
         "version": "12.0"
       },
       "resources": [
@@ -254,12 +253,10 @@
             "name": "[variables('databaseEdition')]",
             "tier": "[variables('databaseEdition')]"
           },
-          "properties": {
-          },
+          "properties": {},
           "dependsOn": [
             "[variables('sqlServerName')]"
           ]
-        
         },
         {
           "name": "AllowAllMicrosoftAzureIps",
@@ -267,23 +264,16 @@
           "apiVersion": "2015-05-01-preview",
           "location": "[resourceGroup().location]",
           "properties": {
-            "endIpAddress": "0.0.0.0",
-            "startIpAddress": "0.0.0.0"
+            "startIpAddress": "0.0.0.0",
+            "endIpAddress": "0.0.0.0"
           },
           "dependsOn": [
             "[variables('sqlServerName')]"
           ]
         }
-        
       ]
-      
     }
-
-
-
-
-
   ],
+
   "outputs": {}
 }
-

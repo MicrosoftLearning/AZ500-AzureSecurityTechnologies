@@ -1,0 +1,68 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "adminUsername": {
+      "type": "string",
+      "defaultValue": "Student",
+      "metadata": {
+        "description": "Administrador de SQL Server."
+      }
+    },
+    "adminPassword": {
+      "type": "securestring",
+      "defaultValue": "Pa55w.rd1234",
+      "metadata": {
+        "description": "Contraseña del administrador de SQL Server."
+      }
+    }
+  },
+  "variables": {
+    "sqlServerName": "[concat('sqlserver', uniqueString(subscription().id, resourceGroup().id))]",
+    "databaseName": "medical",
+    "databaseEdition": "Basic"
+  },
+  "resources": [
+    {
+      "type": "Microsoft.Sql/servers",
+      "apiVersion": "2019-06-01-preview",
+      "name": "[variables('sqlServerName')]",
+      "location": "[resourceGroup().location]",
+      "properties": {
+        "administratorLogin": "[parameters('adminUsername')]",
+        "administratorLoginPassword": "[parameters('adminPassword')]",
+        "version": "12.0"
+      },
+      "resources": [
+        {
+          "type": "databases",
+          "apiVersion": "2019-06-01-preview",
+          "name": "[variables('databaseName')]",
+          "location": "[resourceGroup().location]",
+          "sku": {
+            "name": "[variables('databaseEdition')]",
+            "tier": "[variables('databaseEdition')]"
+          },
+          "properties": {},
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
+          ]
+        },
+        {
+          "type": "firewallRules",
+          "apiVersion": "2015-05-01-preview",
+          "name": "AllowAllMicrosoftAzureIps",
+          "location": "[resourceGroup().location]",
+          "properties": {
+            "startIpAddress": "0.0.0.0",
+            "endIpAddress": "0.0.0.0"
+          },
+          "dependsOn": [
+            "[resourceId('Microsoft.Sql/servers', variables('sqlServerName'))]"
+          ]
+        }
+      ]
+    }
+  ],
+  "outputs": {}
+}
