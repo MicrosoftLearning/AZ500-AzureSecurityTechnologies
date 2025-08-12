@@ -30,7 +30,7 @@ In this lab, you will complete the following exercises:
 
 ## Key Vault diagram
 
-![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/38c4ba6d-2fc7-45e5-b9a2-d5dbb4fbbcbc)
+![Diagram showing the process flow of tasks in this lab.](../media/key-vault-diagram.png)
 
 ## Instructions
 

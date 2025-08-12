@@ -25,7 +25,7 @@ In this lab, you will complete the following exercise:
 
 ## Service Endpoints and Securing Storage diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157534883-29664a05-85d1-4c70-99a7-f16d2360755d.png)
+![Diagram showing the process flow of tasks in the lab.](../media/service-endpoints-and-securing-storage-diagram.png)
 
 ## Instructions
 

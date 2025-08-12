@@ -26,7 +26,7 @@ In this lab, you will complete the following exercise:
 
 ## Configuring and Securing ACR and AKS diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157532250-1104a829-792a-4b6d-beff-fe976e2d5d4b.png)
+![Diagram showing the process flow of the tasks in this lab.](../media/configuring-and-securing-acr-and-aks-diagram.png)
 
 ## Intructions
 

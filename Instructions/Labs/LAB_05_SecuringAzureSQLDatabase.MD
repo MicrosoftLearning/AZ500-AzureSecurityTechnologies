@@ -25,7 +25,7 @@ In this lab, you will complete the following exercise:
 
 ## Securing Azure SQL Database diagram
 
-![image](https://user-images.githubusercontent.com/91347931/157533836-7250fa58-a109-4882-a55b-d3fa3baf34ab.png)
+![Diagram showing the process flow of tasks in this lab.](../media/securing-azure-sql-database-diagram.png)
 
 ## Instructions
 

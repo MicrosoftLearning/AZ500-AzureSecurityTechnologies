@@ -172,7 +172,7 @@ In this task, you will create a data collection rule.
     |Platform Type|**Windows**|
     |Data Collection Endpoint|*Leave Blank*|
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/9b58c4ce-b7a8-4acf-8289-d95b270a6083)
+    ![Screen capture of the Create Data Collection Rule basics tab.](../media/crete-a-data-collection-rule-basics-tab.png)
 
 
 5. Click on the button labeled **Next: Resources >** to proceed.
@@ -195,7 +195,7 @@ In this task, you will create a data collection rule.
     |Disk|60|
     |Network|60|
 
-   ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/a24e44ad-1d10-4533-80e2-bae1b3f6564d)
+   ![Screen capture of the Collect and Deliver tab of the Data Collection Rule.](../media/crete-a-data-collection-rule-collectanddeliver-tab.png)
 
 11. Click on the button labeled **Next: Destination >** to proceed.
   
@@ -203,11 +203,11 @@ In this task, you will create a data collection rule.
 
 13. Click on **Add data source** at the bottom of the page.
     
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/964091e7-bbbc-4ca8-8383-bb2871a1e7f0)
+    ![Screen capture of the Add a Data Source page on the Data Collction Rule page.](../media/crete-a-data-collection-rule-add-datasource.png)
 
 14. Click **Review + create.**
 
-    ![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/50dd8407-a106-4540-9e14-ae40a3c04830)
+    ![Screen capture of the Review + Create tab of the Data Collection Rule wizard.](../media/crete-a-data-collection-rule-reviewcreate-tab.png)
 
 15. Click **Create.**
 

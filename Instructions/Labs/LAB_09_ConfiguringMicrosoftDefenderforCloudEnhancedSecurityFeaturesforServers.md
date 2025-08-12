@@ -26,7 +26,7 @@ As an Azure Security Engineer for a global e-commerce company, you are responsib
 
 2. On the **Microsoft Defender for Cloud**, **Management blade**, go to the **Environment settings**. Expand the environment settings folders until the **subscription** section is displayed, then click the **subscription** to view details.
 
-   ![image](https://github.com/user-attachments/assets/3b25dd82-e09e-4f8a-b85e-c9bc6c4bd488)
+   ![Screen capture of the Environment Settings of Microsoft Defender for Cloud](../media/defender-for-cloud-environment-settings.png)
    
 3. In the **Settings** blade, under **Defender plans**, expand **Cloud Workload Protection (CWP)**.
 
@@ -36,6 +36,6 @@ As an Azure Security Engineer for a global e-commerce company, you are responsib
 
    Note: Enabling the Cloud Workload Protection (CWP) Servers plan from Off to On enables Microsoft Defender for Servers Plan 2.
  
-   ![image](https://github.com/user-attachments/assets/de434a75-345a-4023-83f1-fa53fcb5f288)
+   ![Screen capture of the Microsoft Defender for Cloud plan selection page.](../media/defender-for-cloud-plan-selection.png)
    
 > **Results**: You have enabled Microsoft Defender for Servers Plan 2 on your subscription.
