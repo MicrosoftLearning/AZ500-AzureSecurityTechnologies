@@ -30,7 +30,7 @@ In this lab, you will complete the following exercises:
 
 ## Role-Based Access Control architecture diagram
 
-![image](https://github.com/MicrosoftLearning/AZ500-AzureSecurityTechnologies/assets/91347931/506cde9c-5242-4438-a793-f88a5434a2b2)
+![Diagram showing the system layout for this lab, and the process flow of the labs](../media/role-based-access-control-architecture-diagram.png)
 
 ## Instructions
 
@@ -68,7 +68,7 @@ In this task, you will create a user account for Joseph Price.
 
 7. Click **Create**.
 
-8. Refresh the **Users \| All users** blade to verify the new user was created in your Microsoft Entra tenant.
+8. Refresh the **Users | All users** blade to verify the new user was created in your Microsoft Entra tenant.
 
 #### Task2: Use the Azure portal to create a Senior Admins group and add the user account of Joseph Price to the group.
 
