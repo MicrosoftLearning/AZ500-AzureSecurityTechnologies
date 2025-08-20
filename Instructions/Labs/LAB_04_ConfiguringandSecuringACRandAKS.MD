@@ -81,6 +81,11 @@ In this task, you will create a resource group for the lab an an Azure Container
     ```sh
     az acr create --resource-group AZ500LAB09 --name az500$RANDOM$RANDOM --sku Basic
     ```
+	> **Note** Register Azure Container Registry Resource Provider. If you encounter an error when running `az acr create`, it's likely because the **Azure Container Registry** service hasn't been registered for your subscription yet. To fix this, you can register the service and create your registry in one command:
+	
+	```sh
+	az provider
+	```
 
 7. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
 
