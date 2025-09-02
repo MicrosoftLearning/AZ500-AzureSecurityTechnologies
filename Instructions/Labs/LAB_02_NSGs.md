@@ -53,7 +53,7 @@ In this task, you will create a virtual network to use with the network and appl
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab.
 
-2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual networks** and press the **Enter** key.
+2. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Virtual networks+++ and press the **Enter** key.
 
 3. On the **Virtual networks** blade, click **+ Create**.
 
@@ -61,10 +61,10 @@ In this task, you will create a virtual network to use with the network and appl
 
     |Setting|Value|
     |---|---|
-    |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|click **Create new** and type the name **AZ500LAB07**|
-    |Name|**myVirtualNetwork**|
-    |Region|**East US**|
+    |Subscription | Name of the Azure subscription you are using in this lab |
+    |Resource group | Use the provided Resource Group named **AZ500LAB07** |
+    |Name| +++myVirtualNetwork+++ |
+    |Region| **East US** |
 
 5. On the **IP addresses** tab of the **Create virtual network** blade, set the **IPv4 address space** to **10.0.0.0/16**, and, if needed, in the **Subnet name** column, click **default**, on the **Edit subnet** blade, specify the following settings and click **Save**:
 
@@ -73,15 +73,15 @@ In this task, you will create a virtual network to use with the network and appl
     |Subnet name|**default**|
     |Subnet address range|**10.0.0.0/24**|
 
-6. Back on the **IP addresses** tab of the **Create virtual network** blade, click **Review + create**.
+6. Back on the **IP addresses** tab of the **Create virtual network** screen, click **Review + create**.
 
-7. On the **Review + create** tab of the **Create virtual network** blade, click **Create**.
+7. On the **Review + create** tab of the **Create virtual network** screen, click **Create**.
 
 #### Task 2:  Create application security groups
 
 In this task, you will create an application security group.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Application security groups** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Application security groups+++ and press the **Enter** key.
 
 2. On the **Application security groups** blade, click **+ Create**.
 
@@ -89,9 +89,9 @@ In this task, you will create an application security group.
 
     |Setting|Value|
     |---|---|
-    |Resource group|**AZ500LAB07**|
-    |Name|**myAsgWebServers**|
-    |Region|**East US**|
+    | Resource group | **AZ500LAB07** |
+    | Name | +++myAsgWebServers+++ |
+    | Region | **East US** |
 
     >**Note**: This group will be for the web servers.
 
@@ -104,7 +104,7 @@ In this task, you will create an application security group.
     |Setting|Value|
     |---|---|
     |Resource group|**AZ500LAB07**|
-    |Name|**myAsgMgmtServers**|
+    |Name| +++myAsgMgmtServers+++ |
     |Region|**East US**|
 
     >**Note**: This group will be for the management servers.
@@ -115,7 +115,7 @@ In this task, you will create an application security group.
 
 In this task, you will create a network security group. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Network security groups** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Network security groups+++ and press the **Enter** key.
 
 2. On the **Network security groups** blade, click **+ Create**.
 
@@ -123,18 +123,18 @@ In this task, you will create a network security group.
 
     |Setting|Value|
     |---|---|
-    |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB07**|
-    |Name|**myNsg**|
-    |Region|**East US**|
+    | Subscription | Name of the Azure subscription you are using in this lab |
+    | Resource group | **AZ500LAB07** |
+    | Name | +++myNsg+++ |
+    | Region | **East US** |
 
 4. Click **Review + create** and then click **Create**.
 
-5. In the Azure portal, navigate back to the **Network security groups** blade and click the **myNsg** entry.
+5. In the Azure portal, navigate back to the **Network security groups** blade and select the **myNsg** entry. Or select **Go to resource** if available.
 
-6. On the **myNsg** blade, in the **Settings** section, click **Subnets** and then click **+ Associate**. 
+6. On the **myNsg** blade, in the **Settings** section, click **Subnets** and then select **+ Associate**. 
 
-7. On the **Associate subnet** blade, specify the following settings and click **OK**:
+7. On the **Associate subnet** blade, specify the following settings and select **OK**:
 
     |Setting|Value|
     |---|---|
@@ -151,13 +151,17 @@ In this task, you will create a network security group.
 
     |Setting|Value|
     |---|---|
+    | Source | **Any** |
+    | Source port ranges | * |
     |Destination|in the drop-down list, select **Application security group** and then click **myAsgWebServers**|
+    | Service | **Custom** |
     |Destination port ranges|**80,443**|
     |Protocol|**TCP**|
-    |Priority|**100**|                                                    
+    | Action | **Allow** |
+    |Priority|**100**|
     |Name|**Allow-Web-All**|
 
-4. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
+4. Select the **Add** button on the **Add inbound security rule** page, to create the new inbound rule.
 
 5. On the **myNsg** blade, in the **Settings** section, click **Inbound security rules**, and then click **+ Add**.
 
@@ -165,13 +169,17 @@ In this task, you will create a network security group.
 
     |Setting|Value|
     |---|---|
+    | Source | **Any** |
+    | Source port ranges | * |
     |Destination|in the drop-down list, select **Application security group** and then click **myAsgMgmtServers**|
+    | Service | **Custom** |
     |Destination port ranges|**3389**|
     |Protocol|**TCP**|
-    |Priority|**110**|                                                    
+    | Action | **Allow** |
+    |Priority|**110**|
     |Name|**Allow-RDP-All**|
 
-7. On the **Add inbound security rule** blade, click **Add** to create the new inbound rule. 
+7. Select **Add** on the **Add inbound security rule** page, to create the new inbound rule. 
 
 > Result: You have deployed a virtual network, network security with inbound security rules, and two application security groups. 
 
@@ -182,15 +190,15 @@ In this task, you will create a network security group.
 In this exercise, you will complete the following tasks:
 
 - Task 1: Create a virtual machine to use as a web server.
-- Task 2: Create a virtual machine to use as a management server. 
+- Task 2: Create a virtual machine to use as a management server.
 - Task 3: Associate each virtual machines network interface to it's application security group.
 - Task 4: Test the network traffic filtering.
 
-#### Task 1: Create a virtual machine to use as a web server.
+#### Task 1: Create a virtual machine to use as a web server
 
 In this task, you will create a virtual machine to use as a web server.
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Virtual machines+++ and press the **Enter** key.
 
 2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure virtual machine**.
 
@@ -279,7 +287,7 @@ In this task, you will associate each virtual machines network interface with th
 
 3. On the **myVMWeb** blade, in the **Networking** section, click **Network settings** and then, on the **myVMWeb \| Networking settings** blade, click the **Application security groups** tab.
 
-4. Click + **Add application security groups**, in the **Application security group** list, select **myAsgWebServers**, and then click **Save**.
+4. Click **+ Add application security groups**, in the **Application security group** list, select **myAsgWebServers**, and then click **Save**.
 
 5. Navigate back to the **Virtual machines** blade and in the list of virtual machines, click the **myVMMgmt** entry.
 
