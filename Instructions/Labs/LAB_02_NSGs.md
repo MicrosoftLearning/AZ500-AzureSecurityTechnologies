@@ -293,7 +293,7 @@ In this task, you will associate each virtual machines network interface with th
 
 6. On the **myVMMgmt** blade, in the **Networking** section, click **Networking settings** and then, on the **myVMMgmt \| Networking settings** blade, click the **Application security groups** tab.
 
-7. Click + **Add application security groups**, in the **Application security group** list, select **myAsgMgmtServers**, and then click **Save**.
+7. Click + **Add application security groups**, in the **Application security group** list, select **myAsgMgmtServers**, and then click **Add**.
 
 #### Task 4: Test the network traffic filtering
 
