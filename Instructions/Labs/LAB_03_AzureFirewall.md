@@ -12,7 +12,7 @@ lab:
 You have been asked to install Azure Firewall. This will help your organization control inbound and outbound network access which is an important part of an overall network security plan. Specifically, you would like to create and test the following infrastructure components:
 
 - A virtual network with a workload subnet and a jump host subnet.
-- A virtual machine is each subnet. 
+- A virtual machine in each subnet. 
 - A custom route that ensures all outbound workload traffic from the workload subnet must use the firewall.
 - Firewall Application rules that only allow outbound traffic to www.bing.com. 
 - Firewall Network rules that allow external DNS server lookups.
@@ -39,7 +39,7 @@ In this lab, you will complete the following exercise:
 
 ### Estimated timing: 40 minutes
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
+> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is the region to use for your class. 
 
 In this exercise, you will complete the following tasks:
 
@@ -105,7 +105,7 @@ In this task you will deploy the Azure firewall into the virtual network.
    |Firewall management|**Use Firewall rules (classic) to manage this firewall**|
    |Choose a virtual network|click the **Use existing** option and, in the drop-down list, select **Test-FW-VN**|
    |Firewall Management NIC|To disable this feature, **deselect** the **Enable Firewall Management NIC** option.|
-   |Public IP address|clck **Add new** and type the name **TEST-FW-PIP** and click **OK**|
+   |Public IP address|click **Add new** and type the name **TEST-FW-PIP** and click **OK**|
 
 5. Click **Review + create** and then click **Create**. 
 
@@ -269,7 +269,7 @@ In this task, you will test the firewall to confirm that it works as expected.
 
 3. On the **Srv-Jump** blade, click **Connect** and, in the drop down menu, click **Connect**. 
 
-4. Download the RDP file and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+4. Download the RDP file and use it to connect to the **Srv-Jump** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|

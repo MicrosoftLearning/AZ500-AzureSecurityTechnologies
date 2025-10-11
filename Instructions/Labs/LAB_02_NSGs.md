@@ -36,7 +36,7 @@ In this lab, you will complete the following exercises:
 
 ### Estimated timing: 20 minutes
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
+> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is the region to use for your class. 
 
 In this exercise, you will complete the following tasks:
 
@@ -277,7 +277,7 @@ In this task, you will create a virtual machine to use as a management server.
 
     >**Note**: Wait for both virtual machines to be provisioned before continuing. 
 
-#### Task 3: Associate each virtual machines network interface to its application security group.
+#### Task 3: Associate each virtual machine's network interface to its application security group.
 
 In this task, you will associate each virtual machines network interface with the corresponding application security group. The myVMWeb virtual machine interface will be associated to the myAsgWebServers ASG. The myVMMgmt virtual machine interface will be associated to the myAsgMgmtServers ASG. 
 

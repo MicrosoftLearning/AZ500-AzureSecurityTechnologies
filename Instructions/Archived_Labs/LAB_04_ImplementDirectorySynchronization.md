@@ -217,7 +217,7 @@ In this task, you will connect to the Azure VM running Microsoft Entra Domain Se
 
 4. On the **adVM** blade, click **Connect** and, in the drop down menu, click **RDP**. 
 
-5. In the **IP address** drop-down, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credntials:
+5. In the **IP address** drop-down, select **Load balancer public IP address**, then click **Download RDP File** and use it to connect to the **adVM** Azure VM via Remote Desktop. When prompted to authenticate, provide the following credentials:
 
    |Setting|Value|
    |---|---|

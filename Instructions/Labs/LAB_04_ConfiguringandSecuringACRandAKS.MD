@@ -28,7 +28,7 @@ In this lab, you will complete the following exercise:
 
 ![Diagram showing the process flow of the tasks in this lab.](../media/configuring-and-securing-acr-and-aks-diagram.png)
 
-## Intructions
+## Instructions
 
 ## Lab files:
 
@@ -39,7 +39,7 @@ In this lab, you will complete the following exercise:
 
 ### Estimated timing: 45 minutes
 
-> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is region to use for you class. 
+> For all the resources in this lab, we are using the **East (US)** region. Verify with your instructor this is the region to use for your class. 
 
 In this exercise, you will complete the following tasks:
 
@@ -54,7 +54,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Create an Azure Container Registry
 
-In this task, you will create a resource group for the lab an an Azure Container Registry.
+In this task, you will create a resource group for the lab and an Azure Container Registry.
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
@@ -240,7 +240,7 @@ In this task, you will grant the AKS cluster permission to access the ACR and ma
 
 In this task,  you will download the Manifest files, edit the YAML file, and apply your changes to the cluster. 
 
-1. In the Bash session within the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, naviate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** click **Open**. Next, select **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**.
+1. In the Bash session within the Cloud Shell pane, click the **Upload/Download files** icon, in the drop-down menu, click **Upload**, in the **Open** dialog box, navigate to the location where you downloaded the lab files, select **\\Allfiles\\Labs\\09\\nginxexternal.yaml** click **Open**. Next, select **\\Allfiles\\Labs\\09\\nginxinternal.yaml**, and click **Open**.
 
 2. In the Bash session within the Cloud Shell pane, run the following to identify the name of the Azure Container Registry instance:
 
