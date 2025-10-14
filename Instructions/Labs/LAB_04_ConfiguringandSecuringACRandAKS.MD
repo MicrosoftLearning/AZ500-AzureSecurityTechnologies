@@ -76,18 +76,24 @@ In this task, you will create a resource group for the lab an an Azure Container
     az group list --query "[?name=='AZ500LAB09']" -o table
     ```
 
-6. In the Bash session within the Cloud Shell pane, run the following to create a new Azure Container Registry (ACR) instance (The name of the ACR must be globally unique): 
+6. In the Bash session run the following commands to register the **Container Registery** in the lab environment.
+
+   ```sh
+   az provider register --namespace Microsoft.Kubernetes
+   az provider register --namespace Microsoft.KubernetesConfiguration
+   az provider register --namespace Microsoft.OperationsManagement
+   az provider register --namespace Microsoft.OperationalInsights
+   az provider register --namespace Microsoft.ContainerService
+   az provider register --namespace Microsoft.ContainerRegistry
+   ```
+
+7. In the Bash session within the Cloud Shell pane, run the following to create a new Azure Container Registry (ACR) instance (The name of the ACR must be globally unique): 
 
     ```sh
     az acr create --resource-group AZ500LAB09 --name az500$RANDOM$RANDOM --sku Basic
     ```
-	> **Note** Register Azure Container Registry Resource Provider. If you encounter an error when running `az acr create`, it's likely because the **Azure Container Registry** service hasn't been registered for your subscription yet. To fix this, you can register the service and create your registry in one command:
-	
-	> ```sh
-	> az provider register --namespace Microsoft.ContainerRegistry
-	> ```
 
-7. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
+8. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
 
     ```sh
     az acr list --resource-group AZ500LAB09
@@ -135,7 +141,7 @@ In this task, you will create a Dockerfile, build an image from the Dockerfile, 
 
 In this task, you will create an Azure Kubernetes service and review the deployed resources. 
 
-1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Kubernetes services** and press the **Enter** key.
+1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Kubernetes services+++ and press the **Enter** key.
 
 2. On the **Kubernetes services** blade, click **+ Create** and, in the drop-down menu, click **+ Create a Kubernetes cluster**
 
@@ -143,32 +149,43 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     |Setting|Value|
     |----|----|
-    |Subscription|the name of the Azure subscription you are using in this lab|
-    |Resource group|**AZ500LAB09**|
-    |Kubernetes cluster name|**MyKubernetesCluster**|
-    |Region|**(US) East US**|
-    |Availability zones |**None**|
-    |Scale method|**Manual**|
-    |Node count|**1**|
+    | Subscription | *Use the name of the Azure subscription you are using in this lab* |
+    | Resource group | **AZ500LAB09** |
+    | Cluster preset configuration | **Dev/Test** |
+    | Kubernetes cluster name | +++MyKubernetesCluster+++ |
+    | Region | **(US) East US** |
+    | Fleet Manager | **None** |
+    | Availability zones | **None** |
+    | AKS pricing tier | **Free** |
+    | Enable long term support | **Unchecked** |
+    | Kubernetes version | *Use default* |
+    | Automatic upgrade | *Keep the default * |
+    | Node security channel type | *Keep the default* |
+    | Authentication and Authorization | **Local accounts with Kubernetes RBAC** |
 
-4. Click **Next: Node Pools >** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
+4. Click **Next** and, on the **Node Pools** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
-    |Enable virtual nodes|cleared checkbox|
+    | Enable node auto-provisioning | **Uncheck box** |
+    | Enable virtual nodes | **Uncheck box** |
+    | Other values | *Keep the defaults* |
 	
-5. Click **Next: Access >**, on the **Access** tab of the **Create Kubernetes cluster** blade, accept the defaults, and click **Next: Networking >**. 
+5. Click **Next**, to get to **Networking**. 
 
 6. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
     |Setting|Value|
     |----|----|
-    |Network configuration|**Azure CNI Overlay**|
-    |DNS name prefix|**Leave the default value**|
+    | Enable private cluster | **Unchecked** |
+    | Set authorized IP ranges | **Unchecked** |
+    | Network configuration | **Azure CNI Overlay** |
+    | DNS name prefix | **Leave the default value** |
+    | Network policy | **None** |
 
     >**Note**: AKS can be configured as a private cluster. This assigns a private IP to the API server to ensure network traffic between your API server and your node pools remains on the private network only. For more information, visit [Create a private Azure Kubernetes Service cluster](https://docs.microsoft.com/en-us/azure/aks/private-clusters) page.
 
-7. Click **Next: Integrations >** and, on the **Integrations** tab of the **Create Kubernetes cluster** blade, set **Container monitoring** to **Disabled**. 
+7. Click **Next** and, on the **Integrations** tab of the **Create Kubernetes cluster** page, leave **All values at default**. 
 
     >**Note**: In production scenarios, you would want to enable monitoring. Monitoring is disabled in this case since it is not covered in the lab. 
 
