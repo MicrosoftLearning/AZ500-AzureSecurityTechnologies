@@ -134,7 +134,7 @@ In this task, you will create a storage account.
     |Subscription|the name of the Azure subscription you are using in this lab|
     |Resource group|**AZ500LAB131415**|
     **Instance details**
-    |Storage account name|any globally unique name between 3 and 24 in length consisting of letters and digits|
+    |Storage account name|**strgactignite**|
     |Region|**(US) EastUS**|
     |Primary service|**Azure Blob Storage or Azure Data Lake Storage Gen 2**|
     |Performance|**Standard (general-purpose v2 account)**|
