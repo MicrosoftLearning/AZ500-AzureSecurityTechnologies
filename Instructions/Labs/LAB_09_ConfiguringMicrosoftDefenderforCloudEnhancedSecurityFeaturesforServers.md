@@ -16,7 +16,7 @@ As an Azure Security Engineer for a global e-commerce company, you are responsib
 
 - Configure Microsoft Defender for Cloud Enhanced Security Features for Servers
   
-- Review the ehanced security features for Microsoft Defender for Servers Plan 2
+- Review the enhanced security features for Microsoft Defender for Servers Plan 2
 
 ## Exercise instructions
 

@@ -23,7 +23,7 @@ In this lab, you will complete the following exercises:
 - Exercise 1: Deploy an Azure virtual machine
 - Exercise 2: Create a Log Analytics workspace
 - Exercise 3: Create an Azure storage account
-- Exercise 4: Create a data colllection rule
+- Exercise 4: Create a data collection rule
   
 ## Instructions
 

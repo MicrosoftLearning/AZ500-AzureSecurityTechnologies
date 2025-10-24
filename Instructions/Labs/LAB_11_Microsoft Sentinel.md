@@ -84,11 +84,11 @@ In this task, you will configure Sentinel to use the Azure Activity data connect
 
 7. In step 2 **Connect your subscriptions through diagnostic settings new pipeline**, review the "Launch the Azure Policy Assignment wizard and follow the steps" instructions then click **Launch the Azure Policy Assignment wizard\>**.
 
-8. On the **Configure Azure Activity logs to stream to specified Log Analytics workspace** (Assign Policy page) **Basics** tab, click the **Scope elipsis (...)** button. In the **Scope** page choose your subscription from the drop-down subscription list and click the **Select** button at the bottom of the page.
+8. On the **Configure Azure Activity logs to stream to specified Log Analytics workspace** (Assign Policy page) **Basics** tab, click the **Scope ellipsis (...)** button. In the **Scope** page choose your subscription from the drop-down subscription list and click the **Select** button at the bottom of the page.
 
     >**Note**: *Do not* choose a Resource Group
 
-9. Click the **Next** button at the bottom of the **Basics** tab twice to proceed to the **Parameters** tab. On the **Parameters** tab click the **Primary Log Analytics workspace elipsis (...)** button. In the **Primary Log Analytics workspace** page, make sure your subscription is selected and use the **workspaces** drop-down to select the Log Analytics workspace you are using for Sentinel. When done click the **Select** button at the bottom of the page.
+9. Click the **Next** button at the bottom of the **Basics** tab twice to proceed to the **Parameters** tab. On the **Parameters** tab click the **Primary Log Analytics workspace ellipsis (...)** button. In the **Primary Log Analytics workspace** page, make sure your subscription is selected and use the **workspaces** drop-down to select the Log Analytics workspace you are using for Sentinel. When done click the **Select** button at the bottom of the page.
 
 10. Click the **Next** button at the bottom of the **Parameters** tab to proceed to the **Remediation** tab. On the **Remediation** tab select the **Create a remediation task** checkbox. This will enable the "Configure Azure Activity logs to stream to specified Log Analytics workspace" in the **Policy to remediate** drop-down. In the **System assigned identity location** drop-down, select the region (East US for example) you selected earlier for your Log Analytics workspace.
 
@@ -228,7 +228,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 14. On the **Automated response** tab of the **Analytic rule wizard - Create a new Scheduled rule** blade, click **Next: Review and create >** and click **Save**
 
-    >**Note**: You now have a new active rule called **Playbook Demo**. If an event identified by the rue logic occurs, it will result in a medium severity alert, which will generate a corresponding incident.
+    >**Note**: You now have a new active rule called **Playbook Demo**. If an event identified by the rule logic occurs, it will result in a medium severity alert, which will generate a corresponding incident.
 
 #### Task 6: Invoke an incident and review the associated actions.
 
@@ -248,7 +248,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
 6. Navigate to the **Activity log** blade, note an **Delete JIT Network Access Policies** entry. 
 
-    >**Note**: This may take a few minutes to appear. **Refresh** the page if it does not appear.
+    >**Note**: This may take a few minutes to appear. Refresh the page if it does not appear.
 
 7. In the Azure portal, navigate back to the **Microsoft Sentinel \| Overview** blade.
 
@@ -262,7 +262,7 @@ In this task, you will create a playbook. A security playbook is a collection of
 
     >**Note**: It can take up to 5 minutes for the incident to appear on the **Microsoft Sentinel \| Incidents** blade. 
 
-    >**Note**: Review the **Microsoft Sentinel \| Playbooks** blade. You will find there the count of succesfull and failed runs.
+    >**Note**: Review the **Microsoft Sentinel \| Playbooks** blade. You will find there the count of successful and failed runs.
 
     >**Note**: You have the option of assigning a different severity level and status to an incident.
 
