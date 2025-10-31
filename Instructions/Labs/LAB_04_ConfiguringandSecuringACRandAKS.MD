@@ -408,4 +408,6 @@ In this task, you will use one of the pods running on the AKS cluster to access 
     Remove-AzResourceGroup -Name "AZ500LAB09" -Force -AsJob
     ```
 
-4.  Close the **Cloud Shell** pane. 
+4. Ensure that the HTML code of the **Welcome to nginx!** page is displayed.
+
+5. Close the **Cloud Shell** pane. 
