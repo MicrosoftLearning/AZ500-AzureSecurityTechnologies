@@ -96,7 +96,7 @@ In this task, you will create a resource group for the lab and an Azure Containe
 8. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
 
     ```sh
-    az acr list --resource-group AZ500LAB09
+    az acr list --resource-group AZ500LAB09 -o table
     ```
 
     >**Note**: Record the name of the ACR. You will need it in the next task.
