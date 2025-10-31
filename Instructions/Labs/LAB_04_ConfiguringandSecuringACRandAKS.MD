@@ -277,9 +277,17 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
     >**Note**: This is the *external* yaml file.
 
+    >**Note**: If you see the pop-up **_Switch to Classic Cloud Shell_**, select **Confirm**, run the following command and then repeat this step:
+
+    ```sh
+    ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
+    ```
+
 4. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 5. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+
+    >**Note**: You could use **Ctrl+S** and **Ctrl+Q** to save the file and close the editor.
 
 6. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
@@ -325,6 +333,8 @@ In this task, you will deploy the internal facing service on the AKS.
 2. In the editor pane, scroll down to the line containing the reference to the container image and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 3. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+
+    >**Note**: You could use **Ctrl+S** and **Ctrl+Q** to save the file and close the editor.
 
 4. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
