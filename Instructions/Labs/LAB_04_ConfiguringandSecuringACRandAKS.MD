@@ -195,7 +195,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     >**Note**: Wait for the deployment to complete. This might take about 10 minutes.
 
-9. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+9. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Resource groups+++ and press the **Enter** key.
 
 10. On the **Resource groups** blade, in the listing of resource groups, note a new resource group named **MC_AZ500LAB09_MyKubernetesCluster_eastus** that holds components of the AKS Nodes. Review resources in this resource group. 
 	
