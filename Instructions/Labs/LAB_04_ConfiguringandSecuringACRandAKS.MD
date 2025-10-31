@@ -287,7 +287,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
     kubectl apply -f nginxexternal.yaml
     ```
 
-7. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. 
+7. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. Here’s what you should see:
 
     ```
     deployment.apps/nginxexternal created
@@ -332,7 +332,7 @@ In this task, you will deploy the internal facing service on the AKS.
     kubectl apply -f nginxinternal.yaml
     ```
 
-5.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created:
+5.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created. Here’s what you should see:
 
     ```
     deployment.apps/nginxinternal created
