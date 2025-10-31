@@ -173,7 +173,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 5. Click **Next**, to get to **Networking**. 
 
-  >NOTE - you will get a pop-up that says a **Recommendation** is available for your VM Size.  **Accept the recommendation** to move forward.
+    >**Note**: You will get a pop-up that says a **Recommendation** is available for your VM Size.  **Accept the recommendation** to move forward.
 
 6. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
