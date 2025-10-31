@@ -60,7 +60,7 @@ In this task, you will create a resource group for the lab and an Azure Containe
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Microsoft Entra tenant associated with that subscription.
 
-2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash** and **Create storage**.
+2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash**, **No storage account required**, select your *Subscription*, and then click **Apply**.
 
 3. Ensure **Bash** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
