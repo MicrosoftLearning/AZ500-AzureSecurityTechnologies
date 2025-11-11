@@ -109,9 +109,9 @@ In this task, you will create a user account for Isabel Garcia by using PowerShe
 
 1. **Open the Cloud Shell** by clicking the **Cloud Shell icon** in the top-right corner of the Azure portal.
 
-2. **If prompted, set up Cloud Shell by creating a storage account**. This is required **only the first time** you launch Cloud Shell.
+2. If prompted, select **No storage account required**, select the name of your subscription, and then select **Apply**. This is required *only the first time* you launch the Cloud Shell.
 
-3. In the Cloud Shell pane, **ensure PowerShell is selected** from the drop-down menu in the upper-left corner.
+3. In the Cloud Shell pane, **ensure PowerShell is selected** from the drop-down menu in the upper-left corner. (Note: In the new Cloud Shell, this will say: **-->Switch to Bash**)
 
    >**Note**: To paste copied text into the Cloud Shell, right-click within the pane window and select **Paste**. Alternatively, you can use the **Shift+Insert** key combination.
 
@@ -198,7 +198,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will create a user account for Dylan Williams.
 
-1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash**, and, when prompted, click **Confirm**. 
+1. In the drop-down menu in the upper-left corner of the Cloud Shell pane, select **Bash** (or: **Switch to Bash**), and, when prompted, click **Confirm**. 
 
 2. In the Bash session within the Cloud Shell pane, run the following to identify the name of your Microsoft Entra tenant:
 
