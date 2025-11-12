@@ -96,7 +96,7 @@ In this task, you will create another subnet and enable a service endpoint on th
     |Subnet address range|**10.0.1.0/24**|
     |Service endpoints|**Leave the default of None**|
 
-6. On the **Add subnet** blade, click **Save** to add the new subnet.
+6. On the **Add subnet** blade, click **Add**.
 
     >**Note**: The virtual network now has two subnets: Public and Private. 
 	
@@ -321,7 +321,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Virtual machines** and press the **Enter** key.
 
-2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure Virtual machine**
+2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **Virtual machine**
 
 3. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -356,7 +356,7 @@ In this task, you will create two virtual machines one in the Private subnet and
 
     >**Note**: The second virtual machine will be connected to the Public subnet.
 
-8. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **+ Azure Virtual machine**.
+8. On the **Virtual machines** blade, click **+ Add** and, in the dropdown list, click **Virtual machine**.
 
 9. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
