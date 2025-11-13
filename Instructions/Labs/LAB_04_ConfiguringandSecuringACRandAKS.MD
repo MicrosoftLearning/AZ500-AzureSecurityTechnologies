@@ -60,7 +60,7 @@ In this task, you will create a resource group for the lab and an Azure Containe
 
     >**Note**: Sign in to the Azure portal using an account that has the Owner or Contributor role in the Azure subscription you are using for this lab and the Global Administrator role in the Microsoft Entra tenant associated with that subscription.
 
-2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash** and **Create storage**.
+2. In the Azure portal, open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, click **Bash**, **No storage account required**, select your *Subscription*, and then click **Apply**.
 
 3. Ensure **Bash** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
@@ -96,7 +96,7 @@ In this task, you will create a resource group for the lab and an Azure Containe
 8. In the Bash session within the Cloud Shell pane, run the following to confirm that the new ACR was created:
 
     ```sh
-    az acr list --resource-group AZ500LAB09
+    az acr list --resource-group AZ500LAB09 -o table
     ```
 
     >**Note**: Record the name of the ACR. You will need it in the next task.
@@ -173,7 +173,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
 5. Click **Next**, to get to **Networking**. 
 
-  >NOTE - you will get a pop-up that says a **Recommendation** is available for your VM Size.  **Accept the recommendation** to move forward.
+    >**Note**: You will get a pop-up that says a **Recommendation** is available for your VM Size.  **Accept the recommendation** to move forward.
 
 6. On the **Networking** tab of the **Create Kubernetes cluster** blade, specify the following settings (leave others with their default values):
 
@@ -195,7 +195,7 @@ In this task, you will create an Azure Kubernetes service and review the deploye
 
     >**Note**: Wait for the deployment to complete. This might take about 10 minutes.
 
-9. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
+9. Once the deployment completes, in the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Resource groups+++ and press the **Enter** key.
 
 10. On the **Resource groups** blade, in the listing of resource groups, note a new resource group named **MC_AZ500LAB09_MyKubernetesCluster_eastus** that holds components of the AKS Nodes. Review resources in this resource group. 
 	
@@ -277,9 +277,17 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
 
     >**Note**: This is the *external* yaml file.
 
+    >**Note**: If you see the pop-up **_Switch to Classic Cloud Shell_**, select **Confirm**, run the following command and then repeat this step:
+
+    ```sh
+    ACRNAME=$(az acr list --resource-group AZ500LAB09 --query '[].{Name:name}' --output tsv)
+    ```
+
 4. In the editor pane, scroll down to **line 24** and replace the **`<ACRUniquename>`** placeholder with the ACR name.
 
 5. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
+
+    >**Note**: You could use **Ctrl+S** and **Ctrl+Q** to save the file and close the editor.
 
 6. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
@@ -287,7 +295,7 @@ In this task,  you will download the Manifest files, edit the YAML file, and app
     kubectl apply -f nginxexternal.yaml
     ```
 
-7. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. 
+7. In the Bash session within the Cloud Shell pane, review the output of the command you run in the previous task to verify that the deployment and the corresponding service have been created. Here’s what you should see:
 
     ```
     deployment.apps/nginxexternal created
@@ -326,13 +334,15 @@ In this task, you will deploy the internal facing service on the AKS.
 
 3. In the editor pane, in the upper right corner, click the **ellipses** icon, click **Save** and then click **Close editor**. 
 
+    >**Note**: You could use **Ctrl+S** and **Ctrl+Q** to save the file and close the editor.
+
 4. In the Bash session within the Cloud Shell pane, run the following to apply the change to the cluster:
 
     ```sh
     kubectl apply -f nginxinternal.yaml
     ```
 
-5.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created:
+5.  In the Bash session within the Cloud Shell pane, review the output to verify your deployment and the service have been created. Here’s what you should see:
 
     ```
     deployment.apps/nginxinternal created
@@ -398,4 +408,6 @@ In this task, you will use one of the pods running on the AKS cluster to access 
     Remove-AzResourceGroup -Name "AZ500LAB09" -Force -AsJob
     ```
 
-4.  Close the **Cloud Shell** pane. 
+4. Ensure that the HTML code of the **Welcome to nginx!** page is displayed.
+
+5. Close the **Cloud Shell** pane. 
