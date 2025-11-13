@@ -200,7 +200,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type +++Virtual machines+++ and press the **Enter** key.
 
-2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **+ Azure virtual machine**.
+2. On the **Virtual machines** blade, click **+ Create** and, in the dropdown list, click **Virtual machine**.
 
 3. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -224,7 +224,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 5. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-6. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
+6. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork** and the **default (10.0.0.0/24)** subnet.
 
 7. Under **NIC network security group** select **None**.
 
@@ -240,7 +240,7 @@ In this task, you will create a virtual machine to use as a web server.
 
 In this task, you will create a virtual machine to use as a management server.
 
-1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Create**, and, in the dropdown list, click **+ Azure virtual machine**.
+1. In the Azure portal, navigate back to the **Virtual machines** blade, click **+ Create**, and, in the dropdown list, click **Virtual machine**.
 
 2. On the **Basics** tab of the **Create a virtual machine** blade, specify the following settings (leave others with their default values):
 
@@ -263,7 +263,7 @@ In this task, you will create a virtual machine to use as a management server.
 
 4. Click **Next: Disks >** and, on the **Disks** tab of the **Create a virtual machine** blade, set the **OS disk type** to **Standard HDD** and click **Next: Networking >**.
 
-5. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork**.
+5. On the **Networking** tab of the **Create a virtual machine** blade, select the previously created network **myVirtualNetwork** and the **default (10.0.0.0/24)** subnet.
 
 6. Under **NIC network security group** select **None**.
 
@@ -338,7 +338,7 @@ In this task, you will test the network traffic filters. You should be able to R
 
 > Remember to remove any newly created Azure resources that you no longer use. Removing unused resources ensures you will not incur unexpected costs. 
 
-1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **Create storage**.
+1. Open the Cloud Shell by clicking the first icon in the top right of the Azure Portal. If prompted, select **PowerShell** and **No storage account required**, select the name of your subscription, and then select **Apply**.
 
 2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
