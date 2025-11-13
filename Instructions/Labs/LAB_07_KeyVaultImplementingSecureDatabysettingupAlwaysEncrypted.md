@@ -69,7 +69,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
    |Setting|Value|
    |---|---|
    |Subscription|the name of the Azure subscription you will be using in this lab|
-   |Resource group|click **Create new** and type the name **AZ500LAB10**|
+   |Resource group|click **Create new** and type the name **AZ500Lab10-lod@lab.LabInstance.Id**|
    |Location|**East US**|
    |Username|**Student**|
    |Password|**Please use your personal password created in Lab 02 > Exercise 2 > Task 1 > Step 3.**|
@@ -114,14 +114,14 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 2. Ensure **PowerShell** is selected in the drop-down menu in the upper-left corner of the Cloud Shell pane.
 
-3. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500LAB10**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
+3. In the PowerShell session within the Cloud Shell pane, run the following to create an Azure Key Vault in the resource group **AZ500Lab10-lod@lab.LabInstance.Id**. (If you chose another name for this lab's Resource Group out of Task 1, use that name for this task as well). The Key Vault name must be unique. Remember the name you have chosen. You will need it throughout this lab.  
 
     ```powershell
     $kvName = 'az500kv' + $(Get-Random)
 
-    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500LAB10').Location
+    $location = (Get-AzResourceGroup -ResourceGroupName 'AZ500Lab10-lod@lab.LabInstance.Id').Location
 
-    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500LAB10' -Location $location -DisableRbacAuthorization
+    New-AzKeyVault -VaultName $kvName -ResourceGroupName 'AZ500Lab10-lod@lab.LabInstance.Id' -Location $location -DisableRbacAuthorization
     ```
 
     >**Note**: The output of the last command will display the vault name and the vault URI. The vault URI is in the format `https://<vault_name>.vault.azure.net/`
@@ -130,7 +130,7 @@ In this task, you will create an Azure Key Vault resource. You will also configu
 
 5. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **Resource groups** and press the **Enter** key.
 
-6. On the **Resource groups** blade, in the list of resource group, click the **AZ500LAB10** (or other name you chose earlier for the resource group) entry.
+6. On the **Resource groups** blade, in the list of resource group, click the **AZ500Lab10-lod@lab.LabInstance.Id** (or other name you chose earlier for the resource group) entry.
 
 7. On the Resource Group blade, click the entry representing the newly created Key Vault. 
 
@@ -162,7 +162,7 @@ In this task, you will add a key to the Key Vault and view information about the
 3. In the PowerShell session within the Cloud Shell pane, run the following to add a software-protected key to the Key Vault: 
 
     ```powershell
-    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500LAB10'
+    $kv = Get-AzKeyVault -ResourceGroupName 'AZ500Lab10-lod@lab.LabInstance.Id'
 
     $key = Add-AZKeyVaultKey -VaultName $kv.VaultName -Name 'MyLabKey' -Destination 'Software'
     ```
@@ -296,7 +296,7 @@ In this task, you will grant the newly registered app permissions to access secr
     ```
 4. In the PowerShell session within the Cloud Shell pane, run the following to create a variable storing the Key Vault name.
 	```
-    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500LAB10').VaultName
+    $kvName = (Get-AzKeyVault -ResourceGroupName 'AZ500Lab10-lod@lab.LabInstance.Id').VaultName
 
     $kvName
     ```
@@ -304,7 +304,7 @@ In this task, you will grant the newly registered app permissions to access secr
 5. In the PowerShell session within the Cloud Shell pane, run the following to grant permissions on the Key Vault to the application you registered in the previous task:
 
     ```powershell
-    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500LAB10 -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
+    Set-AZKeyVaultAccessPolicy -VaultName $kvName -ResourceGroupName AZ500Lab10-lod@lab.LabInstance.Id -ServicePrincipalName $applicationId -PermissionsToKeys get,wrapKey,unwrapKey,sign,verify,list
     ```
 
 6. Close the Cloud Shell pane. 
@@ -318,7 +318,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 2. In the list of SQL databases, click the **medical(<randomsqlservername>)** entry.
 
-    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group "AZ500LAB10" (or the name you chose), and selecting **Deployments** from the Settings pane.  
+    >**Note**: If the database cannot be found, this likely means the deployment you initiated in Exercise 1 has not completed yet. You can validate this by browsing to the Azure Resource Group "AZ500Lab10-lod@lab.LabInstance.Id" (or the name you chose), and selecting **Deployments** from the Settings pane.  
 
 3. On the SQL database blade, in the **Settings** section, click **Connection strings**. 
 
@@ -332,7 +332,7 @@ The ARM-template deployment in Exercise 1 provisioned an Azure SQL Server instan
 
 In this task, you log on to the Azure VM, which deployment you initiated in Exercise 1. This Azure VM hosts Visual Studio 2019 and SQL Server Management Studio 19.
 
-    >**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "Az500Lab10" (or other name you chose) and selecting **Deployments** from the Settings pane.  
+    >**Note**: Before you proceed with this task, ensure that the deployment you initiated in the first exercise has completed successfully. You can validate this by navigating to the blade of the Azure resource group "AZ500Lab10-lod@lab.LabInstance.Id" (or other name you chose) and selecting **Deployments** from the Settings pane.  
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box at the top of the Azure portal page, type **virtual machines** and press the **Enter** key.
 
@@ -457,6 +457,8 @@ In this exercise, you will complete the following tasks:
 9. Select continue to start the install.
   - Install takes about 10 minutes
 
+10. Choose **.Net Desktop Development** in the Workloads screen.
+
 #### Task 2: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
 You will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
@@ -536,7 +538,7 @@ You will create a Console application using Visual Studio to load data into the 
 3. In the PowerShell session within the Cloud Shell pane, run the following to remove the resource groups you created in this lab:
   
     ```powershell
-    Remove-AzResourceGroup -Name "AZ500LAB10" -Force -AsJob
+    Remove-AzResourceGroup -Name "AZ500Lab10-lod@lab.LabInstance.Id" -Force -AsJob
     ```
 
 4.  Close the **Cloud Shell** pane. 
