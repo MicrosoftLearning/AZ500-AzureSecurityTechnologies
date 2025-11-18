@@ -78,7 +78,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
     >**Note**: To identify Azure regions where you can provision Azure VMs, refer to [**https://azure.microsoft.com/en-us/regions/offers/**](https://azure.microsoft.com/en-us/regions/offers/)
 
-7. Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button. 
+7. Click the **Review and Create** button and confirm the deployment by clicking the **Create** button. 
 
     >**Note**: This initiates the deployment of the Azure VM and Azure SQL Database required for this lab. 
 
@@ -96,7 +96,7 @@ In this task, you will deploy an Azure VM, which will automatically install Visu
 
 5. Set the **Admin Password** to the same password you used for the previous step.
    
-6.  Click the **Review and Create** button, and confirm the deployment by clicking the **Create** button.
+6.  Click the **Review and Create** button and confirm the deployment by clicking the **Create** button.
 
 ### Exercise 2: Configure the Key Vault resource with a key and a secret
 
