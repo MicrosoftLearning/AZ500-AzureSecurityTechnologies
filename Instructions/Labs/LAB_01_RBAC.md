@@ -297,7 +297,7 @@ In this exercise, you will complete the following tasks:
 
 2. On the **AZ500Lab01** blade, click **Access control (IAM)** in the middle pane.
 
-3. On the **AZ500Lab01 \| Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
+3. On the **AZ500Lab01 | Access control (IAM)** blade, click **+ Add** and then, in the drop-down menu, click **Add role assignment**.
 
 4. On the **Add role assignment** blade, complete each of the following settings before clicking Next:
 
@@ -313,9 +313,11 @@ In this exercise, you will complete the following tasks:
 
 7. From the **Access control (IAM)** blade, select **Role assignments**.
 
-8. On the **AZ500Lab01 \| Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
+8. On the **AZ500Lab01 | Access control (IAM)** blade, on the **Check access** tab, in the **Search by name or email address** text box, type **Dylan Williams**.
 
 9. In the list of search results, select the user account of Dylan Williams and, on the **Dylan Williams assignments - AZ500Lab01** blade, view the newly created assignment.
+
+   > NOTE - Always remember to check both the **Active** and **Eligible** tabs when confirming RBAC assignments.
 
 10. Close the **Dylan Williams assignments - AZ500Lab01** blade.
 
