@@ -17,7 +17,7 @@ You have been asked to create a proof of concept application that makes use of t
 
 >**Note**: For all the resources in this lab, we are using the **East US** region. Verify with your instructor this is the region to use for class. 
 
-To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio 2019 and SQL Server Management Studio 19.
+To keep the focus on the security aspects of Azure, related to building this proof of concept, you will start from an automated ARM template deployment, setting up a Virtual Machine with Visual Studio and SQL Server Management Studio.
 
 ## Lab objectives
 
@@ -50,7 +50,7 @@ In this exercise, you will complete the following tasks:
 
 #### Task 1: Deploy an Azure VM and an Azure SQL database
 
-In this task, you will deploy an Azure VM, which will automatically install Visual Studio 2019 and SQL Server Management Studio 19 as part of the deployment. 
+In this task, you will deploy an Azure VM, which will automatically install Visual Studio and SQL Server Management Studio as part of the deployment. 
 
 1. Sign-in to the Azure portal **`https://portal.azure.com/`**.
 
@@ -433,10 +433,10 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Install Visual Studio 2022
+- Task 1: Install Visual Studio 2026
 - Task 2: Run a data-driven application to demonstrate the use of Azure Key Vault in encrypting the Azure SQL database
 
-#### Task 1: Install Visual Studio 2022
+#### Task 1: Install Visual Studio 2026
 
 1. Switch to your Server virtual machine if you are not already there.
 
