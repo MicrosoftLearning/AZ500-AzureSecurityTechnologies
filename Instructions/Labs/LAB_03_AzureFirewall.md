@@ -1,7 +1,17 @@
 ---
 lab:
-    title: '03 - Azure Firewall'
-    module: 'Module 02 - Plan and implement security for public access to Azure resources'
+  title: 03 - Azure Firewall
+  module: Module 02 - Plan and implement security for public access to Azure resources
+  description: 'You have been asked to install Azure Firewall. This will help your
+    organization control inbound and outbound network access which is an important
+    part of an overall network security plan. Specifically, you would like to create
+    and test the following infrastructure components:'
+  duration: 40 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Firewall
 ---
 
 # Lab 03: Azure Firewall
