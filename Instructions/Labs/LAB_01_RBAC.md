@@ -1,9 +1,16 @@
 ---
 lab:
-    title: '01 - Role Based Access Control'
-    module: 'Module 01 - Manage Identity and Access'
+  title: 01 - Role Based Access Control
+  module: Module 01 - Manage Identity and Access
+  description: 'You have been asked to create a proof of concept showing how Azure
+    users and groups are created. Also, how role-based access control is used to assign
+    roles to groups. Specifically, you need to:'
+  duration: 10 minutes
+  level: 400
+  islab: true
+  primarytopics:
+  - Azure
 ---
-
 
 # Lab 01: Role-Based Access Control
 # Student lab manual
