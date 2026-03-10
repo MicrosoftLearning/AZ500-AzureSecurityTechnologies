@@ -1,7 +1,12 @@
 ---
 lab:
-    title: '02 - Network Security Groups and Application Security Groups'
-    module: 'Module 01 - Plan and implement security for virtual networks'
+  title: 02 - Network Security Groups and Application Security Groups
+  module: Module 01 - Plan and implement security for virtual networks
+  description: 'You have been asked to implement your organization''s virtual networking
+    infrastructure and test to ensure it is working correctly. In particular:'
+  duration: 20 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 02: Network Security Groups and Application Security Groups
