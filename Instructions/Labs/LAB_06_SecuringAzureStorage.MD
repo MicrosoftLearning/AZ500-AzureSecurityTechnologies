@@ -1,7 +1,15 @@
 ---
 lab:
-    title: ' 06 - Service Endpoints and Securing Storage'
-    module: 'Module 03 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance'
+  title: ' 06 - Service Endpoints and Securing Storage'
+  module: Module 03 - Plan and implement security for Azure SQL Database and Azure
+    SQL Managed Instance
+  description: 'You have been asked to create a proof of concept to demonstrate securing
+    Azure file shares. Specifically, you want to:'
+  duration: 45 minutes
+  level: 300
+  islab: true
+  primarytopics:
+  - Azure
 ---
 
 # Lab 06: Service Endpoints and Securing Storage
