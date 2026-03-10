@@ -1,7 +1,16 @@
 ---
 lab:
-    title: '05 - Securing Azure SQL Database'
-    module: 'Module 02 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance'
+  title: 05 - Securing Azure SQL Database
+  module: Module 02 - Plan and implement security for Azure SQL Database and Azure
+    SQL Managed Instance
+  description: 'You have been asked to review security features for Azure SQL database.
+    Specifically, you are interested in:'
+  duration: 30 minutes
+  level: 500
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure SQL Database
 ---
 
 # Lab 05: Securing Azure SQL Database
