@@ -1,7 +1,16 @@
 ---
 lab:
-    title: '04 - Configuring and Securing ACR and AKS'
-    module: 'Module 01 - Secure compute, storage, and databases'
+  title: 04 - Configuring and Securing ACR and AKS
+  module: Module 01 - Secure compute, storage, and databases
+  description: 'You have been asked to deploy a proof of concept with Azure Container
+    Registry and Azure Kubernetes Service. Specifically, the proof of concept should
+    demonstrate:'
+  duration: 45 minutes
+  level: 500
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Container Registry
 ---
 
 # Lab 04: Configuring and Securing ACR and AKS
