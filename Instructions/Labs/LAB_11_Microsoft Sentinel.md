@@ -1,7 +1,14 @@
 ---
 lab:
-    title: '11 - Microsoft Sentinel'
-    module: 'Module 04 - Configure and manage security monitoring and automation solutions'
+  title: 11 - Microsoft Sentinel
+  module: Module 04 - Configure and manage security monitoring and automation solutions
+  description: '**Note:** **Azure Sentinel** is renamed to **Microsoft Sentinel**'
+  duration: 30 minutes
+  level: 500
+  islab: true
+  primarytopics:
+  - Azure
+  - Microsoft Sentinel
 ---
 
 # Lab 11: Microsoft Sentinel
