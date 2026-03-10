@@ -1,7 +1,21 @@
 ---
 lab:
-    title: '07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 01 - Implement and manage enforcement of cloud governance policies'
+  title: 07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)
+  module: Module 01 - Implement and manage enforcement of cloud governance policies
+  description: 'You have been asked to create a proof of concept application that
+    makes use of the Azure SQL Database support for Always Encrypted functionality.
+    All of the secrets and keys used in this scenario should be stored in Key Vault.
+    The application should be registered in Microsoft Entra ID in order to enhance
+    its security posture. To accomplish these objectives, the proof of concept should
+    include:'
+  duration: 60 minutes
+  level: 500
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure SQL Database
+  - Microsoft Entra
+  - Microsoft Entra ID
 ---
 
 # Lab 07: Key Vault (Implementing Secure Data by setting up Always Encrypted)
