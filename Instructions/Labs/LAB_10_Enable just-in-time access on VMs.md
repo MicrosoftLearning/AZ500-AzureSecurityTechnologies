@@ -1,7 +1,20 @@
 ---
 lab:
-    title: '10 - Enable just-in-time access on VMs'    
-    module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
+  title: 10 - Enable just-in-time access on VMs
+  module: Module 03 - Configure and manage threat protection by using Microsoft Defender
+    for Cloud
+  description: As an Azure Security Engineer at a financial services company, you're
+    responsible for securing Azure resources, including virtual machines (VMs) that
+    host critical applications. The security team has identified that continuous open
+    access to VMs increases the risk of brute-force attacks and unauthorized access.
+    To mitigate this, the Chief Information Security Officer (CISO) has requested
+    that you enable Just-in-Time (JIT) VM access on a specific Azure VM used for processing
+    financial transactions.
+  duration: 38 minutes
+  level: 200
+  islab: true
+  primarytopics:
+  - Azure
 ---
 
 # Lab 10: Enable just-in-time access on VMs
