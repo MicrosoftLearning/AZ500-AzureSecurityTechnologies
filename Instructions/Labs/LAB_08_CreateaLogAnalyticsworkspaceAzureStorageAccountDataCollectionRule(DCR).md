@@ -1,7 +1,26 @@
 ---
 lab:
-    title: '08 - Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)' 
-    module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
+  title: 08 - Create a Log Analytics Workspace, Azure Storage Account, and Data Collection
+    Rule (DCR)
+  module: Module 03 - Configure and manage threat protection by using Microsoft Defender
+    for Cloud
+  description: As an Azure Security Engineer for a financial technology company, you
+    are tasked with enhancing monitoring and security visibility across all Azure
+    virtual machines (VMs) used for processing financial transactions and managing
+    sensitive customer data. The security team requires detailed logs and performance
+    metrics from these VMs to detect potential threats and optimize system performance.
+    The Chief Information Security Officer (CISO) has asked you to implement a solution
+    that collects security events, system logs, and performance counters. You have
+    been assigned to configure the Azure Monitor Agent (AMA) along with Data Collection
+    Rules (DCRs) to centralize log collection and performance monitoring.
+  duration: 10 minutes
+  level: 500
+  islab: true
+  primarytopics:
+  - Azure
+  - Azure Monitor
+  - Azure Storage
+  - Azure Virtual Machines
 ---
 
 # Lab 08: Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)
