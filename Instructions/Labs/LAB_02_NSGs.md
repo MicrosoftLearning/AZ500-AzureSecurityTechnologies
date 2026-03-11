@@ -1,7 +1,11 @@
 ---
 lab:
-    title: '02 - Network Security Groups and Application Security Groups'
-    module: 'Module 01 - Plan and implement security for virtual networks'
+  title: 02 - Network Security Groups and Application Security Groups
+  module: Module 01 - Plan and implement security for virtual networks
+  description: In this task, you will create a virtual network to use with the network and application security groups.
+  duration: 20 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 02: Network Security Groups and Application Security Groups
