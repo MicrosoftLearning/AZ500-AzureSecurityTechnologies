@@ -1,7 +1,13 @@
 ---
 lab:
-    title: '07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 01 - Implement and manage enforcement of cloud governance policies'
+  title: 07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)
+  module: Module 01 - Implement and manage enforcement of cloud governance policies
+  description: You will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
+  duration: 60 minutes
+  level: 500
+  islab: true
+  primarytopics:
+    - Visual Studio
 ---
 
 # Lab 07: Key Vault (Implementing Secure Data by setting up Always Encrypted)
