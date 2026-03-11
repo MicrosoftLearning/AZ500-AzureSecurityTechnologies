@@ -1,7 +1,13 @@
 ---
 lab:
-    title: '07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)'
-    module: 'Module 01 - Implement and manage enforcement of cloud governance policies'
+  title: 07 - Key Vault (Implementing Secure Data by setting up Always Encrypted)
+  module: Module 01 - Implement and manage enforcement of cloud governance policies
+  description: Set up SQL Server, then enable and configure Always Encrypted for the data. This lab simulates a web application running in your cloud environment accessing SQL server.
+  duration: 60 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Visual Studio
 ---
 
 # Lab 07: Key Vault (Implementing Secure Data by setting up Always Encrypted)

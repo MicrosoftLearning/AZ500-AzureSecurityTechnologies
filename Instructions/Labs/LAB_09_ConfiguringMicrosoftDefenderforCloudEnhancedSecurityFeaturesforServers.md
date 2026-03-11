@@ -1,7 +1,16 @@
 ---
 lab:
-    title: '09 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers'
-    module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
+  title: 09 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
+  module: Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud
+  description: Secure the company’s cloud infrastructure. Enable Microsoft Defender for Servers in Microsoft Defender for Cloud to provide advanced threat protection and security monitoring for both Azure VMs and hybrid servers.
+  duration: 28 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Virtual Machines
+    - Microsoft Defender
+    - Microsoft Defender for Cloud
 ---
 
 # Lab 09: Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers

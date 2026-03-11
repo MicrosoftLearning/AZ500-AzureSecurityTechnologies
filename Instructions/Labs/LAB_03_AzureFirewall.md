@@ -1,7 +1,14 @@
 ---
 lab:
-    title: '03 - Azure Firewall'
-    module: 'Module 02 - Plan and implement security for public access to Azure resources'
+  title: 03 - Azure Firewall
+  module: Module 02 - Plan and implement security for public access to Azure resources
+  description: In this task you will deploy the Azure firewall into the virtual network.
+  duration: 40 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Azure
+    - Azure Firewall
 ---
 
 # Lab 03: Azure Firewall

@@ -1,7 +1,11 @@
 ---
 lab:
-    title: ' 06 - Service Endpoints and Securing Storage'
-    module: 'Module 03 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance'
+  title: ' 06 - Service Endpoints and Securing Storage'
+  module: Module 03 - Plan and implement security for Azure SQL Database and Azure SQL Managed Instance
+  description: In this task, you will create another subnet and enable a service endpoint on that subnet. Service endpoints are enabled per service, per subnet.
+  duration: 45 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 06: Service Endpoints and Securing Storage

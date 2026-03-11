@@ -1,7 +1,11 @@
 ---
 lab:
-    title: '04 - Configuring and Securing ACR and AKS'
-    module: 'Module 01 - Secure compute, storage, and databases'
+  title: 04 - Configuring and Securing ACR and AKS
+  module: Module 01 - Secure compute, storage, and databases
+  description: In this task, you will create a Dockerfile, build an image from the Dockerfile, and deploy the image to the ACR.
+  duration: 45 minutes
+  level: 300
+  islab: true
 ---
 
 # Lab 04: Configuring and Securing ACR and AKS

@@ -1,9 +1,12 @@
 ---
 lab:
-    title: '01 - Role Based Access Control'
-    module: 'Module 01 - Manage Identity and Access'
+  title: 01 - Role Based Access Control
+  module: Module 01 - Manage Identity and Access
+  description: In this task, you will create a user account for Joseph Price.
+  duration: 10 minutes
+  level: 400
+  islab: true
 ---
-
 
 # Lab 01: Role-Based Access Control
 # Student lab manual

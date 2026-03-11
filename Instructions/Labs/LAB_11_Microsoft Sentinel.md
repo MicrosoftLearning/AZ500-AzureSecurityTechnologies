@@ -1,7 +1,13 @@
 ---
 lab:
-    title: '11 - Microsoft Sentinel'
-    module: 'Module 04 - Configure and manage security monitoring and automation solutions'
+  title: 11 - Microsoft Sentinel
+  module: Module 04 - Configure and manage security monitoring and automation solutions
+  description: In this task, you will create a playbook. A security playbook is a collection of tasks that can be invoked by Microsoft Sentinel in response to an alert.
+  duration: 30 minutes
+  level: 300
+  islab: true
+  primarytopics:
+    - Microsoft Sentinel
 ---
 
 # Lab 11: Microsoft Sentinel
