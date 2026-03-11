@@ -1,7 +1,11 @@
 ---
 lab:
-    title: '10 - Enable just-in-time access on VMs'    
-    module: 'Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud'
+  title: 10 - Enable just-in-time access on VMs
+  module: Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud
+  description: 'In this lab, you will complete the following exercises:'
+  duration: 38 minutes
+  level: 200
+  islab: true
 ---
 
 # Lab 10: Enable just-in-time access on VMs
