@@ -2,13 +2,13 @@
 lab:
   title: 08 - Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)
   module: Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud
-  description: In this task, you will create a data collection rule.
+  description: In this task, you will create a data collection rule.  The rule will manage threats using Microsoft Defender for Cloud.
   duration: 10 minutes
-  level: 500
+  level: 300
   islab: true
   primarytopics:
     - Azure
-    - Azure Storage
+    - Defender for Cloud
 ---
 
 # Lab 08: Create a Log Analytics Workspace, Azure Storage Account, and Data Collection Rule (DCR)

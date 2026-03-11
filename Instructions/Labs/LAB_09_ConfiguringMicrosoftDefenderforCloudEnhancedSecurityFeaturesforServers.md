@@ -2,9 +2,9 @@
 lab:
   title: 09 - Configuring Microsoft Defender for Cloud Enhanced Security Features for Servers
   module: Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud
-  description: As an Azure Security Engineer for a global e-commerce company, you are responsible for securing the company’s cloud infrastructure. The organization relies heavily on Azure virtual machines (VMs) and on-premises servers to run critical applications, manage customer data, and process transactions. The Chief Information Security Officer (CISO) has identified the need for enhanced security measures to protect these resources against cyber threats, vulnerabilities, and misconfigurations. You have been tasked with enabling Microsoft Defender for Servers in Microsoft Defender for Cloud to provide advanced threat protection and security monitoring for both Azure VMs and hybrid servers.
+  description: Secure the company’s cloud infrastructure. Enable Microsoft Defender for Servers in Microsoft Defender for Cloud to provide advanced threat protection and security monitoring for both Azure VMs and hybrid servers.
   duration: 28 minutes
-  level: 200
+  level: 300
   islab: true
   primarytopics:
     - Azure

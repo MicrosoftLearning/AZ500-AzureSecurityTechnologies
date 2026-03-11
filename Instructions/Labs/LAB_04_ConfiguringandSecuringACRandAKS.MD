@@ -4,7 +4,7 @@ lab:
   module: Module 01 - Secure compute, storage, and databases
   description: In this task, you will create a Dockerfile, build an image from the Dockerfile, and deploy the image to the ACR.
   duration: 45 minutes
-  level: 500
+  level: 300
   islab: true
 ---
 

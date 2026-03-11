@@ -2,9 +2,9 @@
 lab:
   title: 10 - Enable just-in-time access on VMs
   module: Module 03 - Configure and manage threat protection by using Microsoft Defender for Cloud
-  description: 'In this lab, you will complete the following exercises:'
-  duration: 38 minutes
-  level: 200
+  description: Deploy a virtual machine then use Just-in-Time (JIT) access to manage the VM.
+  duration: 30 minutes
+  level: 300
   islab: true
 ---
 
