@@ -458,7 +458,7 @@ In this exercise, you will complete the following tasks:
 
 6. Go to https://visualstudio.microsoft.com/downloads.
 
-7. In the **Visual Studio 2022** box, under **Community** select **Free download**.
+7. In the **Visual Studio 2026** box, under **Community** select **Free download**.
 
 8. When the download finishes, select **Open File**.
 
@@ -471,9 +471,9 @@ In this exercise, you will complete the following tasks:
 
 You will create a Console application using Visual Studio to load data into the encrypted columns and then access that data securely using a connection string that accesses the key in the Key Vault.
 
-1. From the RDP session to the **az500-10-vm1**, launch **Visual Studio 2019** from the **Start menu**.
+1. From the RDP session to the **az500-10-vm1**, launch **Visual Studio 2026** from the **Start menu**.
 
-2. Switch to the window displaying Visual Studio 2019 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab.
+2. Switch to the window displaying Visual Studio 2026 welcome message, click the **Sign in** button and, when prompted, provide the credentials you used to authenticate to the Azure subscription you are using in this lab.
 
 3. On the **Get started** page, click **Create a new project**. 
 
