@@ -415,7 +415,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 		[BirthDate] [date] NOT NULL 
      PRIMARY KEY CLUSTERED ([PatientId] ASC) ON [PRIMARY] );
      ```
-13. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Encrypt Columns**. 
+13. After the table is created successfully, in the **Object Explorer** pane, expand the **medical** database node, the **tables** node, right-click the **dbo.Patients** node, and click **Always Encrypted wizard...**. 
 
     >**Note**: This will initiate the **Always Encrypted** wizard.
 
@@ -425,7 +425,7 @@ In this task, you will connect to the SQL Database with SQL Server Management St
 
     >**Note**: While performing the encryption if any error thrown like **Exception has been thrown by the target of an invocation** related to **Rotary(Microsoft.SQLServer.Management.ServiceManagement)** then make sure the **Key Permission's** values of **Rotation Policy Operations** are **unchecked**, if not in the Azure portal navigate to the **Key Vault** >> **Access Policies** >> **Key Permissions** >> Uncheck all the values under the **Rotation Policy Operations** >> Under **Privileged Key Operations** >> Uncheck **Release**.
 
-16. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**, when prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
+16. On the **Master Key Configuration** page, select **Azure Key Vault**, click **Sign in**. Make sure to only allow this App to sign in. When prompted, authenticate by using the same user account you used to provision the Azure Key Vault instance earlier in this lab, ensure that that Key Vault appears in the **Select an Azure Key Vault** drop down list, and click **Next**.
 
 17. On the **Run Settings** page, click **Next**.
 	
