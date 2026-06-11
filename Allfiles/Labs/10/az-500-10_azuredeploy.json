@@ -1,7 +1,6 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-
   "parameters": {
     "adminUsername": {
       "type": "string",
@@ -19,7 +18,6 @@
       }
     }
   },
-
   "variables": {
     "imagePublisher": "MicrosoftWindowsServer",
     "imageOffer": "WindowsServer",
@@ -32,35 +30,19 @@
     "vhdStorageType": "Premium_LRS",
     "publicIPAddressName": "az500-10-pip1",
     "publicIPAddressType": "static",
-    "vhdStorageContainerName": "vhds",
     "vmName": "az500-10-vm1",
     "vmSize": "Standard_DS2s_V3",
     "virtualNetworkName": "az500-10-vnet1",
     "vnetId": "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
     "networkSecurityGroupName": "az500-10-nsg1",
     "subnetRef": "[concat(variables('vnetId'), '/subnets/', variables('subnetName'))]",
-    "vhdStorageAccountName": "[concat('vhdstorage', uniqueString(resourceGroup().id))]",
     "sqlServerName": "[concat('sqlserver', uniqueString(subscription().id, resourceGroup().id))]",
     "databaseName": "medical",
     "databaseEdition": "Basic",
     "databaseCollation": "SQL_Latin1_General_CP1_CI_AS",
     "databaseServiceObjectiveName": "Basic"
   },
-
   "resources": [
-    {
-      "type": "Microsoft.Storage/storageAccounts",
-      "name": "[variables('vhdStorageAccountName')]",
-      "apiVersion": "2016-01-01",
-      "location": "[resourceGroup().location]",
-      "tags": {
-        "displayName": "StorageAccount"
-      },
-      "sku": {
-        "name": "[variables('vhdStorageType')]"
-      },
-      "kind": "Storage"
-    },
     {
       "apiVersion": "2023-06-01",
       "type": "Microsoft.Network/publicIPAddresses",
@@ -70,7 +52,7 @@
         "displayName": "PublicIPAddress"
       },
       "sku": {
-         "name": "Standard"
+        "name": "Standard"
       },
       "properties": {
         "publicIPAllocationMethod": "[variables('publicIPAddressType')]"
@@ -110,7 +92,8 @@
       },
       "dependsOn": [
         "[resourceId('Microsoft.Network/publicIPAddresses', variables('publicIPAddressName'))]",
-        "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]"
+        "[resourceId('Microsoft.Network/virtualNetworks', variables('virtualNetworkName'))]",
+        "[resourceId('Microsoft.Network/networkSecurityGroups', variables('networkSecurityGroupName'))]"
       ],
       "properties": {
         "ipConfigurations": [
@@ -133,7 +116,7 @@
       }
     },
     {
-      "apiVersion": "2015-06-15",
+      "apiVersion": "2021-07-01",
       "type": "Microsoft.Compute/virtualMachines",
       "name": "[variables('vmName')]",
       "location": "[resourceGroup().location]",
@@ -141,7 +124,6 @@
         "displayName": "JumpVM"
       },
       "dependsOn": [
-        "[resourceId('Microsoft.Storage/storageAccounts', variables('vhdStorageAccountName'))]",
         "[resourceId('Microsoft.Network/networkInterfaces', variables('nicName'))]"
       ],
       "properties": {
@@ -161,12 +143,12 @@
             "version": "latest"
           },
           "osDisk": {
-            "name": "osdisk",
-            "vhd": {
-              "uri": "[concat(reference(resourceId('Microsoft.Storage/storageAccounts', variables('vhdStorageAccountName')), '2016-01-01').primaryEndpoints.blob, variables('vhdStorageContainerName'), '/', variables('OSDiskName'), '.vhd')]"
-            },
+            "name": "[variables('OSDiskName')]",
             "caching": "ReadWrite",
-            "createOption": "FromImage"
+            "createOption": "FromImage",
+            "managedDisk": {
+              "storageAccountType": "[variables('vhdStorageType')]"
+            }
           }
         },
         "networkProfile": {
@@ -277,7 +259,5 @@
       ]
     }
   ],
-
   "outputs": {}
-
 }
